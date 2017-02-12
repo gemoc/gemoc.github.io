@@ -1,0 +1,22 @@
+# Site settings
+title: The GEMOC Initiative
+email: contact@gemoc.org
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: gemocinitiative
+github_username:  gemoc
+
+# Build settings
+markdown: kramdown
+
+# These override Jekyll defaults
+# permalink: /:year/:title
+
+# These are new (in addition to Jekyll's elements above )
+organization: The GEMOC Initiative
+#placeholderimagesbaseurl: http://placehold.it/
+

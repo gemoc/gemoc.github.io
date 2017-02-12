@@ -1,0 +1,58 @@
+---
+layout: default
+
+---
+{% if site.github.url %}
+  {% assign url_base = site.github.url %}
+{% else %}
+  {% assign url_base = site.url %}
+{% endif %}
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Events
+            <small>workshops and seminars</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li class="active">Blog Home One</li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">
+
+        {% for event in site.events %}
+            <h2>
+                <a href="{{url_base}}/{{ event.url }}">{{ event.title }}</a>
+            </h2>
+            <a href="blog-post.html">
+                <img class="img-responsive img-hover" src="{{ site.placeholderimagesbaseurl }}{{ post.previewimage }}" alt="">
+            </a>
+            <hr>
+            <p>{{ event.excerpt }}</p>
+            <a class="btn btn-primary" href="{{url_base}}/{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+
+            <hr>
+
+        {% endfor %}
+
+        <!-- Pager -->
+        <ul class="pager">
+            <li class="previous">
+                <a href="#">&larr; Older</a>
+            </li>
+            <li class="next">
+                <a href="#">Newer &rarr;</a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+<!-- /.row -->
