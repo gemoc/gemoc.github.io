@@ -53,9 +53,10 @@ The video below shows the execution of the fUML example model, including a graph
 
 <div style="text-align: center;" markdown="1">
 
-[![download GEMOC Studio](http://gemoc.org/pub/studio/exe16/GemocStudioForFuml_Exe16.linux.x86_64_2016_07_17.zip)
+[![Download Gemoc]({{ site.baseurl}}{% link exe16/download_gemoc_studio.png %})](http://gemoc.org/pub/studio/exe16/GemocStudioForFuml_Exe16.linux.x86_64_2016_07_17.zip)
 
 </div>
+
 
 This archive includes:
 - The GEMOC Studio Language Workbench, providing the means to create and edit concurrency-aware xDSMLs.
@@ -65,6 +66,6 @@ This archive includes:
 - The fUML Activity used as example in the paper.
 - The set of instructions to deploy the languages in the Modeling Workbench in order to be able to replay the execution of the fUML Activity as shown in the videos above.
 
- 
+
 
 *Requirements*: 64-bit Linux OS (tested on Linux Mint 17) and Java 8.
