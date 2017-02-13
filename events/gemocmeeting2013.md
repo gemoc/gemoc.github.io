@@ -23,7 +23,7 @@ The GEMOC initiative meeting will provide an open forum for sharing experiences,
 
 The morning session is open to anyone wishing to have an overview of the current investigations realized in the context of [the GEMOC initiative]({{ site.baseurl }}/).
 
-- 09:30-10:00: Welcome, and [general presentation of the GEMOC initiative]({% link pub/20130701-GEMOC-initiative-meeting/gemocinitiative.pdf %}) *(B. Combemale)*
+- 09:30-10:00: Welcome, and [general presentation of the GEMOC initiative]({{ site.baseurl }}{% link pub/20130701-GEMOC-initiative-meeting/gemocinitiative.pdf %}) *(B. Combemale)*
 - 10:00-10:30: Language workbenches for model and language heterogeneity #1 *(GEMOC Studio, J. DeAntoni)*
 - *10:30-11:00: coffee break*
 - 11:00-11:30: Language workbenches for model and language heterogeneity #2 *(ModHel’X, F. Boulanger)*
@@ -33,7 +33,7 @@ The morning session is open to anyone wishing to have an overview of the current
 
 ## Afternoon session
 
-The afternoon session is open to all [members]({% link members.html %}) of [the GEMOC initiative]({{ site.baseurl }}/), and anyone interested in joining the it.
+The afternoon session is open to all [members]({{ site.baseurl }}{% link members.html %}) of [the GEMOC initiative]({{ site.baseurl }}/), and anyone interested in joining the it.
 
 - 02:00-02:15: Round table and news about the initiative
 - 02:15-03:30: Working session about model and language composability (relations, differences)
@@ -47,4 +47,4 @@ The GEMOC Initiative meeting is part of the Research Project Symposium of the [
 
 # Organizers
 
-The GEMOC initiative meeting is organized by the members of the [GEMOC Advisory Board]({% link members.html %}).
+The GEMOC initiative meeting is organized by the members of the [GEMOC Advisory Board]({{ site.baseurl }}{% link members.html %}).
