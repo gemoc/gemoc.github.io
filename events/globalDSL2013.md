@@ -6,7 +6,7 @@ date: July 2, 2013, Montpellier, France
 
 
 <div style="text-align: center;" markdown="1">
-[![ECglobale_co_located_1024]({% link logo/01/ECglobale_co_located_1024.jpg %})](http://www.lirmm.fr/ec-montpellier-2013/)
+[![ECglobale_co_located_1024]({{ site.baseurl }}{% link logo/01/ECglobale_co_located_1024.jpg %})](http://www.lirmm.fr/ec-montpellier-2013/)
 # International Workshop on*The Globalization of Domain Specific Languages*
 
 <br />
