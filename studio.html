@@ -28,15 +28,21 @@ layout: default
         <p><strong>The GEMOC Studio provides generic components through Eclipse technologies for the development, integration, and use of heterogeneous executable modeling languages.</strong> This includes, among others:
                 <ul>
                     <li>metaprogramming approaches and associated execution engines to design and execute the behavioral semantics of executable modeling languages,</li>
-                    <li>efficient and domain-specific execution trace services,</li>
+                    <li>efficient and domain-specific execution trace management services,</li>
                     <li>model animation services,</li>
                     <li>advanced debugging facilities such as forward and backward debugging (i.e. omniscient debugging), timeline, etc.</li>
                     <li>coordination facilities to support concurrent and coordinated execution of heterogeneous models</li>
+                    <li>an extensible framework for easily adding new execution engines and runtime services</li>
                 </ul>
         </p>
-        <p>
-        The studio is also provided as an Eclipse product, which eases the diffusion of the various technologies aforementioned through an integrated studio that also includes documentation, examples, and tutorials. The GEMOC Studio offers two workbenches (accessible with specific perspectives): a Language Workbench to be used by language designers to build and compose new executable modeling languages, and a Modeling Workbench to be used by domain designers to create, execute, and coordinate models conforming to executable modeling languages.
-        </p>
+	<p>
+	The studio is also provided as an Eclipse product, which eases the diffusion of the various technologies aforementioned through an integrated studio that also includes documentation, examples, and tutorials. The GEMOC Studio offers two workbenches (accessible with specific perspectives): 
+
+	<ul>
+		<li>A <strong>Language Workbench</strong> to be used by language designers to build and compose new executable modeling languages</li>
+		<li>A <strong>Modeling Workbench</strong> to be used by domain designers to create, execute, and coordinate models conforming to executable modeling languages</li>
+	</ul>
+	</p>
     </div>
     <div class="col-lg-2">
         <img class="img-responsive" src="{{ site.baseurl }}/img/studio.jpg" alt="">
@@ -50,9 +56,9 @@ layout: default
     <div class="col-lg-12">
 
         <ul id="myTab" class="nav nav-tabs nav-justified">
-            <li class=""><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Language Workbench</a>
+            <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Language Workbench</a>
             </li>
-            <li class="active"><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Modeling Workbench</a>
+            <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Modeling Workbench</a>
             </li>
         </ul>
 
@@ -68,8 +74,8 @@ layout: default
                             </span>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Sirius Animator</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                            <h4 class="media-heading"><a href="https://www.eclipse.org/sirius/lab.html">Sirius Animator</a></h4>
+                            <p>Definition of execution semantics with an animation layer.</p>
                         </div>
                     </div>
                     <div class="media">
@@ -80,8 +86,8 @@ layout: default
                             </span>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Melange</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                            <h4 class="media-heading"><a href="http://melange.inria.fr/">Melange</a></h4>
+                            <p>Declaration, extension and assembly of the components of the executable language.</p>
                         </div>
                     </div>
                 </div>
