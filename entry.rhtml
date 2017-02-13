@@ -1,0 +1,101 @@
+<% url = ''; url = entry['myurl'] ? entry['myurl'] : entry['url'] %>
+<% title = entry.title.to_s(:filter => :latex) %>
+
+<% warn ("No URL for publication "+entry.key.to_s) unless url %>
+<% if !defined? no_js then no_js = false end %>
+
+<p>
+<% if entry.type == :string %>
+<%# fail silently %>
+<% elsif entry.type == :inproceedings %>
+
+<%# @inproceedings %>
+<a href="<%=url%>"><b><%= title %></b></a>.&nbsp;<%= entry.author.pretty %>.
+	In <i><%= entry['booktitle'] %></i>.  <%= entry['year'] %>.
+
+
+<% elsif entry.type == :article %>
+
+<%# journal article %>
+<a href="<%=url%>"><b><%= title %></b></a>.&nbsp;<%= entry.author.pretty  %>.
+   <i><%= entry['journal'] %></i><%if entry['volume']%> <%= entry['volume']%><%if entry['number']%> (<%= entry['number']%>)<%end%><%end%>.
+  <%if entry['note']%><%= entry['note']%>.<%end%>
+  <%= entry['year'] %>.
+
+
+<% elsif entry.type == :incollection %>
+
+<%# @incollection %>
+<a href="<%=url%>"><b><%= title %></b></a>.&nbsp;<%= entry.author.pretty  %>.  
+	In <%= entry['editor'] %>, editors. <i><%= entry['booktitle'] %></i>. <%= entry['publisher'] %>.  <%= entry['year'] %>.
+
+
+<% elsif entry.type == :mastersthesis %>
+
+<%# thesis %>
+<b><%= title %></b>.&nbsp;<%= entry.author.pretty  %>.  
+   Synthesis project (Required for Ph.D. candidacy), <%= entry['school']%>, <%= entry['year'] %>.
+
+
+<% elsif entry.type == :phdthesis %>
+
+<%# thesis %>
+<a href="<%=url%>"><b><%= title %></b></a>.&nbsp;<%= entry.author.pretty  %>.  
+   Ph.D. Dissertation, <%= entry['school']%>, <%= entry['year'] %>.
+
+
+<% elsif entry.type == :techreport %>
+
+<%# TR %>
+<a href="<%=url%>"><b><%= title %></b></a>.&nbsp;<%= entry.author.pretty  %>.  
+   <%= entry['institution'] %> Technical Report, <%= entry['number']%>, <%= entry['year'] %>.
+
+<% elsif entry.type == :unpublished %>
+
+<%# Probably an arxiv preprint %>
+<a href="<%=url%>"><b><%= title %></b></a>.&nbsp;<%= entry.author.pretty  %>. 
+<%= entry['year'] %>.
+<% if entry['eprint'] %><%= entry['archiveprefix'] %> <%= entry['primaryclass'] %>/<%= entry['eprint'] %><% end %>
+
+<% else %>
+ERROR! Can't display <%= entry.type %> <%= entry.key %>
+<% end %>
+
+<% if entry['annote'] %>
+<span class="annote">(<%= entry['annote'] %>)</span>
+<% end %>
+</p>
+
+<% if entry['webnote'] %>
+<p class="note">(<%= entry['webnote'] %>)</p>
+<% end %>
+
+
+<p>
+   [ 
+  <% if url %> 
+     <a href="<%=url%>">.pdf</a>
+  <% else %>
+     to appear
+  <% end %>
+  <% if !no_js %>
+     | <a href="javascript:toggle('bib<%=entry.key %>', 'bib_link_<%=entry.key %>', 'bib')"  id="bib_link_<%=entry.key %>">bib</a>
+     <% if entry['abstract'] %>
+       | <a href="javascript:toggle('abs<%=entry.key %>', 'abs_link_<%=entry.key %>', 'abstract')" id="abs_link_<%= entry.key %>">abstract</a>
+     <% end %>
+   <% end %>
+     <% if entry['eprint'] %>
+        | <a href="<%=entry['url'] %>"><%=entry['archiveprefix'] %></a>
+     <% end %>
+   ]   
+
+<% if !no_js %>
+
+<div id="div<%=entry.key %>"></div>
+<div style="display:none;" id="abs<%= entry.key%>"><div class="abstract"><%= entry['abstract']%></div></div>
+
+<div style="display:none;" id="bib<%= entry.key%>"><pre class="bibtex"><%=entry.minimize.to_s%></pre></div>
+
+<% end %>
+
+</p>

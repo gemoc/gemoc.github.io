@@ -1,0 +1,40 @@
+---
+layout: default
+
+---
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Publications
+            <small>Subheading</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="{{ site.baseurl }}/">Home</a>
+            </li>
+            <li class="active">Publications</li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+
+<!-- Content Row -->
+<div class="row">
+    <div class="col-lg-12">
+
+
+        <h1>Publications, by date</h1>
+         <% years = bib.all_values(:year).sort.reverse; years.each do |year| %>
+             <% lst = bib["@entry[year=#{year}]"] %>
+
+              <h3 class="year"><%= year %></h3>
+               <OL>
+	         <% lst.each do |entry| %>
+                   <li><%= embed("entry.rhtml", :entry => entry) %></li>
+	         <% end %>
+               </OL>
+         <% end %>
+
+	
+    </div>
+</div> 
+	
