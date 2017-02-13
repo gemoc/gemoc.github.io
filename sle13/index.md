@@ -29,14 +29,17 @@ For each language, we follow the same pattern. We present :
 4. the domain specific event design,
 5. a basic example built using this language.
 
-## The Timed Final State Machine (TFSM) language[ ](https://www.youtube.com/watch?v=gT1QUlmFkLM)
+## The Timed Final State Machine (TFSM) language
 
 A general overview of the use of this workbench is demonstrated on the following video.
-A timed Finite state machine is a language to specify the system behaviour where actions are divided into inputs and outputs. Time constraints limit the time at which an output has to be produced after an input has been applied. After this, the time variable is reset to zero. Moreover, a state can have *a time invariant called time-out. If the time-out ****ex*pires and no input is applied the system should change its state according to the specification. A special discrete clock variable is used in order to represent a timed behaviour.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gT1QUlmFkLM" frameborder="0" allowfullscreen></iframe>
+
+A timed Finite state machine is a language to specify the system behaviour where actions are divided into inputs and outputs. Time constraints limit the time at which an output has to be produced after an input has been applied. After this, the time variable is reset to zero. Moreover, a state can have a time invariant called time-out. If the time-out expires and no input is applied the system should change its state according to the specification. A special discrete clock variable is used in order to represent a timed behaviour.
 
 ### TFSM Abstract Syntax Design
 
-We based the abstract syntax on EMF (the Eclipse Modeling Framework). This choice is motivated by the good acceptation of EMF and its correspondence to the MOF standard. Additionally, EMF is well tooled and many other tools are based on it (*e.g.*,,OCL, GMF, etc).
+We based the abstract syntax on EMF (the Eclipse Modeling Framework). This choice is motivated by the good acceptation of EMF and its correspondence to the MOF standard. Additionally, EMF is well tooled and many other tools are based on it (*e.g.*, OCL, GMF, etc).
 
 Briefly, the abstract syntax of a TFSM *System* (see Figure below) is composed of a set of *TFSM*, a set of global *FSMEvents* and a set of global *FSMClocks*. Each TFSM is composed of *States* among which an initial state and composed of a set of *Transitions*, which owned a guard. A guard can be specified by a FSMEvent reception (EventGuard) or by a duration relative to the entry in the incoming state of the transition (TemporalGuard). The duration of a temporal guard is measured on an explicit reference clock. To a transition is associated an action, represented in the abstract syntax like a *String*. This action represents model level code defined by the designer. In our experiments such model level code is written in the Groovy language[^1] for its capacity to be invoked dynamically. However this is a totally arbitrary choice. A transition can also generate a set of event occurrences.
 
