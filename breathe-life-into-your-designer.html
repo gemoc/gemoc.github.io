@@ -1,0 +1,114 @@
+---
+layout: default
+
+---
+
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Breathe Life Into Your Designer!
+            <small>Model Simulation, Animation and Debugging with <a href="http://www.eclipse.org/sirius/lab.html" target="_blank">Sirius Animator</a>, part of <a href="http://gemoc.org/studio/" target="_blank">the GEMOC studio</a></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li class="active">breathe-life-into-your-designer</li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+
+<!-- Content Row -->
+<div class="row">
+    <div class="col-lg-12">
+
+							
+										
+
+<p><span style="font-weight: 400;">Domain-specific models are used in the development processes to reason and assess specific properties over the system under development as early as possible. This usually leads to a better and cheaper design as more alternatives can be explored. While many models only represent structural aspects of systems, a large amount express behavioral aspects of the same systems. Behavioral models are used in various areas (e.g., enterprise architecture, software and systems engineering, scientific modeling…), with very different underlying formalisms (e.g., business processes, orchestrations, functional chains, scenarios, protocoles, activity or state diagram, etc.). </span></p>
+<p><span style="font-weight: 400;">To ensure that a behavioral model is correct with regard to its intended behavior, early dynamic validation and verification (V&amp;V) techniques are required, such as simulation, debugging, model checking or runtime verification. In particular, debugging is a common dynamic facility to observe and control an execution in order to better understand a behavior or to look for the cause of a defect. Standard (stepwise) debugging only provides facilities to pause and step forward during an execution, hence requiring developers to restart from the beginning to give a second look at a state of interest. <strong>Omniscient debugging extends stepwise debugging by relying on execution traces to enable free traversal of the states reached by a model</strong>, thereby allowing designers to “go back in time.”.</span></p>
+<p><span style="font-weight: 400;">Debugging, and all dynamic V&amp;V techniques in general, require models to be executable, which can be achieved by defining the execution semantics of modeling languages (i.e. DSLs) used to describe them. The execution semantics of a modeling language can be implemented either as a compiler or as an interpreter to be applied on models conforming to the modeling language. </span></p>
+<p><span style="font-weight: 400;">A compiler consist into generating executable code through code generation, usually targeting an execution environment that provide the tools of interest for the modeling language under development (virtual machine, debugger, simulator, checkers…). While this approach allows language designers to reuse existing, possibly efficient, tools for new modeling languages, it comes with two difficulties: the definition of the execution semantics in terms of the targeted execution environment whose the concepts (e.g., classes, methods, etc.) might have nothing to do with the domain-specific concepts of the initial modeling language, and the need of a back-annotation mechanism to trace back the execution results in terms of the initial model. </span></p>
+<p><span style="font-weight: 400;">An interpreter consist into implementing a virtual machine associated to the modeling language, which is in charge of executing any conforming models. The interpreter can be implemented using any action language and consist into the definition of both the data structure of the execution state, and in-place transformations of such an execution state according to a given model. These transformations can directly manipulate the concepts of the modeling language in order to express their execution semantics, and their effect in terms of the execution state. The execution state can be either an extension of the syntax of the modeling language (e.g., the execution state of a statechart could be captured with an additional collection of the current states) or a separate data structure defined itself by its own metamodel (e.g., the execution state of a Petri net represented as a matrix). While the main benefit of this approach is to define the execution semantics directly in terms of the concepts of the modeling language, the main drawback is the necessity for any new modeling language to implement all the tooling using the execution semantics, e.g. debugger. Developing such a complex tool for any modeling language remains a difficult and error prone task. </span></p>
+<p><span style="font-weight: 400;">Despite the specificities of each modeling language captured into the syntax and the execution semantics, it is possible to identify <strong>a common set of debugging facilities for all modeling languages: control of the execution (pause, resume, stop), representation of the current state during the execution (i.e., model animation), breakpoint definition, step into/over/out and step forward/backward.</strong>  </span></p>
+<p><b><i>Here Sirius Animator comes! </i></b></p>
+<blockquote><p><b><i>To drastically reduce the development cost of domain-specific debuggers, Sirius Animator provides a tool-supported approach to complement a modeling language with an execution semantics, and automatically get an advanced and extensible environment for model simulation, animation and debugging. </i></b></p></blockquote>
+<p><span style="font-weight: 400;">Sirius Animator provides a modular approach to <strong>complement an Ecore metamodel with</strong>:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">a <strong>Java-based interpreter</strong>, and </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">a <strong>Sirius-based representation of the execution state</strong>. </span></li>
+</ul>
+<p><span style="font-weight: 400;">Both are automatically deployed, together with a generated efficient execution trace metamodel, into an advanced <strong>omniscient debugging environment</strong> providing:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">an <strong>integration with the Eclipse debug UI</strong> (incl., the binding of the execution state with the variable view),</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">a <strong>generic execution engine</strong> with execution control facilities (pause, resume, stop), </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">a <strong>generic control panel</strong> (incl. breakpoints, step into/over/out and step forward/backward), and </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">a <strong>generic timeline</strong>.</span></li>
+</ul>
+<p  style="text-align:center;"><img class="aligncenter size-full wp-image-1985" src="logo/02//gemocapproach-1.jpg" alt="gemocapproach-1" width="601" height="369" srcset="logo/02//gemocapproach-1.jpg 601w, logo/02//gemocapproach-1-300x184.jpg 300w" sizes="(max-width: 601px) 100vw, 601px" /></p>
+<h1><span style="font-weight: 400;">Bringing Simulation and Animation Capabilities to Arduino Designer</span></h1>
+<p>Let’s go through an example: bringing simulation and animation capabilities to Arduino Designer.</p>
+<p>Arduino Designer is a simple tooling based on Sirius which provide a modeling language to graphically design programs (namely <em>sketches</em>) based on a given hardware configuration (arduino with sensors and actuators). Once a program is defined the user can automatically deploy it on an actual arduino. Behind the scene Arduino Designer will generate the .ino files, launch the compiler and upload the binary. The simulation and animation capabilities provide a convenient way to debug sketches at the level of abstraction provided by the modeling language, without having to systematically compile and deploy the binary on an arduino. This helps the developer to minimize the round-trip between the design of the sketch and the test of the program, and to design the sketch without having necessarily the arduino.</p>
+<p>The sources of the following example are available <a href="https://github.com/gemoc/arduinomodeling" target="_blank">here</a>.</p>
+<h2>Language workbench: Design of the modeling language of Arduino Designer</h2>
+<p>The modeling language covers hardware and software aspects. An excerpt of the metamodel is shown in the following figure. A <em>Project</em> is composed of a <em>Hardware</em> (a particular configuration of an arduino composed of <em>Modules</em>) and a <em>Sketch</em> (program to be executed on the associated configuration of an arduino).</p>
+<p  style="text-align:center;"><a href="logo/02//arduino.png" class="gallery_colorbox" rel="attachment wp-att-1846"><img class="img-responsive" src="logo/02//arduino.png"  alt="arduino" width="4086" height="1555" srcset="logo/02//arduino.png 4086w, logo/02//arduino-300x114.png 300w, logo/02//arduino-768x292.png 768w, logo/02//arduino-1024x390.png 1024w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></p>
+<p>Once we have defined the metamodel, one can expect to examine how a conforming model (program and hardware) behaves step by step. One could even simulate interactions, and all of that without having to compile and deploy on the actual hardware. Instead of defining all the interpretation logic using pure Java code, we provide specific Xtend active annotations to seamlessly extend an Ecore metamodel with dynamic information related to the execution and the execution steps (org.gemoc.arduino.sequential.operationalsemantics). The annotation <em>@Aspect</em> allows to re-open a concept declared in an Ecore metamodel, and to add new attributes / references corresponding to the dynamic information, and operations corresponding to the execution steps. These execution steps are usually defined according to the interpreter pattern, traversing the metamodel to declare the interpretation of instances. The operations corresponding to specific execution steps (i.e., on which we would pause the execution, hence defining the granularity of the possible step-by-step execution) must be declared using the annotation <em>@Step</em>, and the starting point of the execution must be declared using the annotation <em>@Main</em>.</p>
+<p><script src="https://gist.github.com/combemale/b6bc871c9c42ffb1c9b2.js"></script></p>
+<p>From these annotations and the logic defined with Xtend we generate the corresponding code so that :</p>
+<ul>
+<li>the execution control works with EMF transaction commands,</li>
+<li>the dynamic informations are getting displayed in the variable view,</li>
+<li>Sirius gets notified to update the diagram views.</li>
+</ul>
+<p>It remains the definition of the graphical animation layer itself! The animator plugin (org.gemoc.arduino.sequential.design) is responsible for providing customizations to the diagram editor to adapt the shapes and colors based on the runtime data. It rely on the customization capabilities of Sirius :</p>
+<ol>
+<li>The definition of a Viewpoint which extends another one from another plugin. This can be done using the <a href="https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html#diagram_extension" target="_blank">Diagram Extension mechanism</a> in Sirius. To enable this you have to specify the URI of the viewpoint definition which is extended. Such an URI is using the “viewpoint:/” protocol, followed by the “plugin id” and then the “viewpoint name”. Such an extension can declare new Layer definitions, each contributing style customizations and/or actions as shown on the following figure.<br />
+<a  style="text-align:center;" href="logo/02//anim1.jpg" class="gallery_colorbox"><img class="aligncenter wp-image-1847 size-full" src="logo/02//anim1.jpg"  alt="anim1" width="488" height="367" srcset="logo/02//anim1.jpg 488w, logo/02//anim1-300x226.jpg 300w" sizes="(max-width: 488px) 100vw, 488px" /></a></li>
+<li>the specification of style customizations which will adapt the shapes or colors depending on a predicate.<br />
+<a style="text-align:center;"  href="logo/02//anim2.jpg" class=" img-responsive gallery_colorbox"><img class=" img-responsive aligncenter wp-image-1848 size-full" src="logo/02//anim2.jpg"  alt="anim2" width="388" height="128" srcset="logo/02//anim2.jpg 388w, logo/02//anim2-300x99.jpg 300w" sizes="(max-width: 388px) 100vw, 388px" /></a><br />
+In this case for example, the stroke and border colors are redefined based on the result of a Java service called “getLevel”:<br />
+<a style="text-align:center;"  href="logo/02//anim33.jpg" class="gallery_colorbox" rel="attachment wp-att-1852"><img style="text-align:center;"  class="img-responsive aligncenter size-full wp-image-1852" src="logo/02//anim33.jpg"  alt="anim33" width="898" height="222" srcset="logo/02//anim33.jpg 898w, logo/02//anim33-300x74.jpg 300w, logo/02//anim33-768x190.jpg 768w" sizes="(max-width: 898px) 100vw, 898px" /></a><br />
+Images can also be redefined dynamically in the same way :<br />
+<a style="text-align:center;"  href="logo/02//anim4.jpg" class="gallery_colorbox"><img class="aligncenter wp-image-1850 size-full" src="logo/02//anim4.jpg"  alt="anim4" width="471" height="278" srcset="logo/02//anim4.jpg 471w, logo/02//anim4-300x177.jpg 300w" sizes="(max-width: 471px) 100vw, 471px" /></a></li>
+<li>Graphical aspect is one thing but a few actions also have to be contributed to the existing Arduino tooling in order to set breakpoints for instance:<br />
+<a style="text-align:center;"  href="logo/02//anim5.jpg" class="gallery_colorbox" rel="attachment wp-att-1853"><img class="aligncenter size-full wp-image-1853" src="logo/02//anim5.jpg"  alt="anim5" width="469" height="169" srcset="logo/02//anim5.jpg 469w, logo/02//anim5-300x108.jpg 300w" sizes="(max-width: 469px) 100vw, 469px" /></a><br />
+In this case they simply call an external Java action which is provided by Sirius Animatorby one of the installed plugins:<br />
+<a style="text-align:center;"  href="logo/02//anim6.jpg" class="gallery_colorbox" rel="attachment wp-att-1854"><img class="aligncenter size-full wp-image-1854" src="logo/02//anim6.jpg"  alt="anim6" width="847" height="407" srcset="logo/02//anim6.jpg 847w, logo/02//anim6-300x144.jpg 300w, logo/02//anim6-768x369.jpg 768w" sizes="(max-width: 847px) 100vw, 847px" /></a></li>
+</ol>
+<p>In the end, the plugin contributing the animation capabilities is quite small:<br />
+<a style="text-align:center;"  href="logo/02//anim7.jpg" class="gallery_colorbox" rel="attachment wp-att-1855"><img class="aligncenter size-full wp-image-1855" src="logo/02//anim7.jpg"  alt="anim7" width="299" height="366" srcset="logo/02//anim7.jpg 299w, logo/02//anim7-245x300.jpg 245w" sizes="(max-width: 299px) 100vw, 299px" /></a></p>
+<p><img class="aligncenter size-full wp-image-1856" src="logo/02//anim8.jpg" alt="anim8" width="488" height="152" srcset="logo/02//anim8.jpg 488w, logo/02//anim8-300x93.jpg 300w" sizes="(max-width: 488px) 100vw, 488px" /></p>
+<h2>Modeling workbench: debugging environment resulting for Arduino Designer</h2>
+<p>The following figure shows the <em>debugging environment</em> automatically obtained from the design of the modeling language as previously described. The debugging environment is launched from a right click &gt; debug on the model. The debugging environment is fully integrated with the Eclipse debug UI and provide the usual debugging facilities including:</p>
+<ul>
+<li>the control of the execution (pause, resume, stop), incl. step-by-step execution (step forward into, over, out),</li>
+<li>a graphical animation of the model during the execution to highlight the current state,</li>
+<li>the possibility to define breakpoints on model elements,</li>
+<li>the stack of the execution steps,</li>
+<li>the binding of the dynamic information into the variable view to show their value during the execution.</li>
+</ul>
+<p>In addition, the debugging environment provides advanced features related to <em>omniscient debugging</em> such as an efficient management and visualization of the execution trace, the possibility to restore the model in any state previously reached during the execution, and step backward facilities (step backward into/over/out).</p>
+<p>Finally, the <em>multi-dimensional timeline</em> offers one specific execution trace per dynamic information. This allows the developer to navigate through the global execution trace while focusing only on the changes of a particular dynamic information represented in the variable view.</p>
+<iframe  style="display: block; margin: 0px auto;"  id="_ytid_74585" width="620" height="465" src="https://www.youtube.com/embed/d71iTUcYMtQ?enablejsapi=1&autoplay=1&cc_load_policy=0&iv_load_policy=1&loop=1&playlist=d71iTUcYMtQ&modestbranding=0&rel=1&showinfo=1&playsinline=0&autohide=2&theme=dark&color=red&wmode=opaque&vq=&controls=2&" frameborder="0" class="__youtube_prefs__" allowfullscreen data-no-lazy="1"></iframe>
+<p>The technologies required to put this in action are small dedicated components (all open-source) at a &#8220;proof of concept&#8221; maturity level extending proven components: EMF, Eclipse Sirius, Eclipse Debug, Xtend. We&#8217;ve been able to try out those technologies through different use cases, the natural next step is to validate and mature further some of those technologies through an industrial pilot project. Feel free to contact us if you have such an opportunity.</p>
+<h1><span style="font-weight: 400;">Further Materials</span></h1>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">SiriusAnimator on GitHub: </span><a href="https://github.com/SiriusLab/ModelDebugging"><span style="font-weight: 400;">https://github.com/SiriusLab/ModelDebugging</span></a></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">ArduinoDebugger on GitHub: </span><a href="https://github.com/gemoc/arduinomodeling"><span style="font-weight: 400;">https://github.com/gemoc/arduinomodeling</span></a></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">The GEMOC Studio: </span><a href="http://gemoc.org/studio"><span style="font-weight: 400;">http://gemoc.org/studio</span></a></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">“Breathe Life Into your Designer!”, talks at </span></i><a href="http://siriuslab.github.io/talks/BreatheLifeInYourDesigner/slides"><i><span style="font-weight: 400;">EclipseCon France 2015</span></i></a><i><span style="font-weight: 400;"> and </span></i><a href="https://docs.google.com/presentation/d/1E6cDnJBMyYb8gdpKpqjDCp7VuVUERY4egJe3SmGxzsQ/edit?usp=sharing"><i><span style="font-weight: 400;">EclipseCon Europe 2015</span></i></a></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">&#8220;</span></i><a href="https://hal.inria.fr/hal-01182517"><i><span style="font-weight: 400;">Supporting Efficient and Advanced Omniscient Debugging for xDSMLs</span></i></a><i><span style="font-weight: 400;">&#8220;</span></i><span style="font-weight: 400;"> by Erwan Bousse, Jonathan Corley, Benoit Combemale, Jeff Gray and Benoit Baudry. In 8th International Conference on Software Language Engineering (SLE), Oct 2015, Pittsburg, United States.</span></li>
+<li><span style="font-weight: 400;">&#8220;</span><a href="http://gemoc.org/ttc15/"><span style="font-weight: 400;">A Solution to the TTC&#8217;15 Model Execution Case Using the GEMOC Studio</span></a><span style="font-weight: 400;">&#8220;, by Benoît Combemale, Julien DeAntoni, Olivier Barais, Cédric Brun, Arnaud Blouin, Thomas Degueule, Erwan Bousse and Didier Vojtisek. In 8th Transformation Tool Contest @ STAF 2015: 19-26</span></li>
+</ul>
+<h1><span style="font-weight: 400;">Contacts</span></h1>
+<ul>
+<li><a href="http://combemale.fr"><span style="font-weight: 400;">Benoit Combemale</span></a><span style="font-weight: 400;"> &lt;benoit.combemale@irisa.fr&gt;, <a href="http://www.inria.fr/" target="_blank">Inria</a> and <a href="https://www.univ-rennes1.fr/" target="_blank">University of Rennes 1</a>, <a href="http://diverse.irisa.fr/" target="_blank">DiverSE research team</a> (<a href="http://www.irisa.fr/" target="_blank">IRISA</a>) &#8211; <a href="https://twitter.com/bcombemale" target="_blank">@bcombemale</a></span></li>
+<li><a href="http://cedric.brun.io/"><span style="font-weight: 400;">Cédric Brun</span></a><span style="font-weight: 400;"> &lt;cedric.brun@obeo.fr&gt;, <a href="http://www.obeo.fr/en" target="_blank">Obeo</a> &#8211; <a href="https://twitter.com/bruncedric" target="_blank">@bruncedric</a></span></li>
+</ul>
+
+
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->

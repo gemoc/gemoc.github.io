@@ -1,0 +1,175 @@
+--- layout: default ---
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Weave Domain-Specific Concurrency Constraints Into Your DSL!
+            <small>Extending an executable modeling language with a formal model of concurrency to leverage on your scheduling properties</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li class="active">weave-domain-concurrency-into-your-dsl</li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+<!-- Content Row -->
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Context and motivations</h2>
+        <p>In the <a href="breathe-life-into-your-designer.html" target="_blank">previous post on model animation and debugging</a>,
+            we have presented the tool-supported approach proposed by the GEMOC studio to complement an Ecore metamodel with
+            a behavioral semantics, and automatically get an advanced execution environment which provide graphical animation
+            and omniscient debugging facilities.</p>
+        <p>The task of the language engineer is thus reduced to the definition of the domain-specific information, both in terms
+            of the language syntax and the language semantics. Dedicated meta-languages (i.e., language to define languages)
+            are provided to define both parts, namely Ecore for defining the syntax, and Xtend/Kermeta (on top of Java) for
+            expressing the behavioral semantics.</p>
+        <p>However, the emergence of modern concurrent systems (e.g., Cyber-Physical Systems and Internet of Things) and highly-parallel
+            platforms (e.g., many-core, GPGPU and distributed platforms) call for Domain-Specific Modeling Languages (DSMLs)
+            where concurrency is of paramount importance. Such DSMLs are intended to propose constructs with rich concurrency
+            semantics, which allow system designers to precisely define and analyze system behaviors. However, implementing
+            the execution semantics of such DSMLs is a particularly difficult task. Most of the time the concurrency model
+            remains implicit and ad-hoc in the language design and implementation. In the language design, the concurrency
+            model is usually implicitly inherited from the concurrency model of the meta-language employed to design the
+            behavioral semantics (e.g., the default concurrency model of Xtend/Java), or customized with low-level primitives
+            (e.g., using Threads). In the language implementation, the concurrency model is mostly embedded in the underlying
+            execution environment (e.g., the concurrency model of the JVM).</p>
+        <p>The lack of an explicit concurrency model in language specifications prevents : the precise definition, the variation
+            and the complete understanding of the DSML&#8217;s semantics, the effective usage of concurrency-aware analysis
+            techniques, and the exploitation of the concurrency model during the system refinement (e.g., during its allocation
+            on a specific platform).</p>
+        <p><b><i>Here MoCCML (Model of Concurrency and Communication Modeling Language) comes!</i></b></p>
+        <blockquote>
+            <p><b><i>To reason over temporal properties of concurrent or distributed systems (e.g., for design space exploration, scheduling, allocation analysis, etc.), MoCCML supports the reification of a formal model of concurrency in executable modeling languages, independently of a particular execution environment.</i></b></p>
+        </blockquote>
+        <p>In the context of <a href="http://gemoc.org/ins/" target="_blank">the ANR project GEMOC</a>, we have defined a concurrency-aware
+            executable metamodeling approach, which supports a modular definition of the execution semantics, including the
+            concurrency model, the semantic rules (aka. domain-specific actions, DSA), and a well-defined and expressive
+            communication protocol between them. The protocol supports both the mapping of the concurrency model to the semantic
+            rules, and the feedback, possibly with data, from the semantic rules to the concurrency model. The concurrent
+            executable metamodeling approach comes with an additional dedicated meta-language, namely MoCCML, to define the
+            concurrency model and the protocol, as well as the associated execution environment to simulate and analyze the
+            concurrency of behavioral models.</p>
+        <p>MoCCML provides a declarative meta-language, which comes with a model editor combining textual and graphical notations,
+            to complement <a href="breathe-life-into-your-designer.html" target="_blank">an executable metamodel</a>            with:</p>
+        <ul>
+            <li>Explicit observation points specified by events linked to execution functions and constraint between them to
+                specify their causalities</li>
+            <li>Possibly complex domain specific constraints embedded into reusable libraries</li>
+        </ul>
+        <p>At any moment during a run, an event that does not violate the constraints can occur. These constraints can also
+            be of a different kinds, for instance to express a deadline, a minimal throughput or a hardware deployment.</p>
+        <p>The constraints are eventually instantiated to define the execution model of a specific model. The execution model
+            is a symbolic representation of all the acceptable schedules for a particular model. To enable the automatic
+            generation of the execution model, the concurrency model is weaved into the context of specific concepts from
+            the abstract syntax of a DSML. This contextualization is defined by a mapping between the elements of the abstract
+            syntax and the constraints of the concurrency model. The separation of the mapping from the concurrency model
+            makes the concurrency model independent of the DSML so that it can be reused, and semantic variation points can
+            be managed for a single abstract syntax.</p>
+        <p><img class="aligncenter size-full wp-image-1987" src="logo/04/gemocapproach-2.jpg"
+                alt="gemocapproach-2" width="735" height="368" srcset="logo/04/gemocapproach-2.jpg 735w, logo/04/gemocapproach-2-300x150.jpg 300w"
+                sizes="(max-width: 735px) 100vw, 735px" /></p>
+        <p>In our approach, the execution model is acting as the configuration of a generic execution engine that can be used
+            for simulation or analysis of any model conforming to the abstract syntax of the DSML. The modeling workbench
+            of the GEMOC studio provide several generic components such as a dedicated control panel and multi-branch timeline
+            to explore the different possible execution of a running model (according to the schedules allowed by the concurrency
+            model), a timing diagram (VCD) to visualize the concurrency constraints of a given execution model, and an external
+            stimuli manager to force some events according to the system environment.</p>
+        <h2>Bringing concurrency capabilities to Arduino Designer</h2>
+        <p>From the sequential version, we reuse the exact same abstract syntax. The differences are only localized in the definition
+            of the operational semantics. The only file to be changed is the Xtend file, which defines the sequential call
+            of the execution functions. Then we have to create two new files. A first one which defines the events of interest
+            in the system and the constraints between them (in ECL) and a file defining the constraints themselves (in MoCCML).</p>
+        <h3>Modification of the “sequential” execution functions</h3>
+        <p>In the context of Arduino designer, the executions functions define, for each instructions, how the model state must
+            be modified. In the sequential version, the main function defined the control flow between the different execution
+            function. By removing it, the execution functions from the different instructions are not linked by a control
+            flow anymore. We can now define the model of concurrency and communication for our concurrent version of arduino
+            designer.</p>
+        <h3>Identification of the reified execution steps</h3>
+        <p>To define the concurrent control flow, we first define the triggers of the execution functions; <i>i.e.</i>, some
+            Domain Specific Events (DSE). A DSE is defined in the context of a concept of the AS. Then, when applied on a
+            specific model, for each instance of the concept, the corresponding DSE are also instantiated. We name Model
+            Specific Event (MSE) the instantiation of a DSE. A MSE is associated to the instance of the concept the DSE is
+            linked with. an MSE is an ordered set of occurrences. When a DSE is mapped to an execution function, each MSE
+            occurrence calls the execution function on its instance.</p>
+        <p>For instance, in Arduino Designer, we defined a <em>start</em> and a <em>stop</em> DSE in the context of <em>Sketch</em>            (see below). Consequently, for each instance of Sketch in a model, the GEMOC studio will automatically instantiate
+            an instance of start and stop. These MSE are then visible to the model designer when she/he executes its model
+            step by step. We also defined a start and a stop DSE in the context of an instruction. This definition is in
+            our case conditional since we do not want to have MSE for the instances of a <em>ModuleGet</em> instruction.
+            For all the other <em>Instruction</em> instances, a<em> start </em>and<em> stop </em>MSE will be automatically
+            instantiated. The <em>start</em> DSE is linked to the <em>execute()</em> execution function. Consequently, each
+            time a start MSE occurs, the execute function is called on the object associated to the MSE. Exactly the same
+            mechanism happens for the instances of the <em>stop</em> DSE.</p>
+        <p>
+            <script src="https://gist.github.com/jdeantoni/76c0015fef77016ce534dfedd8f8ff2b.js"></script>
+        </p>
+        <p>Once all the DSE are defined (see <a href=" arduinomodeling/dev/language_workbench_concurrency/org.gemoc.arduino.concurrent.ecl/ecl/arduinoML.ecl">here</a>),
+            all the associated execution functions can be called in any arbitrary order since the DSE are not constrained
+            each other, yet. To constrain the order of the MSE occurrences, we put constraints between the DSE by using specific
+            <em>invariants</em>. These invariants use specific kinds of constraints whose definition is given in MoCCML.
+            MoCCML is an extension of the CCSL language (see <a href="http://timesquare.inria.fr">here</a>) with the possibility
+            to specify constraint by using automata. For instance, we want to specify that the <em>start</em> of a <em>Sketch</em>            occurs first and that later the <em>stop</em> can occur. When stop occurred, the <em>start</em> MSE can occur
+            again. In other words, the <em>start</em> and <em>stop</em> MSE of a <em>Sketch</em> are alternating each others.</p>
+        <p>To ensure this constraint, we first define an invariant as the first one below:</p>
+        <p>
+            <script src="https://gist.github.com/jdeantoni/487419cd24de91735645619c189a8394.js"></script>
+        </p>
+        <p>This first invariant (<i>S_nonReentrant</i>) specifies that, for each instance of its context, the <i>Alternates</i>            constraint must be applied on the formal parameters corresponding to the query defined line 3. This constraint
+            is defined in MoCCML by the following automata:</p>
+        <div id="attachment_2006" style="width: 310px" class="wp-caption aligncenter">
+            <a href="logo/05/alternates_moccml.png" class="gallery_colorbox"><img class="wp-image-2006 size-medium" src="logo/05/alternates_moccml-300x170.png"
+                    alt="alternates_moccml" width="300" height="170" srcset="logo/05/alternates_moccml-300x170.png 300w, logo/05/alternates_moccml.png 460w"
+                    sizes="(max-width: 300px) 100vw, 300px" /></a>
+            <p class="wp-caption-text">Definition of the &#8216;Alternates&#8217; constraint</p>
+        </div>
+        <p>This automata has two formal parameters: <i>firstClock</i>, and <i>secondClock</i>, which are used on the transitions
+            of the automata. The automata specifies that when in state S1, only <i>firstClock</i> can occur. When it does,
+            the automata goes in state S2 in which only <i>secondClock</i> can occur. </p>
+        <p>According to the ECL file, this automata is instantiated for each instance of a <i>Sketch</i> with their <em>start</em>            and <em>stop</em> MSE as actual parameters.</p>
+        <p>In the same way the <em>S_startInternalFirst</em> invariant is defined in the context of a Sketch. It specifies that
+            the <i>start</i> event of a Sketch occurs simultaneously (<em>i.e.</em>,in coincidence with) the start of the
+            first instruction of its block (see the query for the second parameter of the Coincides constraint). The <em>Coincides</em>            constraint is a built-in constraint that behaves as define <a href="http://timesquare.inria.fr/index.php?slab=coincides">here</a>.</p>
+        <p>By defining such kind of invariants, we restrict the order in which the occurrences of the different MSE can occur,
+            defining a partial order representing the concurrent execution of the system.</p>
+        <p>all the language workbench sources are available here:</p>
+        <p><a href="https://github.com/gemoc/arduinomodeling/tree/master/dev/language_workbench_concurrency">https://github.com/gemoc/arduinomodeling/tree/master/dev/language_workbench_concurrency</a></p>
+        <h2>Modeling workbench:</h2>
+        <p>Once the DSE are defined and constrained by invariants whose definition is given in MoCCML, the modeling workbench
+            is automatically deployed by the GEMOC studio. </p>
+        <p>In this modeling workbench we defined an example of three sketches executing in parallel on three arduino boards.
+            The master algorithm reads the button state and changes accordingly a variable which is sent to the 2 slave boards
+            by a Bluetooth connection. The slave boards are then reading the value and they highlight correspondingly the
+            leds they have. Note on the left side all the possible logical steps represent the interleaving due to the concurrent
+            execution of the three algorithm deployed on the three boards.</p>
+        <iframe style="display: block; margin: 0px auto;" id="_ytid_49163" width="620" height="349" src="https://www.youtube.com/embed/dtJZyK1RM2A?enablejsapi=1&autoplay=1&cc_load_policy=0&iv_load_policy=1&loop=1&playlist=dtJZyK1RM2A&modestbranding=0&rel=1&showinfo=1&playsinline=0&autohide=2&theme=dark&color=red&wmode=opaque&vq=&controls=2&"
+            frameborder="0" class="__youtube_prefs__" allowfullscreen data-no-lazy="1"></iframe>
+            <p>all the sources of this example can be found here:<br />
+                <a href="https://github.com/gemoc/arduinomodeling/tree/master/dev/modeling_workbench_concurrency">https://github.com/gemoc/arduinomodeling/tree/master/dev/modeling_workbench_concurrency</a></p>
+            <h2>Further Materials</h2>
+            <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">MoCCML on GitHub: </span><a href="https://github.com/gemoc/concurrency"><span style="font-weight: 400;">https://github.com/gemoc/concurrency</span></a></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">ArduinoDebugger on GitHub: </span><a href="https://github.com/gemoc/arduinomodeling"><span style="font-weight: 400;">https://github.com/gemoc/arduinomodeling</span></a></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">The GEMOC Studio: </span><a href="http://gemoc.org/studio"><span style="font-weight: 400;">http://gemoc.org/studio</span></a></li>
+                <li><span style="font-weight: 400;">&#8220;</span><a href="http://dx.doi.org/10.1007/978-3-642-36089-3_11"><span style="font-weight: 400;">Bridging the Chasm between Executable Metamodeling and Models of Computation</span></a><span
+                        style="font-weight: 400;">&#8220;, by Benoît Combemale, Cécile Hardebolle, Christophe Jacquet, Frédéric Boulanger, Benoit Baudry. In SLE 2012: 184-203</span></li>
+                <li><span style="font-weight: 400;">&#8220;</span><a href="http://dx.doi.org/10.1007/978-3-319-02654-1_20"><span style="font-weight: 400;">Reifying Concurrency for Executable Metamodeling</span></a><span
+                        style="font-weight: 400;">&#8220;, by Benoît Combemale, Julien DeAntoni, Matias Vara Larsen, Frédéric Mallet, Olivier Barais, Benoit Baudry, Robert B. France. In SLE 2013: 365-384</span></li>
+                <li><span style="font-weight: 400;">&#8220;</span><a href="http://doi.acm.org/10.1145/2814251.2814261"><span style="font-weight: 400;">Weaving concurrency in executable domain-specific modeling languages</span></a><span
+                        style="font-weight: 400;">&#8220;, by Florent Latombe, Xavier Crégut, Benoît Combemale, Julien DeAntoni, Marc Pantel. In SLE 2015: 125-136</span></li>
+                <li><span style="font-weight: 400;">&#8220;</span><a href="http://dl.acm.org/citation.cfm?id=2755823"><span style="font-weight: 400;">Towards a meta-language for the concurrency concern in DSLs</span></a><span
+                        style="font-weight: 400;">&#8220;, by Julien DeAntoni, Papa Issa Diallo, Ciprian Teodorov, Joël Champeau, Benoît Combemale. In DATE 2015: 313-316</span></li>
+                <li><span style="font-weight: 400;">&#8220;</span><a href="http://gemoc.org/ttc15/"><span style="font-weight: 400;">A Solution to the TTC&#8217;15 Model Execution Case Using the GEMOC Studio</span></a><span
+                        style="font-weight: 400;">&#8220;, by Benoît Combemale, Julien DeAntoni, Olivier Barais, Cédric Brun, Arnaud Blouin, Thomas Degueule, Erwan Bousse and Didier Vojtisek. In 8th Transformation Tool Contest @ STAF 2015: 19-26</span></li>
+            </ul>
+            <h2><span style="font-weight: 400;">Contacts</span></h2>
+            <ul>
+                <li><a href="http://combemale.fr"><span style="font-weight: 400;">Benoit Combemale</span></a><span style="font-weight: 400;"> &lt;benoit.combemale@irisa.fr&gt;, <a href="http://www.inria.fr/" target="_blank">Inria</a> and <a href="https://www.univ-rennes1.fr/" target="_blank">University of Rennes 1</a>, <a href="http://diverse.irisa.fr/" target="_blank">DiverSE research team</a> (<a href="http://www.irisa.fr/" target="_blank">IRISA</a>) &#8211; <a href="https://twitter.com/bcombemale" target="_blank">@bcombemale</a></span></li>
+                <li><a target="_blank" href="http://www.i3s.unice.fr/~deantoni/"><span style="font-weight: 400;">Julien Deantoni</span></a><span
+                        style="font-weight: 400;"> &lt;julien_._deantoni_@_polytech_.unice._fr&gt;, <a href="http://team.inria.fr/aoste" target="_blank">AOSTE research team</a> (I3S)</span></li>
+            </ul>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
