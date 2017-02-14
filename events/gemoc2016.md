@@ -8,11 +8,12 @@ date: October 4, 2016, Saint-Malo, France
 
 [![img]({{site.baseurl}}{% link logo/BandeauWebModels2016_1200x229v4.jpg %})](http://www.modelsconference.org/)
 
-# 4th International Workshop on*The Globalization of Modeling Languages*
+# 4th International Workshop on
+# *The Globalization of Modeling Languages*
 
 ## October 4, 2016, Saint-Malo, Franceco-located with [MODELS 2016](http://www.modelsconference.org/)
 
-# [About]({{ site.baseurl }}{% link events/gemoc2016.md %}#cfp) | [Program]({{ site.baseurl }}{% link events/gemoc2016.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2016.md %}#call) | [Dates]({{ site.baseurl }}{% link events/gemoc2016.md %}#dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2016.md %}#ocpc)
+# [About]({{ site.baseurl }}{% link events/gemoc2016.md %}#about-the-workshop) | [Program]({{ site.baseurl }}{% link events/gemoc2016.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2016.md %}#call-for-papers--models) | [Dates]({{ site.baseurl }}{% link events/gemoc2016.md %}#important-dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2016.md %}#committees)
 
 ## *The proceedings are now online here (http://ceur-ws.org/Vol-1731/)*
 
@@ -45,14 +46,14 @@ Domain-specific languages (DSLs) promise improved development productivity and s
 | 11:30 – 12:00 | Alignment of viewpoint heterogeneous design models: “Emergency Department” Case Study— *Mahmoud El Hamlaoui, Bernard Coulette, Sophie Ebersold, Saloua Bennani, Mahmoud Nassar,**Adil Anwar, Antoine Beugnard, Yassine Jamoussi and Hanh-Nhi Tran* ([paper]({{ site.baseurl }}{% link pub/20161004-GEMOC16/GEMOC_2016_paper_2.pdf %})) |
 | 12:00 – 12:30 | Towards Semantic Integration of Plant Behavior Models with AutomationML’s Intermediate Modeling Layer— *Tanja Mayerhofer, Manuel Wimmer, Luca Berardinelli, Emanuel Mätzler and Nicole Schmidt* ([paper]({{ site.baseurl }}{% link pub/20161004-GEMOC16/GEMOC_2016_paper_5.pdf %}), [slides](http://www.slideshare.net/tmayerhofer/towards-the-semantic-integration-of-plant-behavior-models-with-automationmls-intermediate-modeling-layer)) |
 
-*Lunch Break: 12:30 – 14:00     *
 
-**Session 3**: 14:00 – 15:30
+*Lunch Break: 12:30 – 14:00*
 
 | 14:00 – 14:30 | fSysML: Foundational Executable SysML for Cyber-Physical System Modeling— *Omar Badreddin, Vahdat Abdelzad, Timothy Lethbridge and Maged Elaasar* ([paper]({{ site.baseurl }}{% link pub/20161004-GEMOC16/GEMOC_2016_paper_3.pdf %})) |
 | ------------- | ---------------------------------------- |
 | 14:30 – 15:00 | A New Approach of Qualitative Simulation for the Validation of Hybrid Systems— *Slim Medimegh, Jean-Yves Pierron, Jean-Pierre Gallois and Frédéric Boulanger* ([paper]({{ site.baseurl }}{% link pub/20161004-GEMOC16/GEMOC_2016_paper_4.pdf %})) |
 | 15:00 – 15:30 | Discussion Phase 1: Paper wrap-up and outline of subjects to be discussed in session 2 |
+
 
 *Coffee Break: 15:30 – 16:00*
 
@@ -124,12 +125,8 @@ The accepted papers will be published by CEUR in the workshop proceedings, which
 
 ## Important Dates
 
-- ​
-
 - Paper submission deadline: July 17, 2016
-
 - Notification of acceptance: August 14, 2016
-
 - Workshop: October 4, 2016
 
 ## Committees
