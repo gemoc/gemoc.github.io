@@ -1,0 +1,185 @@
+---
+layout: default
+
+---
+
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">The GEMOC Studio
+            <small>A language and modeling workbench for executable modeling</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="{{ site.baseurl }}/">Home</a>
+            </li>
+            <li><a href="{{ site.baseurl }}/">Studio</a>
+            </li>
+            <li class="active">Download</li>
+        </ol> 
+    </div>
+</div>
+<!-- /.row -->
+
+test last eclipse_package
+{% assign last_eclipse_package = site.categories.eclipse_package.first %} 
+{{ last_eclipse_package.title }}
+{% assign last_virtualbox = site.categories.virtualbox.first %} 
+{{ last_virtualbox.title }}
+{% assign last_updatesite = site.categories.updatesite.first %} 
+{{ last_updatesite.title }}
+
+ 
+ 
+<div class="col-lg-12">
+        <h3>Download</h3>
+        <u>Several versions are availables depending on your needs:</u> Eclipse package (recommanded for most usages), Virtual machine (for OS independant demos running in Virtual Box) or update site (in order to install GEMOC into an existing eclipse).<br>
+  
+<u>Requirements for Eclipse packages and update site:</u> Java 8 and JavaFX . JavaFX is required for the Multidimensional timeline features, please make sure to install it or to use Oracle JRE.<br>
+  
+<u>Getting started:</u> The studio comes with various example languages that you can import in your workspace: _File > New > Examples&#8230;_. &#8212; You can also install additional examples using the component discovery service: _Help > Install additional GEMOC components_. &#8212; You can also browse the [language gallery](http://gemoc.org/gallery/) for some more examples.
+        
+</div> 
+
+<ul id="myTab" class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#service-one" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="32" height="32" align="TOP" /> Eclipse package</a>
+    </li>
+    <li class=""><a href="#service-two" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="32" height="32" align="TOP" /> Virtual machine</a>
+    </li>
+    <li class=""><a href="#service-three" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png"  height="32" align="TOP" /> Update site</a>
+    </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+	<!--  ECLIPSE PACKAGE PANE -->
+    <div class="tab-pane fade active in" id="service-one">
+        <br/>
+        <h3>Current stable version: {{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</h3>
+        <table class="table table-striped">
+		<tbody>
+			<tr>
+			<td>GEMOC Studio Eclipse package <br>{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}<br/> ({{ last_eclipse_package.eclipsePackageSize }})</td>			
+			<td><ul>
+			<li><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ last_eclipse_package.linux32URL }}">Linux (gtk) 32 Bit</a></li> 
+			<li><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ last_eclipse_package.linux64URL }}">Linux (gtk) 64 Bit</a></li>
+			<li><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ last_eclipse_package.macOS64URL }}">Mac OS X (cocoa) 64 Bit</a></li> 
+			<li><a title="gemoc_studio-win32.win32.x86.zip" href="{{ last_eclipse_package.win32URL }}">Windows 32 Bit</a></li> 
+			<li><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ last_eclipse_package.win64URL }}">Windows 64 Bit</a></li>
+			</ul></td>
+			<td><a href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">Release notes</a><br>
+			{{ last_eclipse_package.excerpt }}<a href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">(Read more)</a></td>
+			</tr>
+		</tbody>
+		</table>
+		<h3>All previous stable versions<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#allstablepackages"><i class="fa fa-expand"></i>
+</button></h3>
+		
+  		<div id="allstablepackages" class="collapse">
+	        <table class="table table-striped">
+			<tbody>
+				
+				{% for eclipse_package_post in site.categories.eclipse_package %}
+				<tr>
+				<td><a href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">GEMOC Studio Eclipse package</a><br/> ({{ eclipse_package_post.eclipsePackageSize }})</td>			
+				<td>{{ eclipse_package_post.releaseVersion }} - {{ eclipse_package_post.date  | date: "%Y/%m/%d" }}</td>
+				<td>
+				{{ eclipse_package_post.excerpt }}<a href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">(Read more)</a></td>
+				</tr>
+				{% endfor %}
+			</tbody>
+			</table>
+		</div>
+		<h3>Development versions</h3>
+        <table class="table table-striped">
+		<tbody>
+			<tr>
+			<td><a href="https://ci.inria.fr/gemoc/job/gemoc-studio_gemoc_studio/">GEMOC Studio Eclipse package</a></td>			
+			<td>Latest nightly build</td>
+			<td>Continuous integration build from git.</td>
+			</tr>
+		</tbody>
+		</table>
+    </div>
+    <!--  VIRTUALBOX PANE -->
+    <div class="tab-pane fade" id="service-two">
+        <br/>
+        <h3>Current stable version: {{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</h3>
+        <table class="table table-striped">
+		<tbody>
+			<tr>
+			<td><a href="{{ site.baseurl }}/{{ last_virtualbox.url }}">GEMOC Studio in a VM for VirtualBox</a> <br>{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}<br/> ({{ last_virtualbox.virtualBoxSize }})</td>			
+			<td><ul>
+			
+        	<li><a  title="Lubuntu%2064%20GEMOC.ova" href="{{ last_virtualbox.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a>  </li> 
+			</ul></td>
+			<td>{{ last_virtualbox.virtualBoxLoginComment }}<br>
+			{{ last_virtualbox.excerpt }}<a href="{{ site.baseurl }}/{{ last_virtualbox.url }}">(Read more)</a></td>
+			</tr>
+		</tbody>
+		</table>
+		<h3>All previous stable versions<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#allstablevms"><i class="fa fa-expand"></i></button></h3>
+		
+  		<div id="allstablevms" class="collapse">
+	        <table class="table table-striped">
+			<tbody>
+				
+				{% for virtualbox_post in site.categories.virtualbox %}
+				<tr>
+				<td><a href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">GEMOC Studio in a VM for VirtualBox</a><br/> ({{ virtualbox_post.virtualBoxSize }})</td>			
+				<td>{{ virtualbox_post.releaseVersion }} - {{ virtualbox_post.date  | date: "%Y/%m/%d" }}</td>
+				<td>
+				{{ virtualbox_post.excerpt }}<a href="{{ site.baseurl }}/{{ virtualbox_post.url }}">(Read more)</a></td>
+				</tr>
+				{% endfor %}
+			</tbody>
+			</table>
+		</div>
+    </div>
+    <!--  UPDATESITE PANE -->
+    <div class="tab-pane fade" id="service-three">
+        <br/>
+        <h3>Current stable version: {{ last_updatesite.releaseVersion }}  {{ last_updatesite.date  | date: "%Y/%m/%d"}}</h3>
+        Permalink to latest stable version: <a href="http://gemoc.org/updatesite/studio">http://gemoc.org/updatesite/studio</a>
+        <table class="table table-striped">
+		<tbody>
+			<tr>
+			<td><a href="{{ site.baseurl }}/{{ last_updatesite.url }}">Update site</a> <br>{{ last_updatesite.releaseVersion }} - {{ last_updatesite.date  | date: "%Y/%m/%d" }}</td>			
+			<td><ul>
+			
+        	<li>(right click & copy)<a  href="{{ last_updatesite.updatesiteURL }}">{{ last_updatesite.updatesiteURL }}</a>  </li> 
+			</ul></td>
+			<td>{{ last_updatesite.excerpt }}<a href="{{ site.baseurl }}/{{ last_updatesite.url }}">(Read more)</a></td>
+			</tr>
+		</tbody>
+		</table>
+        <h3>All previous stable versions<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#allstableupdatesites"><i class="fa fa-expand"></i></button></h3>
+        
+  		<div id="allstableupdatesites" class="collapse">
+	        <table class="table table-striped">
+			<tbody>
+				
+				{% for updatesite_post in site.categories.updatesite %}
+				<tr>
+				<td><a href="{{ site.baseurl }}/{{ updatesite_post.url }}">Update site</a></td>			
+				<td>{{ updatesite_post.releaseVersion }} - {{ updatesite_post.date  | date: "%Y/%m/%d" }}</td>
+				<td><ul>
+	        	<li>(right click & copy)<a  href="{{ updatesite_post.updatesiteURL }}">{{ updatesite_post.updatesiteURL }}</a>  </li> 
+				</ul></td>
+				<td>
+				{{ updatesite_post.excerpt }}<a href="{{ site.baseurl }}/{{ updatesite_post.url }}">(Read more)</a></td>
+				</tr>
+				{% endfor %}
+			</tbody>
+			</table>
+		</div>
+		<h3>Development versions</h3>
+        <table class="table table-striped">
+		<tbody>
+			<tr>
+			<td>(right click & copy)<a href="http://gemoc.org/updatesite/studio_nightly/">http://gemoc.org/updatesite/studio_nightly/</a></td>			
+			<td>Latest nightly build</td>
+			<td>Continuous integration build from git.</td>
+			</tr>
+		</tbody>
+		</table>
+    </div>
+</div>
+
