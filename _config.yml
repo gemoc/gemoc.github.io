@@ -18,3 +18,4 @@ markdown: kramdown
 organization: The GEMOC Initiative
 #placeholderimagesbaseurl: http://placehold.it/
 
+gems: [jekyll-twitter-plugin]
