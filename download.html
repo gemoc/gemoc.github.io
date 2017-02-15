@@ -30,6 +30,11 @@ layout: default
         
 </div> 
 
+<!-- compute last release for each kind -->
+{% assign last_eclipse_package = site.categories.eclipse_package.first %}
+{% assign last_virtualbox = site.categories.virtualbox.first %}
+{% assign last_updatesite = site.categories.updatesite.first %} 
+
 <ul id="myTab" class="nav nav-tabs nav-justified">
     <li class="active"><a href="#service-one" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="32" height="32" align="TOP" /> Eclipse package</a>
     </li>
@@ -59,8 +64,7 @@ layout: default
 			</tr>
 		</tbody>
 		</table>
-		<h3>All previous stable versions<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#allstablepackages"><i class="fa fa-expand"></i>
-</button></h3>
+		<h3>All previous stable versions <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#allstablepackages"><i class="fa fa-expand"></i></button></h3>
 		
   		<div id="allstablepackages" class="collapse">
 	        <table class="table table-striped">
@@ -105,7 +109,7 @@ layout: default
 			</tr>
 		</tbody>
 		</table>
-		<h3>All previous stable versions<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#allstablevms"><i class="fa fa-expand"></i></button></h3>
+		<h3>All previous stable versions<button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#allstablevms"><i class="fa fa-expand"></i></button></h3>
 		
   		<div id="allstablevms" class="collapse">
 	        <table class="table table-striped">
@@ -140,7 +144,7 @@ layout: default
 			</tr>
 		</tbody>
 		</table>
-        <h3>All previous stable versions<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#allstableupdatesites"><i class="fa fa-expand"></i></button></h3>
+        <h3>All previous stable versions<button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#allstableupdatesites"><i class="fa fa-expand"></i></button></h3>
         
   		<div id="allstableupdatesites" class="collapse">
 	        <table class="table table-striped">
