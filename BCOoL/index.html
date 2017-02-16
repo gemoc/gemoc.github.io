@@ -1,643 +1,520 @@
- --- layout: default ---
-
-  <div id="page-header">
-    <a href="images/bcool-logo.png"><img src="images/bcool-logo.png" width="380" height=
-    "150" class="templatemo_logo_left"></a>
-  </div><!-- Page Heading/Breadcrumbs -->
-
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">BCOoL - Language coordination made easy<br>
-      <small>Enable the specification of Coordination patterns specified between
-      different language interfaces</small></h1>
-
+--- 
+layout: default 
+---
+<div id="page-header">
+   <a href="images/bcool-logo.png">
+   <img src="images/bcool-logo.png" width="380" height="150" class="templatemo_logo_left"  />					
+   </a>
+</div>
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+   <div class="col-lg-12">
+      <h1 class="page-header">BCOoL - Language coordination made easy <br/>
+         <small>Enable the specification of Coordination patterns specified between different language interfaces</small>
+      </h1>
       <ol class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-
-        <li class="active">Behavioral Coordination</li>
-
-        <li><a href="index.html#BCOoLExample">Example</a> <!--    <ol class="breadcrumb">
-                <li> <a href="index.html#bcoolfirstexample"> Running Example: The Synchronized Product Operator between Timed Finite State Machines</a></li>
-                <li> <a href="index.html#bcoolsecondexample"> The Surveillance Camera System (MoDELS2015)</a></li>
-                <li> <a href="index.html#bcoolcoffeemachine"> The Coffee Machine Example (Demo MoDELS2015)</a></li>
-                <li> <a href="index.html#bcoolsigpml"> A BCOoL operator between the TFSM and SigPML languages</a></li>
-                <li> <a href="index.html#bcoolmapping"> A BCOoL Operator that uses a mapping language to find correspondences</a></li>
-                </ol>--></li>
-
-        <li><a href="index.html#bcoolbiblio">Bibliography</a></li>
+         <li><a href="index.html">Home</a></li>
+         <li class="active">Behavioral Coordination</li>
+         <li ><a href="index.html#BCOoLExample">Example</a></li>
+         <li ><a href="index.html#bcoolbiblio">Bibliography</a></li>
       </ol>
-    </div>
-  </div><!-- <nav class="navbar navbar-inverse navbar-fixed-right" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="TODO">OverView</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="TODO">The Synchronized Product Operator between Timed Finite State Machines</a>
-                        </li>
-                        <li>
-                            <a href="TODO">example 2</a>
-                        </li>
-                        <li>
-                            <a href="TODO">example 3</a>
-                        </li>
-                        <li>
-                            <a href="TODO">example 4</a>
-                        </li>
-                        <li>
-                            <a href="TODO">example 5</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
+   </div>
+</div>
+<!-- <nav class="navbar navbar-inverse navbar-fixed-right" role="navigation">
+   <div class="container">
+       <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+           </button>
+       </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav navbar-right">
+               <li>
+                   <a href="TODO">OverView</a>
+               </li>
+               <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples<b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                       <li>
+                           <a href="TODO">The Synchronized Product Operator between Timed Finite State Machines</a>
+                       </li>
+                       <li>
+                           <a href="TODO">example 2</a>
+                       </li>
+                       <li>
+                           <a href="TODO">example 3</a>
+                       </li>
+                       <li>
+                           <a href="TODO">example 4</a>
+                       </li>
+                       <li>
+                           <a href="TODO">example 5</a>
+                       </li>
+                   </ul>
+               </li>
+               <li>
                     <a href="TODO">BCOoL on github</a>
-                </li>
-                <li>
-                    <a href="TODO">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>                  -->
-
-  <div class="row">
-    <div class="col-lg-12">
-      <h2>Overview</h2><br>
-      <br>
-
-      <h3>What is BCOoL?</h3><a name="bcoolwhat" id="bcoolwhat"></a><br>
-      B-COoL is a dedicated language to explicitly specify how models conforming to
-      different DSMLs can be coordinated. This enables the integrator to capture the
-      knowledge of integration of systems by a dedicated language. In BCOoL, the
-      specification relies on Operators. Once defined, the specification can be used to
-      generate a model of coordination when models are know.
-
-      <p align="center"><a href="images/bcoolapr.jpg"><img class=
-      "aligncenter size-full wp-image-1987" src="images/bcoolapr.jpg" alt="BCOoLApproach"
-      height="350"> 
-      <!--         <img src="images/bcoolapr.jpg" title="BCOoLApproach" width="190" height="120" class="templatemo_pic_right"  /> --></a></p><br>
-      BCOoL is developed on top of the eclipse platform as a set of plugins. More
-      precisely, it is integrated to the GEMOC studio. The GEMOC studio is the
-      integration of various Eclipse Modeling Framework (EMF) based technologies adequate
-      for the specification of executable domain specific modeling languages. BCOoL is
-      itself based on the EMF and its abstract syntax has been developed using Ecore
-      (i.e., the meta-language associated with EMF). The textual concrete syntax has been
-      developed using Xtext, providing advanced edition facilities.<br>
-      <br>
-
-      <h3>How to start with BCOoL?</h3><a name="bcoolhow" id="bcoolhow"></a> To start
-      with BCOoL, download the GEMOC studio that contains BCOoL together with all the
-      plugins to coordinate and execute the models. To develop the following examples, we
-      recommend to download the GEMOC studio from <a href=
-      "https://ci.inria.fr/gemoc/job/gemoc-studio_gemoc_studio/" target=
-      "_parent">here</a>. We highly recommend to start by the following examples. These
-      examples and more can be found at the <a href=
-      "http://matiasvara.github.io/BCOoLExamples/" target="_parent">github repository of
-      BCOoL</a>. If you are experimenting problems during the compilation of the
-      examples, please check the <a href=
-      "http://github.com/MatiasVara/BCOoLExamples/issues/" target="_parent">issues
-      section</a> or contact us by email.<br>
-      <br>
-      <br>
-      <a name="BCOoLExample" id="BCOoLExample"></a>
-
-      <h2>Examples</h2><br>
-
-      <div id="bcoolExampleTab" class="tab-content">
+               </li>
+               <li>
+                   <a href="TODO">Contact</a>
+               </li>
+           </ul>
+       </div>
+   </div>
+   </nav>       		-->
+<div class="row">
+<div class="col-lg-12">
+   <h2>Overview</h2>
+   <br />
+   <br />
+   <h3>What is BCOoL?</h3>
+   <a name="bcoolwhat"></a> 
+   <br />
+   B-COoL is a dedicated language to explicitly specify how models conforming to different DSMLs can be coordinated. This enables the integrator to capture the knowledge of integration of systems by a dedicated language. In BCOoL, the specification relies on Operators. Once defined, the specification can be used to generate a model of coordination when models are know.  
+   <p align="center">
+      <a href="images/bcoolapr.jpg">
+         <img class="aligncenter size-full wp-image-1987" src="images/bcoolapr.jpg"
+            alt="BCOoLApproach" height="350" />
+      </a>
+   </p>
+   <br />
+   BCOoL is developed on top of the eclipse platform as a set of plugins. More precisely, it is integrated to the GEMOC studio. The GEMOC studio is the integration of various Eclipse Modeling Framework (EMF) based technologies adequate for the specification of executable domain specific modeling languages. BCOoL is itself based on the EMF and its abstract syntax has been developed using Ecore (i.e., the meta-language associated with EMF). The textual concrete syntax has been developed using Xtext, providing advanced edition facilities.
+   <br />
+   <br />
+   <h3>How to start with BCOoL?</h3>
+   <a name="bcoolhow"></a> 
+   To start with BCOoL, download the GEMOC studio that contains BCOoL together with all the plugins to coordinate and execute the models. To develop the following examples, we recommend to download the GEMOC studio from <a href="https://ci.inria.fr/gemoc/job/gemoc-studio_gemoc_studio/" target="_parent">here</a>. We highly recommend to start by the following examples. These examples and more can be found at the <a href="http://matiasvara.github.io/BCOoLExamples/" target="_parent">github repository of BCOoL</a>. If you are experimenting problems during the compilation of the examples, please check the <a href="http://github.com/MatiasVara/BCOoLExamples/issues/" target="_parent">issues section</a> or contact us by email.  	
+   <br />
+   <br />
+   <br />
+   <a name="BCOoLExample"></a>
+   <h2>Examples</h2>
+   <br />
+   <div id="bcoolExampleTab" class="tab-content">
       <div class="tab-pane fade active in" id="service-one">
-        <br>
-
-        <div class="col-md-6">
-          <div class="media">
-            <div class="pull-left">
-              <span class="fa-stack fa-2x"></span>
+         <br/>
+         <div class="col-md-6">
+            <div class="media">
+               <div class="pull-left">
+                  <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+                  </span>
+               </div>
+               <div class="media-body">
+                  <h4 class="media-heading"><a href="index.html#bcoolfirstexample">Synchronized Product Operator between Timed Finite State Machines</a></h4>
+                  <!--<p>Quick description</p>-->
+               </div>
             </div>
-
-            <div class="media-body">
-              <h4 class="media-heading"><a href=
-              "index.html#bcoolfirstexample">Synchronized Product Operator between Timed
-              Finite State Machines</a></h4><!--<p>Quick description</p>-->
+            <div class="media">
+               <div class="pull-left">
+                  <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+                  </span>
+               </div>
+               <div class="media-body">
+                  <h4 class="media-heading"><a href="index.html#bcoolsecondexample">Surveillance Camera System (MoDELS2015)</a></h4>
+                  <!--<p>Quick description</p>-->
+               </div>
             </div>
-          </div>
-
-          <div class="media">
-            <div class="pull-left">
-              <span class="fa-stack fa-2x"></span>
+         </div>
+         <div class="col-md-6">
+            <div class="media">
+               <div class="pull-left">
+                  <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+                  </span>
+               </div>
+               <div class="media-body">
+                  <h4 class="media-heading"><a href="index.html#bcoolcoffeemachine">The Coffee Machine Example (Demo MoDELS2015)</a></h4>
+                  <!--<p>Quick Description</p>-->
+               </div>
             </div>
-
-            <div class="media-body">
-              <h4 class="media-heading"><a href=
-              "index.html#bcoolsecondexample">Surveillance Camera System
-              (MoDELS2015)</a></h4><!--<p>Quick description</p>-->
+            <div class="media">
+               <div class="pull-left">
+                  <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+                  </span>
+               </div>
+               <div class="media-body">
+                  <h4 class="media-heading"><a href="index.html#bcoolsigpml">A BCOoL operator between the TFSM and SigPML languages</a></h4>
+                  <!--<p>Quick Description</p>-->
+               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="media">
-            <div class="pull-left">
-              <span class="fa-stack fa-2x"></span>
+         </div>
+         <div class="col-md-12">
+            <div class="media">
+               <div class="pull-left">
+                  <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+                  </span>
+               </div>
+               <div class="media-body">
+                  <h4 class="media-heading"><a href="index.html#bcoolmapping">A BCOoL Operator that uses a mapping language to find correspondences</a></h4>
+                  <!-- <p>Quick Description</p>-->
+               </div>
             </div>
-
-            <div class="media-body">
-              <h4 class="media-heading"><a href="index.html#bcoolcoffeemachine">The
-              Coffee Machine Example (Demo MoDELS2015)</a></h4>
-              <!--<p>Quick Description</p>-->
-            </div>
-          </div>
-
-          <div class="media">
-            <div class="pull-left">
-              <span class="fa-stack fa-2x"></span>
-            </div>
-
-            <div class="media-body">
-              <h4 class="media-heading"><a href="index.html#bcoolsigpml">A BCOoL operator
-              between the TFSM and SigPML languages</a></h4>
-              <!--<p>Quick Description</p>-->
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-12">
-          <div class="media">
-            <div class="pull-left">
-              <span class="fa-stack fa-2x"></span>
-            </div>
-
-            <div class="media-body">
-              <h4 class="media-heading"><a href="index.html#bcoolmapping">A BCOoL
-              Operator that uses a mapping language to find correspondences</a></h4>
-              <!-- <p>Quick Description</p>-->
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
-
+      
+      
+      
+      
+      
+      
       <div class="col-lg-12">
-        <h3>Running Example: The Synchronized Product Operator between Timed Finite State
-        Machines</h3><a name="bcoolfirstexample" id="bcoolfirstexample"></a>
-
-        <div>
-          <a href="images/example_syncProd.jpg"><img class=
-          "alignleft size-full wp-image-1987" src="images/example_syncProd.jpg" alt=
-          "Photo One" title="SyncronzedProductTFSM" height="200"></a> The synchronized
-          product operator coordinates models conforming to the Timed Finite State
-          Machine (TFSM) language; a state machine language augmented with timed
-          transitions. Briefly, the operator accepts two models conforming to TFSM as
-          argument. It selects the events with same name, and then, it coordinates the
-          selected events by forcing a simultaneous occurrence between events.<br>
-          <br>
-          <a href="images/syncrotfsmtuto/step02.jpg"><img src=
-          "images/syncrotfsmtuto/step02.jpg" height="200" class=
-          "alignright size-full wp-image-1987"></a> To run the example, we need a GEMOC
-          studio with the BCOoL plug-in installed. In the first GEMOC studio workspace,
-          we create new project example of TFSM language.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/syncrotfsmtuto/step2.jpg"><img src=
-          "images/syncrotfsmtuto/step2.jpg" height="200" class=
-          "alignleft size-full wp-image-1987"></a> In the second GEMOC studio workspace,
-          we import the project from the BCOoLExample repository in github. The project
-          includes the needed interfaces libraries, and the operator. In addition, it
-          includes some example models to apply the operator.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/syncrotfsmtuto/step3.jpg"><img src=
-          "images/syncrotfsmtuto/step3.jpg" height="200" class=
-          "alignright size-full wp-image-1987"></a> To generate the model of coordination
-          between two TFSMs, two steps are needed. First, we compile the BCOoL spec as is
-          shown in the picture. This generates a qvto transformation that applies between
-          any pair of models conforming to the TFSM language (in src-gen).<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/syncrotfsmtuto/step4.jpg"><img src=
-          "images/syncrotfsmtuto/step4.jpg" height="200" class=
-          "alignleft size-full wp-image-1987"></a> Once compiled, the qvto transformation
-          enables to generate the model of coordination between any pair of TFSM models.
-          To do so, we select the input models (jobB.tfsm and jobA.tfsm) and we click on
-          create ccsl coordination.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/syncrotfsmtuto/step6.jpg"><img src=
-          "images/syncrotfsmtuto/step6.jpg" height="200" class=
-          "alignright size-full wp-image-1987"></a> This results in the generation of a
-          CCSL specification that includes the CCSL spec of each model plus the
-          coordination. The specification can be executed by using TimeSquare.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/syncrotfsmtuto/step7.jpg"><img src=
-          "images/syncrotfsmtuto/step7.jpg" height="200" class=
-          "alignleft size-full wp-image-1987"></a> The specification can be executed by
-          using TimeSquare. Figure illustrates the partial timing output (VCD) of the
-          execution of the whole example. In the Figure, we highlight the events that
-          results coordinated.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/syncrotfsmtuto/step8.jpg"><img src=
-          "images/syncrotfsmtuto/step8.jpg" height="200" class=
-          "talignright size-full wp-image-1987"></a> The workbench also offers the
-          possibility to obtain by exploration quantitative results on the scheduling
-          state-space. Figure illustrate the graphical representation of the state-space
-          for our example. The exploration results in 66 states and 3454 transitions.<br>
-          <br>
-          <br>
-          <br>
-          To watch the complete procedure go to <a href="http://youtu.be/8XEz9Qda4tU8"
-          target="_parent">Video</a><br>
-          <br>
-        </div>
-
-        <h3>The Surveillance Camera System (MoDELS2015)</h3>
-
-        <div>
-          <a name="bcoolsecondexample" id="bcoolsecondexample"></a> In this example, we
-          use BCOoL to develop three coordination operators between the TFSM and the
-          Activity lenguages. These operators are used to specify three coordination
-          patterns between these languages. First, we syncronize FSMEvents of the TFSM
-          language and Signals from the Activity lenguage. Second, we propose a
-          hierarchical coordination operator in which the entering of states are
-          coordinated with the execution of an activity. Finally, we propose a timing
-          coordination operator to coordinate the time in a TFSM and an Activity.<br>
-          <br>
-          <a href="images/camera/models2015pic.jpg"><img src=
-          "images/camera/models2015pic.jpg" alt="The surveillance camera system" title=
-          "The surveillance camera system" width="190" height="200" class=
-          "templatemo_pic_right"></a> The picture illustrates the application of the
-          operators in a surveillance camera system. To coordinate the models, we have to
-          specify a timing and hierarchical coordination between the states of the TFSM
-          CameraEncoderControl and the activities doJPEG and doJPEG2000. In addition, we
-          have to synchronize the activity BatterySensor and the TFSM
-          CameraEncoderControl by coordinating the corresponding Signals and FSMEvents.
-          To coordination these models, we develop in the following three BCOoL
-          operators.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/camera/camera0.jpg"><img src="images/camera/camera0.jpg" alt=
-          "Language Workbench" title="Language Workbench" width="190" height="100" class=
-          "templatemo_pic_right"></a> In a GEMOC studio, we need in the language
-          workbench the TFSM and the Activity language. The TFSM language must be
-          imported from <a href=
-          "https://github.com/MatiasVara/BCOoLExamples/tree/master/languages/tfsmwithonenter"
-          target="_parent">here</a>. To get the activity language, we need to clone the
-          following <a href="https://github.com/gemoc/activitydiagram" target=
-          "_parent">github repository</a>. Then, in the workspace, we need to import all
-          the projects in the folders activitydiagram/dev/gemoc_commons/ and
-          activitydiagram/dev/gemoc_concurrent/language_workbench/. In addition, we need
-          to import the project org.gemoc.sample.bcool.tfsmandactivityhierarchical that
-          contains the operators. We can get this project from <a href=
-          "https://github.com/MatiasVara/BCOoLExamples/tree/master/org.gemoc.sample.bcool.tfsmandactivityhierarchical"
-          target="_parent">here</a>. The language workbench should look as in the
-          picture.<br>
-          <br>
-          <br>
-          <a href="images/camera/camera1.jpg"><img src="images/camera/camera1.jpg" alt=
-          "Modeling Workbench" title="Modeling Workbench" width="190" height="100" class=
-          "templatemo_pic_left"></a> In the modeling workbench, we import the project
-          org.gemoc.sample.bcool.cameracontrol from <a href=
-          "https://github.com/MatiasVara/BCOoLExamples" target="_parent">here</a>. The
-          modeling workbench should look as in the picture. The project includes the
-          heterogeneous models of the surveillance camera system. Also, it contains the
-          BFlow specification that defines how the operators defined in the BCOoL
-          specification must be applied between the models of the camera to get a
-          coordinated system.<br>
-          <br>
-          <br>
-          <a href="images/camera/camera3.jpg"><img src="images/camera/camera3.jpg" alt=
-          "Debug Configuration" title="Debug Configuration" width="190" height="100"
-          class="templatemo_pic_right"></a> To execute the coordinated system, we first
-          need to go to Debug Configuration and configure the Gemoc Coordinated
-          eXecutable Models as shown in the picture. The launcher contains information
-          about the the BFlow specification. Notice that, before to launch the execution,
-          the directory gemoc-gen should contain the generated file
-          CameraControlFlow.xml. This file is automatically generated from the BFlow
-          specification. In case that the file was not generated, it is necessary to edit
-          the BFlow specification, and then, store it. This will generate the
-          corresponding file in the gemoc-gen directory.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/camera/camera4.jpg"><img src="images/camera/camera4.jpg" alt=
-          "Coordinated Execution of the System" title=
-          "Coordinated Execution of the System" width="190" height="100" class=
-          "templatemo_pic_left"></a> By clicking on debug, the coordinated execution is
-          launched. The engine provides several options to drive the execution of the
-          models. For instance, it enables a system designer to select the next valid
-          execution step. Also, the workbench provides the animation of models.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/camera/camera5.jpg"><img src="images/camera/camera5.jpg" alt=
-          "Coordinated Execution of the System" title=
-          "Coordinated Execution of the System" width="190" height="100" class=
-          "templatemo_pic_right"></a> The directory gemoc-gen contains the resulting
-          coordinated model together with the timemodel of each individual model. The
-          coordinated model can then be used for verification. For example, the figure
-          illustrates the use of TimeSquare to get a VCD representation of the
-          coordinated system. In this example, we cannot compute the state-space graph
-          since the behavior of the coordinated model is not finite.<br>
-          <br>
-          <br>
-          <br>
-          To watch the complete procedure go to <a href="http://youtu.be/i8i8o5PfrSM"
-          target="_parent">Video</a>
-        </div>
-
-        <h3>The Coffee Machine Example (Demo MoDELS2015)</h3>
-
-        <div class="text_area">
-          <a name="bcoolcoffeemachine" id="bcoolcoffeemachine"></a> In this example, we
-          use BCOoL to develop the synchronized product operator between the TFSM and the
-          Activity lenguages. The operator coordinates FSMEvents from the TFSM and
-          Actions from the Activity language by comparing its names.<br>
-          <br>
-          <a href="images/coffeemachine/coffeemachine.png"><img src=
-          "images/coffeemachine/coffeemachine.png" alt="TheCoffeeMachine" title=
-          "TheCoffeeMachine" width="190" height="120" class="templatemo_pic_right"></a>
-          The picture illustrates the application of the operators in a coffee machine.
-          To coordinate the models, we have to synchronize the activity CoffeeAlgorithm
-          and the TFSM CoffeeCoin by coordinating the corresponding Actions and FSMEvent.
-          In the following, we develop an operator in BCOoL to generate the coordination
-          between these models.<br>
-          <br>
-          <br>
-          <a href="images/coffeemachine/coffeemachine0.jpg"><img src=
-          "images/coffeemachine/coffeemachine0.jpg" alt="First Studio Workspace" title=
-          "Language Workbench" width="190" height="100" class="templatemo_pic_right"></a>
-          In a GEMOC studio, we need in the language workbench the TFSM and Activity
-          languages. For the TFSM language, it is only necessary to go to File, New, and
-          then Example. In the wizard, we select the GEMOC TFSM language. To get the
-          activity language, we need to clone the following <a href=
-          "https://github.com/gemoc/activitydiagram" target="_parent">github
-          repository</a>. Then, in the language workbench, we need to import all the
-          projects from the folders activitydiagram/dev/gemoc_commons/ and
-          activitydiagram/dev/gemoc_concurrent/language_workbench/. Finally, we have to
-          import the bcool project org.gemoc.sample.bcool.tfsmandactivity. We can get
-          this project from <a href=
-          "https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndActivity/language_workbench"
-          target="_parent">here</a>. The language workbench should look as in the
-          picture.<br>
-          <br>
-          <br>
-          <a href="images/coffeemachine/coffeemachine1.jpg"><img src=
-          "images/coffeemachine/coffeemachine1.jpg" alt="Modeling Workbench" title=
-          "Modeling Workbench" width="190" height="100" class="templatemo_pic_left"></a>
-          In the modeling workbench, we import the project
-          org.gemoc.sample.bcool.coffeemachine from <a href=
-          "https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndActivity/modeling_workbench"
-          target="_parent">here</a>. The modeling workbench should look as in the
-          picture. The project includes the different models of the coffee machine and
-          the bflow specification to get the coordinated model.<br>
-          <br>
-          <br>
-          <a href="images/coffeemachine/coffeemachine2.jpg"><img src=
-          "images/coffeemachine/coffeemachine2.jpg" alt="Heterogeneous Execution Engine"
-          title="Heterogeneous Execution Engine" width="190" height="100" class=
-          "templatemo_pic_right"></a> To execute the coordinated system, we first need to
-          go to Debug Configuration and configure the Gemoc Coordinated eXecutable Models
-          as shown in the picture. The launcher contains information about the bflow
-          specification.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/coffeemachine/coffeemachine3.jpg"><img src=
-          "images/coffeemachine/coffeemachine3.jpg" alt="Coordinated Execution" title=
-          "Coordinated Execution" width="190" height="100" class=
-          "templatemo_pic_left"></a> By clicking on debug, the coordinated execution is
-          launched. The engine provides several options to drive the execution of the
-          models. For instance, it enables a system designer to select the next valid
-          execution step. Also, the workbench provides the animation of models.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/coffeemachine/coffeemachine41.jpg"><img src=
-          "images/coffeemachine/coffeemachine41.jpg" alt="Coordinated Execution" title=
-          "Coordinated Execution" width="190" height="100" class=
-          "templatemo_pic_right"></a> The directory gemoc-gen contains the resulting
-          coordinated model together with the timemodel of each individual model. The
-          coordinated model can then be used for verification. For example, the figure
-          illustrates the use of TimeSquare to compute the state-space graph.<br>
-          <br>
-          <br>
-          <br>
-          <a href="images/coffeemachine/coffeemachine4.jpg"><img src=
-          "images/coffeemachine/coffeemachine4.jpg" width="190" height="100" class=
-          "templatemo_pic_left"></a> Figure illustrate the graphical representation of
-          the state-space for our example. The exploration results in 39 states and 405
-          transitions, without deadlocks. The edges in red represents the transition that
-          contains the events that are forced to happen simultaneously by the
-          coordination (<a href="images/coffeemachine.dot" target="_parent">full
-          graph</a> in .dot format).<br>
-          <br>
-          <br>
-          <br>
-          To watch the complete procedure go to <a href=
-          "https://www.youtube.com/watch?v=g4Az2DglNY4" target="_parent">Video</a>
-        </div>
-
-        <h3>A BCOoL operator between the TFSM and SigPML languages</h3>
-
-        <div>
-          <a name="bcoolsigpml" id="bcoolsigpml"></a> In this example, we use BCOoL to
-          develop an operator between the TFSM and the SigPML (Signal Processing Modeling
-          Language) languages. SigPML is an extension of SDF in which an application is
-          described as a set of Agents. Upon activation, each agent uses the data on its
-          Input Ports, executes N processing cycles and produces computed results on its
-          Output Ports. In this context, we use BCOoL to define an operator that
-          synchronizes the occurrences of FSMEvents and the starting of Agents by relying
-          on their names. In the following, we use the GEMOC studio to first develop the
-          operator. Then, in the modeling wokbench, we use this operator to coordinate
-          the heterogenenous models of a coffee machine.<br>
-          <br>
-          <a href="images/sigpmlandtfsm/coffeemachinesigpml0.jpg"><img src=
-          "images/sigpmlandtfsm/coffeemachinesigpml0.jpg" alt="First Studio Workspace"
-          title="Language Workbench" width="190" height="100" class=
-          "templatemo_pic_right"></a> In the language workbench, we need the TFSM and
-          SigPML languages. There are two ways to get these languages. They can be
-          deployed by using the wizard. Or, they can be imported from <a href=
-          "https://github.com/gemoc/gemoc-studio/tree/master/official_samples" target=
-          "_parent">here</a>. The language workbench should look as in the picture.<br>
-          <br>
-          <br>
-          <a href="images/sigpmlandtfsm/coffeemachinesigpml2.jpg"><img src=
-          "images/sigpmlandtfsm/coffeemachinesigpml2.jpg" alt="First Studio Workspace"
-          title="Language Workbench" width="190" height="100" class=
-          "templatemo_pic_left"></a> Also, in the language workbench, we have to import
-          the project that contains the BCOoL specification. This corresponds with the
-          project named org.gemoc.sample.bcool.tfsmandsigpml. One way to get this project
-          is by using the wizard. To do so, go to New &gt; Example &gt; GEMOC language
-          workbench examples. Also, the project can be downloaded from <a href=
-          "https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndSigPML/language_workbench/org.gemoc.sample.bcool.tfsmandsigpml"
-          target="_parent">here</a><br>
-          <br>
-          <br>
-          <a href="images/sigpmlandtfsm/coffeemachinesigpml3.jpg"><img src=
-          "images/sigpmlandtfsm/coffeemachinesigpml3.jpg" alt="First Studio Workspace"
-          title="Language Workbench" width="190" height="100" class=
-          "templatemo_pic_right"></a> In the modeling workbench, we have to import the
-          project that contains the models of the coffee machine and the BFLoW
-          specification. The project can get it by doing New &gt; Example &gt; GEMOC
-          modeling workbench examples. Also, this project can be imported from <a href=
-          "https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndSigPML/modeling_workbench/org.gemoc.sample.bcool.coffeemachinewithsigpml"
-          target="_parent">here</a>. The modeling workbench should look as in the
-          picture.<br>
-          <br>
-          <br>
-          <a href="images/sigpmlandtfsm/coffeemachinesigpml5.jpg"><img src=
-          "images/sigpmlandtfsm/coffeemachinesigpml5.jpg" alt="First Studio Workspace"
-          title="Language Workbench" width="190" height="100" class=
-          "templatemo_pic_left"></a> To execute the coordinated system, we first need to
-          go to Debug Configuration and configure the Gemoc Coordinated eXecutable Models
-          as shown in the picture. The launcher contains information about the BFLoW
-          specification used to build the coordination model and then launch the
-          simulation.<br>
-          <br>
-          <br>
-          <a href="images/sigpmlandtfsm/coffeemachinesigpml6.jpg"><img src=
-          "images/sigpmlandtfsm/coffeemachinesigpml6.jpg" alt="First Studio Workspace"
-          title="Language Workbench" width="190" height="100" class=
-          "templatemo_pic_right"></a> By clicking on debug, the coordinated execution is
-          launched. The engine provides several options to drive the execution of the
-          models. For instance, it enables a system designer to select the next valid
-          execution step. Also, the workbench provides the animation of models.<br>
-          <br>
-          <br>
-          To watch the complete procedure go to Video
-        </div>
-
-        <h3>A BCOoL Operator that uses a mapping language to find correspondences</h3>
-
-        <div>
-          <a name="bcoolmapping" id="bcoolmapping"></a> In this example, we use BCOoL to
-          develop the synchronized product operator between the TFSM and the Activity
-          lenguages. The operator coordinates the ocurrences of FSMEvents and the
-          starting of an Action. To find the elements to coordinate, we rely on a third
-          language named Mapping Language which contains correspondences between the TFSM
-          and Activity languages. This lenguage is imported in the BCOoL specification
-          and used in the matching correspondence to find the elements to coordinate. The
-          example can be found <a href="http://github.com/MatiasVara/BCOoLExamples/"
-          target="_parent">here</a>. In this case the language workbench has to contain
-          the TFSM and Activity language and also the mapping language (e.g.,
-          org.gemoc.sample.bcool.mapping). Then, import the project
-          org.gemoc.sample.bcool.coffeemachinewithsigpml into the modeling workbench.<br>
-          <br>
-        </div>
-      </div><br>
-      <br>
-
+         <h3>Running Example: The Synchronized Product Operator between Timed Finite State Machines</h3>
+         <a name="bcoolfirstexample"></a> 
+         <div >
+            <a href="images/example_syncProd.jpg">
+            <img class="alignleft size-full wp-image-1987" src="images/example_syncProd.jpg" alt="Photo One" title="SyncronzedProductTFSM"  height="200"   />
+            </a> 
+            The synchronized product operator coordinates models conforming to the Timed Finite State Machine (TFSM) language; a state machine language augmented with timed transitions. Briefly, the operator accepts two models conforming to TFSM as argument. It selects the events with same name, and then, it coordinates the selected events by forcing a simultaneous occurrence between events.
+            <br />				
+            <br />		
+            <a href="images/syncrotfsmtuto/step02.jpg">
+            <img src="images/syncrotfsmtuto/step02.jpg" height="200" class="alignright size-full wp-image-1987"  />					
+            </a>
+            To run the example, we need a GEMOC studio with the BCOoL plug-in installed. In the first GEMOC studio workspace, we create new project example of TFSM language.
+            <br />				
+            <br />		
+            <br />				
+            <br />	
+            <a href="images/syncrotfsmtuto/step2.jpg">
+            <img src="images/syncrotfsmtuto/step2.jpg" height="200" class="alignleft size-full wp-image-1987"  />					
+            </a>
+            In the second GEMOC studio workspace, we import the project from the BCOoLExample repository in github. The project includes the needed interfaces libraries, and the operator. In addition, it includes some example models to apply the operator. 
+            <br />				
+            <br />		
+            <br />				
+            <br />	
+            <a href="images/syncrotfsmtuto/step3.jpg">
+            <img src="images/syncrotfsmtuto/step3.jpg" height="200" class="alignright size-full wp-image-1987"  />					
+            </a>
+            To generate the model of coordination between two TFSMs, two steps are needed. First, we compile the BCOoL spec as is shown in the picture. This generates a qvto transformation that applies between any pair of models conforming to the TFSM language (in src-gen). 
+            <br />				
+            <br />		
+            <br />				
+            <br />	
+            <a href="images/syncrotfsmtuto/step4.jpg">
+            <img src="images/syncrotfsmtuto/step4.jpg" height="200" class="alignleft size-full wp-image-1987"  />					
+            </a>
+            Once compiled, the qvto transformation enables to generate the model of coordination between any pair of TFSM models. To do so, we select the input models (jobB.tfsm and jobA.tfsm) and we click on create ccsl coordination.
+            <br />				
+            <br />		
+            <br />				
+            <br />	
+            <a href="images/syncrotfsmtuto/step6.jpg">
+            <img src="images/syncrotfsmtuto/step6.jpg" height="200" class="alignright size-full wp-image-1987"  />					
+            </a>
+            This results in the generation of a CCSL specification that includes the CCSL spec of each model plus the coordination. The specification can be executed by using TimeSquare.
+            <br />				
+            <br />						
+            <br />		
+            <br />		
+            <a href="images/syncrotfsmtuto/step7.jpg">
+            <img src="images/syncrotfsmtuto/step7.jpg" height="200" class="alignleft size-full wp-image-1987"  />					
+            </a>
+            The specification can be executed by using TimeSquare. Figure illustrates the partial timing output (VCD) of the execution of the whole example. In the Figure, we highlight the events that results coordinated. 
+            <br />				
+            <br />						
+            <br />		
+            <br />	
+            <a href="images/syncrotfsmtuto/step8.jpg">
+            <img src="images/syncrotfsmtuto/step8.jpg" height="100" class="talignright size-full wp-image-1987"  />					
+            </a>
+            The workbench also offers the possibility to obtain by exploration quantitative results on the scheduling state-space. Figure illustrate the graphical representation of the state-space for our example. The exploration results in 66 states and 3454 transitions.  
+            <br />				
+            <br />						
+            <br />		
+            <br />												
+            To watch the complete procedure go to <a href="http://youtu.be/8XEz9Qda4tU8" target="_parent">Video</a>         
+            <br />
+            <br />
+         </div>
+         
+         
+         
+         
+         
+         
+         <h3>The Surveillance Camera System (MoDELS2015)</h3>
+         <div>
+            <a name="bcoolsecondexample"></a> 
+            In this example, we use BCOoL to develop three coordination operators between the TFSM and the Activity lenguages. These operators are used to specify three coordination patterns between these languages. First, we syncronize FSMEvents of the TFSM language and Signals from the Activity lenguage. Second, we propose a hierarchical coordination operator in which the entering of states are coordinated with the execution of an activity. Finally, we propose a timing coordination operator to coordinate the time in a TFSM and an Activity. 
+            <br />
+            <br />
+            <a href="images/camera/models2015pic.jpg">
+            <img src="images/camera/models2015pic.jpg" alt="The surveillance camera system" title="The surveillance camera system" width="190" height="200" class="templatemo_pic_right"  />
+            </a> 
+            The picture illustrates the application of the operators in a surveillance camera system. To coordinate the models, we have to specify a timing and hierarchical coordination between the states of the TFSM CameraEncoderControl and the activities doJPEG and doJPEG2000.
+            In addition, we have to synchronize the activity BatterySensor and the TFSM CameraEncoderControl by coordinating the corresponding Signals and FSMEvents. To coordination these models, we develop in the following three BCOoL operators.
+            <br />
+            <br />
+            <br />
+            <br />
+            <a href="images/camera/camera0.jpg">
+            <img src="images/camera/camera0.jpg" alt="Language Workbench" title="Language Workbench" width="190" height="100" class="templatemo_pic_right"  />
+            </a> 
+            In a GEMOC studio, we need in the language workbench the TFSM and the Activity language. The TFSM language must be imported from <a href="https://github.com/MatiasVara/BCOoLExamples/tree/master/languages/tfsmwithonenter" target="_parent">here</a>. To get the activity language, we need to clone the following <a href="https://github.com/gemoc/activitydiagram" target="_parent">github repository</a>. Then, in the workspace, we need to import all the projects in the folders activitydiagram/dev/gemoc_commons/ and activitydiagram/dev/gemoc_concurrent/language_workbench/. In addition, we need to import the project org.gemoc.sample.bcool.tfsmandactivityhierarchical that contains the operators. We can get this project from <a href="https://github.com/MatiasVara/BCOoLExamples/tree/master/org.gemoc.sample.bcool.tfsmandactivityhierarchical" target="_parent">here</a>. The language workbench should look as in the picture.
+            <br />
+            <br />
+            <br />
+            <a href="images/camera/camera1.jpg">
+            <img src="images/camera/camera1.jpg" alt="Modeling Workbench" title="Modeling Workbench" width="190" height="100" class="templatemo_pic_left"  />
+            </a> 
+            In the modeling workbench, we import the project org.gemoc.sample.bcool.cameracontrol from <a href="https://github.com/MatiasVara/BCOoLExamples" target="_parent">here</a>. The modeling workbench should look as in the picture. The project includes the heterogeneous models of the surveillance camera system.  Also, it contains the BFlow specification that defines how the operators defined in the BCOoL specification must be applied between the models of the camera to get a coordinated system. 
+            <br />
+            <br />
+            <br />
+            <a href="images/camera/camera3.jpg">
+            <img src="images/camera/camera3.jpg" alt="Debug Configuration" title="Debug Configuration" width="190" height="100" class="templatemo_pic_right"  />
+            </a> 
+            To execute the coordinated system, we first need to go to Debug Configuration and configure the Gemoc Coordinated eXecutable Models as shown in the picture. The launcher contains information about the the BFlow specification. Notice that, before to launch the execution, the directory gemoc-gen should contain the generated file CameraControlFlow.xml. This file is automatically generated from the BFlow specification. In case that the file was not generated, it is necessary to edit the
+            BFlow specification, and then, store it. This will generate the corresponding file in the gemoc-gen directory.  
+            <br />				
+            <br />						
+            <br />		
+            <br />		
+            <a href="images/camera/camera4.jpg">
+            <img src="images/camera/camera4.jpg" alt="Coordinated Execution of the System" title="Coordinated Execution of the System" width="190" height="100" class="templatemo_pic_left"  />
+            </a> 
+            By clicking on debug, the coordinated execution is launched. The engine provides several options to drive the execution of the models. For instance, it enables a system designer to select the next valid execution step. Also, the workbench provides the animation of models. 
+            <br />				
+            <br />						
+            <br />		
+            <br />		
+            <a href="images/camera/camera5.jpg">
+            <img src="images/camera/camera5.jpg" alt="Coordinated Execution of the System" title="Coordinated Execution of the System" width="190" height="100" class="templatemo_pic_right"  />
+            </a> 
+            The directory gemoc-gen contains the resulting coordinated model together with the timemodel of each individual model. The coordinated model can then be used for verification. For example, the figure illustrates the use of TimeSquare to get a VCD representation of the coordinated system. In this example, we cannot compute the state-space graph since the behavior of the coordinated model is not finite.  
+            <br />				
+            <br />						
+            <br />		
+            <br />	
+            To watch the complete procedure go to  <a href="http://youtu.be/i8i8o5PfrSM" target="_parent">Video</a>
+         </div>
+         
+         
+         
+         
+         
+         <h3>The Coffee Machine Example (Demo MoDELS2015)</h3>
+         <div class="text_area">
+            <a name="bcoolcoffeemachine"></a> 
+            In this example, we use BCOoL to develop the synchronized product operator between the TFSM and the Activity lenguages. The operator coordinates FSMEvents from the TFSM and Actions from the Activity language by comparing its names.
+            <br />
+            <br />
+            <a href="images/coffeemachine/coffeemachine.png">
+            <img src="images/coffeemachine/coffeemachine.png" alt="TheCoffeeMachine" title="TheCoffeeMachine" width="190" height="120" class="templatemo_pic_right"  />
+            </a> 
+            The picture illustrates the application of the operators in a coffee machine. To coordinate the models, we have to synchronize the activity CoffeeAlgorithm and the TFSM CoffeeCoin by coordinating the corresponding Actions and FSMEvent. In the following, we develop an operator in BCOoL to generate the coordination between these models.
+            <br />
+            <br />
+            <br />
+            <a href="images/coffeemachine/coffeemachine0.jpg">
+            <img src="images/coffeemachine/coffeemachine0.jpg" alt="First Studio Workspace" title="Language Workbench" width="190" height="100" class="templatemo_pic_right"  />
+            </a> 
+            In a GEMOC studio, we need in the language workbench the TFSM and Activity languages. For the TFSM language, it is only necessary to go to File, New, and then Example. In the wizard, we select the GEMOC TFSM language. To get the activity language, we need to clone the following <a href="https://github.com/gemoc/activitydiagram" target="_parent">github repository</a>. Then, in the language workbench, we need to import all the projects from the folders activitydiagram/dev/gemoc_commons/ and activitydiagram/dev/gemoc_concurrent/language_workbench/. Finally, we have to import the bcool project org.gemoc.sample.bcool.tfsmandactivity. We can get this project from <a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndActivity/language_workbench" target="_parent">here</a>. The language workbench should look as in the picture.
+            <br />
+            <br />
+            <br />
+            <a href="images/coffeemachine/coffeemachine1.jpg">
+            <img src="images/coffeemachine/coffeemachine1.jpg" alt="Modeling Workbench" title="Modeling Workbench" width="190" height="100" class="templatemo_pic_left"  />
+            </a> 
+            In the modeling workbench, we import the project org.gemoc.sample.bcool.coffeemachine from <a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndActivity/modeling_workbench" target="_parent">here</a>. The modeling workbench should look as in the picture. The project includes the different models of the coffee machine and the bflow specification to get the coordinated model. 
+            <br />
+            <br />
+            <br />
+            <a href="images/coffeemachine/coffeemachine2.jpg">
+            <img src="images/coffeemachine/coffeemachine2.jpg" alt="Heterogeneous Execution Engine" title="Heterogeneous Execution Engine" width="190" height="100" class="templatemo_pic_right"  />
+            </a> 
+            To execute the coordinated system, we first need to go to Debug Configuration and configure the Gemoc Coordinated eXecutable Models as shown in the picture. The launcher contains information about the bflow specification.
+            <br />				
+            <br />						
+            <br />		
+            <br />		
+            <a href="images/coffeemachine/coffeemachine3.jpg">
+            <img src="images/coffeemachine/coffeemachine3.jpg" alt="Coordinated Execution" title="Coordinated Execution" width="190" height="100" class="templatemo_pic_left"  />
+            </a> 
+            By clicking on debug, the coordinated execution is launched. The engine provides several options to drive the execution of the models. For instance, it enables a system designer to select the next valid execution step. Also, the workbench provides the animation of models. 
+            <br />				
+            <br />						
+            <br />		
+            <br />			
+            <a href="images/coffeemachine/coffeemachine41.jpg">
+            <img src="images/coffeemachine/coffeemachine41.jpg" alt="Coordinated Execution" title="Coordinated Execution" width="190" height="100" class="templatemo_pic_right"  />					
+            </a>
+            The directory gemoc-gen contains the resulting coordinated model together with the timemodel of each individual model. The coordinated model can then be used for verification. For example, the figure illustrates the use of TimeSquare to compute the state-space graph.  
+            <br />				
+            <br />						
+            <br />		
+            <br />			
+            <a href="images/coffeemachine/coffeemachine4.jpg">
+            <img src="images/coffeemachine/coffeemachine4.jpg" width="190" height="100" class="templatemo_pic_left"  />					
+            </a>
+            Figure illustrate the graphical representation of the state-space for our example. The exploration results in 39 states and 405 transitions, without deadlocks. The edges in red represents the transition that contains the events that are forced to happen simultaneously by the coordination (<a href="images/coffeemachine.dot" target="_parent">full graph</a> in .dot format).   
+            <br />				
+            <br />						
+            <br />		
+            <br />												
+            To watch the complete procedure go to <a href="https://www.youtube.com/watch?v=g4Az2DglNY4" target="_parent">Video</a>   
+         </div>
+         
+         
+         
+         
+         <h3>A BCOoL operator between the TFSM and SigPML languages</h3>
+         <div >
+            <a name="bcoolsigpml"></a> 
+            In this example, we use BCOoL to develop an operator between the TFSM and the SigPML (Signal Processing Modeling Language) languages. SigPML is an extension of SDF in which an application is described as a set of Agents. Upon activation, each agent uses the data on its Input Ports, executes N processing cycles and produces computed results on its Output Ports. In this context, we use BCOoL to define an operator that synchronizes the occurrences of FSMEvents and the starting of Agents by relying on their names.
+            In the following, we use the GEMOC studio to first develop the operator. Then, in the modeling wokbench, we use this operator to coordinate the heterogenenous models of a coffee machine.
+            <br />
+            <br />
+            <a href="images/sigpmlandtfsm/coffeemachinesigpml0.jpg">
+            <img src="images/sigpmlandtfsm/coffeemachinesigpml0.jpg" alt="First Studio Workspace" title="Language Workbench" width="190" height="100" class="templatemo_pic_right"  />
+            </a> 
+            In the language workbench, we need the TFSM and SigPML languages. There are two ways to get these languages. They can be deployed by using the wizard. Or, they can be imported from <a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples" target="_parent">here</a>. The language workbench should look as in the picture.
+            <br />
+            <br />
+            <br />
+            <a href="images/sigpmlandtfsm/coffeemachinesigpml2.jpg">
+            <img src="images/sigpmlandtfsm/coffeemachinesigpml2.jpg" alt="First Studio Workspace" title="Language Workbench" width="190" height="100" class="templatemo_pic_left"  />
+            </a> 
+            Also, in the language workbench, we have to import the project that contains the BCOoL specification. This corresponds with the project named org.gemoc.sample.bcool.tfsmandsigpml. One way to get this project is by using the wizard. To do so, go to New > Example > GEMOC language workbench examples. Also, the project can be downloaded from <a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndSigPML/language_workbench/org.gemoc.sample.bcool.tfsmandsigpml" target="_parent">here</a>  
+            <br />
+            <br />
+            <br />
+            <a href="images/sigpmlandtfsm/coffeemachinesigpml3.jpg">
+            <img src="images/sigpmlandtfsm/coffeemachinesigpml3.jpg" alt="First Studio Workspace" title="Language Workbench" width="190" height="100" class="templatemo_pic_right"  />
+            </a> 
+            In the modeling workbench, we have to import the project that contains the models of the coffee machine and the BFLoW specification. The project can get it by doing New > Example > GEMOC modeling workbench examples. Also, this project can be imported from  <a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndSigPML/modeling_workbench/org.gemoc.sample.bcool.coffeemachinewithsigpml" target="_parent">here</a>. The modeling workbench should look as in the picture. 
+            <br />
+            <br />
+            <br />
+            <a href="images/sigpmlandtfsm/coffeemachinesigpml5.jpg">
+            <img src="images/sigpmlandtfsm/coffeemachinesigpml5.jpg" alt="First Studio Workspace" title="Language Workbench" width="190" height="100" class="templatemo_pic_left"  />
+            </a> 
+            To execute the coordinated system, we first need to go to Debug Configuration and configure the Gemoc Coordinated eXecutable Models as shown in the picture. The launcher contains information about the BFLoW specification used to build the coordination model and then launch the simulation.
+            <br />
+            <br />
+            <br />
+            <a href="images/sigpmlandtfsm/coffeemachinesigpml6.jpg">
+            <img src="images/sigpmlandtfsm/coffeemachinesigpml6.jpg" alt="First Studio Workspace" title="Language Workbench" width="190" height="100" class="templatemo_pic_right"  />
+            </a> 
+            By clicking on debug, the coordinated execution is launched. The engine provides several options to drive the execution of the models. For instance, it enables a system designer to select the next valid execution step. Also, the workbench provides the animation of models. 
+            <br />
+            <br />
+            <br />
+            To watch the complete procedure go to Video</a>   
+         </div>
+         
+         
+         
+         
+         
+         <h3>A BCOoL Operator that uses a mapping language to find correspondences</h3>
+         <div >
+            <a name="bcoolmapping"></a> 
+            In this example, we use BCOoL to develop the synchronized product operator between the TFSM and the Activity lenguages. The operator coordinates the ocurrences of FSMEvents and the starting of an Action. To find the elements to coordinate, we rely on a third language named Mapping Language which contains correspondences between the TFSM and Activity languages. This lenguage is imported in the BCOoL specification and used in the matching correspondence to find the elements to coordinate.
+            The example can be found <a href="http://github.com/MatiasVara/BCOoLExamples/" target="_parent">here</a>. In this case the language workbench has to contain the TFSM and Activity language and also the mapping language (e.g., org.gemoc.sample.bcool.mapping). Then, import the project org.gemoc.sample.bcool.coffeemachinewithsigpml into the modeling workbench.      
+            <br />
+            <br />
+         </div>
+      </div>
+      <br />
+      <br />
       <h2>Bibliography</h2>
-
       <div class="col-lg-12">
-        <a name="bcoolbiblio" id="bcoolbiblio"></a>
-
-        <div>
-          Vara Larsen, M., &ldquo;BCool: the Behavioral Coordination Operator
-          Language&rdquo;, PhD thesis. <a href=
-          "https://hal.inria.fr/tel-01302875v1/bibtex" target="_parent">[BIBTEX]</a>
-          <a href="https://hal.inria.fr/tel-01302875" target="_parent">[PDF]</a><br>
-          <br>
-          Vara Larsen, M., DeAntoni, J., Combemale, B. and Mallet, F. &ldquo;A
-          Model-Driven Based Environment for Automatic Model Coordination.&rdquo; In
-          MoDELs (DEMO), Ottawa, 2015. <a href=
-          "https://hal.inria.fr/hal-01198744v1/bibtex" target="_parent">[BIBTEX]</a>
-          <a href="https://hal.inria.fr/hal-01198744/document" target=
-          "_parent">[PDF]</a><br>
-          <br>
-          Vara Larsen, M., DeAntoni, J., Combemale, B. and Mallet, F. &ldquo;A Behavioral
-          Coordination Operator Language (BCOoL).&rdquo; In MoDELs, Ottawa, 2015.
-          <a href="https://hal.inria.fr/hal-01182773v1/bibtex" target=
-          "_parent">[BIBTEX]</a> <a href="https://hal.inria.fr/hal-01182773/document"
-          target="_parent">[PDF]</a><br>
-          <br>
-          Vara Larsen, M., DeAntoni, J., Combemale, B. and Mallet, F. &ldquo;Framework
-          for Heterogeneous Modeling and Composition.&rdquo; In Conference en IngenieriE
-          du Logiciel (CIEL&rsquo;14), Paris, 2014. <a href=
-          "https://hal.archives-ouvertes.fr/hal-01073202v1/bibtex" target=
-          "_parent">[BIBTEX]</a> <a href=
-          "https://hal.archives-ouvertes.fr/hal-01073202/document" target=
-          "_parent">[PDF]</a><br>
-          <br>
-          Vara Larsen, M., Goknil, A. &ldquo;Railroad Crossing Heterogeneous
-          Model.&rdquo; In GEMOC workshop 2013 - International Workshop on The
-          Globalization of Modeling Languages, Miami, 2013. <a href=
-          "https://hal.inria.fr/hal-00867316v2/bibtex" target="_parent">[BIBTEX]</a>
-          <a href="https://hal.inria.fr/hal-00867316v2/document" target=
-          "_parent">[PDF]</a><br>
-          <br>
-        </div>
-      </div><br>
-      <br>
-      <br>
-      <img src="images/i3s.jpg" width="170" height="70"> <img src="images/inria_logo.jpg"
-      width="170" height="70"> <img src="images/gemoc-logo.jpg" width="170" height=
-      "70"></div>
-    </div><!--        <div id="templatemo_right_column">
-        
-            <ul class="templatemo_menu">              
-                <div id="nolink">Getting Started</div>
-                        <li><a href="#bcoolwhat" target="_parent">What is BCOoL?</a>
-            </li>
-                                        <li><a href="#bcoolhow" target="_parent">How to start with BCOoL?</a>
-            </li>
-                <li><a href="https://youtu.be/mfOskFiEFGw" target="_parent">BCOoL for everyone</a>
-            </li>
-            
-            <li><a href="http://docs.google.com/presentation/d/18Ul2BJeen-XAOd446bpj0QPvWJ6JyumwfNiAFcA8VsE/pub?start=true&loop=false&delayms=3000" target="_parent">BCOoL in 2 min</a></li>
-                                <div id="nolink">Examples</div>            
-                                        <li><a href="#bcoolfirstexample" target="_parent">Synchronized Product between TFSMs</a>
-            </li>
-                                                        <li><a href="#bcoolsecondexample" target="_parent">Coordination of the surveillance camera system (Model2015)</a>
-            </li>
-            
-                                                                <li><a href="#bcoolcoffeemachine" target="_parent">Coordination of the coffee machine heterogeneous model (DemoModel2015)</a>
-            </li>
-                                                        <li><a href="#bcoolsigpml" target="_parent">A BCOoL Operator between the TFSM and SigPML languages</a>
-            </li>               
-            
-                            </li>
-                                                        <li><a href="#bcoolmapping" target="_parent">A BCOoL Operator that uses a mapping language (between the TFSM and SigPML languages)</a>
-            </li>    
-            
-        
-            
-                <li><a target="_blank" href="http://matiasvara.github.io/BCOoLExamples/" target="_parent">More Examples</a></li>  
-            <div id="nolink">Development of BCOoL</div>       
-                <li><a target="_blank" href="https://github.com/gemoc/coordination" target="_parent">BCOoL on GitHub</a></li>                                   
-                                <div id="nolink">Reference Documentation</div>          
-                                <li><a href="#bcoolbiblio" target="_parent">Publications</a></li>    
-            <li><a href="images/poster.pdf" target="_parent">Poster</a></li>
-            <li><a href="images/Tesis.odp" target="_parent">PhD Tesis Presentation</a></li>
-            <li><a href="http://www.gemoc.org" target="_parent">GEMOC Project</a></li>
-            <li><a href="mailto:matias.vara_larsen[at]inria.fr" target="_parent">Contact</a>
-            </li>
-        </ul>
-        
-
-
-        
-    </div>
-
-        <div id="templatemo_footer">
-    <a href="http://team.inria.fr/aoste/">AOSTE team: I3S - UMR6070 - UNS CNRS - INRIA Méditerranée</a> 
-    </div>-->
-  </div>
+         <a name="bcoolbiblio"></a> 
+         <div>
+            Vara Larsen, M., “BCool: the Behavioral Coordination Operator Language”, PhD thesis. 
+            <a href="https://hal.inria.fr/tel-01302875v1/bibtex" target="_parent">[BIBTEX]</a>
+            <a href="https://hal.inria.fr/tel-01302875" target="_parent">[PDF]</a>
+            <br />
+            <br />
+            Vara Larsen, M., DeAntoni, J., Combemale, B. and Mallet, F. “A Model-Driven Based Environment for Automatic Model Coordination.” In MoDELs (DEMO), Ottawa, 2015. 
+            <a href="https://hal.inria.fr/hal-01198744v1/bibtex" target="_parent">[BIBTEX]</a>
+            <a href="https://hal.inria.fr/hal-01198744/document" target="_parent">[PDF]</a>
+            <br />
+            <br />
+            Vara Larsen, M., DeAntoni, J., Combemale, B. and Mallet, F. “A Behavioral Coordination Operator Language (BCOoL).” In MoDELs, Ottawa, 2015. 
+            <a href="https://hal.inria.fr/hal-01182773v1/bibtex" target="_parent">[BIBTEX]</a>
+            <a href="https://hal.inria.fr/hal-01182773/document" target="_parent">[PDF]</a>
+            <br />
+            <br />
+            Vara Larsen, M., DeAntoni, J., Combemale, B. and Mallet, F. “Framework for Heterogeneous Modeling and Composition.” In Conference en IngenieriE du Logiciel (CIEL’14), Paris, 2014.
+            <a href="https://hal.archives-ouvertes.fr/hal-01073202v1/bibtex" target="_parent">[BIBTEX]</a>
+            <a href="https://hal.archives-ouvertes.fr/hal-01073202/document" target="_parent">[PDF]</a>
+            <br />
+            <br />
+            Vara Larsen, M., Goknil, A. “Railroad Crossing Heterogeneous Model.” In GEMOC workshop 2013 - International Workshop on The Globalization of Modeling Languages, Miami, 2013.
+            <a href="https://hal.inria.fr/hal-00867316v2/bibtex" target="_parent">[BIBTEX]</a>
+            <a href="https://hal.inria.fr/hal-00867316v2/document" target="_parent">[PDF]</a>
+            <br />
+            <br />
+         </div>
+      </div>
+      <br />
+      <br />
+      <br /> 
+      <img src="images/i3s.jpg" width="170" height="70">  
+      <img src="images/inria_logo.jpg" width="170" height="70">  
+      <img src="images/gemoc-logo.jpg" width="170" height="70">  
+   </div>
+</div>
+<!--	<div id="templatemo_right_column">
+   <ul class="templatemo_menu">              
+      	<div id="nolink">Getting Started</div>
+      	   	<li><a href="#bcoolwhat" target="_parent">What is BCOoL?</a>
+      </li>
+                	   	<li><a href="#bcoolhow" target="_parent">How to start with BCOoL?</a>
+      </li>
+      	<li><a href="https://youtu.be/mfOskFiEFGw" target="_parent">BCOoL for everyone</a>
+      </li>
+      
+    <li><a href="http://docs.google.com/presentation/d/18Ul2BJeen-XAOd446bpj0QPvWJ6JyumwfNiAFcA8VsE/pub?start=true&loop=false&delayms=3000" target="_parent">BCOoL in 2 min</a></li>
+   <div id="nolink">Examples</div>            
+                      	   	<li><a href="#bcoolfirstexample" target="_parent">Synchronized Product between TFSMs</a>
+      </li>
+                                     	   	<li><a href="#bcoolsecondexample" target="_parent">Coordination of the surveillance camera system (Model2015)</a>
+      </li>
+      
+                                        	   	<li><a href="#bcoolcoffeemachine" target="_parent">Coordination of the coffee machine heterogeneous model (DemoModel2015)</a>
+      </li>
+                               	   	<li><a href="#bcoolsigpml" target="_parent">A BCOoL Operator between the TFSM and SigPML languages</a>
+      </li>               
+      
+                     </li>
+                               	   	<li><a href="#bcoolmapping" target="_parent">A BCOoL Operator that uses a mapping language (between the TFSM and SigPML languages)</a>
+      </li>    
+      
+   
+      
+       <li><a target="_blank" href="http://matiasvara.github.io/BCOoLExamples/" target="_parent">More Examples</a></li>  
+      <div id="nolink">Development of BCOoL</div>       
+      	 <li><a target="_blank" href="https://github.com/gemoc/coordination" target="_parent">BCOoL on GitHub</a></li>   				
+   <div id="nolink">Reference Documentation</div>          
+   <li><a href="#bcoolbiblio" target="_parent">Publications</a></li>    
+     <li><a href="images/poster.pdf" target="_parent">Poster</a></li>
+     <li><a href="images/Tesis.odp" target="_parent">PhD Tesis Presentation</a></li>
+     <li><a href="http://www.gemoc.org" target="_parent">GEMOC Project</a></li>
+      <li><a href="mailto:matias.vara_larsen[at]inria.fr" target="_parent">Contact</a>
+      </li>
+   </ul>
+   
+   
+   
+   
+   </div>
+   
+   <div id="templatemo_footer">
+   <a href="http://team.inria.fr/aoste/">AOSTE team: I3S - UMR6070 - UNS CNRS - INRIA Méditerranée</a> 
+   </div>-->
