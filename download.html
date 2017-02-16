@@ -12,7 +12,7 @@ layout: default
         <ol class="breadcrumb">
             <li><a href="{{ site.baseurl }}/">Home</a>
             </li>
-            <li><a href="{{ site.baseurl }}/">Studio</a>
+            <li><a href="{{ site.baseurl }}/studio.html">Studio</a>
             </li>
             <li class="active">Download</li>
         </ol> 
@@ -26,7 +26,7 @@ layout: default
   
 <u>Requirements for Eclipse packages and update site:</u> Java 8 and JavaFX . JavaFX is required for the Multidimensional timeline features, please make sure to install it or to use Oracle JRE.<br>
   
-<u>Getting started:</u> The studio comes with various example languages that you can import in your workspace: _File > New > Examples&#8230;_. &#8212; You can also install additional examples using the component discovery service: _Help > Install additional GEMOC components_. &#8212; You can also browse the [language gallery](http://gemoc.org/gallery/) for some more examples.
+<u>Getting started:</u> The studio comes with various example languages that you can import in your workspace: <i>File > New > Examples&#8230;</i>. &#8212; You can also install additional examples using the component discovery service: <i>Help > Install additional GEMOC components</i>. &#8212; You can also browse the <a href="{{ site.baseurl }}/gallery.html">language gallery</a> for some more examples.
         
 </div> 
 
@@ -40,7 +40,7 @@ layout: default
     </li>
     <li class=""><a href="#service-two" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="32" height="32" align="TOP" /> Virtual machine</a>
     </li>
-    <li class=""><a href="#service-three" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png"  height="32" align="TOP" /> Update site</a>
+    <li class=""><a href="#service-three" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png"  height="24" align="TOP" /> Update site</a>
     </li>
 </ul>
 <div id="myTabContent" class="tab-content">
@@ -51,15 +51,14 @@ layout: default
   			<div class="panel-body">
 		        <table class="table table-striped">
 				<tbody>
-					<tr>
+					<tr>					
 					<td>GEMOC Studio Eclipse package <br><a title="More details about this version"  href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</a><br/> ({{ last_eclipse_package.eclipsePackageSize }})</td>			
-					<td><ul>
-					<li><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ last_eclipse_package.linux32URL }}">Linux (gtk) 32 Bit</a></li> 
-					<li><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ last_eclipse_package.linux64URL }}">Linux (gtk) 64 Bit</a></li>
-					<li><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ last_eclipse_package.macOS64URL }}">Mac OS X (cocoa) 64 Bit</a></li> 
-					<li><a title="gemoc_studio-win32.win32.x86.zip" href="{{ last_eclipse_package.win32URL }}">Windows 32 Bit</a></li> 
-					<li><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ last_eclipse_package.win64URL }}">Windows 64 Bit</a></li>
-					</ul></td>
+					<td>
+						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ last_eclipse_package.linux32URL }}">Linux (gtk) 32 Bit</a><br> 
+						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ last_eclipse_package.linux64URL }}">Linux (gtk) 64 Bit</a><br>
+						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ last_eclipse_package.macOS64URL }}">Mac OS X (cocoa) 64 Bit</a><br> 
+						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-win32.win32.x86.zip" href="{{ last_eclipse_package.win32URL }}">Windows 32 Bit</a><br> 
+						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ last_eclipse_package.win64URL }}">Windows 64 Bit</a><br>
 					<td>{{ last_eclipse_package.excerpt }}<a href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">(Read more)</a></td>
 					</tr>
 				</tbody>
@@ -79,7 +78,7 @@ layout: default
 							
 							{% for eclipse_package_post in site.categories.eclipse_package %}
 							<tr>
-							<td><a href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">GEMOC Studio Eclipse package</a><br/> ({{ eclipse_package_post.eclipsePackageSize }})</td>			
+							<td><a title="More details about this version"   href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">GEMOC Studio Eclipse package</a><br/> ({{ eclipse_package_post.eclipsePackageSize }})</td>			
 							<td>{{ eclipse_package_post.releaseVersion }} - {{ eclipse_package_post.date  | date: "%Y/%m/%d" }}</td>
 							<td>
 							{{ eclipse_package_post.excerpt }}<a href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">(Read more)</a></td>
@@ -98,7 +97,7 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td><a href="https://ci.inria.fr/gemoc/job/gemoc-studio_gemoc_studio/">GEMOC Studio Eclipse package</a></td>			
+					<td><a title="get the latest version from the continuopus integration service" href="https://ci.inria.fr/gemoc/job/gemoc-studio_gemoc_studio/"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" />GEMOC Studio Eclipse package</a></td>			
 					<td>Latest nightly build</td>
 					<td>Continuous integration build from git.</td>
 					</tr>
@@ -116,10 +115,10 @@ layout: default
 				<tbody>
 					<tr>
 					<td>GEMOC Studio in a VM for VirtualBox <br><a title="More details about this version" href="{{ site.baseurl }}/{{ last_virtualbox.url }}">{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</a><br/> ({{ last_virtualbox.virtualBoxSize }})</td>			
-					<td><ul>
-					
-		        	<li><a  title="Lubuntu%2064%20GEMOC.ova" href="{{ last_virtualbox.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a>  </li> 
-					</ul></td>
+					<td>
+						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="16" height="16" align="TOP" />
+						<a  title="Lubuntu%2064%20GEMOC.ova" href="{{ last_virtualbox.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a>  
+					</td>
 					<td>{{ last_virtualbox.virtualBoxLoginComment }}<br>
 					{{ last_virtualbox.excerpt }}<a href="{{ site.baseurl }}/{{ last_virtualbox.url }}">(Read more)</a></td>
 					</tr>
@@ -140,7 +139,7 @@ layout: default
 							
 							{% for virtualbox_post in site.categories.virtualbox %}
 							<tr>
-							<td><a href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">GEMOC Studio in a VM for VirtualBox</a><br/> ({{ virtualbox_post.virtualBoxSize }})</td>			
+							<td><a title="More details about this version" href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">GEMOC Studio in a VM for VirtualBox</a><br/> ({{ virtualbox_post.virtualBoxSize }})</td>			
 							<td>{{ virtualbox_post.releaseVersion }} - {{ virtualbox_post.date  | date: "%Y/%m/%d" }}</td>
 							<td>
 							{{ virtualbox_post.excerpt }}<a href="{{ site.baseurl }}/{{ virtualbox_post.url }}">(Read more)</a></td>
@@ -161,17 +160,19 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td>Update site> <br><a  title="More details about this version"  href="{{ site.baseurl }}/{{ last_updatesite.url }}">{{ last_updatesite.releaseVersion }} - {{ last_updatesite.date  | date: "%Y/%m/%d" }}</a></td>			
-					<td><ul>
-					
-		        	<li>(right click & copy)<a  href="{{ last_updatesite.updatesiteURL }}">{{ last_updatesite.updatesiteURL }}</a>  </li> 
-					</ul></td>
+					<td>Update site <br><a  title="More details about this version"  href="{{ site.baseurl }}/{{ last_updatesite.url }}">{{ last_updatesite.releaseVersion }} - {{ last_updatesite.date  | date: "%Y/%m/%d" }}</a></td>			
+					<td>
+						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png" height="16" align="TOP" />
+						
+						(right click & copy) <a  href="{{ last_updatesite.updatesiteURL }}">{{ last_updatesite.updatesiteURL }}</a>   
+					</td>
 					<td>{{ last_updatesite.excerpt }}<a href="{{ site.baseurl }}/{{ last_updatesite.url }}">(Read more)</a></td>
 					</tr>
 				</tbody>
 				</table>
 			</div>
-			<div class="panel-footer">Permalink to latest stable version: <a href="http://gemoc.org/updatesite/studio">http://gemoc.org/updatesite/studio</a>
+			<div class="panel-footer">Permalink to latest stable version: <a href="http://gemoc.org/updatesite/studio">http://gemoc.org/updatesite/studio</a><br>
+			(See <a href="http://help.eclipse.org/neon/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm">online documentation</a> about adding update sites in your eclipse installation.				        
 			</div>
 		</div>
 		<div class="panel-group">
@@ -186,11 +187,12 @@ layout: default
 							<tbody>
 								{% for updatesite_post in site.categories.updatesite %}
 								<tr>
-								<td><a href="{{ site.baseurl }}/{{ updatesite_post.url }}">Update site</a></td>			
-								<td>{{ updatesite_post.releaseVersion }} - {{ updatesite_post.date  | date: "%Y/%m/%d" }}</td>
-								<td><ul>
-					        	<li>(right click & copy)<a  href="{{ updatesite_post.updatesiteURL }}">{{ updatesite_post.updatesiteURL }}</a>  </li> 
-								</ul></td>
+								<td>Update site <br>			
+									<a title="More details about this version" href="{{ site.baseurl }}/{{ updatesite_post.url }}">{{ updatesite_post.releaseVersion }} - {{ updatesite_post.date  | date: "%Y/%m/%d" }}</a></td>
+								<td>
+									<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png" height="16" align="TOP" />
+									(right click & copy) <a  href="{{ updatesite_post.updatesiteURL }}">{{ updatesite_post.updatesiteURL }}</a>   
+								</td>
 								<td>
 								{{ updatesite_post.excerpt }}<a href="{{ site.baseurl }}/{{ updatesite_post.url }}">(Read more)</a></td>
 								</tr>
@@ -207,7 +209,8 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td>(right click & copy)<a href="http://gemoc.org/updatesite/studio_nightly/">http://gemoc.org/updatesite/studio_nightly/</a></td>			
+					<td><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png" height="16" align="TOP" />
+						(right click & copy)<a href="http://gemoc.org/updatesite/studio_nightly/">http://gemoc.org/updatesite/studio_nightly/</a></td>			
 					<td>Latest nightly build</td>
 					<td>Continuous integration build from git.</td>
 					</tr>
