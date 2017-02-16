@@ -17,13 +17,7 @@ moliz: <img title="The domain language can be executed with an xMOF engine." src
 
 Discover concrete examples of modeling languages created with the GEMOC Studio for various use-cases: Systems Engineering, Software Development, Business Configuration, Computational Science, etc.
 
-
-{{ page.langSeq }}
-{{ page.langCon }}
-{{ page.beCool }}
-{{ page.download }}
-{{ page.pkg }}
-{{ page.moliz }}
+<hr>
 
 <!-- Activity Diagram  -->
 <div class="row">
