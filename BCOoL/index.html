@@ -17,14 +17,22 @@ layout: default
         <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li class="active">Behavioral Coordination</li>
-            <li ><a href="BCOol/index.html#BCOoLExample">Example</a></li>
+            <li ><a href="BCOol/index.html#BCOoLExample">Example</a>
+                <ul>
+                 <li> <a href="BCOol/index.html#bcoolfirstexample"> Running Example: The Synchronized Product Operator between Timed Finite State Machines</a></li>
+                 <li> <a href="BCOol/index.html#bcoolsecondexample"> The Surveillance Camera System (MoDELS2015)</a></li>
+                 <li> <a href="BCOol/index.html#bcoolcoffeemachine"> The Coffee Machine Example (Demo MoDELS2015)</a></li>
+                 <li> <a href="BCOol/index.html#bcoolsigpml"> A BCOoL operator between the TFSM and SigPML languages</a></li>
+                 <li> <a href="BCOol/index.html#bcoolmapping"> A BCOoL Operator that uses a mapping language to find correspondences</a></li>
+                </ul>
+            </li>
+            <li ><a href="BCOol/index.html#bcoolbiblio">Bibliography</a>
         </ol>
     </div>
 </div>                                                                            
 
-   <nav class="navbar navbar-inverse navbar-fixed-right" role="navigation">
+<!-- <nav class="navbar navbar-inverse navbar-fixed-right" role="navigation">
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -33,7 +41,6 @@ layout: default
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -67,10 +74,8 @@ layout: default
                 </li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
-</nav>       		
+</nav>       		-->
  
 
 <div class="row">
@@ -102,7 +107,7 @@ To start with BCOoL, download the GEMOC studio that contains BCOoL together with
 		<div class="col-lg-12">
         <h3>Running Example: The Synchronized Product Operator between Timed Finite State Machines</h3>
         <a name="bcoolfirstexample"></a> 
-        <div class="text_area">
+        <div >
 <a href="images/example_syncProd.jpg">
         <img src="images/example_syncProd.jpg" alt="Photo One" title="SyncronzedProductTFSM" width="190" height="100" class="templatemo_pic_left"  />
 </a> 
@@ -204,7 +209,7 @@ To start with BCOoL, download the GEMOC studio that contains BCOoL together with
           </div>
 
 		<h3>The Surveillance Camera System (MoDELS2015)</h3>
-        <div class="text_area">
+        <div>
          <a name="bcoolsecondexample"></a> 
 In this example, we use BCOoL to develop three coordination operators between the TFSM and the Activity lenguages. These operators are used to specify three coordination patterns between these languages. First, we syncronize FSMEvents of the TFSM language and Signals from the Activity lenguage. Second, we propose a hierarchical coordination operator in which the entering of states are coordinated with the execution of an activity. Finally, we propose a timing coordination operator to coordinate the time in a TFSM and an Activity. 
 <br />
@@ -280,7 +285,7 @@ By clicking on debug, the coordinated execution is launched. The engine provides
 													 
 											 To watch the complete procedure go to  <a href="http://youtu.be/i8i8o5PfrSM" target="_parent">Video</a>
 
- <div class="publish_date"> </div>
+
           </div>
           
           
@@ -369,14 +374,13 @@ By clicking on debug, the coordinated execution is launched. The engine provides
 										
 													 To watch the complete procedure go to <a href="https://www.youtube.com/watch?v=g4Az2DglNY4" target="_parent">Video</a>   
 
- <div class="publish_date"> </div>
           </div>          
           
           
           
           
 <h3>A BCOoL operator between the TFSM and SigPML languages</h3>
-        <div class="text_area">
+        <div >
          <a name="bcoolsigpml"></a> 
 In this example, we use BCOoL to develop an operator between the TFSM and the SigPML (Signal Processing Modeling Language) languages. SigPML is an extension of SDF in which an application is described as a set of Agents. Upon activation, each agent uses the data on its Input Ports, executes N processing cycles and produces computed results on its Output Ports. In this context, we use BCOoL to define an operator that synchronizes the occurrences of FSMEvents and the starting of Agents by relying on their names.
 In the following, we use the GEMOC studio to first develop the operator. Then, in the modeling wokbench, we use this operator to coordinate the heterogenenous models of a coffee machine.
@@ -448,7 +452,7 @@ To watch the complete procedure go to Video</a>
  
  
 		<h3>A BCOoL Operator that uses a mapping language to find correspondences</h3>
-        <div class="text_area">
+        <div >
          <a name="bcoolmapping"></a> 
 In this example, we use BCOoL to develop the synchronized product operator between the TFSM and the Activity lenguages. The operator coordinates the ocurrences of FSMEvents and the starting of an Action. To find the elements to coordinate, we rely on a third language named Mapping Language which contains correspondences between the TFSM and Activity languages. This lenguage is imported in the BCOoL specification and used in the matching correspondence to find the elements to coordinate.
 The example can be found <a href="http://github.com/MatiasVara/BCOoLExamples/" target="_parent">here</a>. In this case the language workbench has to contain the TFSM and Activity language and also the mapping language (e.g., org.gemoc.sample.bcool.mapping). Then, import the project org.gemoc.sample.bcool.coffeemachinewithsigpml into the modeling workbench.      
@@ -473,7 +477,7 @@ The example can be found <a href="http://github.com/MatiasVara/BCOoLExamples/" t
 <div class="col-lg-12">
         
         <a name="bcoolbiblio"></a> 
-        <div class="text_area">
+        <div>
                 			   Vara Larsen, M., “BCool: the Behavioral Coordination Operator Language”, PhD thesis. 
 						<a href="https://hal.inria.fr/tel-01302875v1/bibtex" target="_parent">[BIBTEX]</a>
 						  <a href="https://hal.inria.fr/tel-01302875" target="_parent">[PDF]</a>
