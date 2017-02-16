@@ -173,61 +173,71 @@ layout: default
          <h3>Running Example: The Synchronized Product Operator between Timed Finite State Machines</h3>
          <a name="bcoolfirstexample"></a> 
          <div class="media">
-            <a  href="images/example_syncProd.jpg">
-            <img class="aligncenter size-full wp-image-1987" src="images/example_syncProd.jpg" alt="Photo One" title="SyncronzedProductTFSM"  height="200"   />
-            </a> 
-            <div align="left">
+            <p>
+                 <a  href="images/example_syncProd.jpg">
+                <img class="aligncenter size-full wp-image-1987" src="images/example_syncProd.jpg" alt="Photo One" title="SyncronzedProductTFSM"  height="200"   />
+                </a> 
+            <!--<div align="left">-->
                 The synchronized product operator coordinates models conforming to the Timed Finite State Machine (TFSM) language; a state machine language augmented with timed transitions. Briefly, the operator accepts two models conforming to TFSM as argument. It selects the events with same name, and then, it coordinates the selected events by forcing a simultaneous occurrence between events.
-            </div>
+<!--            </div>-->
+            </p>
+            <p>
+                <a href="images/syncrotfsmtuto/step02.jpg">
+                    <img src="images/syncrotfsmtuto/step02.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
+                </a>
+    <!--            <div align="right">-->
+                    To run the example, we need a GEMOC studio with the BCOoL plug-in installed. In the first GEMOC studio workspace, we create new project example of TFSM language.
+<!--            </div>-->
+            </p>
+            <p>
+                <a href="images/syncrotfsmtuto/step2.jpg">
+                    <img src="images/syncrotfsmtuto/step2.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
+                </a>
+    <!--            <div align="left">-->
+                    In the second GEMOC studio workspace, we import the project from the BCOoLExample repository in github. The project includes the needed interfaces libraries, and the operator. In addition, it includes some example models to apply the operator. 
+<!--            </div>-->
+            </p>
+            <p>
+                <a href="images/syncrotfsmtuto/step3.jpg">
+                <img src="images/syncrotfsmtuto/step3.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
+                </a>
+    <!--            <div align="right">	-->
+                    To generate the model of coordination between two TFSMs, two steps are needed. First, we compile the BCOoL spec as is shown in the picture. This generates a qvto transformation that applies between any pair of models conforming to the TFSM language (in src-gen). 
+    <!--            </div>-->
+            </p>
+            <p>
+                <a href="images/syncrotfsmtuto/step4.jpg">
+                    <img src="images/syncrotfsmtuto/step4.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
+                </a>
+    <!--            <div align="left">-->
+                    Once compiled, the qvto transformation enables to generate the model of coordination between any pair of TFSM models. To do so, we select the input models (jobB.tfsm and jobA.tfsm) and we click on create ccsl coordination.
+    <!--            </div>-->
+            </p>
+            <p>
+                <a href="images/syncrotfsmtuto/step6.jpg">
+                    <img src="images/syncrotfsmtuto/step6.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
+                </a>
+    <!--            <div align="right">	-->
+                    This results in the generation of a CCSL specification that includes the CCSL spec of each model plus the coordination. The specification can be executed by using TimeSquare.
+    <!--            </div>-->
+            </p>
+            <p>
+                <a href="images/syncrotfsmtuto/step7.jpg">
+                    <img src="images/syncrotfsmtuto/step7.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
+                </a>
+    <!--            <div align="left">-->
+                    The specification can be executed by using TimeSquare. Figure illustrates the partial timing output (VCD) of the execution of the whole example. In the Figure, we highlight the events that results coordinated. 
+    <!--            </div>-->
+            </p>
+            <p>
+                <a href="images/syncrotfsmtuto/step8.jpg">
+                    <img src="images/syncrotfsmtuto/step8.jpg" height="100" class="aligncenter size-full wp-image-1987"  />					
+                </a>
+    <!--            <div align="right">	-->
+                    The workbench also offers the possibility to obtain by exploration quantitative results on the scheduling state-space. Figure illustrate the graphical representation of the state-space for our example. The exploration results in 66 states and 3454 transitions.  
+    <!--            </div>-->
+            </p>
             
-            <a href="images/syncrotfsmtuto/step02.jpg">
-                <img src="images/syncrotfsmtuto/step02.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
-            </a>
-            <div align="right">
-                To run the example, we need a GEMOC studio with the BCOoL plug-in installed. In the first GEMOC studio workspace, we create new project example of TFSM language.
-            </div>
-        
-            <a href="images/syncrotfsmtuto/step2.jpg">
-                <img src="images/syncrotfsmtuto/step2.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
-            </a>
-            <div align="left">
-                In the second GEMOC studio workspace, we import the project from the BCOoLExample repository in github. The project includes the needed interfaces libraries, and the operator. In addition, it includes some example models to apply the operator. 
-            </div>
-        
-            <a href="images/syncrotfsmtuto/step3.jpg">
-            <img src="images/syncrotfsmtuto/step3.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
-            </a>
-            <div align="right">	
-                To generate the model of coordination between two TFSMs, two steps are needed. First, we compile the BCOoL spec as is shown in the picture. This generates a qvto transformation that applies between any pair of models conforming to the TFSM language (in src-gen). 
-            </div>
-        
-            <a href="images/syncrotfsmtuto/step4.jpg">
-                <img src="images/syncrotfsmtuto/step4.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
-            </a>
-            <div align="left">
-                Once compiled, the qvto transformation enables to generate the model of coordination between any pair of TFSM models. To do so, we select the input models (jobB.tfsm and jobA.tfsm) and we click on create ccsl coordination.
-            </div>
-        
-            <a href="images/syncrotfsmtuto/step6.jpg">
-                <img src="images/syncrotfsmtuto/step6.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
-            </a>
-            <div align="right">	
-                This results in the generation of a CCSL specification that includes the CCSL spec of each model plus the coordination. The specification can be executed by using TimeSquare.
-            </div>
-        
-            <a href="images/syncrotfsmtuto/step7.jpg">
-                <img src="images/syncrotfsmtuto/step7.jpg" height="200" class="aligncenter size-full wp-image-1987"  />					
-            </a>
-            <div align="left">
-                The specification can be executed by using TimeSquare. Figure illustrates the partial timing output (VCD) of the execution of the whole example. In the Figure, we highlight the events that results coordinated. 
-            </div>
-        
-            <a href="images/syncrotfsmtuto/step8.jpg">
-                <img src="images/syncrotfsmtuto/step8.jpg" height="100" class="aligncenter size-full wp-image-1987"  />					
-            </a>
-            <div align="right">	
-                The workbench also offers the possibility to obtain by exploration quantitative results on the scheduling state-space. Figure illustrate the graphical representation of the state-space for our example. The exploration results in 66 states and 3454 transitions.  
-            </div>
             <div class="media">
                <div class="pull-left">
                   <span class="fa-stack fa-2x">
