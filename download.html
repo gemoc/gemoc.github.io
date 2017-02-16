@@ -52,7 +52,7 @@ layout: default
 		        <table class="table table-striped">
 				<tbody>
 					<tr>
-					<td>GEMOC Studio Eclipse package <br>{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}<br/> ({{ last_eclipse_package.eclipsePackageSize }})</td>			
+					<td>GEMOC Studio Eclipse package <br><a title="More details about this version"  href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</a><br/> ({{ last_eclipse_package.eclipsePackageSize }})</td>			
 					<td><ul>
 					<li><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ last_eclipse_package.linux32URL }}">Linux (gtk) 32 Bit</a></li> 
 					<li><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ last_eclipse_package.linux64URL }}">Linux (gtk) 64 Bit</a></li>
@@ -60,8 +60,7 @@ layout: default
 					<li><a title="gemoc_studio-win32.win32.x86.zip" href="{{ last_eclipse_package.win32URL }}">Windows 32 Bit</a></li> 
 					<li><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ last_eclipse_package.win64URL }}">Windows 64 Bit</a></li>
 					</ul></td>
-					<td><a href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">Release notes</a><br>
-					{{ last_eclipse_package.excerpt }}<a href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">(Read more)</a></td>
+					<td>{{ last_eclipse_package.excerpt }}<a href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">(Read more)</a></td>
 					</tr>
 				</tbody>
 				</table>
@@ -116,7 +115,7 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td><a href="{{ site.baseurl }}/{{ last_virtualbox.url }}">GEMOC Studio in a VM for VirtualBox</a> <br>{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}<br/> ({{ last_virtualbox.virtualBoxSize }})</td>			
+					<td>GEMOC Studio in a VM for VirtualBox <br><a title="More details about this version" href="{{ site.baseurl }}/{{ last_virtualbox.url }}">{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</a><br/> ({{ last_virtualbox.virtualBoxSize }})</td>			
 					<td><ul>
 					
 		        	<li><a  title="Lubuntu%2064%20GEMOC.ova" href="{{ last_virtualbox.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a>  </li> 
@@ -162,7 +161,7 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td><a href="{{ site.baseurl }}/{{ last_updatesite.url }}">Update site</a> <br>{{ last_updatesite.releaseVersion }} - {{ last_updatesite.date  | date: "%Y/%m/%d" }}</td>			
+					<td>Update site> <br><a  title="More details about this version"  href="{{ site.baseurl }}/{{ last_updatesite.url }}">{{ last_updatesite.releaseVersion }} - {{ last_updatesite.date  | date: "%Y/%m/%d" }}</a></td>			
 					<td><ul>
 					
 		        	<li>(right click & copy)<a  href="{{ last_updatesite.updatesiteURL }}">{{ last_updatesite.updatesiteURL }}</a>  </li> 
