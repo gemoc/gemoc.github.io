@@ -18,18 +18,18 @@ layout: default
             <li><a href="index.html">Home</a></li>
             <li class="active">Behavioral Coordination</li>
             <li ><a href="BCOol/index.html#BCOoLExample">Example</a>
-                <ul>
+                <ol class="breadcrumb">
                  <li> <a href="BCOol/index.html#bcoolfirstexample"> Running Example: The Synchronized Product Operator between Timed Finite State Machines</a></li>
                  <li> <a href="BCOol/index.html#bcoolsecondexample"> The Surveillance Camera System (MoDELS2015)</a></li>
                  <li> <a href="BCOol/index.html#bcoolcoffeemachine"> The Coffee Machine Example (Demo MoDELS2015)</a></li>
                  <li> <a href="BCOol/index.html#bcoolsigpml"> A BCOoL operator between the TFSM and SigPML languages</a></li>
                  <li> <a href="BCOol/index.html#bcoolmapping"> A BCOoL Operator that uses a mapping language to find correspondences</a></li>
-                </ul>
+                </ol>
             </li>
             <li ><a href="BCOol/index.html#bcoolbiblio">Bibliography</a>
         </ol>
     </div>
-</div>                                                                            
+</div>                                                                           
 
 <!-- <nav class="navbar navbar-inverse navbar-fixed-right" role="navigation">
     <div class="container">
@@ -87,9 +87,13 @@ layout: default
 <a name="bcoolwhat"></a> 
 <br />
 B-COoL is a dedicated language to explicitly specify how models conforming to different DSMLs can be coordinated. This enables the integrator to capture the knowledge of integration of systems by a dedicated language. In BCOoL, the specification relies on Operators. Once defined, the specification can be used to generate a model of coordination when models are know.  
-<a href="images/bcoolapr.jpg">
-        <img src="images/bcoolapr.jpg" title="BCOoLApproach" width="190" height="120" class="templatemo_pic_right"  />
-</a> 
+       <p> <a href="images/bcoolapr.jpg">
+        <img class="aligncenter size-full wp-image-1987" src="images/bcoolapr.jpg"
+                alt="BCOoLApproach" width="735" height="368" srcset="images/bcoolapr.jpg 735w, images/bcoolapr.jpg 300w"
+                sizes="(max-width: 735px) 100vw, 735px" />
+<!--         <img src="images/bcoolapr.jpg" title="BCOoLApproach" width="190" height="120" class="templatemo_pic_right"  /> -->
+       </a> </p>
+
 <br />
 
 BCOoL is developed on top of the eclipse platform as a set of plugins. More precisely, it is integrated to the GEMOC studio. The GEMOC studio is the integration of various Eclipse Modeling Framework (EMF) based technologies adequate for the specification of executable domain specific modeling languages. BCOoL is itself based on the EMF and its abstract syntax has been developed using Ecore (i.e., the meta-language associated with EMF). The textual concrete syntax has been developed using Xtext, providing advanced edition facilities.
@@ -104,6 +108,24 @@ To start with BCOoL, download the GEMOC studio that contains BCOoL together with
 <a name="BCOoLExample"></a>
 <h2>Examples</h2>		
 <br />
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">BCOoL - Language coordination made easy <br/>
+            <small>Enable the specification of Coordination patterns specified between different language interfaces</small>
+        </h1>
+        <ol class="breadcrumb">
+                 <li> <a href="BCOol/index.html#bcoolfirstexample"> Running Example: The Synchronized Product Operator between Timed Finite State Machines</a></li>
+                 <li> <a href="BCOol/index.html#bcoolsecondexample"> The Surveillance Camera System (MoDELS2015)</a></li>
+                 <li> <a href="BCOol/index.html#bcoolcoffeemachine"> The Coffee Machine Example (Demo MoDELS2015)</a></li>
+                 <li> <a href="BCOol/index.html#bcoolsigpml"> A BCOoL operator between the TFSM and SigPML languages</a></li>
+                 <li> <a href="BCOol/index.html#bcoolmapping"> A BCOoL Operator that uses a mapping language to find correspondences</a></li>
+        </ol>
+    </div>
+</div> 
+
+
+
 		<div class="col-lg-12">
         <h3>Running Example: The Synchronized Product Operator between Timed Finite State Machines</h3>
         <a name="bcoolfirstexample"></a> 
