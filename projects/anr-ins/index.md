@@ -15,7 +15,9 @@ layout: default
 - **Supported by the French Agency for Research (ANR)**, Program INS (*Ingénierie Numérique & Sécurité*). Grant ANR-12-INSE-0011, ANR Funding: 1 M€. See the ANR website: [french](http://www.agence-nationale-recherche.fr/projet-anr/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-12-INSE-0011), [english](http://www.agence-nationale-recherche.fr/en/anr-funded-project/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-12-INSE-0011).
 - **Labels from the competitiveness clusters**: Image & Réseaux, Aerospace Valley, Systematic
 
+<div style="text-align: center; max-width: 100%;" markdown="1">
 [![ANR](http://gemoc.irisa.fr/logo/logo_anr_en.jpg)](http://www.agence-nationale-recherche.fr/)
+</div>
 
 ## ANR INS Project GEMOC (2012-2016)
 
