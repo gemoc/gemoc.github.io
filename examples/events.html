@@ -29,14 +29,14 @@ layout: default
 
         {% for event in site.events %}
             <h2>
-                <a href="{{url_base}}/{{ event.url }}">{{ event.title }}</a>
+                <a href="{{ site.baseurl }}/{{ event.url }}">{{ event.title }}</a>
             </h2>
             <a href="blog-post.html">
                 <img class="img-responsive img-hover" src="{{ site.placeholderimagesbaseurl }}{{ post.previewimage }}" alt="">
             </a>
             <hr>
             <p>{{ event.excerpt }}</p>
-            <a class="btn btn-primary" href="{{url_base}}/{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+            <a class="btn btn-primary" href="{{ site.baseurl }}/{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
 
             <hr>
 
