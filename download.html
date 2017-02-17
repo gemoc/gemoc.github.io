@@ -110,12 +110,12 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td>GEMOC Studio in a VM for VirtualBox <br><a title="More details about this version" href="{{ site.baseurl }}/{{ last_virtualbox.url }}">{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</a><br/> ({{ last_virtualbox.virtualBoxSize }})</td>			
+					<td>GEMOC Studio in a VM for VirtualBox <br><a title="More details about this version" href="{{ site.baseurl }}/{{ last_virtualbox.url }}">{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</a></td>			
 					<td>
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="16" height="16" align="TOP" />
-						<a  title="Lubuntu%2064%20GEMOC.ova" href="{{ last_virtualbox.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a>  
+						<a  title="Lubuntu%2064%20GEMOC.ova" href="{{ last_virtualbox.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a> ({{ last_virtualbox.virtualBoxSize }})  
 					</td>
-					<td>{{ last_virtualbox.virtualBoxLoginComment }}<br>
+					<td><i>{{ last_virtualbox.virtualBoxLoginComment }}</i><br>
 					{{ last_virtualbox.excerpt }}<a href="{{ site.baseurl }}/{{ last_virtualbox.url }}">(Read more)</a></td>
 					</tr>
 				</tbody>
@@ -135,9 +135,14 @@ layout: default
 							
 							{% for virtualbox_post in site.categories.virtualbox %}
 							<tr>
-							<td><a title="More details about this version" href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">GEMOC Studio in a VM for VirtualBox</a><br/> ({{ virtualbox_post.virtualBoxSize }})</td>			
-							<td>{{ virtualbox_post.releaseVersion }} - {{ virtualbox_post.date  | date: "%Y/%m/%d" }}</td>
-							<td>
+							<td>VM for VirtualBox <br>
+								<a title="More details about this version" href="{{ site.baseurl }}/{{ virtualbox_post.url }}">{{ virtualbox_post.releaseVersion }} - {{ virtualbox_post.date  | date: "%Y/%m/%d" }}</a> 
+							</td>			
+							<td><a  title="Lubuntu%2064%20GEMOC.ova ({{ virtualbox_post.virtualBoxSize }})" href="{{ virtualbox_post.virtualBoxURL }}">
+								<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="16" height="16" align="TOP" />
+								Lubuntu 64 GEMOC.ova</a> ({{ virtualbox_post.virtualBoxSize }})
+							</td>
+							<td><i>{{ virtualbox_post.virtualBoxLoginComment }}</i><br>
 							{{ virtualbox_post.excerpt }}<a href="{{ site.baseurl }}/{{ virtualbox_post.url }}">(Read more)</a></td>
 							</tr>
 							{% endfor %}
@@ -159,16 +164,15 @@ layout: default
 					<td>Update site <br><a  title="More details about this version"  href="{{ site.baseurl }}/{{ last_updatesite.url }}">{{ last_updatesite.releaseVersion }} - {{ last_updatesite.date  | date: "%Y/%m/%d" }}</a></td>			
 					<td>
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png" height="16" align="TOP" />
-						
-						(right click & copy) <a  href="{{ last_updatesite.updatesiteURL }}">{{ last_updatesite.updatesiteURL }}</a>   
+						<a title="right click, copy the URL then paste into eclipse" href="{{ last_updatesite.updatesiteURL }}">{{ last_updatesite.updatesiteURL }}</a>   
 					</td>
 					<td>{{ last_updatesite.excerpt }}<a href="{{ site.baseurl }}/{{ last_updatesite.url }}">(Read more)</a></td>
 					</tr>
 				</tbody>
 				</table>
 			</div>
-			<div class="panel-footer">Permalink to latest stable version: <a href="http://gemoc.org/updatesite/studio">http://gemoc.org/updatesite/studio</a><br>
-			(See <a href="http://help.eclipse.org/neon/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm">online documentation</a> about adding update sites in your eclipse installation.				        
+			<div class="panel-footer">Permalink to latest stable version: <a title="right click, copy the URL then paste into eclipse" href="http://gemoc.org/updatesite/studio">http://gemoc.org/updatesite/studio</a><br>
+			(See <a href="http://help.eclipse.org/neon/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm">Eclipse online documentation</a> about adding update sites in your eclipse installation.				        
 			</div>
 		</div>
 		<div class="panel-group">
@@ -187,7 +191,7 @@ layout: default
 									<a title="More details about this version" href="{{ site.baseurl }}/{{ updatesite_post.url }}">{{ updatesite_post.releaseVersion }} - {{ updatesite_post.date  | date: "%Y/%m/%d" }}</a></td>
 								<td>
 									<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png" height="16" align="TOP" />
-									(right click & copy) <a  href="{{ updatesite_post.updatesiteURL }}">{{ updatesite_post.updatesiteURL }}</a>   
+									<a title="right click, copy the URL then paste into eclipse"  href="{{ updatesite_post.updatesiteURL }}">{{ updatesite_post.updatesiteURL }}</a>   
 								</td>
 								<td>
 								{{ updatesite_post.excerpt }}<a href="{{ site.baseurl }}/{{ updatesite_post.url }}">(Read more)</a></td>
@@ -206,7 +210,7 @@ layout: default
 				<tbody>
 					<tr>
 					<td><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png" height="16" align="TOP" />
-						(right click & copy)<a href="http://gemoc.org/updatesite/studio_nightly/">http://gemoc.org/updatesite/studio_nightly/</a></td>			
+						<a title="right click, copy then paste into eclipse" href="http://gemoc.org/updatesite/studio_nightly/">http://gemoc.org/updatesite/studio_nightly/</a></td>			
 					<td>Latest nightly build</td>
 					<td>Continuous integration build from git.</td>
 					</tr>
