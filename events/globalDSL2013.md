@@ -13,7 +13,7 @@ date: July 2, 2013, Montpellier, France
 
 ## July 2, 2013, Montpellier, Franceco-located with [ECMFA, ECOOP and ECSA 2013](http://www.lirmm.fr/ec-montpellier-2013/)
 
-# [About]({{ site.baseurl }}{% link events/globalDSL2013.md %}#cfp)   |   [Program]({{ site.baseurl }}{% link events/globalDSL2013.md %}#program)   |   [Call]({{ site.baseurl }}{% link events/globalDSL2013.md %}#call)   |   [Dates]({{ site.baseurl }}{% link events/globalDSL2013.md %}#dates)   |   [Committees]({{ site.baseurl }}{% link events/globalDSL2013.md %}#ocpc)
+<strong>[About]({{ site.baseurl }}{% link events/globalDSL2013.md %}#cfp)   |   [Program]({{ site.baseurl }}{% link events/globalDSL2013.md %}#program)   |   [Call]({{ site.baseurl }}{% link events/globalDSL2013.md %}#call)   |   [Dates]({{ site.baseurl }}{% link events/globalDSL2013.md %}#dates)   |   [Committees]({{ site.baseurl }}{% link events/globalDSL2013.md %}#ocpc)</strong>
 
 </div>
 

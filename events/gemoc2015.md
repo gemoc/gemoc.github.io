@@ -12,9 +12,9 @@ date: September 28, 2015, Ottawa, Canada
 
 ## September 28, 2015, Ottawa, Canadaco-located with [MODELS 2015](http://www.modelsconference.org/)
 
-> # **GEMOC 2015 is now over! You can checkout the slides, and the workshop proceedings published on CEUR.**
+> **GEMOC 2015 is now over! You can checkout the slides, and the workshop proceedings published on CEUR.**
 
-# [About]({{ site.baseurl }}{% link events/gemoc2015.md %}#cfp)   |   [Program]({{ site.baseurl }}{% link events/gemoc2015.md %}#program)   |   [Call]({{ site.baseurl }}{% link events/gemoc2015.md %}#call)   |   [Dates]({{ site.baseurl }}{% link events/gemoc2015.md %}#dates)   |   [Committees]({{ site.baseurl }}{% link events/gemoc2015.md %}#ocpc)
+<strong>[About]({{ site.baseurl }}{% link events/gemoc2015.md %}#cfp)   |   [Program]({{ site.baseurl }}{% link events/gemoc2015.md %}#program)   |   [Call]({{ site.baseurl }}{% link events/gemoc2015.md %}#call)   |   [Dates]({{ site.baseurl }}{% link events/gemoc2015.md %}#dates)   |   [Committees]({{ site.baseurl }}{% link events/gemoc2015.md %}#ocpc)</strong>
 
 </div>
 

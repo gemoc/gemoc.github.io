@@ -14,7 +14,7 @@ date: September 28, 2014, Valencia, Spain
 
 > # **The workshop report is available online, and the workshop proceedings is published on CEUR.**
 
-# [About]({{ site.baseurl }}{% link events/gemoc2014.md %}#cfp)   |   [Program]({{ site.baseurl }}{% link events/gemoc2014.md %}#program)   |   [Call]({{ site.baseurl }}{% link events/gemoc2014.md %}#call)   |   [Dates]({{ site.baseurl }}{% link events/gemoc2014.md %}#dates)   |   [Committees]({{ site.baseurl }}{% link events/gemoc2014.md %}#ocpc)
+<strong>[About]({{ site.baseurl }}{% link events/gemoc2014.md %}#cfp)   |   [Program]({{ site.baseurl }}{% link events/gemoc2014.md %}#program)   |   [Call]({{ site.baseurl }}{% link events/gemoc2014.md %}#call)   |   [Dates]({{ site.baseurl }}{% link events/gemoc2014.md %}#dates)   |   [Committees]({{ site.baseurl }}{% link events/gemoc2014.md %}#ocpc)</strong>
 
 </div>
 
