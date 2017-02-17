@@ -23,7 +23,7 @@ layout: default
 <!--
 <div class="row">
     <div class="col-md-7">
-        <a href="{{url_base}}portfolio-item.html">
+        <a href="{{ site.baseurl }}portfolio-item.html">
             <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
         </a>
     </div>
@@ -31,7 +31,7 @@ layout: default
         <h3>Safran/Inria project GLOSE (2017-2020)</h3>
         <h4>GLObalization in Systems Engineering</h4>
         <p>TODO.</p>
-        <a class="btn btn-primary" href="{{url_base}}/projects/glose.html">View Project</i></a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}/projects/glose.html">View Project</i></a>
     </div>
 </div>
 -->
@@ -58,7 +58,7 @@ layout: default
         <h3>ANR INS Project GEMOC (2012-2016)</h3>
         <h4>A Tool-Supported Approach for Omniscient Debugging and Concurrent Execution of Heterogeneous Models</h4>
         <p>The ANR INS project GEMOC is a French collaborative project that investigates a modular executable metamodeling approach and the definition of a behavioral language interface to be used for expressing behavioral coordination patterns between languages.</p>
-        <a class="btn btn-primary" href="{{url_base}}/projects/anrgemoc.html">View Project</i></a>
+        {% include projects/ans-ins/horizontal-menu.md %}
     </div>
 </div>
 <!-- /.row -->
