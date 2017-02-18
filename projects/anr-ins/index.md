@@ -6,26 +6,9 @@ layout: default
 
 {% include projects/ans-ins/horizontal-menu.md %}
 
-## ANR INS – Project Identification
-
-- **Consortium**: ENSTA Bretagne, Inria, IRIT, I3S, Obeo, Thales. See also [the partners description]({{ site.baseurl }}{% link projects/anr-ins/partners.md %}).
-- **Principal Investigator**: Inria ([Benoit Combemale](http://people.irisa.fr/Benoit.Combemale/)). See also [the board members]({{ site.baseurl }}{% link projects/anr-ins/board-members.md %}).
-- **Duration**: 01.12.12 – 30.03.16 (40 months)
-- **Budget**: 2.7 M€
-- **Supported by the French Agency for Research (ANR)**, Program INS (*Ingénierie Numérique & Sécurité*). Grant ANR-12-INSE-0011, ANR Funding: 1 M€. See the ANR website: [french](http://www.agence-nationale-recherche.fr/projet-anr/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-12-INSE-0011), [english](http://www.agence-nationale-recherche.fr/en/anr-funded-project/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-12-INSE-0011).
-- **Labels from the competitiveness clusters**: Image & Réseaux, Aerospace Valley, Systematic
-
-<div style="text-align: center; max-width: 100%;" markdown="1">
-[![ANR](http://gemoc.irisa.fr/logo/logo_anr_en.jpg)](http://www.agence-nationale-recherche.fr/)
-</div>
-
 ## ANR INS Project GEMOC (2012-2016)
 
 > ### A Tool-Supported Approach for Omniscient Debugging and Concurrent Execution of Heterogeneous Models
-
-<div style="text-align: center; max-width: 100%;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Tk5DecseYOg" frameborder="0" allowfullscreen></iframe>
-</div>
 
 The [ANR INS project GEMOC]({{ site.baseurl }}{% link projects/anr-ins/index.md %}) investigates the following **scientific breakthroughs**:
 
@@ -42,13 +25,13 @@ The following **technological breakthroughs** are developped:
 
 The language workbench and the modeling workbench are included into [the GEMOC Studio]({{ site.baseurl }}{% link studio.html %}), an Eclipse package that contains components supporting the GEMOC methodology.
 
-<div style="text-align: center; max-width: 100%;" markdown="1">
+<div style="text-align: center; max-width: 50%;" markdown="1">
 [![Development of an executable DSML, and execution environment for model debugging]({{ site.baseurl }}{% link projects/anr-ins/executableDSL1-150x150.png %})]({{ site.baseurl }}{% link projects/anr-ins/executableDSL1.png %})
 
 Development of an executable DSML, and execution environment for model debugging
 </div>
 
-<div style="text-align: center; max-width: 100%;" markdown="1">
+<div style="text-align: center; max-width: 50%;" markdown="1">
 [![Concurrent execution of heterogeneous models]({{ site.baseurl }}{% link projects/anr-ins/gemocBigCoordinationPicture-150x150.png %})]({{ site.baseurl }}{% link projects/anr-ins/gemocBigCoordinationPicture.png %})
 
 Concurrent execution of heterogeneous models
@@ -58,6 +41,37 @@ The scientific and technological breakthroughs are experimented to develop the 
 
 The GEMOC studio is open-source, domain-independent, and benefits from the support of the [Eclipse IWG Polarsys](http://polarsys.org/) for sustainable exploitation.
 
-<div style="text-align: center; max-width: 100%;">
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/kRa3jZqj7pV8wV" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BenotCombemale/a-toolsupported-approach-for-omniscient-debugging-and-concurrent-execution-of-heterogeneous-models-60157232" title="A Tool-Supported Approach for Omniscient Debugging and Concurrent Execution of Heterogeneous Models" target="\_blank">A Tool-Supported Approach for Omniscient Debugging and Concurrent Execution of Heterogeneous Models</a> </strong> from <strong><a target="\_blank" href="//www.slideshare.net/BenotCombemale">Benoît Combemale</a></strong> </div>
+<div style="text-align: center; max-width: 50%;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tk5DecseYOg" frameborder="0" allowfullscreen></iframe>
 </div>
+
+<div style="text-align: center; max-width: 50%;">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/kRa3jZqj7pV8wV" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+</div>
+
+## ANR INS – Project Identification
+
+- **Consortium**: ENSTA Bretagne, Inria, IRIT, I3S, Obeo, Thales. See also [the partners description]({{ site.baseurl }}{% link projects/anr-ins/partners.md %}).
+- **Principal Investigator**: Inria ([Benoit Combemale](http://people.irisa.fr/Benoit.Combemale/)).
+- **Duration**: 01.12.12 – 30.03.16 (40 months)
+- **Budget**: 2.7 M€
+- **Supported by the French Agency for Research (ANR)**, Program INS (*Ingénierie Numérique & Sécurité*). Grant ANR-12-INSE-0011, ANR Funding: 1 M€. See the ANR website: [french](http://www.agence-nationale-recherche.fr/projet-anr/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-12-INSE-0011), [english](http://www.agence-nationale-recherche.fr/en/anr-funded-project/?tx_lwmsuivibilan_pi2%5BCODE%5D=ANR-12-INSE-0011).
+- **Labels from the competitiveness clusters**: Image & Réseaux, Aerospace Valley, Systematic
+
+<div style="text-align: center; max-width: 100%;" markdown="1">
+[![ANR](http://gemoc.irisa.fr/logo/logo_anr_en.jpg)](http://www.agence-nationale-recherche.fr/)
+</div>
+
+## ANR INS – Board Members
+
+All partner coordinators and work-package leaders constitute the board of the ANR INS Project GEMOC, chaired by the project coordinator. The actual board members are the following:
+
+- Benoit Combemale, Associate Professor, University of Rennes 1 (**Project coordinator**, WP0 leader)
+- Benoit Baudry, Researcher, Inria (Inria coordinator)
+- Cédric Brun, Engineer, Obeo (Obeo coordinator)
+- Xavier Crégut, Associate Professor, INPT ENSEEIHT (WP1 leader, INPT coordinator)
+- Joël Champeau, Associate Professor, ENSTA Bretagne (WP2 leader, ENSTA coordinator)
+- Julien De Antoni, Associate Professor, I3S (WP3 leader, I3S coordinator)
+- Ali Koudri, Research Engineer, Thales (WP5 leader)
+- Jérôme Le Noir, Research Engineer, Thales (Thales coordinator)
+- Didier Vojtisek, Research Engineer, Inria (WP4 leader)

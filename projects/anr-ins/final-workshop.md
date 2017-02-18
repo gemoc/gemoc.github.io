@@ -18,8 +18,6 @@ Laboratoire d’Informatique de Paris 6 (LIP6)
 Tour 25-26, salle 105
 4 Place Jussieu, 75252 Paris Cedex 05, France
 
-The registration is free but mandatory. Please, **confirm your participation** by email to [Benoit Combemale](mailto:benoit.combemale@inria.fr).
-
 # Program
 
 - 09:30-10:00: Welcome coffee
