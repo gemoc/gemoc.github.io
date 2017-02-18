@@ -18,3 +18,20 @@ markdown: kramdown
 organization: The GEMOC Initiative
 #placeholderimagesbaseurl: http://placehold.it/
 
+gems:
+
+# jekyll-scholar configurations
+scholar:
+  style: ./publications/acm-sig-proceedings-long-author-list.csl
+  use_raw_bibtex_entry : true
+  locale: en
+  sort_by: year
+  order: descending
+  source: ./publications
+  bibliography: gemoc.bib
+  details_dir: ./publications/details
+  query: "@*[public!=no]"
+
+  # Scholar has changed the way it renders bib tags
+  # Need to look at more at the defaults.
+  #bibliography_list_tag: "ul"

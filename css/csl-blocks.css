@@ -1,0 +1,250 @@
+/* This is a CSS file for CSL blocks for paper formatting. */
+
+.csl-box {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border: 0px solid navy;
+    margin: 2px;
+    vertical-align: top;
+}
+
+.csl-year {
+
+}
+
+.csl-index  {
+    display: inline-block;
+    vertical-align: top;
+    width: 7%;
+}
+
+.csl-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 88%;
+
+}
+
+.csl-award {
+    display:block;
+    vertical-align: top;
+    color: blue;
+    font-weight: 500;
+    
+}
+    
+ol {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.csl-year-header {
+    margin-left: 1.5em;
+    vertical-align: top;
+    width: 100%;
+    font-weight: 800;
+}
+
+.csl-year-icon {
+    position: relative;
+
+}
+
+.csl-year-icon:before {
+    content: "\f009";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+/*    color: #000;*/
+    font-size: 24px;
+    margin-left: 0em;
+    padding-right: 1em;
+    padding-top: 0.22em;
+    position: absolute;
+    top: 0px;
+
+}
+
+
+/* CSL Type icons */
+.csl-point-journal-icon {
+    position: relative;
+}
+
+.csl-point-journal-icon:before {
+    content: "\f0c8";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #660066;
+/*FF0099; */
+    font-size: 18px;
+    margin-left: 0em;
+    padding-right: 1em;
+    padding-top: 0.22em;
+    position: relative;
+    top: 0px;
+
+}
+
+
+.csl-point-conference-icon {
+    position: relative;
+}
+
+.csl-point-conference-icon:before {
+    content: "\f0c8";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000099;
+/*3366FF;*/
+    font-size: 20px;
+    margin-left: 0 em;
+    padding-right: 1em;
+    padding-top: 0.22em;
+    position: relative;
+    top: 0px;
+
+}
+
+
+.csl-point-bookchapter-icon {
+    position: relative;
+}
+
+.csl-point-bookchapter-icon:before {
+    content: "\f0c8";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #009933;
+/*33FF00;*/
+    font-size: 20px;
+    margin-left: 0em;
+    padding-right: 1em;
+    padding-top: 0.22em;
+    position: relative;
+    top: 0px;
+
+}
+
+
+.csl-point-techreport-icon {
+    position: relative;
+}
+
+.csl-point-techreport-icon:before {
+    content: "\f0c8";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #663300;
+    font-size: 18px;
+    margin-left: 0em;
+    padding-right: 1em;
+    position: relative;
+    padding-top: 0.22em;
+    top: 0px;
+
+}
+
+
+.csl-point-book-icon {
+    position: relative;
+}
+
+.csl-point-book-icon:before {
+    content: "\f0c8";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #CC9933;
+/*FFFF00;*/
+    font-size: 20px;
+    margin-left: 0em;
+    padding-right: 1em;
+    padding-top: 0.22em;
+    position: relative;
+    top: 0px;
+
+}
+
+/*
+.csl-point-journal {
+    list-style-image: url('https://caesr.uwaterloo.ca/images/journal-point.png');
+}
+
+.csl-point-conference {
+    list-style-image: url('https://caesr.uwaterloo.ca/images/conference-point.png');
+}
+
+.csl-point-bookchapter {
+    list-style-image: url('https://caesr.uwaterloo.ca/images/bookchapter-point.png');
+}
+
+.csl-point-techreport {
+    list-style-image: url('https://caesr.uwaterloo.ca/images/techreport-point.png');
+}
+
+.csl-point-book {
+    list-style-image: url('https://caesr.uwaterloo.ca/images/book-point.png');
+}
+*/
+
+ol li {
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 5px; 
+    margin-top: 10px;
+}
+
+.csl-title, .csl-author, .csl-event, .csl-venue {
+    display: block;
+    position: relative;
+}
+
+.csl-title b {
+    font-weight: 600;
+}
+
+.csl-author {
+    font-weight: 300;
+}
+
+.csl-event {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.csl-event i {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.csl-pdf {
+    display:inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    color: block;
+    margin-right: 1%;
+}
+
+.csl-slides {
+    display:inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    color: block;
+    margin-right: 1%;
+}
+ 
