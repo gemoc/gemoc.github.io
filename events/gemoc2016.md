@@ -13,7 +13,7 @@ date: October 4, 2016, Saint-Malo, France
 
 ## October 4, 2016, Saint-Malo, Franceco-located with [MODELS 2016](http://www.modelsconference.org/)
 
-# [About]({{ site.baseurl }}{% link events/gemoc2016.md %}#about-the-workshop) | [Program]({{ site.baseurl }}{% link events/gemoc2016.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2016.md %}#call-for-papers--models) | [Dates]({{ site.baseurl }}{% link events/gemoc2016.md %}#important-dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2016.md %}#committees)
+<strong>[About]({{ site.baseurl }}{% link events/gemoc2016.md %}#about-the-workshop) | [Program]({{ site.baseurl }}{% link events/gemoc2016.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2016.md %}#call-for-papers--models) | [Dates]({{ site.baseurl }}{% link events/gemoc2016.md %}#important-dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2016.md %}#committees)</strong>
 
 ## *The proceedings are now online here (http://ceur-ws.org/Vol-1731/)*
 

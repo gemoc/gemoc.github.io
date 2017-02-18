@@ -9,9 +9,11 @@ layout: default
             <small>{{ page.date | date: "%Y/%m/%d" }}</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="index.html">Home</a>
+            <li><a href="{{ site.baseurl }}/index.html">Home</a>
             </li>
-            <li><a href="studio.html">Studio</a>
+            <li><a href="{{ site.baseurl }}/studio.html">Studio</a>
+            </li>
+            <li><a href="{{ site.baseurl }}/download.html">Download</a>
             </li>
             <li class="active">{{ page.title }} ({{ page.date | date: "%b %Y " }})</li>
         </ol>
@@ -27,88 +29,76 @@ layout: default
 
         <!-- Blog Post -->
 
-        <hr>
-
-        {% if page.previewimage %}
-        <!-- Preview Image -->
-        <img class="img-responsive" src="{{ site.placeholderimagesbaseurl }}{{ page.previewimage }}" alt="">
-        {% endif %}
-
-        <hr>
 
         <!-- Post Content -->
         {% if page.excerpt %}
         <p class="lead">{{ page.excerpt }}</p>
         {% endif %}
 
-		{% if page.linux32URL %}
-        <!-- Preview Image -->
-        {{ page.linux32URfsdfsL }}
-        {% endif %}
-
-<ul id="myTab" class="nav nav-tabs nav-justified">
-	{% if page.categories contains 'eclipse_package' %}
-    <li class="active"><a href="#service-one" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="{{ site.baseurl }}/img/releng/gemoc_eclipse_package.png" width="32" height="32" align="TOP" /> Eclipse package</a>
-    </li>
-    {% endif %}
-	{% if page.categories contains 'virtualbox' %}
-		{% if page.categories contains 'eclipse_package' %}	
-    <li class="">
-    	{% else %}
-    <li class="active">
-    	{% endif %}
-    	<a href="#service-two" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="{{ site.baseurl }}/img/releng/gemoc_vm.png" width="32" height="32" align="TOP" /> Virtual machine</a>
-    </li>
-    {% endif %}
-	{% if page.categories contains 'updatesite' %}
-    	{% if page.categories contains 'eclipse_package' or page.categories contains 'virtualbox' %}	
-    <li class="">
-    	{% else %}
-    <li class="active">
-    	{% endif %}
-    	<a href="#service-three" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="{{ site.baseurl }}/img/releng/gemoc_update_site.png"  height="32" align="TOP" /> Update site</a>
-    </li>
-    {% endif %}
-</ul>
-<div id="myTabContent" class="tab-content">
-	{% if page.categories contains 'eclipse_package' %}
-    <div class="tab-pane fade active in" id="service-one">
-        <ul>GEMOC Studio Eclipse package ({{ page.eclipsePackageSize }})</td>
-        	<li><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ page.linux32URL }}">Linux (gtk) 32 Bit</a></li> 
-			<li><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ page.linux64URL }}">Linux (gtk) 64 Bit</a></li> 
-			<li><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ page.macOS64URL }}p">Mac OS X (cocoa) 64 Bit</a></li> 
-			<li><a title="gemoc_studio-win32.win32.x86.zip" href="{{ page.win32URL }}">Windows 32 Bit</a></li> 
-			<li><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ page.win64URL }}">Windows 64 Bit</a></li>
-		</ul>
-    </div>
-    {% endif %}
-	{% if page.categories contains 'virtualbox' %}
 		{% if page.categories contains 'eclipse_package' %}
-    <div class="tab-pane fade " id="service-two">
-    	{% else %}
-    <div class="tab-pane fade active in" id="service-two">
-    	{% endif %}
-        <br/>
-        <ul>GEMOC Studio Virtual Machine ({{ page.virtualBoxSize }})
-        	<li><a  title="Lubuntu%2064%20GEMOC.ova" href="{{ page.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a> {{ page.virtualBoxLoginComment }} </li>
-        </ul>
-        
-    </div>
-    {% endif %}
-	{% if page.categories contains 'updatesite' %}
-		{% if page.categories contains 'eclipse_package' or page.categories contains 'virtualbox' %}
-    <div class="tab-pane fade " id="service-three">
-    	{% else %}
-    <div class="tab-pane fade active in" id="service-three">
-    	{% endif %}
-        <br/>
-        <ul>GEMOC Studio update site
-        	<li>(right click & copy) <a href="{{ page.updatesiteURL }}">{{ page.updatesiteURL }}</a></li>
-        </ul>
-        
-    </div>
-    {% endif %}
-</div>
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+		 			<h3 class="panel-title">
+						<a title="expand panel to show all stable versions" data-toggle="collapse" href="#eclipsepackage"><img class="alignleft" style="border: 0px none;" src="{{ site.baseurl }}/img/releng/gemoc_eclipse_package.png" width="24" height="24" align="TOP" /> Eclipse package <i class="fa fa-expand"></i></a>
+					</h3>
+				</div>
+		  		<div id="eclipsepackage" class="panel-collapse collapse">
+		  			<div class="panel-body">
+				        <ul>Download the Eclipse package ({{ page.eclipsePackageSize }})
+				        	<li><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ page.linux32URL }}">Linux (gtk) 32 Bit</a></li> 
+							<li><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ page.linux64URL }}">Linux (gtk) 64 Bit</a></li> 
+							<li><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ page.macOS64URL }}p">Mac OS X (cocoa) 64 Bit</a></li> 
+							<li><a title="gemoc_studio-win32.win32.x86.zip" href="{{ page.win32URL }}">Windows 32 Bit</a></li> 
+							<li><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ page.win64URL }}">Windows 64 Bit</a></li>
+						</ul>				
+		  			</div>
+		  			<div class="panel-footer"></div>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% if page.categories contains 'virtualbox' %}
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+		 			<h3 class="panel-title">
+						<a title="expand panel to show all stable versions" data-toggle="collapse" href="#virtualbox"><img class="alignleft" style="border: 0px none;" src="{{ site.baseurl }}/img/releng/gemoc_vm.png" width="24" height="24" align="TOP" /> Virtual machine <i class="fa fa-expand"></i></a>
+					</h3>
+				</div>
+		  		<div id="virtualbox" class="panel-collapse collapse">
+		  			<div class="panel-body">
+				        <ul> Download the VirtualBox image ({{ page.virtualBoxSize }})
+				        	<li><a  title="Lubuntu%2064%20GEMOC.ova" href="{{ page.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a> {{ page.virtualBoxLoginComment }} </li>
+						</ul>				
+		  			</div>
+		  			<div class="panel-footer"></div>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% if page.categories contains 'updatesite' %}
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+		 			<h3 class="panel-title">
+						<a title="expand panel to show all stable versions" data-toggle="collapse" href="#updatesite"><img class="alignleft" style="border: 0px none;" src="{{ site.baseurl }}/img/releng/gemoc_update_site.png" height="24" align="TOP" /> Update site <i class="fa fa-expand"></i></a>
+					</h3>
+				</div>
+		  		<div id="updatesite" class="panel-collapse collapse">
+		  			<div class="panel-body">
+		  				Add this URL to the update sites of your eclipse installation. (See <a href="http://help.eclipse.org/neon/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm">online documentation</a>)
+				        <ul>
+				        	<li><a title="right click, copy the URL then paste into eclipse" href="{{ page.updatesiteURL }}">{{ page.updatesiteURL }}</a></li>
+						</ul>				
+		  			</div>
+		  			<div class="panel-footer"></div>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+
+
 
 
 		<hr>

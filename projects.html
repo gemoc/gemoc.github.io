@@ -7,7 +7,7 @@ layout: default
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">Projects
-            <small>subheading</small>
+            <small>collaborative and billateral collaborations</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="{{ site.baseurl }}/">Home</a>
@@ -23,7 +23,7 @@ layout: default
 <!--
 <div class="row">
     <div class="col-md-7">
-        <a href="{{url_base}}portfolio-item.html">
+        <a href="{{ site.baseurl }}portfolio-item.html">
             <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
         </a>
     </div>
@@ -31,7 +31,7 @@ layout: default
         <h3>Safran/Inria project GLOSE (2017-2020)</h3>
         <h4>GLObalization in Systems Engineering</h4>
         <p>TODO.</p>
-        <a class="btn btn-primary" href="{{url_base}}/projects/glose.html">View Project</i></a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}/projects/glose.html">View Project</i></a>
     </div>
 </div>
 -->
@@ -41,12 +41,7 @@ layout: default
 
 <!-- Project One -->
 <div class="row">
-    <div class="col-md-4">
-        <a href="{{url_base}}/project/anrgemoc.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
-        </a>
-    </div>
-    <div class="col-md-8">
+    <div class="col-md-12">
         <h3>Associate Team ALE (2017-2019)</h3>
         <h4>Agile Language Engineering</h4>
         <p>ALE is a research associate team (2017-2019), between the DiverSE team at Inria (France) and the SWAT team at CWI (The Netherlands).</p>
@@ -59,16 +54,11 @@ layout: default
 
 <!-- Project Two -->
 <div class="row">
-    <div class="col-md-4">
-        <a href="{{url_base}}portfolio-item.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
-        </a>
-    </div>
-    <div class="col-md-8">
+    <div class="col-md-12">
         <h3>ANR INS Project GEMOC (2012-2016)</h3>
         <h4>A Tool-Supported Approach for Omniscient Debugging and Concurrent Execution of Heterogeneous Models</h4>
         <p>The ANR INS project GEMOC is a French collaborative project that investigates a modular executable metamodeling approach and the definition of a behavioral language interface to be used for expressing behavioral coordination patterns between languages.</p>
-        <a class="btn btn-primary" href="{{url_base}}/projects/anrgemoc.html">View Project</i></a>
+        {% include projects/ans-ins/horizontal-menu.md %}
     </div>
 </div>
 <!-- /.row -->
@@ -77,12 +67,7 @@ layout: default
 
 <!-- Project Three -->
 <div class="row">
-    <div class="col-md-4">
-        <a href="{{ site.baseurl }}/projects/mbsar.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
-        </a>
-    </div>
-    <div class="col-md-8">
+    <div class="col-md-12">
         <h3>CNRS PICS Project MBSAR (2013-2015)</h3>
         <h4>Model-Based Security Analysis at Runtime</h4>
         <p>MBSAR is a collaboration between the Software Assurance Lab from Colorado State University and the Triskell team at IRISA. MBSAR is a 3-year project (2013-2015) funded by the CNRS in the context of the program PICS.</p>
@@ -95,13 +80,7 @@ layout: default
 
 <!-- Project Four -->
 <div class="row">
-
-    <div class="col-md-4">
-        <a href="{{ site.baseurl }}/projects/as2011.html">
-            <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
-        </a>
-    </div>
-    <div class="col-md-8">
+    <div class="col-md-12">
         <h3>CNRS GDR GPL Action GEMOC (2011)</h3>
         <h4>Software Engineering for Heterogeneous Software systems</h4>
         <p>French collaborative project to establish a state of the art with regards to heterogeneous modeling and simulation of complex soft-intensive systems.</p>

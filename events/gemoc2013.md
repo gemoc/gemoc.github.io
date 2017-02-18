@@ -13,7 +13,7 @@ date: September 29, 2013, Miami, Florida, USA
 
 > # **The workshop report is published online on CEUR.**
 
-# [About]({{ site.baseurl }}{% link events/gemoc2013.md %}#cfp)   |   [Program]({{ site.baseurl }}{% link events/gemoc2013.md %}#program)   |   [Call]({{ site.baseurl }}{% link events/gemoc2013.md %}#call)   |   [Dates]({{ site.baseurl }}{% link events/gemoc2013.md %}#dates)   |   [Committees]({{ site.baseurl }}{% link events/gemoc2013.md %}#ocpc)
+<strong>[About]({{ site.baseurl }}{% link events/gemoc2013.md %}#cfp)   |   [Program]({{ site.baseurl }}{% link events/gemoc2013.md %}#program)   |   [Call]({{ site.baseurl }}{% link events/gemoc2013.md %}#call)   |   [Dates]({{ site.baseurl }}{% link events/gemoc2013.md %}#dates)   |   [Committees]({{ site.baseurl }}{% link events/gemoc2013.md %}#ocpc)<strong>
 
 </div>
 

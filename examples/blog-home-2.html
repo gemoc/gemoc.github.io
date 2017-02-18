@@ -14,7 +14,7 @@ layout: default
             <small>Subheading</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{{url_base}}/index.html">Home</a>
+            <li><a href="{{ site.baseurl }}/index.html">Home</a>
             </li>
             <li class="active">Blog Home Two</li>
         </ol>
@@ -31,18 +31,18 @@ layout: default
         <p>{{ post.date | date: "%B %-d, %Y" }}</p>
     </div>
     <div class="col-md-5">
-        <a href="{{url_base}}/{{ post.url }}">
+        <a href="{{ site.baseurl }}/{{ post.url }}">
             <img class="img-responsive img-hover" src="{{ site.placeholderimagesbaseurl }}{{ post.previewimage }}" alt="">
         </a>
     </div>
     <div class="col-md-6">
         <h3>
-            <a href="{{url_base}}/{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
         </h3>
-        <p>by <a href="{{url_base}}/{{ post.url }}">{{ post.author }}</a>
+        <p>by <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.author }}</a>
         </p>
         <p>{{ post.excerpt }}</p>
-        <a class="btn btn-primary" href="{{url_base}}/{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}/{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
     </div>
 </div>
 <!-- /.row -->
