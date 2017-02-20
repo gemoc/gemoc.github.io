@@ -6,3 +6,7 @@ gem 'jekyll-paginate'
 gem 'rouge'
 gem 'jekyll-scholar'
 gem 'jekyll-scholar-extras-gemoc', path: "./gemoc-jekyll-scholar-extras"
+
+group :jekyll_plugins do
+   gem "jekyll-twitter-plugin"
+end
