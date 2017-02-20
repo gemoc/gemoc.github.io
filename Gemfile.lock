@@ -38,7 +38,7 @@ GEM
       citeproc-ruby (~> 1.0)
       csl-styles (~> 1.0)
       jekyll (~> 3.0)
-    jekyll-scholar-extras (0.1.3)
+    jekyll-scholar-extras-gemoc (0.1.3)
       bibtex-ruby (~> 4.0, >= 4.0.13)
       citeproc-ruby (~> 1.0)
       jekyll (~> 3.0)
@@ -75,7 +75,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-redirect-from
   jekyll-scholar
-  jekyll-scholar-extras
+  jekyll-scholar-extras-gemoc
   jekyll-sitemap
   rouge
 
