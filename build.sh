@@ -46,7 +46,7 @@ function deploy {
 	git add -A
 	git status
 	git commit -m "Lastest site built on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to github"
-	git push -f $DEPLOY_REPO HEAD:gh-pages
+	git push -f $DEPLOY_REPO HEAD:master
 }
 
 
