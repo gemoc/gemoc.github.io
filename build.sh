@@ -34,7 +34,7 @@ function deploy {
          exit 0
      fi
 
-     if [ "$TRAVIS_BRANCH" != "gh-page-edit" ]; then
+     if [ "$TRAVIS_BRANCH" != "gh-pages-edit" ]; then
          echo "except we should only publish the gh-page-edit branch. stopping here"
          exit 0
      fi
