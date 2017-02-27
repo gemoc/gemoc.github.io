@@ -16,7 +16,7 @@ script:
 
 branches:
   only:
-    - gh-page-edit
+    - gh-pages-edit
 
 env:
   global:
