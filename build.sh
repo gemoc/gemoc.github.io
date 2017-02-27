@@ -2,7 +2,7 @@
 
 set -e
 
-DEPLOY_REPO="https://${GH_TOKEN}@github.com/gemoc/website.git"
+DEPLOY_REPO="https://${GH_TOKEN}@github.com/gemoc/gemoc.github.io.git"
 
 function main {
 	clean

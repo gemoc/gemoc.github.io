@@ -3,7 +3,7 @@ title: The GEMOC Initiative
 email: contact@gemoc.org
 description: > # this means to ignore newlines until "baseurl:"
   GEMOC develops techniques, frameworks, and environments to facilitate the creation, integration, and automated processing of heterogeneous modeling languages.
-baseurl: "/website" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://gemoc.github.io" # the base hostname & protocol for your site
 twitter_username: gemocinitiative
 github_username:  gemoc
