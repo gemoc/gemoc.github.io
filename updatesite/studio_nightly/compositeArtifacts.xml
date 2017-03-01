@@ -6,6 +6,6 @@
  
     </properties>
     <children size='1'>
-        <child location='http://gemoc.irisa.fr/updatesite/studio_nightly'/>
+        <child location='http://gemoc.irisa.fr/updatesite/studio_nightly/'/>
     </children>
 </repository>

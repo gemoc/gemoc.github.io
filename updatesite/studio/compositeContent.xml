@@ -6,6 +6,6 @@
         <property name='p2.timestamp' value='1313779613760'/>
     </properties>
     <children size='1'>
-        <child location='http://gemoc.irisa.fr/updatesite/studio'/>
+        <child location='http://gemoc.irisa.fr/updatesite/studio/'/>
     </children>
 </repository>
