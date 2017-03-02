@@ -7,7 +7,7 @@ langSeq: <img title="The domain language can be executed with a sequential engin
 langCon: <img title="The domain language can be executed with a concurrent engine (ccsljava)." src="gallery/IconeGemocLanguage-Concurrent-48.png" alt="Concurrent Language" width="16" height="16">
 bcoolLangCoord: <img title="Models of this domain language can be coordinated with other models (of the same language or other languages)." src="gallery/bcool-icon-32.png" width="16" height="16">
 download: <img title="the language is available through the GEMOC discovery service." src="gallery/download_gemoc_studio.png" width="16">
-pkg: <img title="the language is available as sample in the GEMOC Studio." src="img/releng/gemoc_studio_package.png" width="16" height="16">
+pkg: <img title="the language is available as sample in the GEMOC Studio." src="img/releng/gemoc_eclipse_package.png" width="16" height="16">
 moliz: <img title="The domain language can be executed with an xMOF engine." src="gallery/xmof_moliz_ico.png" alt="" width="16" height="16">
 ---
 
