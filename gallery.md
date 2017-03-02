@@ -5,9 +5,9 @@ permalink: gallery.html
 
 langSeq: <img title="The domain language can be executed with a sequential engine (Java)." src="gallery/IconeGemocLanguage-Sequential-48.png" alt="Sequential Language" width="16" height="16">
 langCon: <img title="The domain language can be executed with a concurrent engine (ccsljava)." src="gallery/IconeGemocLanguage-Concurrent-48.png" alt="Concurrent Language" width="16" height="16">
-beCool: <img title="Models of this domain language can be coordinated with other models (of the same language or other languages)." src="gallery/bcool-icon-32.png" width="16" height="16">
+bcoolLangCoord: <img title="Models of this domain language can be coordinated with other models (of the same language or other languages)." src="gallery/bcool-icon-32.png" width="16" height="16">
 download: <img title="the language is available through the GEMOC discovery service." src="gallery/download_gemoc_studio.png" width="16">
-pkg: <img title="the language is available as sample in the GEMOC Studio." src="gallery/gemoc_studio_package_64x64.png" width="16" height="16">
+pkg: <img title="the language is available as sample in the GEMOC Studio." src="img/releng/gemoc_studio_package.png" width="16" height="16">
 moliz: <img title="The domain language can be executed with an xMOF engine." src="gallery/xmof_moliz_ico.png" alt="" width="16" height="16">
 ---
 
@@ -27,7 +27,7 @@ Discover concrete examples of modeling languages created with the GEMOC Studio f
         </a>
     </div>
     <div class="col-md-8">
-        <h3>Activity Diagram {{ page.langSeq }} {{ page.langCon }} {{ page.beCool }} {{ page.download }}</h3>
+        <h3>Activity Diagram {{ page.langSeq }} {{ page.langCon }} {{ page.bcoolLangCoord }} {{ page.download }}</h3>
         <p>This is an implementation of the UML Activity Diagram language.</p>
 
         <h4>Related links</h4>
@@ -172,7 +172,7 @@ Discover concrete examples of modeling languages created with the GEMOC Studio f
         </a>
     </div>
     <div class="col-md-8">
-        <h3>SigPML {{ page.langCon }} {{ page.beCool }} {{ page.pkg }}</h3>
+        <h3>SigPML {{ page.langCon }} {{ page.bcoolLangCoord }} {{ page.pkg }}</h3>
         <p>SigPML is a DSL dedicated to Signal Processing Modeling Language.</p>
 
         <h4>Related links</h4>
@@ -194,7 +194,7 @@ Discover concrete examples of modeling languages created with the GEMOC Studio f
         </a>
     </div>
     <div class="col-md-8">
-        <h3>TFSM {{ page.langCon }} {{ page.beCool }} {{ page.pkg }}</h3>
+        <h3>TFSM {{ page.langCon }} {{ page.bcoolLangCoord }} {{ page.pkg }}</h3>
         <p>TFSM is a version of Finite State Machine with time.</p>
 
         <h4>Related links</h4>
@@ -216,7 +216,7 @@ Discover concrete examples of modeling languages created with the GEMOC Studio f
         </a>
     </div>
     <div class="col-md-8">
-        <h3>xCapella {{ page.langCon }} {{ page.beCool }}</h3>
+        <h3>xCapella {{ page.langCon }} {{ page.bcoolLangCoord }}</h3>
         <p>xCapella is an executable extension of <a href="https://polarsys.org/capella/">Capella</a>.
 The execution is mainly based on the coordination of two sub languages: Mode Automata and DataFlow.</p>
 
