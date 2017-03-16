@@ -10,7 +10,7 @@ The consortium evolving in the ANR INS Project GEMOC gathers complementary exper
 
 # Core Partners
 
-[![gemoc-partners]({{ site.baseurl }}{% link projects/anr-ins/gemoc-partners.png%})]({{ site.baseurl }}{% link projects/anr-ins/gemoc-partners.png%})
+[![gemoc-partners]({{ site.baseurl }}{% link ins/gemoc-partners.png%})]({{ site.baseurl }}{% link ins/gemoc-partners.png%})
 
 [![Inria](http://www.inria.fr/extension/site_inria/design/site_inria/images/logos/logo_INRIA.png)](http://www.inria.fr/)
 
@@ -42,7 +42,7 @@ People involved:
 
  
 
-[![logo_obeo_HD]({{ site.baseurl }}{% link projects/anr-ins/logo_obeo_HD-300x77.png%})](http://obeo.fr/)
+[![logo_obeo_HD]({{ site.baseurl }}{% link ins/logo_obeo_HD-300x77.png%})](http://obeo.fr/)
 
 Obeo is a leading company for model driven software development based on Eclipse. Obeo offers products and services both to industrialize new development and to understand/update legacy systems. The company was created in 2005 and has now more than 45 employees in three offices (Nantes, Paris and Toulouse). It has several large companies as customers like Thales, Airbus, CEA, Alstom, Unédic, etc.
 Involved in the Open Source community, Obeo is an Eclipse-based company. It is the only french member of the Eclipse Foundation Strategic Member committee. It lead several modeling project such as: Acceleo (EMF code generator), ATL (EMF model transformation), EMF compare (model comparison), EEF (EMF model property editions). Moreover, Obeo is developing a nascent Eclipse-based technology, Obeo Designer, which devises a modeling environment for alleviating domain specific modeling language definitions and uses. Hence, Obeo will bring to the project this dual experience: modeling and Eclipse.
@@ -56,7 +56,7 @@ People involved:
 
  
 
-[![IRIT]({{ site.baseurl }}{% link projects/anr-ins/irit.jpg %})](http://irit.fr/)
+[![IRIT]({{ site.baseurl }}{% link ins/irit.jpg %})](http://irit.fr/)
 
 IRIT ACADIE (Assistance à la Certification d’Applications Distribuées et Embarquées – Distributed and Embedded Application Certification Assistance) has been involved in the integration of formal specification and verification and Model Driven Engineering technologies in the last 10 years. The results of this work, expressed as the eXecutable Domain Specific Modeling Language metamodeling pattern and the Coq4MDE formal specification of Model Driven Engineering key technological elements, has been applied in the FUI TOPCASED project for the development of model Validation and Verification tools such as model animators (in collaboration with ATOS Origin and the LIUPPA Movies team) and model checkers (in collaboration with the CNRS-LAAS-OLC, INRIA-VASY and INRIA-ESPRESSO teams). This work has been published both on formal engineering, model driven engineering and industrial transfer conferences. These activities are currently being extended in many projects such as FRAE QUARTEFT, ITEA OPEES and JTI ARTEMIS CESAR. These activities have always been conducted in close relationship with industrial partners like Airbus, ATOS, CNES, CONTINENTAL, C-S, EADS-Astrium and THALES providing a seamless transfer of formal specification and verification technologies to industrial end users through MDE.
 
@@ -68,7 +68,7 @@ People involved:
 
  
 
-[![I3S]({{ site.baseurl }}{% link projects/anr-ins/logo-i3s.jpg %})](http://www.i3s.unice.fr/I3S/)
+[![I3S]({{ site.baseurl }}{% link ins/logo-i3s.jpg %})](http://www.i3s.unice.fr/I3S/)
 
 The Aoste Team-project is a joint project between the I3S Laboratory (Informatique Signaux et Systèmes de Sophia Antipolis, UMR 7271 CNRS) and the INRIA Research center Sophia-Antipolis Méditerranée. The main objective of Aoste is to reconcile formal and engineering models for the modeling and analysis of real-time and embedded systems. Such systems require sound mathematically based models (for safety-critical aspects) that can address the complexity and heterogeneity of the applications (mix of control and data flow), the execution platform (increasingly parallel with multi-core architectures) and the allocation of the former onto the latter, taking into account functional and non-functional aspects (timing constraints, power consumption). Aoste builds on the experience of its team members on synchronous reactive languages (SyncCharts, Safe State Machines of SCADE) and their extensions (GALS, polychronous languages). Aoste proposes both static and analysis methods to guarantee the correction of properties and assess the adequacy of the proposed models. Over the last six years, we have set up to promote our work within the modeling community by taking the lead for the definition of the time model of the UML Profile for MARTE (Modeling and Analysis of Real-Time and Embedded systems), which has been formally adopted by the Object Management Group in November 2009. This time model gives a temporal and causal interpretation to models in general, and UML models in particular. This time model should be one the foundational element, in GEMOC, for the definition of the meta-language able to capture and compose MoCCs.
 
@@ -80,7 +80,7 @@ People involved:
 
  
 
-[![ENSTA Bretagne]({{ site.baseurl }}{% link projects/anr-ins/Logo_ENSTA_Bretagne.jpg %})](http://www.ensta-bretagne.fr/)
+[![ENSTA Bretagne]({{ site.baseurl }}{% link ins/Logo_ENSTA_Bretagne.jpg %})](http://www.ensta-bretagne.fr/)
 
 ENSTA-Bretagne is an academic partner involved in several projects related to MDE technologies; applied to process modelling, hardware/software co-design, requirements modelling, and vali¬dation. ENSTA-Bretagne expertise in hardware/software co-design has been reinforced during the national research ANR project MOPCOM-SOC/SOPC. One of the results brought in this project is the Cometa metamodel.. This metamodel is used through a dedicated tool-assisted methodology based on UML/MARTE. This Cometa metamodel is also used in the European ARTEMIS iFEST project as pivot formalism between several tools related to the co-design domain. In this context, the model of computation, described in Cometa, is promoted to structure the application modeling. ENSTA-Bretagne will contribute to GEMOC in the areas of metamodeling related to the communication in the model of computation. ENSTA-Bretagne will make use of GEMOC results in courses included in a postgraduate training on embedded system modelling and validation, down to concrete robotic applications developed with other teams of the ENSTA-Bretagne, like oceanographic submarine observatories and an auto¬nomous submarine.
 

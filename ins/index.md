@@ -10,7 +10,7 @@ layout: default
 
 > ### A Tool-Supported Approach for Omniscient Debugging and Concurrent Execution of Heterogeneous Models
 
-The [ANR INS project GEMOC]({{ site.baseurl }}{% link projects/anr-ins/index.md %}) investigates the following **scientific breakthroughs**:
+The [ANR INS project GEMOC]({{ site.baseurl }}{% link ins/index.md %}) investigates the following **scientific breakthroughs**:
 
 - A **modular executable metamodeling** approach for behavioral semantics understanding, reuse and variability. This approach supports an explicit model of concurrency and domain-specific actions with a well-defined protocol between them (incl., mapping, feedback and callback).
 - The definition of both **structural and behavioral language interfaces**; the structural interface to allow language structure manipulation, language substitutability and model polymorphism, and the behavioral interface for language behavioral coordination.
@@ -26,13 +26,13 @@ The following **technological breakthroughs** are developped:
 The language workbench and the modeling workbench are included into [the GEMOC Studio]({{ site.baseurl }}{% link studio.html %}), an Eclipse package that contains components supporting the GEMOC methodology.
 
 <div style="text-align: center; max-width: 50%;" markdown="1">
-[![Development of an executable DSML, and execution environment for model debugging]({{ site.baseurl }}{% link projects/anr-ins/executableDSL1-150x150.png %})]({{ site.baseurl }}{% link projects/anr-ins/executableDSL1.png %})
+[![Development of an executable DSML, and execution environment for model debugging]({{ site.baseurl }}{% link ins/executableDSL1-150x150.png %})]({{ site.baseurl }}{% link ins/executableDSL1.png %})
 
 Development of an executable DSML, and execution environment for model debugging
 </div>
 
 <div style="text-align: center; max-width: 50%;" markdown="1">
-[![Concurrent execution of heterogeneous models]({{ site.baseurl }}{% link projects/anr-ins/gemocBigCoordinationPicture-150x150.png %})]({{ site.baseurl }}{% link projects/anr-ins/gemocBigCoordinationPicture.png %})
+[![Concurrent execution of heterogeneous models]({{ site.baseurl }}{% link ins/gemocBigCoordinationPicture-150x150.png %})]({{ site.baseurl }}{% link ins/gemocBigCoordinationPicture.png %})
 
 Concurrent execution of heterogeneous models
 </div>
@@ -51,7 +51,7 @@ The GEMOC studio is open-source, domain-independent, and benefits from the suppo
 
 ## ANR INS – Project Identification
 
-- **Consortium**: ENSTA Bretagne, Inria, IRIT, I3S, Obeo, Thales. See also [the partners description]({{ site.baseurl }}{% link projects/anr-ins/partners.md %}).
+- **Consortium**: ENSTA Bretagne, Inria, IRIT, I3S, Obeo, Thales. See also [the partners description]({{ site.baseurl }}{% link ins/partners.md %}).
 - **Principal Investigator**: Inria ([Benoit Combemale](http://people.irisa.fr/Benoit.Combemale/)).
 - **Duration**: 01.12.12 – 30.03.16 (40 months)
 - **Budget**: 2.7 M€

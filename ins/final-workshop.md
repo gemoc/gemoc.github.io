@@ -6,9 +6,9 @@ layout: default
 
 {% include projects/ans-ins/horizontal-menu.md %}
 
-[![ANR Project GEMOC]({{ site.baseurl }}{% link projects/anr-ins/gemocworkshop.jpeg %})]({{ site.baseurl }}{% link projects/anr-ins/index.md %})
+[![ANR Project GEMOC]({{ site.baseurl }}{% link ins/gemocworkshop.jpeg %})]({{ site.baseurl }}{% link ins/index.md %})
 
-The final workshop of [the ANR project GEMOC]({{ site.baseurl }}{% link projects/anr-ins/index.md %}) (grant #ANR-12-INSE-0011) has brought together people from academia and industry to discuss recent progresses related to heterogeneous modeling and simulation in software and systems engineering. The scientific and technological breakthroughs achieved during the ANR project GEMOC have been presented, and demonstrations of [the GEMOC studio]({{ site.baseurl }}{% link studio.html %}) have been given.
+The final workshop of [the ANR project GEMOC]({{ site.baseurl }}{% link ins/index.md %}) (grant #ANR-12-INSE-0011) has brought together people from academia and industry to discuss recent progresses related to heterogeneous modeling and simulation in software and systems engineering. The scientific and technological breakthroughs achieved during the ANR project GEMOC have been presented, and demonstrations of [the GEMOC studio]({{ site.baseurl }}{% link studio.html %}) have been given.
 
 Different talks presented the scientific and technological achievements of the project. Demonstrations of the GEMOC studio have been given to develop and coordinate executable (domain-specific) modeling languages, and deploy the corresponding modeling workbenches supported by simulation, graphical animation and omniscient debugging facilities.
 
