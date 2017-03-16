@@ -32,16 +32,16 @@ layout: default
 {% assign last_updatesite = site.categories.updatesite.first %} 
 
 <ul id="myTab" class="nav nav-tabs nav-justified">
-    <li class="active"><a href="#service-one" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="32" height="32" align="TOP" /> Eclipse package</a>
+    <li class="active"><a href="#eclipse-package" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="32" height="32" align="TOP" /> Eclipse package</a>
     </li>
-    <li class=""><a href="#service-two" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="32" height="32" align="TOP" /> Virtual machine</a>
+    <li class=""><a href="#lubuntu-vm" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="32" height="32" align="TOP" /> Virtual machine</a>
     </li>
-    <li class=""><a href="#service-three" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png"  height="24" align="TOP" /> Update site</a>
+    <li class=""><a href="#update-site" data-toggle="tab"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png"  height="24" align="TOP" /> Update site</a>
     </li>
 </ul>
 <div id="myTabContent" class="tab-content">
 	<!--  ECLIPSE PACKAGE PANE -->
-    <div class="tab-pane fade active in" id="service-one">
+    <div class="tab-pane fade active in" id="eclipse-package">
         <div class="panel panel-default">
   			<div class="panel-heading">Current stable version: {{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</div>
   			<div class="panel-body">
@@ -103,7 +103,7 @@ layout: default
 		</div>
     </div>
     <!--  VIRTUALBOX PANE -->
-    <div class="tab-pane fade" id="service-two">
+    <div class="tab-pane fade" id="lubuntu-vm">
         <div class="panel panel-default">
   			<div class="panel-heading">Current stable version: {{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</div>
   			<div class="panel-body">
@@ -154,7 +154,7 @@ layout: default
 		</div>
     </div>
     <!--  UPDATESITE PANE -->
-    <div class="tab-pane fade" id="service-three">
+    <div class="tab-pane fade" id="update-site">
         <div class="panel panel-default">
   			<div class="panel-heading">Current stable version: {{ last_updatesite.releaseVersion }}  {{ last_updatesite.date  | date: "%Y/%m/%d"}}</div>
   			<div class="panel-body">
