@@ -48,14 +48,14 @@ layout: default
 		        <table class="table table-striped">
 				<tbody>
 					<tr>					
-					<td>GEMOC Studio Eclipse package <br><a title="More details about this version"  href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</a><br/> ({{ last_eclipse_package.eclipsePackageSize }})</td>			
+					<td>GEMOC Studio Eclipse package <br><a title="More details about this version"  href="{{ site.baseurl }}{{ last_eclipse_package.url }}">{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</a><br/> ({{ last_eclipse_package.eclipsePackageSize }})</td>			
 					<td>
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ last_eclipse_package.linux32URL }}">Linux (gtk) 32 Bit</a><br> 
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ last_eclipse_package.linux64URL }}">Linux (gtk) 64 Bit</a><br>
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ last_eclipse_package.macOS64URL }}">Mac OS X (cocoa) 64 Bit</a><br> 
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-win32.win32.x86.zip" href="{{ last_eclipse_package.win32URL }}">Windows 32 Bit</a><br> 
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ last_eclipse_package.win64URL }}">Windows 64 Bit</a><br>
-					<td>{{ last_eclipse_package.excerpt }}<a href="{{ site.baseurl }}/{{ last_eclipse_package.url }}">(Read more)</a></td>
+					<td>{{ last_eclipse_package.excerpt }}<a href="{{ site.baseurl }}{{ last_eclipse_package.url }}">(Read more)</a></td>
 					</tr>
 				</tbody>
 				</table>
@@ -74,10 +74,10 @@ layout: default
 							
 							{% for eclipse_package_post in site.categories.eclipse_package %}
 							<tr>
-							<td><a title="More details about this version"   href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">GEMOC Studio Eclipse package</a><br/> ({{ eclipse_package_post.eclipsePackageSize }})</td>			
+							<td><a title="More details about this version"   href="{{ site.baseurl }}{{ eclipse_package_post.url }}">GEMOC Studio Eclipse package</a><br/> ({{ eclipse_package_post.eclipsePackageSize }})</td>			
 							<td>{{ eclipse_package_post.releaseVersion }} - {{ eclipse_package_post.date  | date: "%Y/%m/%d" }}</td>
 							<td>
-							{{ eclipse_package_post.excerpt }}<a href="{{ site.baseurl }}/{{ eclipse_package_post.url }}">(Read more)</a></td>
+							{{ eclipse_package_post.excerpt }}<a href="{{ site.baseurl }}{{ eclipse_package_post.url }}">(Read more)</a></td>
 							</tr>
 							{% endfor %}
 						</tbody>
@@ -93,7 +93,7 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td><a title="get the latest version from the continuopus integration service" href="https://ci.inria.fr/gemoc/job/gemoc-studio_gemoc_studio/"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" />GEMOC Studio Eclipse package</a></td>			
+					<td><a title="get the latest version from the continuous integration service" href="https://ci.inria.fr/gemoc/job/gemoc-studio_gemoc_studio/"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" />GEMOC Studio Eclipse package</a></td>			
 					<td>Latest nightly build</td>
 					<td>Continuous integration build from git.</td>
 					</tr>
@@ -110,13 +110,13 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td>GEMOC Studio in a VM for VirtualBox <br><a title="More details about this version" href="{{ site.baseurl }}/{{ last_virtualbox.url }}">{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</a></td>			
+					<td>GEMOC Studio in a VM for VirtualBox <br><a title="More details about this version" href="{{ site.baseurl }}{{ last_virtualbox.url }}">{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</a></td>			
 					<td>
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="16" height="16" align="TOP" />
 						<a  title="Lubuntu%2064%20GEMOC.ova" href="{{ last_virtualbox.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a> ({{ last_virtualbox.virtualBoxSize }})  
 					</td>
 					<td><i>{{ last_virtualbox.virtualBoxLoginComment }}</i><br>
-					{{ last_virtualbox.excerpt }}<a href="{{ site.baseurl }}/{{ last_virtualbox.url }}">(Read more)</a></td>
+					{{ last_virtualbox.excerpt }}<a href="{{ site.baseurl }}{{ last_virtualbox.url }}">(Read more)</a></td>
 					</tr>
 				</tbody>
 				</table>
@@ -136,14 +136,14 @@ layout: default
 							{% for virtualbox_post in site.categories.virtualbox %}
 							<tr>
 							<td>VM for VirtualBox <br>
-								<a title="More details about this version" href="{{ site.baseurl }}/{{ virtualbox_post.url }}">{{ virtualbox_post.releaseVersion }} - {{ virtualbox_post.date  | date: "%Y/%m/%d" }}</a> 
+								<a title="More details about this version" href="{{ site.baseurl }}{{ virtualbox_post.url }}">{{ virtualbox_post.releaseVersion }} - {{ virtualbox_post.date  | date: "%Y/%m/%d" }}</a> 
 							</td>			
 							<td><a  title="Lubuntu%2064%20GEMOC.ova ({{ virtualbox_post.virtualBoxSize }})" href="{{ virtualbox_post.virtualBoxURL }}">
 								<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="16" height="16" align="TOP" />
 								Lubuntu 64 GEMOC.ova</a> ({{ virtualbox_post.virtualBoxSize }})
 							</td>
 							<td><i>{{ virtualbox_post.virtualBoxLoginComment }}</i><br>
-							{{ virtualbox_post.excerpt }}<a href="{{ site.baseurl }}/{{ virtualbox_post.url }}">(Read more)</a></td>
+							{{ virtualbox_post.excerpt }}<a href="{{ site.baseurl }}{{ virtualbox_post.url }}">(Read more)</a></td>
 							</tr>
 							{% endfor %}
 						</tbody>
@@ -161,12 +161,12 @@ layout: default
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td>Update site <br><a  title="More details about this version"  href="{{ site.baseurl }}/{{ last_updatesite.url }}">{{ last_updatesite.releaseVersion }} - {{ last_updatesite.date  | date: "%Y/%m/%d" }}</a></td>			
+					<td>Update site <br><a  title="More details about this version"  href="{{ site.baseurl }}{{ last_updatesite.url }}">{{ last_updatesite.releaseVersion }} - {{ last_updatesite.date  | date: "%Y/%m/%d" }}</a></td>			
 					<td>
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png" height="16" align="TOP" />
 						<a title="right click, copy the URL then paste into eclipse" href="{{ last_updatesite.updatesiteURL }}">{{ last_updatesite.updatesiteURL }}</a>   
 					</td>
-					<td>{{ last_updatesite.excerpt }}<a href="{{ site.baseurl }}/{{ last_updatesite.url }}">(Read more)</a></td>
+					<td>{{ last_updatesite.excerpt }}<a href="{{ site.baseurl }}{{ last_updatesite.url }}">(Read more)</a></td>
 					</tr>
 				</tbody>
 				</table>
@@ -188,13 +188,13 @@ layout: default
 								{% for updatesite_post in site.categories.updatesite %}
 								<tr>
 								<td>Update site <br>			
-									<a title="More details about this version" href="{{ site.baseurl }}/{{ updatesite_post.url }}">{{ updatesite_post.releaseVersion }} - {{ updatesite_post.date  | date: "%Y/%m/%d" }}</a></td>
+									<a title="More details about this version" href="{{ site.baseurl }}{{ updatesite_post.url }}">{{ updatesite_post.releaseVersion }} - {{ updatesite_post.date  | date: "%Y/%m/%d" }}</a></td>
 								<td>
 									<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_update_site.png" height="16" align="TOP" />
 									<a title="right click, copy the URL then paste into eclipse"  href="{{ updatesite_post.updatesiteURL }}">{{ updatesite_post.updatesiteURL }}</a>   
 								</td>
 								<td>
-								{{ updatesite_post.excerpt }}<a href="{{ site.baseurl }}/{{ updatesite_post.url }}">(Read more)</a></td>
+								{{ updatesite_post.excerpt }}<a href="{{ site.baseurl }}{{ updatesite_post.url }}">(Read more)</a></td>
 								</tr>
 								{% endfor %}
 							</tbody>
