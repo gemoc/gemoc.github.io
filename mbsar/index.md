@@ -10,8 +10,8 @@ layout: default
             <small>2013-2015</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+            <li><a href="{{ site.baseurl }}/projects.html">Projects</a></li>
             <li class="active">MBSAR</li>
         </ol>
     </div>
