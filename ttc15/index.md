@@ -8,8 +8,6 @@ layout: default
 
 # Ressources
 
-- buy an essay [best college essays](https://essaygoal.com/college-essay-writing-service/) write my research paper for me
-
 - [Description of the use case](https://code.google.com/a/eclipselabs.org/p/moliz/source/browse/?repo=ttc2015)
 
 - [Presentation of the solution using the GEMOC studio](https://hal.inria.fr/hal-01152342)
