@@ -194,9 +194,9 @@ Discover concrete examples of modeling languages created with the GEMOC Studio f
 
         <h4>Related links</h4>
         <ul>
-            <li><a href="https://some.url.here">GitHub</a> (language)</li>
-            <li><a href="https://some.url.here">Github</a> (coordination with ActivityDiagram)</li>
-            <li><a href="https://some.url.here">Github</a> (coordination with SigPML)</li>
+            <li><a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/TFSM">GitHub</a> (language)</li>
+            <li><a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndActivity">Github</a> (coordination with ActivityDiagram)</li>
+            <li><a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/bcool_TFSMAndSigPML">Github</a> (coordination with SigPML)</li>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
