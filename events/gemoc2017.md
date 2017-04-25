@@ -70,7 +70,7 @@ Submitted articles must not have been previously published or currently submitte
 
 ### Submission
 
-Each contribution must not exceed 10 pages in [the LNCS format](http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0) and must be [submitted electronically in pdf format via Easychair](https://easychair.org/conferences/?conf=gemoc20170).
+Each contribution must not exceed 10 pages in [the LNCS format](http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0) and must be [submitted electronically in pdf format via Easychair](https://easychair.org/conferences/?conf=gemoc2017).
 
 In addition, the concrete models referenced in a contribution should be submitted to [ReMoDD](http://www.cs.colostate.edu/remodd/v1/).
 
