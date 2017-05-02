@@ -7,7 +7,6 @@ DEPLOY_REPO="https://${GH_TOKEN}@github.com/gemoc/gemoc.github.io.git"
 function main {
 	clean
 	get_current_site
-	get_discovery_pages
 	build_site
     deploy
 }
@@ -22,10 +21,6 @@ function get_current_site {
 	git clone --depth 1 $DEPLOY_REPO _site
 }
 
-function get_discovery_pages {
-	echo "getting discovery pages"
-	wget -P discovery https://raw.githubusercontent.com/gemoc/gemoc-studio/master/gemoc_studio/discovery/catalog.md
-}
 
 function build_site {
 	echo "building site"
