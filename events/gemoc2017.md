@@ -80,7 +80,7 @@ The accepted papers will be published by CEUR in the workshop proceedings, which
 
 ## Important Dates
 
-- Paper submission deadline: July 17, 2017
+- Paper submission deadline: July 07, 2017
 - Notification of acceptance: July 28, 2017
 - Workshop: October 17, 18, or 19, 2017
 
