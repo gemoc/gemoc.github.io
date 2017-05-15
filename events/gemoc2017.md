@@ -82,13 +82,13 @@ The accepted papers will be published by CEUR in the workshop proceedings, which
 
 - Paper submission deadline: July 07, 2017
 - Notification of acceptance: July 28, 2017
-- Workshop: October 17, 18, or 19, 2017
+- Workshop: September 17, 18, or 19, 2017
 
 ## Committees
 
 ### Organizers ([contact](mailto:gemoc2017@gemoc.org))
 
-- [Frédéric Boulanger](http://www.supelec.fr/359_p_10036/frederic-boulanger.html), CentraleSupélec/LRI, Université Paris-Saclay, France 
+- [Frédéric Boulanger](http://www.supelec.fr/359_p_10036/frederic-boulanger.html), CentraleSupélec/LRI, Université Paris-Saclay, France
 - [Eugene Syriani](http://www-ens.iro.umontreal.ca/~syriani/main.html), University of Montreal, Canada
 - [Andreas Wortmann](www.se-rwth.de/~wortmann), RWTH Aachen University, Germany
 
