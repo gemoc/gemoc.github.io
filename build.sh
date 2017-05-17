@@ -30,8 +30,9 @@ function build_site {
 function deploy {
 	echo "deploying changes"
 
-     if [ -z "$TRAVIS_PULL_REQUEST" ]; then
-         echo "except don't publish site for pull requests"
+     if [ "$TRAVIS_PULL_REQUEST" != "false" ]
+     then
+         echo "Pull request are not deployed"
          exit 0
      fi
 
