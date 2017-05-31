@@ -26,6 +26,10 @@ GEMOC 2017 will provide an open forum for sharing experiences, problems and solu
 
 - tba
 
+## Keynote - Hans Vangheluwe
+
+We're happy to announce that GEMOC 2017 features a keynote by [Hans Vangheluwe](http://msdl.cs.mcgill.ca/people/hv/) of McGill University on Multi-Paradigm Modelling for Cyber-Physical Systems. 
+
 ## Call for Papers / Models
 
 ### Context and Motivation
