@@ -12,7 +12,7 @@ date: September 2017, Austin, TX, USA
 
 ## September 2017, Austin, TX, USA co-located with [MODELS 2017](http://www.modelsconference.org/)
 
-<strong>[About]({{ site.baseurl }}{% link events/gemoc2017.md %}#about-the-workshop) | [Program]({{ site.baseurl }}{% link events/gemoc2017.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2016.md %}#call-for-papers--models) | [Dates]({{ site.baseurl }}{% link events/gemoc2017.md %}#important-dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2017.md %}#committees)</strong>
+<strong>[About]({{ site.baseurl }}{% link events/gemoc2017.md %}#about-the-workshop) | [Program]({{ site.baseurl }}{% link events/gemoc2017.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2017.md %}#call-for-papers--models) | [Dates]({{ site.baseurl }}{% link events/gemoc2017.md %}#important-dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2017.md %}#committees)</strong>
 
 </div>
 
@@ -28,7 +28,7 @@ GEMOC 2017 will provide an open forum for sharing experiences, problems and solu
 
 ## Keynote - Hans Vangheluwe
 
-We're happy to announce that GEMOC 2017 features a keynote by [Hans Vangheluwe](http://msdl.cs.mcgill.ca/people/hv/) of McGill University on Multi-Paradigm Modelling for Cyber-Physical Systems. 
+We're happy to announce that GEMOC 2017 features a keynote by [Hans Vangheluwe](http://msdl.cs.mcgill.ca/people/hv/) of McGill University on Multi-Paradigm Modeling for Cyber-Physical Systems.
 
 ## Call for Papers / Models
 
@@ -36,9 +36,7 @@ We're happy to announce that GEMOC 2017 features a keynote by [Hans Vangheluwe](
 
 Software intensive systems are becoming more complex, driven by the need to integrate multiple concerns. These concerns are usually modeled using different languages, with specific concepts, technologies, and abstraction levels. This multiplication of languages eases the development related to each specific concern but raises language and technology integration problems at the different stages of the software life cycle. In order to reason about the global system, it becomes necessary to explicitly describe the different kinds of relationships that exist between the different languages used in the development of a complex system. To support effective language integration, there is a pressing need to reify and classify these relationships, as well as the language interactions that the relationships enable.
 
-The 2017 edition of the GEMOC workshop will follow the successful previous four editions: [GEMOC at MODELS 2013]({{ site.baseurl }}{% link events/gemoc2013.md %}) in Miami, USA, [GEMOC at MODELS 2014]({{ site.baseurl }}{% link events/gemoc2014.md %}) in Valencia, Spain, [GEMOC at MODELS 2015]({{ site.baseurl }}{% link events/gemoc2015.md %}) in Ottawa, Canada, and [GEMOC at MODELS 2016]({{ site.baseurl }}{% link events/gemoc2016.md %}) in Saint-Malo, France.
-
-The 2017 edition will complete the state-of-the-art and practice initiated during the last years. This edition will also continue to investigate the language interfaces required in the context of the globalization of modeling languages. Additionally, it will study the possible relationships with the viewpoint engineering and the notion of multi-paradigm modeling. It will also strengthen the community that broadens the current DSML research focus beyond the development of independent DSMLs to a research focus that provides support for globalized DSMLs.
+The 2017 edition of the GEMOC workshop will follow the successful previous four editions: [GEMOC at MODELS 2013]({{ site.baseurl }}{% link events/gemoc2013.md %}) in Miami, USA, [GEMOC at MODELS 2014]({{ site.baseurl }}{% link events/gemoc2014.md %}) in Valencia, Spain, [GEMOC at MODELS 2015]({{ site.baseurl }}{% link events/gemoc2015.md %}) in Ottawa, Canada, and [GEMOC at MODELS 2016]({{ site.baseurl }}{% link events/gemoc2016.md %}) in Saint-Malo, France. This edition will complete the state-of-the-art and practice initiated during the last years. This edition will also continue to investigate the language interfaces required in the context of the globalization of modeling languages. Additionally, it will study the possible relationships with the viewpoint engineering and the notion of multi-paradigm modeling. It will also strengthen the community that broadens the current DSML research focus beyond the development of independent DSMLs to a research focus that provides support for globalized DSMLs.
 
 GEMOC 2017 is supported by [the GEMOC initiative]({{ site.baseurl }}/), which promotes research seeking to develop the necessary breakthroughs in software languages to support global software engineering, i.e., breakthroughs that lead to effective technologies supporting different forms of language integration, including language collaboration, interoperability and composability.
 
@@ -86,7 +84,7 @@ The accepted papers will be published by CEUR in the workshop proceedings, which
 
 - Paper submission deadline: July 07, 2017
 - Notification of acceptance: July 28, 2017
-- Workshop: September 17, 18, or 19, 2017
+- Workshop: September 19, 2017
 
 ## Committees
 
@@ -98,4 +96,21 @@ The accepted papers will be published by CEUR in the workshop proceedings, which
 
 ### Program Committee
 
-- tba
+* Marsha Chechik (University of Toronto)
+* Tony Clark (Sheffield Hallam University)
+* Benoit Combemale (IRISA, Université de Rennes 1)
+* Jonathan Corley (University of West Georgia)
+* Julien Deantoni (UNS - I3S - INRIA Sophia Antipolis Mediterranee)
+* Jeff Gray (University of Alabama)
+* Jean-Marc Jézéquel (University of Rennes)
+* Ralf Lämmel (Universität Koblenz-Landau)
+* Marjan Mernik (University of Maribor)
+* Gunter Mussbacher (McGill University)
+* Florian Noyrit (CEA LIST)
+* Richard Paige (University of York)
+* Bernhard Rumpe (RWTH Aachen University)
+* Matthias Schöttle (McGill University)
+* Safouan Taha (CentraleSupélec, LRI)
+* Mark Van Den Brand (Eindhoven University of Technology)
+* Hans Vangheluwe (McGill University)
+* Markus Voelter (Independent)
