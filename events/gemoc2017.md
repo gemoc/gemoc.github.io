@@ -24,7 +24,63 @@ GEMOC 2017 will provide an open forum for sharing experiences, problems and solu
 
 ## Program
 
-- tba
+<table>
+<tr>
+	<td colspan="2"><b>Session 1</b>: 9:00 – 10:30</td>
+</tr>
+<tr>
+	<td width="100em" valign="top">09:00 – 09:15&nbsp;</td>
+	<td>Opening</td>
+</tr>
+<tr>
+	<td valign="top">09:15 - 10:30&nbsp;</td>
+	<td>Keynote <i>Multi-Paradigm Modeling for Cyber-Physical Systems</i> by Hans Vangheluwe</td>
+</tr>
+
+<tr><td colspan="2">&nbsp;</td></tr>
+
+<tr>
+	<td valign="top">10:30 – 11:00&nbsp;</td>
+  <td><i>Coffee Break</i></td>
+</tr>
+
+<tr><td colspan="2">&nbsp;</td></tr>
+
+<tr>
+	<td colspan="2"><b>Session 2</b>: 11:00 – 12:30</td>
+</tr>
+<tr>
+	<td valign="top">11:00 – 11:20&nbsp;</td>
+	<td><i>
+	Bridging Engineering and Formal Modeling: WebGME and Formula Integration
+	</i>
+	by Tamas Kecskes, Qishen Zhang and Janos Sztipanovits
+	</td>
+</tr>
+<tr>
+	<td valign="top">11:20 – 11:40&nbsp;</td>
+	<td><i>
+	CREST - A Continuous, REactive SysTems DSL
+	</i>
+	by Stefan Klikovits, Alban Linard and Didier Buchs
+	</td>
+</tr>
+<tr>
+	<td valign="top">11:40 – 12:00&nbsp;</td>
+	<td><i>
+	Modeling co-simulation : a first experiment
+	</i>
+	by Renan Leroux, Ileana Ober, Marc Pantel and Jean-Michel Bruel
+	</td>
+</tr>
+<tr>
+	<td valign="top">12:00 - 12:30&nbsp;</td>
+	<td><i>
+	Discussion and closing
+	</i>
+	</td>
+</tr>
+</table>
 
 ## Keynote - Hans Vangheluwe
 
