@@ -10,7 +10,7 @@ date: September 2017, Austin, TX, USA
 
 # *The Globalization of Modeling Languages*
 
-## September 2017, Austin, TX, USA co-located with [MODELS 2017](http://www.modelsconference.org/)
+## September 19th, Austin, TX, USA co-located with [MODELS 2017](http://www.modelsconference.org/)
 
 <strong>[About]({{ site.baseurl }}{% link events/gemoc2017.md %}#about-the-workshop) | [Program]({{ site.baseurl }}{% link events/gemoc2017.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2017.md %}#call-for-papers--models) | [Dates]({{ site.baseurl }}{% link events/gemoc2017.md %}#important-dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2017.md %}#committees)</strong>
 
@@ -23,6 +23,8 @@ The increasing complexity of modern software-intensive systems demands for enhan
 GEMOC 2017 will provide an open forum for sharing experiences, problems and solutions on the conjoint use of multiple modeling languages. This workshop will be the place where concrete artifacts, ideas and opinions are exchanged in order to reap constructive feedback. Following the two four editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from *the globalization of modeling languages*; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.
 
 ## Program
+
+The workshop will take place in room Capitol Ballroom H.
 
 <table>
 <tr>
