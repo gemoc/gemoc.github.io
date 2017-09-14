@@ -84,9 +84,20 @@ The workshop will take place in room Capitol Ballroom H.
 </tr>
 </table>
 
-## Keynote - Hans Vangheluwe
+## Keynote
 
 We're happy to announce that GEMOC 2017 features a keynote by [Hans Vangheluwe](http://msdl.cs.mcgill.ca/people/hv/) of McGill University on Multi-Paradigm Modeling for Cyber-Physical Systems.
+
+**Hans Vangheluwe - Co-simulation: Serving Multiple Masters - A Research Agenda**
+
+The relationship between system integrators and their suppliers puts ever increasing demands on modelling and simulation technology. The supplier wants (1) to evaluate, using modelling and simulation, the suitability/optimality of a single component available multiple suppliers and (2) to perform early system integration and evaluation of multiple heterogeneous components developed by different suppliers. The evaluation may cover both functional and non-functional (e.g., safety, energy efficiency) properties. The challenge is to evaluate while keeping supplier IP protected.
+
+In this presentation, different alternative solutions will be investigated, with a particular focus on co-simulation. In co-simulation, suppliers share only pre-compiled components, known as Functional Mockup Units (FMUs).
+The FMUs hide IP, but do expose sufficient information in their API to allow for meaningful orchestrated co-simulation. The current Functional Mockup Interface (FMI) standard defines both a model-simulation solver interface and an interface between the FMU (a model/simulation solver combination) and the context in which it is used.
+FMUs are commonly combined using a "master" simulator which orchestrates the interleaving of the individual simulators. An obvious challenge with pre-compiled components which expose only limited information is to guarantee overall correct simulation results. Correctness ranges from numerical stability to satisfying domain (e.g., physics conservation) laws. At the root of this is the need for compositionality of the components.
+
+The presentation will further explore some research challenges: optimizing overall simulation performance by constructing optimal master algorithms; the combination of multiple modelling formalisms (in particular, continuous-discrete combinations); the inclusion of models at different levels of abstraction in a single FMU; support for dynamic-structure models, including possible changes in computational causality; the introduction of non-deterministic models, to for example model the environment in which a system operates.
+
 
 ## Call for Papers / Models
 
