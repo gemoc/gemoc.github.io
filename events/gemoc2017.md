@@ -36,7 +36,7 @@ The workshop will take place in room Capitol Ballroom H.
 </tr>
 <tr>
 	<td valign="top">09:15 - 10:30&nbsp;</td>
-	<td>Keynote <i>Multi-Paradigm Modeling for Cyber-Physical Systems</i> by Hans Vangheluwe</td>
+	<td>Keynote <i>Hans Vangheluwe - Co-simulation: Serving Multiple Masters - A Research Agenda</i> by Hans Vangheluwe</td>
 </tr>
 
 <tr><td colspan="2">&nbsp;</td></tr>
