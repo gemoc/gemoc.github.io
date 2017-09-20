@@ -229,6 +229,26 @@ The execution is mainly based on the coordination of two sub languages: Mode Aut
 
 ---
 
+<!-- Pacman DSL  -->
+<div class="row">
+    <div class="col-md-8 col-md-push-4">
+        <h3>Pacman DSL {{ page.langSeq }}</h3>
+        <p>The Pacman DSL is a model-based homage to the classic game demonstrating event handling.</p>
+
+        <h4>Related links</h4>
+        <ul>
+            <li><a href="https://github.com/tetrabox/pacman-example">Github page</a></li>
+        </ul>
+    </div>
+	<div class="col-md-4 col-md-pull-8">
+        <a href="gallery/pacman-screenshot.png">
+            <img class="img-responsive img-hover" src="gallery/pacman-screenshot-300x294.png" alt="">
+        </a>
+    </div>
+</div>
+
+---
+
 <div class="alert alert-info" role="alert">
 
 <h4>Your language created with GEMOC is not listed here?</h4>
