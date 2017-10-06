@@ -3,3 +3,4 @@ _site
 .tweet-cache
 /.project
 .bundle/
+/vendor
