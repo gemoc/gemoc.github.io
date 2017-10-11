@@ -20,7 +20,7 @@ exclude: [vendor]
 organization: The GEMOC Initiative
 #placeholderimagesbaseurl: http://placehold.it/
 
-gems: [jekyll-twitter-plugin]
+plugins: [jekyll-twitter-plugin]
 
 # jekyll-scholar configurations
 scholar:
