@@ -14,6 +14,8 @@ date: September 2017, Austin, TX, USA
 
 <strong>[About]({{ site.baseurl }}{% link events/gemoc2017.md %}#about-the-workshop) | [Program]({{ site.baseurl }}{% link events/gemoc2017.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2017.md %}#call-for-papers--models) | [Dates]({{ site.baseurl }}{% link events/gemoc2017.md %}#important-dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2017.md %}#committees)</strong>
 
+## *The proceedings are now online here (http://ceur-ws.org/Vol-2019/)*
+
 </div>
 
 ## About the Workshop
