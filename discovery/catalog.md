@@ -124,6 +124,29 @@ Language coordination operators designed using GEMOC.
 <hr>
 ## Alternative GEMOC based Engines
 Engines and tools proposing alternative approaches (based on GEMOC execution framework)
+<!-- GEMOC Concurrent Engine  -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
+         GEMOC Concurrent Engine </h3>
+        <p>This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare.</p>
+        <p>This component provides the editors and execution engine, as well as wizards helping you to setup your concurrent language projects.
+        <a href="https://github.com/gemoc/concurrency">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.executionengine.ccsljava.repository/target/repository/">https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.executionengine.ccsljava.repository/target/repository/</a></li>  
+            <li><a href="https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/mapping/deployment/org.eclipse.gemoc.moccml.mapping.updatesite/target/repository/">https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/mapping/deployment/org.eclipse.gemoc.moccml.mapping.updatesite/target/repository/</a></li>      
+	    <li><a href="https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/constraint/releng/org.eclipse.gemoc.mocc.p2updatesite/target/repository/">https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/constraint/releng/org.eclipse.gemoc.mocc.p2updatesite/target/repository/</a></li>     
+            <li><a href="http://timesquare.inria.fr/update_site/oxygen">http://timesquare.inria.fr/update_site/oxygen</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <img class="img-responsive img-hover" src="images/gemoc_concurrent_TFSM_animation_screenshot_320x280.png" alt="">        
+    </div>
+</div>
+
+<hr>
 
 <!-- GEMOC xMOF Engine  -->
 <div class="row">    

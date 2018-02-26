@@ -98,6 +98,25 @@
           url="https://github.com/moliz/moliz.xmof"/>
       <id>org.modelexecution.moliz.gemoc.feature</id>
     </components>
+    <components
+        name="GEMOC Concurrent Engine"
+        provider=""
+        description="This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare."
+        license="EPL 1.0"
+        image32="images/IconeGemocLanguagePlusModel-32.png">
+      <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.executionengine.ccsljava.repository/target/repository/</sitesURLS>
+      <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/constraint/releng/org.eclipse.gemoc.mocc.p2updatesite/target/repository/</sitesURLS>
+      <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/mapping/deployment/org.eclipse.gemoc.moccml.mapping.updatesite/target/repository/</sitesURLS>
+      <sitesURLS>http://timesquare.inria.fr/update_site/oxygen</sitesURLS>
+      <overview
+          summary="This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare."
+          screenshot="images/gemoc_concurrent_TFSM_animation_screenshot_320x280.png"
+          url="https://github.com/gemoc/concurrency"/>
+      <id>fr.inria.aoste.timesquare.feature</id>
+      <id>org.eclipse.gemoc.moccml.mapping.feature</id>
+      <id>org.eclipse.gemoc.moccml.constraint.feature</id>
+      <id>org.eclipse.gemoc.executionengine.ccsljava.feature</id>
+    </components>
   </categories>
   <categories
       name="Exhaustive Exploration"
