@@ -104,10 +104,10 @@
         description="This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare."
         license="EPL 1.0"
         image32="images/IconeGemoc_studio-32.png">
-      <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.executionengine.ccsljava.repository/target/repository/</sitesURLS>
       <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/constraint/releng/org.eclipse.gemoc.mocc.p2updatesite/target/repository/</sitesURLS>
       <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/mapping/deployment/org.eclipse.gemoc.moccml.mapping.updatesite/target/repository/</sitesURLS>
       <sitesURLS>http://timesquare.inria.fr/update_site/oxygen</sitesURLS>
+      <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.execution.concurrent.ccsljava.repository/target/repository/</sitesURLS>
       <overview
           summary="This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare."
           screenshot="images/gemoc_concurrent_TFSM_animation_screenshot_320x280.png"
