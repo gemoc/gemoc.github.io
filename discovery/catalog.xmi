@@ -115,7 +115,7 @@
       <id>fr.inria.aoste.timesquare.feature</id>
       <id>org.eclipse.gemoc.moccml.mapping.feature</id>
       <id>org.eclipse.gemoc.moccml.constraint.feature</id>
-      <id>org.eclipse.gemoc.executionengine.ccsljava.feature</id>
+      <id>org.eclipse.gemoc.execution.concurrent.ccsljavaxdsml.feature</id>
     </components>
   </categories>
   <categories
