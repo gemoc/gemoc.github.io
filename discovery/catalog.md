@@ -82,7 +82,7 @@ Languages designed using GEMOC.
 <!-- Markedgraph Language (Concurrent)(Incubation)  -->
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
-        <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
+        <h3><img src="images/IconeGemocLanguage-Concurrent-32.png" alt="">
          Markedgraph Language (Concurrent)(Incubation) <small>by GEMOC</small></h3>
         <p>Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models.</p>
         <p>Deployer that installs the project sources for the Markedgraph Language developped using GEMOC.  This version runs using the GEMOC Concurrent engine. The deployer also provides some sample models. This is the result of the GEMOC tutorial available in the eclipse help.
@@ -127,8 +127,8 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
 <!-- GEMOC Concurrent Engine  -->
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
-        <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
-         GEMOC Concurrent Engine </h3>
+        <h3><img src="images/IconeGemoc_studio-32.png" alt="">
+         GEMOC Concurrent Engine <small>by GEMOC</small></h3>
         <p>This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare.</p>
         <p>This component provides the editors and execution engine, as well as wizards helping you to setup your concurrent language projects.
         <a href="https://github.com/gemoc/concurrency">Learn more</a></p>

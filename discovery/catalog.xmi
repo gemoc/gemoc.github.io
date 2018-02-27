@@ -47,7 +47,7 @@
         description="Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models."
         license="EPL"
         groups="//@filters.0"
-        image32="images/IconeGemocLanguagePlusModel-32.png">
+        image32="images/IconeGemocLanguage-Concurrent-32.png">
       <sitesURLS>https://ci.inria.fr/gemoc/job/Markedgraph_updatesite/lastSuccessfulBuild/artifact/sample/markedgraph/releng/org.gemoc.sample.markedgraph.repository/target/repository/</sitesURLS>
       <overview
           summary="Deployer that installs the project sources for the Markedgraph Language developped using GEMOC.  This version runs using the GEMOC Concurrent engine. The deployer also provides some sample models. This is the result of the GEMOC tutorial available in the eclipse help."
@@ -100,10 +100,10 @@
     </components>
     <components
         name="GEMOC Concurrent Engine"
-        provider=""
+        provider="GEMOC"
         description="This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare."
         license="EPL 1.0"
-        image32="images/IconeGemocLanguagePlusModel-32.png">
+        image32="images/IconeGemoc_studio-32.png">
       <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.executionengine.ccsljava.repository/target/repository/</sitesURLS>
       <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/constraint/releng/org.eclipse.gemoc.mocc.p2updatesite/target/repository/</sitesURLS>
       <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/mapping/deployment/org.eclipse.gemoc.moccml.mapping.updatesite/target/repository/</sitesURLS>
