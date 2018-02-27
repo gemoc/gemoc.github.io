@@ -90,7 +90,7 @@ Discover concrete examples of modeling languages created with the GEMOC Studio f
 
         <h4>Related links</h4>
         <ul>
-            <li><a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/LegacyFSM">Github page</a></li>
+            <li><a href="https://github.com/eclipse/gemoc-studio/tree/master/official_samples/LegacyFSM">Github page</a></li>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
