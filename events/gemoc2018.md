@@ -1,7 +1,7 @@
 ---
 layout: event
 title: GEMOC 2018
-date: October 2018, Copenhagen, Denmark
+date: October 14, 15 or 16 2018, Copenhagen, Denmark
 ---
 
 <div style="text-align: center;" markdown="1">
@@ -86,7 +86,7 @@ The accepted papers will be published by CEUR in the workshop proceedings, which
 
 - Paper submission deadline: July 17, 2018
 - Notification of acceptance: August 17, 2018
-- Workshop: October XX, 2018
+- Workshop: October 14, 15 or 16, 2018
 
 ## Committees
 
