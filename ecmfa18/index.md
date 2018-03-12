@@ -2,12 +2,22 @@
 layout: default
 ---
 
+<link rel="stylesheet" href="{% link ecmfa18/table.css %}">
+
 # Trace Comprehension Operators for Executable DSLs
 
 <div style="text-align: justify;" markdown="1">
 
-
->Recent approaches contribute facilities to breathe life into metamodels, thus making behavioral models directly executable. Such facilities are particularly helpful to better utilize a model over the time dimension, e.g., for early validation and verification. However, when even a small change is made to the model, to the language definition (e.g., , semantic variation points), or to the external stimuli of an execution scenario, it remains difficult for a designer to grasp the impact of such a change on the resulting execution trace. This prevents accessible trade-off analysis and design-space exploration on behavioral models. In this paper, we propose a set of formally defined operators for analyzing execution traces. The operators include dynamic trace filtering, trace comparison with diff computation and visualization, and graph-based view extraction to analyze cycles. The operators are applied and validated on a demonstrative example that highlight their usefulness for the comprehension specific aspects of the underlying traces. 
+> Recent approaches contribute facilities to breathe life into metamodels, thus making behavioral models directly
+> executable. Such facilities are particularly helpful to better utilize a model over the time dimension, e.g., for
+> early validation and verification. However, when even a small change is made to the model, to the language definition
+> (e.g., , semantic variation points), or to the external stimuli of an execution scenario, it remains difficult for a
+> designer to grasp the impact of such a change on the resulting execution trace. This prevents accessible trade-off
+> analysis and design-space exploration on behavioral models. In this paper, we propose a set of formally defined
+> operators for analyzing execution traces. The operators include dynamic trace filtering, trace comparison with diff
+> computation and visualization, and graph-based view extraction to analyze cycles. The operators are applied and
+> validated on a demonstrative example that highlight their usefulness for the comprehension specific aspects of the
+> underlying traces.
 >
 > Dorian Leroy, Erwan Bousse, Anaël Megna, Benoit Combemale, Manuel Wimmer.
 >
@@ -284,3 +294,153 @@ The Consumers' point of view of the model is the following:
 
 Producer-Consumers example model (sub-model focused on the consumers point of view).
 </div>
+
+The `Consumer`s will stay in an `Active` state during the execution. They receive data from the `Producer` through their
+`input` (I) port, and react depending on the `payload` (p) transmitted. If they can evolve in their active state, then
+they will answer an `ack` message to the `Producer`, otherwise the outer transition will fire and they will answer an
+`nack` message.  
+At any moment, if they receive a `stop` message through their `synchro`nisation (S) port, they jump to the their `End`
+state and the execution stops.
+
+Written with the concrete syntax, the behaviour of the first Consumer is the following:
+
+```
+statechart Behaviour init Active {
+
+    composite state Active init S2 {
+
+        state S1 {
+            ...
+        }
+
+        state S2 {
+            internal S2_p_3
+                event data : input?data
+                guard data.p == 3
+                action input!ack()
+
+            transition S2_p_0 -> S1
+                event data : input?data
+                guard data.p == 0
+                action input!ack()
+
+            transition S2_p_2 -> S3
+                event data : input?data
+                guard data.p == 2
+                action input!ack()
+        }
+
+        state S3 {
+            ...
+        }
+
+        internal P
+            event input?data
+            action input!nack()
+
+        transition S -> End
+            event synchro?stop
+    }
+
+    final state End {}
+}
+```
+
+Step by step, the execution of this model proceeds as follows:
+
+- Execution starts, `Producer` enters in his `Produce` state and all the `Consumers` enter in their `Active` state in
+  substate `S2`;
+- `Producer` fires transition `A`: sends `data(1)` through port `output`, increments `data_index` to `1`, and finally
+  jumps in state `Wait`;
+- `Consumer1` fires transition `P`: sends `nack()` through port `input` and stay in state `Active.S2`;
+- `Consumer2` fires transition `S2_p_1`: sends `ack()` through port `input` and stay in state `Active.S2`;
+- `Consumer3` fires transition `S2_p_1`: sends `ack()` through port `input` and jumps to state `Active.S1`;
+- `Producer` fires transition `C`: increments `consumer_nack` and stay in state `Wait`,  
+  then, fires transition `B`: increments `consumer_ack` and stay in state `Wait`,
+  and then, fires transition `D`: jumps into state `Produce`;
+- etc.
+
+The full execution trace counts 47 states and each one contains 17 dynamic properties (if we only consider those which
+have at least one change during the execution), which is, even for this very little model, not really user-friendly to
+read.
+
+<div class="table-responsive" markdown="1">
+
+| Dynamic Properties             | 0    | 1   | 2      | 3      | 4      | 5       | 6     | 7   | 8   | 9      | 10     | 11     | 12      | 13    | 14  | 15  | 16     | 17     | 18     | 19      | 20    | 21  | 22  | 23     | 24     | 25     | 26      | 27    | 28  | 29  | 30     | 31     | 32     | 33      | 34    | 35  | 36  | 37     | 38     | 39     | 40      | 41    | 42  | 43  | 44   | 45   | 46   |
+|--------------------------------|------|-----|--------|--------|--------|---------|-------|-----|-----|--------|--------|--------|---------|-------|-----|-----|--------|--------|--------|---------|-------|-----|-----|--------|--------|--------|---------|-------|-----|-----|--------|--------|--------|---------|-------|-----|-----|--------|--------|--------|---------|-------|-----|-----|------|------|------|
+| Provider.current_state         | null | P   | W      | W      | W      | W       | W     | W   | P   | W      | W      | W      | W       | W     | W   | P   | W      | W      | W      | W       | W     | W   | P   | W      | W      | W      | W       | W     | W   | P   | W      | W      | W      | W       | W     | W   | P   | W      | W      | W      | W       | W     | W   | Er  | Er   | Er   | Er   |
+| Provider.data_index            | null | 0   | 1      | 1      | 1      | 1       | 1     | 1   | 1   | 2      | 2      | 2      | 2       | 2     | 2   | 2   | 3      | 3      | 3      | 3       | 3     | 3   | 3   | 4      | 4      | 4      | 4       | 4     | 4   | 4   | 5      | 5      | 5      | 5       | 5     | 5   | 5   | 6      | 6      | 6      | 6       | 6     | 6   | 6   | 6    | 6    | 6    |
+| Provider.consumer_ack          | null | 0   | 0      | 0      | 0      | 0       | 0     | 1   | 1   | 0      | 0      | 0      | 0       | 1     | 1   | 1   | 0      | 0      | 0      | 0       | 1     | 2   | 2   | 0      | 0      | 0      | 0       | 1     | 2   | 2   | 0      | 0      | 0      | 0       | 0     | 1   | 1   | 0      | 0      | 0      | 0       | 0     | 0   | 0   | 0    | 0    | 0    |
+| Provider.consumer_nack         | null | 0   | 0      | 0      | 0      | 0       | 1     | 1   | 1   | 0      | 0      | 0      | 0       | 0     | 1   | 1   | 0      | 0      | 0      | 0       | 0     | 0   | 0   | 0      | 0      | 0      | 0       | 0     | 0   | 0   | 0      | 0      | 0      | 0       | 1     | 1   | 1   | 0      | 0      | 0      | 0       | 1     | 2   | 2   | 2    | 2    | 2    |
+| Provider.output.messages       | null | [ ] | [ ]    | [n]    | [n,a]  | [n,a,a] | [a,a] | [a] | [ ] | [ ]    | [a]    | [a,n]  | [a,n,a] | [n,a] | [a] | [ ] | [ ]    | [a]    | [a,a]  | [a,a,a] | [a,a] | [a] | [ ] | [ ]    | [a]    | [a,a]  | [a,a,n] | [a,n] | [n] | [ ] | [ ]    | [n]    | [n,a]  | [n,a,a] | [a,a] | [a] | [ ] | [ ]    | [n]    | [n,n]  | [n,n,n] | [n,n] | [n] | [ ] | [ ]  | [ ]  | [ ]  |
+| Consumer1.current_state        | null | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | E    | E    | E    |
+| Consumer1.Active.current_state | null | S2  | S2     | S2     | S2     | S2      | S2    | S2  | S2  | S2     | S2     | S2     | S2      | S2    | S2  | S2  | S2     | S3     | S3     | S3      | S3    | S3  | S3  | S3     | S3     | S3     | S3      | S3    | S3  | S3  | S3     | S3     | S3     | S3      | S3    | S3  | S3  | S3     | S3     | S3     | S3      | S3    | S3  | S3  | null | null | null |
+| Consumer1.input.messages       | null | [ ] | [d(1)] | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(3)] | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(2)] | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(2)] | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(0)] | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(0)] | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]  | [ ]  | [ ]  |
+| Consumer1.synchro.messages     | null | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [s] | [ ]  | [ ]  | [ ]  |
+| Consumer2.current_state        | null | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A    | E    | E    |
+| Consumer2.Active.current_state | null | S2  | S2     | S2     | S2     | S2      | S2    | S2  | S2  | S2     | S2     | S2     | S2      | S2    | S2  | S2  | S2     | S2     | S1     | S1      | S1    | S1  | S1  | S1     | S1     | S2     | S2      | S2    | S2  | S2  | S2     | S2     | S3     | S3      | S3    | S3  | S3  | S3     | S3     | S3     | S3      | S3    | S3  | S3  | S3   | null | null |
+| Consumer2.input.messages       | null | [ ] | [d(1)] | [d(1)] | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(3)] | [d(3)] | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(2)] | [d(2)] | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(2)] | [d(2)] | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(0)] | [d(0)] | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [d(0)] | [d(0)] | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]  | [ ]  | [ ]  |
+| Consumer2.synchro.messages     | null | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [s] | [s]  | [ ]  | [ ]  |
+| Consumer3.current_state        | null | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A      | A      | A      | A       | A     | A   | A   | A    | A    | E    |
+| Consumer3.Active.current_state | null | S2  | S2     | S2     | S2     | S1      | S1    | S1  | S1  | S1     | S1     | S1     | S2      | S2    | S2  | S2  | S2     | S2     | S2     | S3      | S3    | S3  | S3  | S3     | S3     | S3     | S3      | S3    | S3  | S3  | S3     | S3     | S3     | S2      | S2    | S2  | S2  | S2     | S2     | S2     | S2      | S2    | S2  | S2  | S2   | S2   | null |
+| Consumer3.input.messages       | null | [ ] | [d(1)] | [d(1)] | [d(1)] | [ ]     | [ ]   | [ ] | [ ] | [d(3)] | [d(3)] | [d(3)] | [ ]     | [ ]   | [ ] | [ ] | [d(2)] | [d(2)] | [d(2)] | [ ]     | [ ]   | [ ] | [ ] | [d(2)] | [d(2)] | [d(2)] | [ ]     | [ ]   | [ ] | [ ] | [d(0)] | [d(0)] | [d(0)] | [ ]     | [ ]   | [ ] | [ ] | [d(0)] | [d(0)] | [d(0)] | [ ]     | [ ]   | [ ] | [ ] | [ ]  | [ ]  | [ ]  |
+| Consumer3.synchro.messages     | null | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [ ] | [ ]    | [ ]    | [ ]    | [ ]     | [ ]   | [ ] | [s] | [s]  | [s]  | [ ]  |
+
+</div>
+
+In order to get something interesting out of this lot of information, we can *filter* the dimension of the trace.  
+For instance, keeping only the set of information composed of the `Producer.current_state` and `Active.current_state`
+from all the `Consumer`s, we would be able to observe the effect of the number sequence in the `data_list` of the
+`Producer` on the whole model.
+
+<div class="table-responsive" markdown="1">
+
+| Dynamic Properties             | 0    | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44   | 45   | 46   |
+|--------------------------------|------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|------|------|------|
+| Provider.current_state         | null | P  | W  | W  | W  | W  | W  | W  | P  | W  | W  | W  | W  | W  | W  | P  | W  | W  | W  | W  | W  | W  | P  | W  | W  | W  | W  | W  | W  | P  | W  | W  | W  | W  | W  | W  | P  | W  | W  | W  | W  | W  | W  | Er | Er   | Er   | Er   |
+| Consumer1.Active.current_state | null | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | null | null | null |
+| Consumer2.Active.current_state | null | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S1 | S1 | S1 | S1 | S1 | S1 | S1 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3   | null | null |
+| Consumer3.Active.current_state | null | S2 | S2 | S2 | S2 | S1 | S1 | S1 | S1 | S1 | S1 | S1 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2   | S2   | null |
+
+</div>
+
+Now that we have the subset of dimensions, we can *reduce* the trace by merging the states that are similar and
+neighboring together.
+
+<div class="table-responsive" markdown="1">
+
+| Dynamic Properties             | 0    | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22   | 23   | 24   |
+|--------------------------------|------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|------|------|------|
+| Provider.current_state         | null | P  | W  | W  | P  | W  | W  | P  | W  | W  | W  | W  | P  | W  | W  | P  | W  | W  | W  | P  | W  | Er | Er   | Er   | Er   |
+| Consumer1.Active.current_state | null | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | null | null | null |
+| Consumer2.Active.current_state | null | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S2 | S1 | S1 | S1 | S1 | S2 | S2 | S2 | S3 | S3 | S3 | S3 | S3 | S3   | null | null |
+| Consumer3.Active.current_state | null | S2 | S2 | S1 | S1 | S1 | S2 | S2 | S2 | S2 | S2 | S3 | S3 | S3 | S3 | S3 | S3 | S3 | S2 | S2 | S2 | S2 | S2   | S2   | null |
+
+</div>
+
+Some of the states that we obtained after *filtering* and *reducing* are similar but not next to each other. We can,
+thanks to the *graph* operator, observe what are the equivalences and how they interfere.
+
+Just for comprehension, we put here the result of the computation of the equivalence classes.
+
+<div class="table-responsive" markdown="1">
+
+| Equivalence Class | 0   | 1      | 2         | 3      | 4   | 5   | 6    | 7        | 8    | 9        | 10   | 11   | 12       | 13   | 14   | 15   | 16   | 17   |
+|-------------------|:---:|:------:|:---------:|:------:|:---:|:---:|:----:|:--------:|:----:|:--------:|:----:|:----:|:--------:|:----:|:----:|:----:|:----:|:----:|
+| Associated States | (0) | (1, 7) | (2, 6, 8) | (3, 5) | (4) | (9) | (10) | (11, 13) | (12) | (14, 16) | (15) | (17) | (18, 20) | (19) | (21) | (22) | (23) | (24) |
+
+</div>
+
+The *graph* operator will produce a graph similar to the following one, we arrange it to better comprehend and interpret
+what happened during the execution.
+
+<div style="text-align: center;" markdown="1">
+[![Producer-Consumers example graph]({{ site.baseurl }}{% link ecmfa18/producer_graph.png %})]({{ site.baseurl }}{% link ecmfa18/producer_graph.png %})
+
+Result of the *graph* operator applied on the *filtered* and *reduced* execution trace.
+</div>
+
+With this view, we can understand two things:
+- starting from the initial state, sending data sequence `[1, 3]` will loop and will not modifiy the state of the system
+  composed of the three consumers (at least, their current state); and
+- the minimal sequence that brought the system in a error state is, starting from the initial state, `[2, 2, 0, 0]`.
