@@ -2,42 +2,66 @@
 layout: default
 ---
 
-# Execution Trace Comprehension for xDSLs
+# Trace Comprehension Operators for Executable DSLs
 
 <div style="text-align: justify;" markdown="1">
-> Recent approaches bring facilities to breathe life into metamodels, thus making conforming behavioral models
-> executable. This is particularly helpful to better appreciate a model over the time dimension, e.g., for early
-> validation and verification. However, when even a small change is made to the model, to the language definition
-> (e.g., semantic variation points) or to the considered execution scenario, it remains difficult for a designer to
-> grasp the impact of such change on the resulting execution trace. This prevents accessible trade-off analysis and
-> design-space exploration on behavioral models. In this paper, we propose a set of sound facilities for analyzing
-> execution traces, based on a generic execution trace metamodel valid for any language definition. The facilities
-> include dynamic information filtering, trace comparison with diff computation and visualization, and graph-based views
-> extraction to analyze cycles. The facilities are experimented and validated on specific use cases that highlight their
-> added value for the comprehension of the underlying execution traces.
+
+
+>Recent approaches contribute facilities to breathe life into metamodels, thus making behavioral models directly executable. Such facilities are particularly helpful to better utilize a model over the time dimension, e.g., for early validation and verification. However, when even a small change is made to the model, to the language definition (e.g., , semantic variation points), or to the external stimuli of an execution scenario, it remains difficult for a designer to grasp the impact of such a change on the resulting execution trace. This prevents accessible trade-off analysis and design-space exploration on behavioral models. In this paper, we propose a set of formally defined operators for analyzing execution traces. The operators include dynamic trace filtering, trace comparison with diff computation and visualization, and graph-based view extraction to analyze cycles. The operators are applied and validated on a demonstrative example that highlight their usefulness for the comprehension specific aspects of the underlying traces. 
 >
-> “Execution Trace Comprehension for xDSLs”
+> Dorian Leroy, Erwan Bousse, Anaël Megna, Benoit Combemale, Manuel Wimmer.
 >
-> Dorian Leroy, Anaël Megna, Erwan Bousse, Benoit Combemale, Manuel Wimmer.
->
-> Research Paper Submission to the 14th European Conference on Modelling Foundations and Applications (ECMFA 2018)
+> *Research Paper Submission to the 14th European Conference on Modelling Foundations and Applications (ECMFA 2018)*
 </div>
 
 This page presents the application and the validation of the four operators and their approach presented in our
 submission to the 14th European Conference on Modelling Foundations and Applications (ECMFA 2018).
 
-In our submission, we motivated and illustrated the approaches through a very simple example based on simple UML
-State Machines with history states (implementation available [here](https://github.com/tetrabox/examples-behavioral-interface/tree/master/languages/statemachines)).
+
+
+## Tool support presentation
+
+As explained in the paper, we implemented our approach as a tool provided inside the GEMOC Studio, an Eclipse-based language and modeling workbench to design executable DSLs and execute conforming models.
+
+Here is a sample of the graphical interface of the tool when comparing two State Machine execution traces:
+
+<div style="text-align: center;" markdown="1">
+![](screenshot-compare-filtering.png)
+</div>
+
+We can see:
+- at the top, the two execution traces being compared, the first with seven states and the second with eight states
+- the result of the *Compare* operator shows us that the second trace has one extra state, shown in red, as compared to the first trace
+- at the bottom, two pairs of dimensions are shown (one for `Region1`, one for `Region2`), with one dimension per trace in each pair, enabling the comparison per dimension
+- on the left, checkboxes are available to trigger at the same time the *Filter* and *Reduce* operators
+
+From there, if we use the checkboxes to filter out the `Region2` dimension using *Filter* and *Reduce*, we obtain this simplified trace:
+
+<div style="text-align: center;" markdown="1">
+![](screenshot-filtering-reduce-after.png)
+</div>
+
+We notice that:
+- there are only five execution states remaining
+- the *Compare* operator does not find any difference anymore between the traces.
+
+
+## State Machines DSL implementation
+
+The implementation of the State Machine DSL presented in the paper [is available on Github](https://github.com/tetrabox/examples-behavioral-interface/tree/master/languages/statemachines), and can be used as an executable DSL in the GEMOC Studio.
+
+## ThingML demonstrative example presentation
+
+In our submission, we motivated and illustrated the approach using an example based on simple UML
+State Machines with history states.
 Here, we will focus on a larger xDSML initially based on
 [ThingML](http://thingml.org/) to validate the application of our tooling, through relatively small models but which can
 scale very easily (by just increasing the number of consumers or clients, see below) and with a behaviour that is
 difficult to predict or anticipate.
 
-## ThingML presentation
-
 ThingML (for Thing Modeling Language) is a modeling language for describing distributed systems. It is used in embedded
 systems and is oriented towards the description of components (the things) and the way they communicate between each
-other.  
+other.
 The models written in ThingML, through a text editor (standalone, or embedded in Eclipse thanks to Xtext), can be
 compiled to a large set of target platform like Arduino, C, C++, Java, Android, Javascript, etc.
 
