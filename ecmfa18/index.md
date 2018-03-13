@@ -27,7 +27,8 @@ This page presents the application and the validation of the four operators and 
 submission to the 14th European Conference on Modelling Foundations and Applications (ECMFA 2018).
 
 In our submission, we motivated and illustrated the approaches through a very simple example based on simple UML
-State Machines with history states. Here, we will focus on a larger xDSML initially based on
+State Machines with history states (implementation available [here](https://github.com/tetrabox/examples-behavioral-interface/tree/master/languages/statemachines)).
+Here, we will focus on a larger xDSML initially based on
 [ThingML](http://thingml.org/) to validate the application of our tooling, through relatively small models but which can
 scale very easily (by just increasing the number of consumers or clients, see below) and with a behaviour that is
 difficult to predict or anticipate.
