@@ -22,8 +22,21 @@ submission to the 14th European Conference on Modelling Foundations and Applicat
 ## Tool support presentation
 
 As explained in the paper, we implemented our approach as a tool provided inside the GEMOC Studio, an Eclipse-based language and modeling workbench to design executable DSLs and execute conforming models.
+The implementation of the State Machine DSL presented in the paper [is available on Github](https://github.com/tetrabox/examples-behavioral-interface/tree/master/languages/statemachines), and can be used as an executable DSL in the GEMOC Studio.
 
-Here is a sample of the graphical interface of the tool when comparing two State Machine execution traces:
+Here is a screenshot of the GEMOC Studio when executing a State Machine model with trace construction and state graph visualization:
+
+<div style="text-align: center;" markdown="1">
+![](screenshot-global-annotated.svg)
+</div>
+
+We can see:
+- at the left, the executed model in a tree representation
+- at the bottom, the recorded execution trace is shown with sixteen states and three dimensions
+- in the middle, a representation of the state graph obtained using the *Graph* operator is shown, with three different cycles highlighted using different colors
+
+
+Now here is a sample of the graphical interface of the tool when comparing two State Machine execution traces:
 
 <div style="text-align: center;" markdown="1">
 ![](screenshot-compare-filtering.png)
@@ -44,11 +57,6 @@ From there, if we use the checkboxes to filter out the `Region2` dimension using
 We notice that:
 - there are only five execution states remaining
 - the *Compare* operator does not find any difference anymore between the traces.
-
-
-## State Machines DSL implementation
-
-The implementation of the State Machine DSL presented in the paper [is available on Github](https://github.com/tetrabox/examples-behavioral-interface/tree/master/languages/statemachines), and can be used as an executable DSL in the GEMOC Studio.
 
 ## ThingML demonstrative example presentation
 
