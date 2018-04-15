@@ -35,10 +35,7 @@ TBA
 
 ### Context and Motivation
 
-
-
 Software intensive systems are becoming more complex, driven by the need to integrate across multiple concerns. Consequently, the development of such systems requires the integration of different concerns and skills. These concerns are usually covered by different languages, with specific concepts, technologies and abstraction levels. This multiplication of languages eases the development related to one specific concern but raises language and technology integration problems at the different stages of the software life cycle. In order to reason about the global system, it becomes necessary to explicitly describe the different kinds of relationships that exist between the different languages used in the development of a complex system. To support effective language integration, there is a pressing need to reify and classify these relationships, as well as the language interactions that the relationships enable. 
-
 
 The 2018 edition of the GEMOC workshop will follow the successful previous five editions: [GEMOC at MODELS 2013]({{ site.baseurl }}{% link events/gemoc2013.md %}) in Miami, USA, [GEMOC at MODELS 2014]({{ site.baseurl }}{% link events/gemoc2014.md %}) in Valencia, Spain, [GEMOC at MODELS 2015]({{ site.baseurl }}{% link events/gemoc2015.md %}) in Ottawa, Canada, [GEMOC at MODELS 2016]({{ site.baseurl }}{% link events/gemoc2016.md %}) in Saint-Malo, France, and [GEMOC at MODELS 2017]({{ site.baseurl }}{% link events/gemoc2017.md %}) in Austin, TX, USA.
 This edition will complete the state-of-the-art and practice initiated during the last years. 
@@ -49,6 +46,12 @@ It will also strengthen the community that broadens the current DSML research fo
 
 
 GEMOC 2018 is supported by [the GEMOC initiative]({{ site.baseurl }}/) and its associated Eclipse Research consortium, which promotes research seeking to develop the necessary breakthroughs in software languages to support global software engineering, i.e., breakthroughs that lead to effective technologies supporting different forms of language integration, including language collaboration, interoperability and composability.
+
+### Workshop Format
+
+The format of the workshop reflects the goals of the workshop: constructive feedback on submitted papers and other artifacts on the conjoint use of different modeling languages, collaborations, and community building. The format of the workshop is that of a working meeting. Hence, there is less focus on presentations and more focus on producing and documenting a research content that identifies challenges, different forms of language integration, and relates existing solutions.
+ 
+The workshop consists of a morning session in which a keynote and short presentations of the accepted papers will be given. A significant amount of time will be reserved for discussing each paper and their relations to each other. The afternoon session is devoted to a working session dedicated to open discussions of the presented contributions and other topics suggested by the participants. The closing session is dedicated to develop a plan to publish the results of the discussion in a final workshop report.
 
 
 ### Topics
@@ -66,19 +69,12 @@ The topics of interest for GEMOC 2018 include:
 
 Submissions describing practical and industrial experience related to the use of heterogeneous modeling languages are also encouraged, particularly in the following application domains:
 
-<!--
 - Cyber-Physical Systems, System of Systems
 - Internet of Services, Internet of Things
 - Complex Adaptive Systems
 - Smart City, Smart Building, Home automation
 - Smart Grids, management of renewable and intermittent energy sources
 - Industry 4.0 and the smart factory of the future
--->
-
-- Cyber-Physical Systems, System of Systems
-- Internet of Services, Internet of Things
-- Complex Adaptive Systems
-- Smart City, Smart Building, Home automation
 
 ### Types of Contributions
 
@@ -94,16 +90,15 @@ Submitted articles must not have been previously published or currently submitte
 
 ### Submission
 
-Each contribution must not exceed 10 pages in [the LNCS format](http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0) and must be [submitted electronically in pdf format via Easychair](https://easychair.org/conferences/?conf=gemoc2018).
-
-In addition, the concrete models referenced in a contribution should be submitted to [ReMoDD](http://www.cs.colostate.edu/remodd/v1/).
+Each contribution must not exceed 5 pages for short papers and 10 pages for full papers in [the LNCS format](http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/conferences/?conf=gemoc2018).
 
 ### Publication
 
-The accepted papers will be published by CEUR in the workshop proceedings, which is indexed by DBLP. Moreover, the models will be published on ReMoDD. Also, participants will be strongly encouraged to participate in preparing the workshop report.
+The accepted papers will be published by CEUR in the workshop proceedings. Also, participants will be strongly encouraged to participate in preparing the workshop report.
 
 ## Important Dates
 
+- Abstract submission deadline: July 10, 2018
 - Paper submission deadline: July 17, 2018
 - Notification of acceptance: August 17, 2018
 - Workshop: October 14, 15 or 16, 2018
