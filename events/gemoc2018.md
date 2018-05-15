@@ -113,4 +113,15 @@ The accepted papers will be published by CEUR in the workshop proceedings. Also,
 
 ### Program Committee
 
-TBA
+- Frédéric Boulanger (CentraleSupélec)
+- Eugene Syriani (University of Montreal)
+- Julien Deantoni (UNS - I3S - INRIA Sophia Antipolis Mediterranee)
+- Jonathan Corley (University of West Georgia)
+- Mark Van Den Brand (Eindhoven University of Technology)
+- Bernhard Rumpe (RWTH Aachen University)
+- Richard Paige (University of York)
+- Tony Clark (Sheffield Hallam University)
+- Marsha Chechik (University of Toronto)
+- Andreas Wortmann RWTH (Aachen University)
+- Tanja Mayerhofer (TU Wien)
+- Marjan Mernik (University of Maribor)
