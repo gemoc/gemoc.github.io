@@ -80,7 +80,7 @@ Submissions describing practical and industrial experience related to the use of
 
 As contributions, we expect early research results about the aforementioned topics, descriptions of case studies on the coordinated use of multiple modeling languages, and/or descriptions of practical experience, opinions and related approaches.
 
-Each contribution must be described in a short paper not exceeding 5 pages in the LNCS format, or a full paper not exceeding 10 pages in the LNCS format. Each paper should describe problems, case studies, or solutions related to the topics of interest. Each paper is expected to highlight the relationships between modeling languages, as well as their management.
+Each contribution must be described in a short paper not exceeding 3 pages in the ACM sigconf format, or a full paper not exceeding 6 pages in the ACM sigconf format. Each paper should describe problems, case studies, or solutions related to the topics of interest. Each paper is expected to highlight the relationships between modeling languages, as well as their management.
 
 Papers that describe use cases, or novel integration approaches can be accompanied by concrete artifacts, such as models (requirements, design, analysis, transformation, composition, etc.), stored in a public repository (e.g., [ReMoDD](http://www.cs.colostate.edu/remodd/v1/)). Artifacts should illustrate any experience on the conjoint use of different modeling languages.
 
