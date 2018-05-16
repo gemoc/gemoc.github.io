@@ -109,7 +109,7 @@ The accepted papers will be published by CEUR in the workshop proceedings. Also,
 
 - [Erwan Bousse](http://people.irisa.fr/Erwan.Bousse/), TU Wien, Austria
 - [Benoit Combemale](http://combemale.fr), University of Toulouse, France
-- [Jeff Gray](http://gray.cs.ua.edu/), University of Alabaman USA
+- [Jeff Gray](http://gray.cs.ua.edu/), University of Alabama, USA
 
 ### Program Committee
 
