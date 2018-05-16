@@ -1,7 +1,7 @@
 ---
 layout: event
 title: GEMOC 2018
-date: October 14, 15 or 16 2018, Copenhagen, Denmark
+date: October 15, 2018, Copenhagen, Denmark
 ---
 
 <div style="text-align: center;" markdown="1">
@@ -10,7 +10,7 @@ date: October 14, 15 or 16 2018, Copenhagen, Denmark
 
 # *The Globalization of Modeling Languages*
 
-## October 14, 15 or 16th, Copenhagen, Denmark, co-located with [MODELS 2018](http://www.modelsconference.org/)
+## October 15, Copenhagen, Denmark, co-located with [MODELS 2018](http://www.modelsconference.org/)
 
 <strong>[About]({{ site.baseurl }}{% link events/gemoc2018.md %}#about-the-workshop) | [Program]({{ site.baseurl }}{% link events/gemoc2018.md %}#program) | [Call]({{ site.baseurl }}{% link events/gemoc2018.md %}#call-for-papers--models) | [Dates]({{ site.baseurl }}{% link events/gemoc2018.md %}#important-dates) | [Committees]({{ site.baseurl }}{% link events/gemoc2018.md %}#committees)</strong>
 
@@ -90,7 +90,7 @@ Submitted articles must not have been previously published or currently submitte
 
 ### Submission
 
-Each contribution must not exceed 5 pages for short papers and 10 pages for full papers in [the LNCS format](http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/conferences/?conf=gemoc2018).
+Each contribution must not exceed 3 pages for short papers and 8 pages for full papers in [the ACM sigconf](https://www.acm.org/publications/proceedings-template), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/conferences/?conf=gemoc2018).
 
 ### Publication
 
@@ -101,7 +101,7 @@ The accepted papers will be published by CEUR in the workshop proceedings. Also,
 - Abstract submission deadline: July 10, 2018
 - Paper submission deadline: July 17, 2018
 - Notification of acceptance: August 17, 2018
-- Workshop: October 14, 15 or 16, 2018
+- Workshop: October 15, 2018
 
 ## Committees
 
