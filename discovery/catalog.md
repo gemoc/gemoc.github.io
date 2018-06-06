@@ -167,6 +167,26 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
     </div>
 </div>
 
+<!-- ALE Engine -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/modeling32.png" alt="">
+          ALE Engine<small>by Inria and Obeo</small></h3>
+        <p>This engine allows to define the execution semantics of languages with Action Language for EMF (ALE).</p>
+        <p>Ale is a language to define behaviors on the top of Ecore models. It is intended to be distributed in EcoreTools and will be an alternative to K3. It has its own GEMOC engine support.
+        <a href="http://gemoc.org/ale-lang/">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/">https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/</a></li> 
+            <li><a href="https://ci.inria.fr/gemoc/job/gemoc-studio-ale-execution/lastSuccessfulBuild/artifact/releng/org.eclipse.gemoc.ale.engine.updatesite/target/repository/</a></li>           
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <!-- <img class="img-responsive img-hover" src="images/tesl-screenshot-320x240.png" alt=""> -->        
+    </div>
+</div>
+
 <hr>
 ## Exhaustive Exploration
 Tools for Exhaustive Exploration.
@@ -222,24 +242,6 @@ Modeling environment tools.
 ## Alternative Tools
 Engines and tools proposing alternative approaches (may not directly use GEMOC execution framework)
 
-<!-- ALE  -->
-<div class="row">    
-    <div class="col-md-8 col-md-push-4">    	
-        <h3><img src="images/modeling32.png" alt="">
-          ALE <small>by Inria and Obeo</small></h3>
-        <p>Action Language for EMF.</p>
-        <p>Ale is a language to define behaviors on the top of Ecore models. It is intended to be distributed in EcoreTools and will be an alternative to K3.
-        <a href="http://gemoc.org/ale-lang/">Learn more</a></p>
-
-        <h4>Update site</h4>
-        <ul>
-            <li><a href="https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/">https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/</a></li>            
-        </ul>
-    </div>
-    <div class="col-md-4 col-md-pull-8">
-        <!-- <img class="img-responsive img-hover" src="images/tesl-screenshot-320x240.png" alt=""> -->        
-    </div>
-</div>
 
 <!-- TESL Engine and Editor  -->
 <div class="row">    
