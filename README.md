@@ -30,3 +30,9 @@ Serve the site on port 4000 on the local machine. Dependencies are installed and
 ```bash
 $ docker run -it --rm -p 4000:4000 -v "$(pwd):/srv/jekyll" --volume=$PWD/vendor/bundle:/usr/local/bundle jekyll/jekyll:latest bash -c "bundle update ; bundle install ; jekyll s"
 ```
+
+## Publications
+
+Integrating a new paper to the http://gemoc.org/publications.html can be done by adding bib references to ./publications/gemoc.bib
+
+If you are running a local development server, the publications page should be updated at runtime, so reloading the page on a browser should return an up to date page.
