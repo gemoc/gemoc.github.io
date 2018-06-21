@@ -21,3 +21,6 @@ For better transparency and replicability, this website provides
 - a [sanitized list of the 222 included publications](./data/included.xlsx),
 
 We hope that this data supports better comprehension of the systematic mapping study and of its results.
+
+The paper is available from
+- Wortmann, A., Combemale, B., and Barais, O. 2017. [A Systematic Mapping Study on Modeling for Industry 4.0](https://www.computer.org/csdl/proceedings/models/2017/3492/00/3492a281-abs.html). ACM/IEEE 20th International Conference on Model Driven Engineering Languages and Systems (MODELS). IEEE, 2017.
