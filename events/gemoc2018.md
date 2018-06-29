@@ -29,7 +29,7 @@ TBA
 
 ## Keynote
 
-TBA
+The keynote will be given by [Mark van den Brand](https://www.tue.nl/en/research/researchers/mark-van-den-brand/). Title and abstract TBA.
 
 ## Call for Papers / Models
 
