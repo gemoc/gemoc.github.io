@@ -29,7 +29,9 @@ TBA
 
 ## Keynote
 
-The keynote will be given by [Mark van den Brand](https://www.tue.nl/en/research/researchers/mark-van-den-brand/). Title and abstract TBA.
+The keynote will be given by [Mark van den Brand](https://www.tue.nl/en/research/researchers/mark-van-den-brand/).
+
+Title: *"Model Driven Software Engineering creates the legacy of tomorrow"*
 
 ## Call for Papers / Models
 
