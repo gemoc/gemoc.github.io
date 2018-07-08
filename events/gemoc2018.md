@@ -31,7 +31,9 @@ TBA
 
 The keynote will be given by [Mark van den Brand](https://www.tue.nl/en/research/researchers/mark-van-den-brand/).
 
-Title: *"Model Driven Software Engineering creates the legacy of tomorrow"*
+Title: *"Model Driven Software Engineering creates tomorrow’s legacy"*
+
+Abstract: [PDF version](gemoc2018-keynote-abstract.pdf)
 
 ## Call for Papers / Models
 
