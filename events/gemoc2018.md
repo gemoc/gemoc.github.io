@@ -191,7 +191,7 @@ Submitted articles must not have been previously published or currently submitte
 
 ### Submission
 
-Each contribution must not exceed 3 pages for short papers and 8 pages for full papers in [the ACM sigconf](https://www.acm.org/publications/proceedings-template), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/conferences/?conf=gemoc2018).
+Each contribution must not exceed 3 pages for short papers and 6 pages for full papers in [the ACM sigconf](https://www.acm.org/publications/proceedings-template), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/conferences/?conf=gemoc2018).
 
 ### Publication
 
