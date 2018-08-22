@@ -4,6 +4,12 @@ title: GEMOC 2018
 date: October 15, 2018, Copenhagen, Denmark
 ---
 
+<style type="text/css">
+  ul li ul {
+    margin-top: 0;
+  }
+</style>
+
 <div style="text-align: center;" markdown="1">
 
 # 6th International Workshop on
@@ -25,7 +31,34 @@ GEMOC 2018 will provide an open forum for sharing experiences, problems and solu
 
 ## Program
 
-TBA
+### Session 1 (9:00–10:30)
+
+* **09:00–09:15** Opening
+* **09:15–10:30** [Keynote by Mark van den Brand](#keynote)
+
+### Coffee break (10:30–11:00)
+
+### Session 2 (10:30–12:30)
+
+* **11:00–12:30** Paper presentations #1
+	- *Model Consistency ensured by Metamodel Integration* (Johannes Meier and Andreas Winter)
+	- *A Common Integrated Framework for Heterogeneous Modeling Services* (Anastasia Mavridou, Tamas Kecskes, Qishen Zhang and Janos Sztipanovits)
+	- *Tool-Support of Socio-Technical Coordination in the Context of Heterogeneous Modeling* (Francis Bordeleau, Benoit Combemale, Romina Eramo, Mark van den Brand and Manuel Wimmer)
+
+### Lunch break (12:30–14:00)
+
+### Session 3 (14:00–15:30)
+
+* **14:00–15:00** Paper presentations #2
+	- *CPS simulation models categories in Extended Enterprises* (Renan Leroux, Marc Pantel, Ileana Ober and Jean-Michel Bruel)
+	- *Adding a HenshinEngine to GEMOC Studio: An experience report* (Steffen Zschaler)
+* **15:00–15:30** Organization of the discussion
+
+### Coffee break (15:30–16:00)
+
+### Session 4 (16:00–17:30)
+
+* **16:00–17:30** Discussion
 
 ## Keynote
 
