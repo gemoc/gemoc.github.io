@@ -51,7 +51,7 @@ GEMOC 2018 will provide an open forum for sharing experiences, problems and solu
 
 * **14:00–15:00** Paper presentations #2
 	- *CPS simulation models categories in Extended Enterprises* (Renan Leroux, Marc Pantel, Ileana Ober and Jean-Michel Bruel)
-	- *Adding a HenshinEngine to GEMOC Studio: An experience report* (Steffen Zschaler)
+	- *Adding a HenshinEngine to GEMOC Studio: An experience report* (Steffen Zschaler) [[slides](http://gemoc.org/pub/20181015-GEMOC18/gemoc18-zschaler-slides.pdf)]
 * **15:00–15:30** Organization of the discussion
 
 ### Coffee break (15:30–16:00)
