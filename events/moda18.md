@@ -14,6 +14,8 @@ date: December 19, 2018, Rennes, France
 
 # Workshop on Model and Data: Duality and Complementarity
 
+</div>
+
 ## About the Workshop
 
 While the use of models has a longstanding history in software engineering practices, the use of data (open data, run time data, etc.) becomes more and more prevalent in modern practices thanks to their availability, advances in data processing techniques, and the availability of resources on demand (e.g., cloud infrastructures). From existing search-based approaches to advanced predictive methods such as machine learning, the duality and complementarity of data and models appear more and more apparent in the various phases of software lifecycles. Not only restricted to empirical studies for scientific purposes, but such practices also open many opportunities in the development of future software systems for exploiting real data or engineering expertise as part of the whole software lifecycle. This includes smart recommendations at requirement and design time (which is edition runtime), advanced feedback loop based on seamless and continuous DevOps activities, and new development paradigm incorporating predictive models to implement smart systems relying on informed decisions.
