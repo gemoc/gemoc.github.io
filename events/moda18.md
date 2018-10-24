@@ -25,7 +25,7 @@ We expect the workshop to be highly interactive and open-minded, with the main o
 ## Tentative Program
 
 * **09:00–09:15** Welcome coffee
-* **09:15–09:30** Introduction: context and practical info (Benoit C.)
+* **09:15–09:30** Introduction: context and practical info (Benoit)
 * **09:30–10:00** Research work @ diverse about data/model (Benoit)
 * **10:00–10:30** Research work @ som about data/model (Jordi)
 * **10:30–11:00** Research work @ big about data/model (Manuel)
