@@ -34,7 +34,7 @@ GEMOC 2018 will provide an open forum for sharing experiences, problems and solu
 ### Session 1 (9:00–10:30)
 
 * **09:00–09:15** Opening
-* **09:15–10:30** [Keynote by Mark van den Brand](#keynote)
+* **09:15–10:30** [Keynote by Mark van den Brand](#keynote) [[slides](/pub/20181015-GEMOC18/slides0.pdf)]
 
 ### Coffee break (10:30–11:00)
 
@@ -42,8 +42,11 @@ GEMOC 2018 will provide an open forum for sharing experiences, problems and solu
 
 * **11:00–12:30** Paper presentations #1
 	- *Model Consistency ensured by Metamodel Integration* (Johannes Meier and Andreas Winter)
+  [[paper](/pub/20181015-GEMOC18/paper1.pdf), [slides](/pub/20181015-GEMOC18/slides1.pdf)]
 	- *A Common Integrated Framework for Heterogeneous Modeling Services* (Anastasia Mavridou, Tamas Kecskes, Qishen Zhang and Janos Sztipanovits)
+  [[paper](/pub/20181015-GEMOC18/paper2.pdf), [slides](/pub/20181015-GEMOC18/slides2.pdf)]
 	- *Tool-Support of Socio-Technical Coordination in the Context of Heterogeneous Modeling* (Francis Bordeleau, Benoit Combemale, Romina Eramo, Mark van den Brand and Manuel Wimmer)
+  [[paper](/pub/20181015-GEMOC18/paper3.pdf), [slides](/pub/20181015-GEMOC18/slides3.pdf)]
 
 ### Lunch break (12:30–14:00)
 
@@ -51,7 +54,9 @@ GEMOC 2018 will provide an open forum for sharing experiences, problems and solu
 
 * **14:00–15:00** Paper presentations #2
 	- *CPS simulation models categories in Extended Enterprises* (Renan Leroux, Marc Pantel, Ileana Ober and Jean-Michel Bruel)
-	- *Adding a HenshinEngine to GEMOC Studio: An experience report* (Steffen Zschaler) [[slides](http://gemoc.org/pub/20181015-GEMOC18/gemoc18-zschaler-slides.pdf)]
+  [[paper](/pub/20181015-GEMOC18/paper4.pdf), [slides](/pub/20181015-GEMOC18/slides4.pdf)]
+	- *Adding a HenshinEngine to GEMOC Studio: An experience report* (Steffen Zschaler)
+  [[paper](/pub/20181015-GEMOC18/paper5.pdf), [slides](/pub/20181015-GEMOC18/slides5.pdf)]
 * **15:00–15:30** Organization of the discussion
 
 ### Coffee break (15:30–16:00)
@@ -74,7 +79,7 @@ The keynote will be given by [Mark van den Brand](https://www.tue.nl/en/research
 				</div>
 		  		<div id="allstablepackages" class="panel-collapse collapse">
 		  			<div class="panel-body">
-		
+
 
 
 
@@ -155,11 +160,11 @@ The keynote will be given by [Mark van den Brand](https://www.tue.nl/en/research
  and models. These are just a few of the challenges that we are
  facing. If we are able to make this happen then we might have
  a silver bullet after all and the promised increase in quality and
- productivity can be realized.</p> 
+ productivity can be realized.</p>
 
 
 		  			</div>
-		  			
+
 				</div>
 			</div>
 		</div>
@@ -169,12 +174,12 @@ The keynote will be given by [Mark van den Brand](https://www.tue.nl/en/research
 
 ### Context and Motivation
 
-Software intensive systems are becoming more complex, driven by the need to integrate across multiple concerns. Consequently, the development of such systems requires the integration of different concerns and skills. These concerns are usually covered by different languages, with specific concepts, technologies and abstraction levels. This multiplication of languages eases the development related to one specific concern but raises language and technology integration problems at the different stages of the software life cycle. In order to reason about the global system, it becomes necessary to explicitly describe the different kinds of relationships that exist between the different languages used in the development of a complex system. To support effective language integration, there is a pressing need to reify and classify these relationships, as well as the language interactions that the relationships enable. 
+Software intensive systems are becoming more complex, driven by the need to integrate across multiple concerns. Consequently, the development of such systems requires the integration of different concerns and skills. These concerns are usually covered by different languages, with specific concepts, technologies and abstraction levels. This multiplication of languages eases the development related to one specific concern but raises language and technology integration problems at the different stages of the software life cycle. In order to reason about the global system, it becomes necessary to explicitly describe the different kinds of relationships that exist between the different languages used in the development of a complex system. To support effective language integration, there is a pressing need to reify and classify these relationships, as well as the language interactions that the relationships enable.
 
 The 2018 edition of the GEMOC workshop will follow the successful previous five editions: [GEMOC at MODELS 2013]({{ site.baseurl }}{% link events/gemoc2013.md %}) in Miami, USA, [GEMOC at MODELS 2014]({{ site.baseurl }}{% link events/gemoc2014.md %}) in Valencia, Spain, [GEMOC at MODELS 2015]({{ site.baseurl }}{% link events/gemoc2015.md %}) in Ottawa, Canada, [GEMOC at MODELS 2016]({{ site.baseurl }}{% link events/gemoc2016.md %}) in Saint-Malo, France, and [GEMOC at MODELS 2017]({{ site.baseurl }}{% link events/gemoc2017.md %}) in Austin, TX, USA.
-This edition will complete the state-of-the-art and practice initiated during the last years. 
+This edition will complete the state-of-the-art and practice initiated during the last years.
 <!--
-This edition will also continue to investigate the language interfaces required in the context of the globalization of modeling languages. Additionally, it will study the possible relationships with the viewpoint engineering and the notion of multi-paradigm modeling. 
+This edition will also continue to investigate the language interfaces required in the context of the globalization of modeling languages. Additionally, it will study the possible relationships with the viewpoint engineering and the notion of multi-paradigm modeling.
 -->
 It will also strengthen the community that broadens the current DSML research focus beyond the development of independent DSMLs to a research focus that provides support for globalized DSMLs.
 
@@ -184,7 +189,7 @@ GEMOC 2018 is supported by [the GEMOC initiative]({{ site.baseurl }}/) and its 
 ### Workshop Format
 
 The format of the workshop reflects the goals of the workshop: constructive feedback on submitted papers and other artifacts on the conjoint use of different modeling languages, collaborations, and community building. The format of the workshop is that of a working meeting. Hence, there is less focus on presentations and more focus on producing and documenting a research content that identifies challenges, different forms of language integration, and relates existing solutions.
- 
+
 The workshop consists of a morning session in which a keynote and short presentations of the accepted papers will be given. A significant amount of time will be reserved for discussing each paper and their relations to each other. The afternoon session is devoted to a working session dedicated to open discussions of the presented contributions and other topics suggested by the participants. The closing session is dedicated to develop a plan to publish the results of the discussion in a final workshop report.
 
 
