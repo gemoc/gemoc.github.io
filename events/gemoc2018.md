@@ -2,6 +2,27 @@
 layout: event
 title: GEMOC 2018
 date: October 15, 2018, Copenhagen, Denmark
+
+photos:
+  - url: /pub/20181015-GEMOC18/gemoc-group-cropped.jpg
+    image_path: /pub/20181015-GEMOC18/gemoc-group-cropped.jpg
+  - url: /pub/20181015-GEMOC18/20181015_092023.jpg
+    image_path: /pub/20181015-GEMOC18/20181015_092023.jpg
+  - url: /pub/20181015-GEMOC18/20181015_092146.jpg
+    image_path: /pub/20181015-GEMOC18/20181015_092146.jpg
+  - url: /pub/20181015-GEMOC18/20181015_110429.jpg
+    image_path: /pub/20181015-GEMOC18/20181015_110429.jpg
+  - url: /pub/20181015-GEMOC18/20181015_114256.jpg
+    image_path: /pub/20181015-GEMOC18/20181015_114256.jpg
+  - url: /pub/20181015-GEMOC18/20181015_115801.jpg
+    image_path: /pub/20181015-GEMOC18/20181015_115801.jpg
+  - url: /pub/20181015-GEMOC18/20181015_140337.jpg
+    image_path: /pub/20181015-GEMOC18/20181015_140337.jpg
+  - url: /pub/20181015-GEMOC18/20181015_153101.jpg
+    image_path: /pub/20181015-GEMOC18/20181015_153101.jpg
+  - url: /pub/20181015-GEMOC18/20181015_162143.jpg
+    image_path: /pub/20181015-GEMOC18/20181015_162143.jpg
+
 ---
 
 <style type="text/css">
@@ -23,6 +44,9 @@ date: October 15, 2018, Copenhagen, Denmark
 
 </div>
 
+{% include gallery id="photos" %}
+
+
 ## About the Workshop
 
 The increasing complexity of modern software-intensive systems demands for enhanced software engineering methods. Separation of concerns of the diverse stakeholders' facilitates the coordinated development of system aspects implementing these concerns. These different concerns are often associated with specialized description languages and technologies, which are based on concern-specific problems and solution concepts. Hence, software developers are faced with the challenging task of integrating the different languages and associated technologies used to produce software artifacts in the different concern spaces. GEMOC 2018 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the *globalization of modeling languages*; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.
@@ -34,7 +58,7 @@ GEMOC 2018 will provide an open forum for sharing experiences, problems and solu
 ### Session 1 (9:00–10:30)
 
 * **09:00–09:15** Opening
-* **09:15–10:30** [Keynote by Mark van den Brand](#keynote) [[slides](/pub/20181015-GEMOC18/slides0.pdf)]
+* **09:15–10:30** [Keynote by Mark van den Brand](#keynote) [[abstract](/pub/20181015-GEMOC18/keynote-abstract.pdf), [slides](/pub/20181015-GEMOC18/slides0.pdf)]
 
 ### Coffee break (10:30–11:00)
 
