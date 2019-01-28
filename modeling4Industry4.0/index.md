@@ -13,14 +13,26 @@ Industry 4.0 is a term coined 2011 at Hannover fair as the fourth industrial rev
 
 - “connected, intelligent products that communicate with users, new digital business models that harness collected data to offer additional services and as-a-service products, products on the assembly line that tell shop floor machinery how they are to be processed. The core of Industry 4.0 is highly intelligent connected systems that create a fully digital value chain, the 4th industrial revolution enabled by the Industrial Internet of Things." ([Accenture](https://www.accenture.com/us-en/digital-industry-index))
 
-We aim to characterize the state of the art of Model-Based Systems Engineering for the smart factory through a [systematic mapping study](http://robertfeldt.net/publications/petersen_ease08_sysmap_studies_in_se.pdf) on this topic. Adopting a detailed search strategy over multiple digital libraries, 1467 papers were initially identified as possibly relevant. Of these, 222 papers were selected and categorized using a particular classification scheme. In the study, we present the concerns addressed by modeling community for Industry 4.0, how these are investigated, where these are published, and by whom. The resulting research landscape can help to understand, guide, and compare research in this field. In particular, this paper identifies the Industry 4.0 challenges addressed  by the modeling community but also the challenges that seems to be less investigated.
+We aim to characterize the state of the art of Model-Based Systems Engineering for the smart factory through a [systematic mapping study](http://robertfeldt.net/publications/petersen_ease08_sysmap_studies_in_se.pdf) on this topic. Adopting a detailed search strategy over multiple digital libraries, 1467 papers -- published until February 2017 -- were initially identified as possibly relevant. Of these, 222 papers were selected and categorized using a particular classification scheme. In the study, we present the concerns addressed by modeling community for Industry 4.0, how these are investigated, where these are published, and by whom. The resulting research landscape can help to understand, guide, and compare research in this field. In particular, this paper identifies the Industry 4.0 challenges addressed  by the modeling community but also the challenges that seems to be less investigated.
 
 For better transparency and replicability, this website provides
 
-- a list of the [initial 1467 publications](./data/allpapers.xlsx), and
-- a [sanitized list of the 222 included publications](./data/included.xlsx),
+- a list of the [initial 1467 publications](./data/2017-corpus.xlsx) and
+- a [sanitized list of the 222 included publications](./data/2017-included.xlsx),
 
 We hope that this data supports better comprehension of the systematic mapping study and of its results.
 
 The paper is available from
 - Wortmann, A., Combemale, B., and Barais, O. 2017. [A Systematic Mapping Study on Modeling for Industry 4.0](https://www.computer.org/csdl/proceedings/models/2017/3492/00/3492a281-abs.html). ACM/IEEE 20th International Conference on Model Driven Engineering Languages and Systems (MODELS). IEEE, 2017.
+
+# 2018 Mapping Study Update
+
+We updated the study to include results until March 2018. For this update, we reviewed XXX additional publications out of which 120 were included in the mapping study. Please find the added publications below as 
+
+* a list of the [XXX](./data/2018-additional-corpus.xlsx) additionally reviewed publications and
+* a [sanitized list of the YYY additionally included publications](./data/2018-additionally-included.xlsx),
+
+For your convenience, this website also provides the complete data in two spreadsheets as 
+
+* a list of the [total XXX reviewed publications](./data/2018-total-corpus.xlsx) and
+* a [sanitized list of the total YYY included publications](./data/2018-total-included.xlsx),
