@@ -29,10 +29,10 @@ The paper is available from
 
 We updated the study to include results until March 2018. For this update, we reviewed XXX additional publications out of which 120 were included in the mapping study. Please find the added publications below as 
 
-* a list of the [XXX](./data/2018-additional-corpus.xlsx) additionally reviewed publications and
-* a [sanitized list of the YYY additionally included publications](./data/2018-additionally-included.xlsx),
+* a list of the [834](./data/2018-additional-corpus.xlsx) additionally reviewed publications and
+* a [sanitized list of the 118 additionally included publications](./data/2018-additionally-included.xlsx),
 
 For your convenience, this website also provides the complete data in two spreadsheets as 
 
-* a list of the [total XXX reviewed publications](./data/2018-total-corpus.xlsx) and
-* a [sanitized list of the total YYY included publications](./data/2018-total-included.xlsx),
+* a list of the [total 2301 reviewed publications](./data/2018-total-corpus.xlsx) and
+* a [sanitized list of the total 340 included publications](./data/2018-total-included.xlsx),
