@@ -17,8 +17,8 @@ We aim to characterize the state of the art of Model-Based Systems Engineering f
 
 For better transparency and replicability, this website provides
 
-- a list of the [initial 1467 publications](./data/2017-corpus.xlsx) and
-- a [sanitized list of the 222 included publications](./data/2017-included.xlsx),
+- a list of the [initial 1466 publications](./data/2017-corpus.xlsx) and
+- a [sanitized list of the 222 included publications](./data/2017-included.xlsx).
 
 We hope that this data supports better comprehension of the systematic mapping study and of its results.
 
@@ -27,12 +27,12 @@ The paper is available from
 
 # 2018 Mapping Study Update
 
-We updated the study to include results until March 2018. For this update, we reviewed XXX additional publications out of which 120 were included in the mapping study. Please find the added publications below as 
+We updated the study to include results until March 2018. For this update, we considered 834 additional publications out of which 118 were included in the mapping study. Please find the added publications below as 
 
 * a list of the [834](./data/2018-additional-corpus.xlsx) additionally reviewed publications and
-* a [sanitized list of the 118 additionally included publications](./data/2018-additionally-included.xlsx),
+* a [sanitized list of the 118 additionally included publications](./data/2018-additionally-included.xlsx).
 
 For your convenience, this website also provides the complete data in two spreadsheets as 
 
 * a list of the [total 2301 reviewed publications](./data/2018-total-corpus.xlsx) and
-* a [sanitized list of the total 340 included publications](./data/2018-total-included.xlsx),
+* a [sanitized list of the total 340 included publications](./data/2018-total-included.xlsx).
