@@ -34,5 +34,5 @@ We updated the study to include results until March 2018. For this update, we co
 
 For your convenience, this website also provides the complete data in two spreadsheets as 
 
-* a list of the [total 2301 reviewed publications](./data/2018-total-corpus.xlsx) and
+* a list of the [total 2300 reviewed publications](./data/2018-total-corpus.xlsx) and
 * a [sanitized list of the total 340 included publications](./data/2018-total-included.xlsx).
