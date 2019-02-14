@@ -27,7 +27,7 @@ The paper is available from
 
 # 2018 Mapping Study Update
 
-We updated the study to include results until March 2018. For this update, we considered 294 additional publications out of which 131 were included in the mapping study. Below you find the updated data sets:
+We updated the study to include results until March 2018. For this update, we investigated 813 additional publications out of which 131 were included in the mapping study. Below you find the updated data sets:
 
-- a list of the [total 2300 investigated publications](./data/2018-corpus.xlsx) and
+- a list of the [total 2279 investigated publications](./data/2018-corpus.xlsx) and
 - a [sanitized list of the total 353 included publications](./data/2018-included.xlsx).
