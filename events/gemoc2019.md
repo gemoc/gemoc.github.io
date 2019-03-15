@@ -37,7 +37,7 @@ GEMOC 2018 will provide an open forum for sharing experiences, problems and solu
 ### Session 1 (9:00–10:30)
 
 * **09:00–09:15** Opening
-* **09:15–10:30** [Keynote by XXX](#keynote) [[abstract](/pub/201909XX-GEMOC19/keynote-abstract.pdf), [slides](/pub/201909XX-GEMOC19/xxx.pdf)]
+* **09:15–10:30** [Keynote by XXX](#keynote) [[abstract](/pub/201909XX-GEMOC19/ToAppear.pdf), [slides](/pub/201909XX-GEMOC19/xxx.pdf)]
 
 ### Coffee break (10:30–11:00)
 
@@ -51,7 +51,7 @@ GEMOC 2018 will provide an open forum for sharing experiences, problems and solu
 
 * **14:00–15:00** Paper presentations #2
 	
-* **15:00–15:30** Organization of the discussion
+* **15:00–15:30** Collaborative Organization of the discussion
 
 ### Coffee break (15:30–16:00)
 
@@ -93,7 +93,7 @@ TBA
 
 Software intensive systems are becoming more complex, driven by the need to integrate across multiple concerns. Consequently, the development of such systems requires the integration of different concerns and skills. These concerns are usually covered by different languages, with specific concepts, technologies and abstraction levels. This multiplication of languages eases the development related to one specific concern but raises language and technology integration problems at the different stages of the software life cycle. In order to reason about the global system, it becomes necessary to explicitly describe the different kinds of relationships that exist between the different languages used in the development of a complex system. To support effective language integration, there is a pressing need to reify and classify these relationships, as well as the language interactions that the relationships enable.
 
-The 2018 edition of the GEMOC workshop will follow the successful previous five editions: [GEMOC at MODELS 2013]({{ site.baseurl }}{% link events/gemoc2013.md %}) in Miami, USA, [GEMOC at MODELS 2014]({{ site.baseurl }}{% link events/gemoc2014.md %}) in Valencia, Spain, [GEMOC at MODELS 2015]({{ site.baseurl }}{% link events/gemoc2015.md %}) in Ottawa, Canada, [GEMOC at MODELS 2016]({{ site.baseurl }}{% link events/gemoc2016.md %}) in Saint-Malo, France, and [GEMOC at MODELS 2017]({{ site.baseurl }}{% link events/gemoc2017.md %}) in Austin, TX, USA.
+The 2019 edition of the GEMOC workshop will follow the successful previous six editions: [GEMOC at MODELS 2013]({{ site.baseurl }}{% link events/gemoc2013.md %}) in Miami, USA, [GEMOC at MODELS 2014]({{ site.baseurl }}{% link events/gemoc2014.md %}) in Valencia, Spain, [GEMOC at MODELS 2015]({{ site.baseurl }}{% link events/gemoc2015.md %}) in Ottawa, Canada, [GEMOC at MODELS 2016]({{ site.baseurl }}{% link events/gemoc2016.md %}) in Saint-Malo, France, [GEMOC at MODELS 2017]({{ site.baseurl }}{% link events/gemoc2017.md %}) in Austin, TX, USA and [GEMOC at MODELS 2018]({{ site.baseurl }}{% link events/gemoc2018.md %}) in Copenhagen, DK.
 This edition will complete the state-of-the-art and practice initiated during the last years.
 <!--
 This edition will also continue to investigate the language interfaces required in the context of the globalization of modeling languages. Additionally, it will study the possible relationships with the viewpoint engineering and the notion of multi-paradigm modeling.
@@ -101,7 +101,7 @@ This edition will also continue to investigate the language interfaces required 
 It will also strengthen the community that broadens the current DSML research focus beyond the development of independent DSMLs to a research focus that provides support for globalized DSMLs.
 
 
-GEMOC 2018 is supported by [the GEMOC initiative]({{ site.baseurl }}/) and its associated Eclipse Research consortium, which promotes research seeking to develop the necessary breakthroughs in software languages to support global software engineering, i.e., breakthroughs that lead to effective technologies supporting different forms of language integration, including language collaboration, interoperability and composability.
+GEMOC 2019 is supported by [the GEMOC initiative]({{ site.baseurl }}/) and its associated Eclipse Research consortium, which promotes research seeking to develop the necessary breakthroughs in software languages to support global software engineering, i.e., breakthroughs that lead to effective technologies supporting different forms of language integration, including language collaboration, interoperability and composability.
 
 ### Workshop Format
 
@@ -112,7 +112,7 @@ The workshop consists of a morning session in which a keynote and short presenta
 
 ### Topics
 
-The topics of interest for GEMOC 2018 include:
+The topics of interest for GEMOC 2019 include (but are not limited to):
 
 - Tools and methods for engineering modeling languages
 - Composability and interoperability of heterogeneous modeling languages
@@ -146,7 +146,7 @@ Submitted articles must not have been previously published or currently submitte
 
 ### Submission
 
-Each contribution must not exceed 3 pages for short papers and 6 pages for full papers in [the ACM sigconf](https://www.acm.org/publications/proceedings-template), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/conferences/?conf=gemoc2018).
+Each contribution must not exceed 5 pages for short papers and 10 pages for full papers in [the ACM sigconf](https://www.acm.org/publications/proceedings-template), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/conferences/?conf=gemoc2018).
 
 ### Publication
 
@@ -154,17 +154,17 @@ The accepted papers will be published by CEUR in the workshop proceedings. Also,
 
 ## Important Dates
 
-- Abstract submission deadline: July 10, 2018
-- Paper submission deadline: July 17, 2018
-- Notification of acceptance: August 17, 2018
-- Workshop: October 15, 2018
+- Abstract submission deadline: July 10, 2019
+- Paper submission deadline: July 17, 2019
+- Notification of acceptance: August 17, 2019
+- Workshop: October 15, 2019
 
 ## Committees
 
 ### Organizers ([contact](mailto:gemoc2018@gemoc.org))
 
 - [Romina Eramo](xxx), Univ. L'alquila, Italy
-- [Julien Deantoni](http://combemale.fr), Univ. Nice, France
+- [Julien Deantoni](http://i3s.unice.fr/~deantoni), Univ. Nice, France
 
 ### Program Committee
 
