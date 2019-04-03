@@ -49,3 +49,4 @@ were included into the mapping study. Below you find the updated data sets:
 
 - a list of the [total 2275 investigated publications](./data/2018-corpus.xlsx) and
 - a [sanitized list of the total 348 included publications](./data/2018-included.xlsx).
+
