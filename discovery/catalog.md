@@ -82,7 +82,7 @@ Languages designed using GEMOC.
 <!-- Markedgraph Language (Concurrent)(Incubation)  -->
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
-        <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
+        <h3><img src="images/IconeGemocLanguage-Concurrent-32.png" alt="">
          Markedgraph Language (Concurrent)(Incubation) <small>by GEMOC</small></h3>
         <p>Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models.</p>
         <p>Deployer that installs the project sources for the Markedgraph Language developped using GEMOC.  This version runs using the GEMOC Concurrent engine. The deployer also provides some sample models. This is the result of the GEMOC tutorial available in the eclipse help.
@@ -124,6 +124,29 @@ Language coordination operators designed using GEMOC.
 <hr>
 ## Alternative GEMOC based Engines
 Engines and tools proposing alternative approaches (based on GEMOC execution framework)
+<!-- GEMOC Concurrent Engine  -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/IconeGemoc_studio-32.png" alt="">
+         GEMOC Concurrent Engine <small>by GEMOC</small></h3>
+        <p>This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare.</p>
+        <p>This component provides the editors and execution engine, as well as wizards helping you to setup your concurrent language projects.
+        <a href="https://github.com/gemoc/concurrency">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.execution.concurrent.ccsljava.repository/target/repository/">https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.execution.concurrent.ccsljava.repository/target/repository/</a></li>  
+            <li><a href="https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/mapping/deployment/org.eclipse.gemoc.moccml.mapping.updatesite/target/repository/">https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/mapping/deployment/org.eclipse.gemoc.moccml.mapping.updatesite/target/repository/</a></li>      
+	    <li><a href="https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/constraint/releng/org.eclipse.gemoc.mocc.p2updatesite/target/repository/">https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/constraint/releng/org.eclipse.gemoc.mocc.p2updatesite/target/repository/</a></li>     
+            <li><a href="http://timesquare.inria.fr/update_site/oxygen">http://timesquare.inria.fr/update_site/oxygen</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <img class="img-responsive img-hover" src="images/gemoc_concurrent_TFSM_animation_screenshot_320x280.png" alt="">        
+    </div>
+</div>
+
+<hr>
 
 <!-- GEMOC xMOF Engine  -->
 <div class="row">    
@@ -141,6 +164,26 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/xmof-figure-320x240.png" alt="">        
+    </div>
+</div>
+
+<!-- ALE Engine -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/modeling32.png" alt="">
+          ALE Engine<small>by Inria and Obeo</small></h3>
+        <p>This engine allows to define the execution semantics of languages with Action Language for EMF (ALE).</p>
+        <p>Ale is a language to define behaviors on the top of Ecore models. It is intended to be distributed in EcoreTools and will be an alternative to K3. It has its own GEMOC engine support.
+        <a href="http://gemoc.org/ale-lang/">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/">https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/</a></li> 
+            <li><a href="https://ci.inria.fr/gemoc/job/gemoc-studio-ale-execution/lastSuccessfulBuild/artifact/releng/org.eclipse.gemoc.ale.engine.updatesite/target/repository/</a></li>           
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <!-- <img class="img-responsive img-hover" src="images/tesl-screenshot-320x240.png" alt=""> -->        
     </div>
 </div>
 
@@ -199,24 +242,6 @@ Modeling environment tools.
 ## Alternative Tools
 Engines and tools proposing alternative approaches (may not directly use GEMOC execution framework)
 
-<!-- ALE  -->
-<div class="row">    
-    <div class="col-md-8 col-md-push-4">    	
-        <h3><img src="images/modeling32.png" alt="">
-          ALE <small>by Inria and Obeo</small></h3>
-        <p>Action Language for EMF.</p>
-        <p>Ale is a language to define behaviors on the top of Ecore models. It is intended to be distributed in EcoreTools and will be an alternative to K3.
-        <a href="http://gemoc.org/ale-lang/">Learn more</a></p>
-
-        <h4>Update site</h4>
-        <ul>
-            <li><a href="https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/">https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/</a></li>            
-        </ul>
-    </div>
-    <div class="col-md-4 col-md-pull-8">
-        <!-- <img class="img-responsive img-hover" src="images/tesl-screenshot-320x240.png" alt=""> -->        
-    </div>
-</div>
 
 <!-- TESL Engine and Editor  -->
 <div class="row">    

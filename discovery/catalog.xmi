@@ -47,7 +47,7 @@
         description="Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models."
         license="EPL"
         groups="//@filters.0"
-        image32="images/IconeGemocLanguagePlusModel-32.png">
+        image32="images/IconeGemocLanguage-Concurrent-32.png">
       <sitesURLS>https://ci.inria.fr/gemoc/job/Markedgraph_updatesite/lastSuccessfulBuild/artifact/sample/markedgraph/releng/org.gemoc.sample.markedgraph.repository/target/repository/</sitesURLS>
       <overview
           summary="Deployer that installs the project sources for the Markedgraph Language developped using GEMOC.  This version runs using the GEMOC Concurrent engine. The deployer also provides some sample models. This is the result of the GEMOC tutorial available in the eclipse help."
@@ -98,6 +98,40 @@
           url="https://github.com/moliz/moliz.xmof"/>
       <id>org.modelexecution.moliz.gemoc.feature</id>
     </components>
+    <components
+        name="GEMOC Concurrent Engine"
+        provider="GEMOC"
+        description="This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare."
+        license="EPL 1.0"
+        image32="images/IconeGemoc_studio-32.png">
+      <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/constraint/releng/org.eclipse.gemoc.mocc.p2updatesite/target/repository/</sitesURLS>
+      <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/moccml/mapping/deployment/org.eclipse.gemoc.moccml.mapping.updatesite/target/repository/</sitesURLS>
+      <sitesURLS>http://timesquare.inria.fr/update_site/oxygen</sitesURLS>
+      <sitesURLS>https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.execution.concurrent.ccsljava.repository/target/repository/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/releases/oxygen</sitesURLS>
+      <overview
+          summary="This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare."
+          screenshot="images/gemoc_concurrent_TFSM_animation_screenshot_320x280.png"
+          url="https://github.com/gemoc/concurrency"/>
+      <id>fr.inria.aoste.timesquare.feature</id>
+      <id>org.eclipse.gemoc.moccml.mapping.feature</id>
+      <id>org.eclipse.gemoc.moccml.constraint.feature</id>
+      <id>org.eclipse.gemoc.execution.concurrent.ccsljavaxdsml.feature</id>
+    </components>
+    <components
+        name="ALE Engine(Incubation)"
+        provider="Inria and Obeo"
+        description="This engine allows to define the execution semantics of languages with Action Language for EMF (ALE)"
+        license="EPL"
+        image32="images/modeling32.png">
+      <sitesURLS>https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/</sitesURLS>
+      <sitesURLS>https://ci.inria.fr/gemoc/job/gemoc-studio-ale-execution/lastSuccessfulBuild/artifact/releng/org.eclipse.gemoc.ale.engine.updatesite/target/repository/</sitesURLS>
+      <overview
+          summary="Ale is a language to define behaviors on the top of Ecore models. It is intended to be distributed in EcoreTools and will be an alternative to K3. It has its own GEMOC engine support."
+          url="http://gemoc.org/ale-lang/"/>
+      <id>org.eclipse.emf.ecoretools.ale.feature</id>
+      <id>org.eclipse.gemoc.ale.engine.feature</id>
+    </components>
   </categories>
   <categories
       name="Exhaustive Exploration"
@@ -141,18 +175,6 @@
       name="Alternative Tools"
       description="Engines and tools proposing alternative approaches (may not directly use GEMOC execution framework)"
       relevance="2">
-    <components
-        name="ALE (Incubation)"
-        provider="Inria and Obeo"
-        description="Action Language for EMF"
-        license="EPL"
-        image32="images/modeling32.png">
-      <sitesURLS>https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/</sitesURLS>
-      <overview
-          summary="Ale is a language to define behaviors on the top of Ecore models. It is intended to be distributed in EcoreTools and will be an alternative to K3."
-          url="http://gemoc.org/ale-lang/"/>
-      <id>org.eclipse.emf.ecoretools.ale.feature</id>
-    </components>
     <components
         name="TESL Engine and Editor"
         provider="CentraleSup&#xe9;lec/LRI"

@@ -90,7 +90,7 @@ Discover concrete examples of modeling languages created with the GEMOC Studio f
 
         <h4>Related links</h4>
         <ul>
-            <li><a href="https://github.com/gemoc/gemoc-studio/tree/master/official_samples/LegacyFSM">Github page</a></li>
+            <li><a href="https://github.com/eclipse/gemoc-studio/tree/master/official_samples/LegacyFSM">Github page</a></li>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -253,6 +253,6 @@ The execution is mainly based on the coordination of two sub languages: Mode Aut
 
 <h4>Your language created with GEMOC is not listed here?</h4>
 
-Feel free to submit your work here: <a href="">gemoc-studio/issues</a>.
+Feel free to submit your work here: <a href="https://github.com/gemoc/gemoc.github.io/issues">gemoc.github.io/issues</a>.
 
 </div>
