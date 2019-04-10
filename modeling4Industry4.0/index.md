@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# MODELS'17 Industry 4.0 Systematic Mapping Study
+# Industry 4.0 Systematic Mapping Study
 
 Industrial revolutions always introduced step changes to manufacturing. The
 first industrial revolution (18th to 19th century) advanced production from
