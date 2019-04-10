@@ -95,7 +95,7 @@ use these terms in either related work or the referenced literature.
 <table border="0" width="600px"> 
     <tr>
         <td align="center" width="800px" border="0">
-            <img src="./pics/queries.jpg" width="600px"/>
+            <img src="./pics/queries.jpg" width="800px"/>
         </td>
     </tr>
     <tr>
