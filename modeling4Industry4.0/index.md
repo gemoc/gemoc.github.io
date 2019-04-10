@@ -92,11 +92,18 @@ full-text search with this clause, we omitted including synonyms for "DSL"
 or "modeling language". Papers contributing to modeling should at least
 use these terms in either related work or the referenced literature.
 
-
-|![Queries](./pics/queries.png "Example representations of our search query reformulated for different databases")|
-|:-:    |
-|Example representations of our search query reformulated for different databases|
-
+<table border="1"> 
+    <tr>
+        <td align="center">
+            <img src="./pics/queries.png" width="600px"/>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <div style="font-size:1em"><b>Fig. 1. </b>Example representations of our search query reformulated for different databases</div>
+        </td>
+    </tr>
+</table>
 
 Although we cannot exclude omitting a small number of possibly relevant
 publications that do not provide such discussions, searching this way yields
