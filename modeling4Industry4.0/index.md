@@ -92,14 +92,14 @@ full-text search with this clause, we omitted including synonyms for "DSL"
 or "modeling language". Papers contributing to modeling should at least
 use these terms in either related work or the referenced literature.
 
-<table border="0" width="600px"> 
+<table border="1"> 
     <tr>
-        <td align="center" border="0">
-            <img src="./pics/queries.png" width="600px"/>
+        <td align="center">
+            <img src="./pics/queries.jpg" width="600px"/>
         </td>
     </tr>
     <tr>
-        <td align="center" border="0">
+        <td align="center">
             <div style="font-size:1em"><b>Fig. 1. </b>Example representations of our search query reformulated for different databases</div>
         </td>
     </tr>
