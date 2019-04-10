@@ -94,12 +94,12 @@ use these terms in either related work or the referenced literature.
 
 <table border="0" width="600px"> 
     <tr>
-        <td align="center" width="600px" border="0">
+        <td align="center" width="800px" border="0">
             <img src="./pics/queries.jpg" width="600px"/>
         </td>
     </tr>
     <tr>
-        <td align="center" width="600px" border="0">
+        <td align="center" width="800px" border="0">
             <div style="font-size:75%"><b>Fig. 1. </b>Example representations of our search query reformulated for different databases (the figures have been produced after the article and consequently show higher numbers of results).</div>
         </td>
     </tr>
