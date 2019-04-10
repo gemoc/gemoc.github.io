@@ -62,6 +62,7 @@ We hope that this data supports better comprehension of the systematic mapping s
 
 The paper is available from
 - Wortmann, A., Combemale, B., and Barais, O. 2017. [A Systematic Mapping Study on Modeling for Industry 4.0](https://www.computer.org/csdl/proceedings/models/2017/3492/00/3492a281-abs.html). ACM/IEEE 20th International Conference on Model Driven Engineering Languages and Systems (MODELS). IEEE, 2017.
+- We also provide its [open access preprint](https://hal.inria.fr/hal-01514421v2) for your convenience.
 
 # 2018 Mapping Study Update
 
@@ -92,44 +93,20 @@ full-text search with this clause, we omitted including synonyms for "DSL"
 or "modeling language". Papers contributing to modeling should at least
 use these terms in either related work or the referenced literature.
 
-<table border="1"> 
+<table border="0" width="600px"> 
     <tr>
-        <td align="center">
-            <img src="./pics/queries.jpg" width="600px"/>
+        <td align="center" width="800px" border="0">
+            <img src="./pics/queries.jpg" width="800px"/>
         </td>
     </tr>
     <tr>
-        <td align="center">
-            <div style="font-size:1em"><b>Fig. 1. </b>Example representations of our search query reformulated for different databases</div>
+        <td align="center" width="800px" border="0">
+            <div style="font-size:75%"><b>Fig. 1. </b>Example representations of our search query reformulated for different databases (the figures have been produced after the article and consequently show higher numbers of results).</div>
         </td>
     </tr>
 </table>
 
-Although we cannot exclude omitting a small number of possibly relevant
-publications that do not provide such discussions, searching this way yields
-better results than just searching titles and abstracts. Moreover, we also
-did not enforce any inferior year-limit and included papers published until
-February 2018. Where such complex logical conditions were not supported,
-we searched for parts of the query and joined the results manually. For ACM
-Digital Library we could reuse the query as is (modulo minor changes to its
-concrete syntax). For Google Scholar we changed the representation of the
-query's Boolean operators and used [Harzing's Publish or Perish](https://harzing.com/resources/publish-or-perish}) software to extract    
-results. Due to its limitation to ca. 1.000 citations per query, we
-downloaded the citations in two parts out of which one includes citations
-until $2017$ and the other all later citations. IEEE Xplore enforces a limit
-of 40 search terms, which did not affect our query and supports the use of
-nested Boolean queries through its advanced search, hence data retrieval was
-straightforward. Similarly, retrieving citations from Scopus, SpringerLink,
-and Web of Science did not require any changes to the query as both supports
-nested Boolean queries through their advanced search.
-Applying our query -- with the explained operative modifications -- to 
-[ACM Digital Library](https://dl.acm.org),  
-[Google Scholar](https://scholar.google.com),  
-[IEEE Xplore](https://ieeexplore.ieee.org), 
-[Scopus](https://www.scopus.com/),  
-[SpringerLink](https://link.springer.com), and  
-[Web of Science](https://www.webofknowledge.com)
-produced the 2.848 candidate publications provided for download above.
+Although we cannot exclude omitting a small number of possibly relevant publications that do not provide such discussions, searching this way yields better results than just searching titles and abstracts. Moreover, we also did not enforce any inferior year-limit and included papers published until February 2018. Where such complex logical conditions were not supported, we searched for parts of the query and joined the results manually. For ACM Digital Library we could reuse the query as is (modulo minor changes to its concrete syntax). For Google Scholar we changed the representation of the query's Boolean operators and used [Harzing's Publish or Perish](https://harzing.com/resources/publish-or-perish}) software to extract  results. Due to its limitation to ca. 1.000 citations per query, we downloaded the citations in two parts out of which one includes citations until $2017$ and the other all later citations. IEEE Xplore enforces a limit of 40 search terms, which did not affect our query and supports the use of nested Boolean queries through its advanced search, hence data retrieval was straightforward. Similarly, retrieving citations from Scopus, SpringerLink, and Web of Science did not require any changes to the query as both supports nested Boolean queries through their advanced search. Applying our query -- with the explained operative modifications -- to [ACM Digital Library](https://dl.acm.org), [Google Scholar](https://scholar.google.com), [IEEE Xplore](https://ieeexplore.ieee.org), [Scopus](https://www.scopus.com/), [SpringerLink](https://link.springer.com), and [Web of Science](https://www.webofknowledge.com)
 
 A more detailed description of our data collection process and its results is [available here](./data/Industry_4.0_Mapping_Study_Search).
 
