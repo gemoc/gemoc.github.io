@@ -100,7 +100,7 @@ use these terms in either related work or the referenced literature.
     </tr>
     <tr>
         <td align="center" width="600px" border="0">
-            <div style="font-size:0.5em"><b>Fig. 1. </b>Example representations of our search query reformulated for different databases (the figures have been produced after the article and consequently show higher numbers of results)</div>
+            <div style="font-size:75%"><b>Fig. 1. </b>Example representations of our search query reformulated for different databases (the figures have been produced after the article and consequently show higher numbers of results).</div>
         </td>
     </tr>
 </table>
