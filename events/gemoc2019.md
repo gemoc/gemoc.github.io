@@ -16,9 +16,9 @@ date: September, 2019, Munich, Germany
 
 # *The Globalization of Modeling Languages*
 
-## September, Munich, Germany, co-located with  [MODELS 2019](http://www.modelsconference.org/)
+## September, Munich, Germany, co-located with Â [MODELS 2019](http://www.modelsconference.org/)
 
-<strong>[About]({{ site.baseurl }}{% link events/gemoc2019.md %}#about-the-workshop)  |  [Program]({{ site.baseurl }}{% link events/gemoc2019.md %}#program)  |  [Call]({{ site.baseurl }}{% link events/gemoc2019.md %}#call-for-papers--models)  |  [Dates]({{ site.baseurl }}{% link events/gemoc2019.md %}#important-dates)  |  [Committees]({{ site.baseurl }}{% link events/gemoc2019.md %}#committees)</strong>
+<strong>[About]({{ site.baseurl }}{% link events/gemoc2019.md %}#about-the-workshop) Â | Â [Program]({{ site.baseurl }}{% link events/gemoc2019.md %}#program) Â | Â [Call]({{ site.baseurl }}{% link events/gemoc2019.md %}#call-for-papers--models) Â | Â [Dates]({{ site.baseurl }}{% link events/gemoc2019.md %}#important-dates) Â | Â [Committees]({{ site.baseurl }}{% link events/gemoc2019.md %}#committees)</strong>
 
 
 </div>
@@ -30,7 +30,7 @@ The increasing complexity of modern software-intensive systems demands for enhan
 
 GEMOC 2019 will be a full-day workshop that brings together researchers and practitioners in the modeling languages community to discuss the challenges associated with integrating multiple, heterogeneous modeling languages. The languages of interest range from requirements, to design and runtime languages, and include both general-purpose and domain-specific languages. Challenges related to engineering composable languages, well-formed semantic composition of languages and reasoning about systems described using heterogeneous languages are of particular interest. Following the previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from the *globalization of modeling languages*; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.
 
-GEMOC 2019 will provide an open forum for sharing experiences, problems and solutions on the conjoint use of multiple modeling languages. This workshop will be the place where concrete artifacts, ideas and opinions are exchanged in order to reap constructive feedback. Following the previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from  *the globalization of modeling languages*; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.
+GEMOC 2019 will provide an open forum for sharing experiences, problems and solutions on the conjoint use of multiple modeling languages. This workshop will be the place where concrete artifacts, ideas and opinions are exchanged in order to reap constructive feedback. Following the previous editions, a major objective is to continue collaborations and to expand a community that is focused on solving the problems arising from Â *the globalization of modeling languages*; i.e., the use of multiple DSLs to support coordinated development of diverse aspects of a system.
 
 
 ## Program
@@ -58,7 +58,7 @@ This comes with important challenges, as emerged during the \emph{1st Winter Mod
 
 In this context, the proposed GEMOC 2019 workshop aims to attract submissions that outline heterogeneous modeling approaches and case studies that identify and discuss well-defined problems about the development of techniques to manage the many different aspects of the systems. The goal is to facilitate deep discussions among the participants that lead to an initial classification of the kinds of language relationships and their management.
 
-The 2019 edition of the GEMOC workshop will follow the successful previous six editions:  [GEMOC at MODELS 2013]({{ site.baseurl }}{% link events/gemoc2013.md %})  in Miami, USA,  [GEMOC at MODELS 2014]({{ site.baseurl }}{% link events/gemoc2014.md %})  in Valencia, Spain, [GEMOC at MODELS 2015]({{ site.baseurl }}{% link events/gemoc2015.md %}) in Ottawa, Canada, [GEMOC at MODELS 2016]({{ site.baseurl }}{% link events/gemoc2016.md %}) in Saint-Malo, France, [GEMOC at MODELS 2017]({{ site.baseurl }}{% link events/gemoc2017.md %}) in Austin, TX, USA and [GEMOC at MODELS 2018]({{ site.baseurl }}{% link events/gemoc2018.md %}) in Copenhagen, DK. This edition will complete the state-of-the-art and practice initiated during the last years. It will also strengthen the community that broadens the current DSML research focus beyond the development of independent DSMLs to a research focus that provides support for globalized DSMLs.
+The 2019 edition of the GEMOC workshop will follow the successful previous six editions: Â [GEMOC at MODELS 2013]({{ site.baseurl }}{% link events/gemoc2013.md %}) Â in Miami, USA, Â [GEMOC at MODELS 2014]({{ site.baseurl }}{% link events/gemoc2014.md %}) Â in Valencia, Spain, [GEMOC at MODELS 2015]({{ site.baseurl }}{% link events/gemoc2015.md %}) in Ottawa, Canada, [GEMOC at MODELS 2016]({{ site.baseurl }}{% link events/gemoc2016.md %}) in Saint-Malo, France, [GEMOC at MODELS 2017]({{ site.baseurl }}{% link events/gemoc2017.md %}) in Austin, TX, USA and [GEMOC at MODELS 2018]({{ site.baseurl }}{% link events/gemoc2018.md %}) in Copenhagen, DK. This edition will complete the state-of-the-art and practice initiated during the last years. It will also strengthen the community that broadens the current DSML research focus beyond the development of independent DSMLs to a research focus that provides support for globalized DSMLs.
 
 The GEMOC workshop series is supported by [the GEMOC initiative]({{ site.baseurl }}/) and its associated Eclipse Research consortium, which promotes research seeking to develop the necessary breakthroughs in software languages to support global software engineering, i.e., breakthroughs that lead to effective technologies supporting different forms of language integration, including language collaboration, interoperability and composability.
 
@@ -105,12 +105,12 @@ Each paper should describe problems, case studies, or solutions related to the t
 
 Papers that describe use cases, or novel integration approaches can be accompanied by concrete artifacts, such as models (requirements, design, analysis, transformation, composition, etc.), stored in a public repository (e.g., [ReMoDD](http://www.cs.colostate.edu/remodd/v1/)). Artifacts should illustrate any experience on the conjoint use of different modeling languages.
 
-Submitted articles must not have been previously published or currently submitted for publication elsewhere. The program chairs will apply the principles of the ACM Plagiarism Policy throughout the submission and review process. All contributions will be reviewed and selected by the program committee members.
+Submitted articles must not have been previously published or currently submitted for publication elsewhere. The program chairs will apply the principles of the ACM Plagiarism Policy throughout the submission and review process. All contributions will be reviewed and selected by the program committee members. 
 
 
 ### Submission
 
-Each contribution must not exceed 5 pages for short papers and 10 pages for full papers in [the IEEE format] (https://www.ieee.org/conferences/publishing/templates.html) and must be [submitted electronically in PDF format via Easychair](https://easychair.org/my/conference?conf=gemoc2019). 
+Each contribution must not exceed 5 pages for short papers and 10 pages for full papers in [the IEEE format] (https://www.ieee.org/conferences/publishing/templates.html) andÂ must be [submitted electronically in PDF format via Easychair](https://easychair.org/my/conference?conf=gemoc2019). 
 
 
 ### Publication
