@@ -149,7 +149,7 @@ Submissions describing practical and industrial experience related to the use of
 
 As contributions, we expect early research results about the aforementioned topics, descriptions of case studies on the coordinated use of multiple modeling languages, and/or descriptions of practical experience, opinions and related approaches.
 
-Each contribution must be described in a short paper not exceeding 3 pages, or a full paper not exceeding 6 pages. Each paper should describe problems, case studies, or solutions related to the topics of interest. Short papers can also describe experience reports, tool demonstrations or position papers. Each paper is expected to highlight the relationships between modeling languages, as well as their management.
+Each paper should describe problems, case studies, or solutions related to the topics of interest. Short papers can also describe experience reports, tool demonstrations or position papers. Each paper is expected to highlight the relationships between modeling languages, as well as their management.
 
 <!--Each contribution must be described in a short paper not exceeding 3 pages in the ACM sigconf format, or a full paper not exceeding 6 pages in the ACM sigconf format. Each paper should describe problems, case studies, or solutions related to the topics of interest. Each paper is expected to highlight the relationships between modeling languages, as well as their management.-->
 
@@ -160,15 +160,13 @@ Submitted articles must not have been previously published or currently submitte
 
 ### Submission
 
-Each contribution must not exceed 5 pages for short papers and 10 pages for full papers (further details TBA), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/my/conference?conf=gemoc2019). 
+Each contribution must not exceed 5 pages for short papers and 10 pages for full papers in [the IEEE format] (https://www.ieee.org/conferences/publishing/templates.html) and�must be [submitted electronically in PDF format via Easychair](https://easychair.org/my/conference?conf=gemoc2019). 
 
-
-<!--Each contribution must not exceed 5 pages for short papers and 10 pages for full papers in [the ACM sigconf](https://www.acm.org/publications/proceedings-template), and must be [submitted electronically in PDF format via Easychair](https://easychair.org/my/conference?conf=gemoc2019). -->
 
 ### Publication
+ 
+The accepted papers will be published as IEEE online proceedings, and indexed in DBLP and Scopus. Also, participants will be strongly encouraged to participate in preparing the workshop report.
 
-The accepted papers will be published in the workshop proceedings indexed in SCOPUS (further details TBA). Also, participants will be strongly encouraged to participate in preparing the workshop report.
-<!--The accepted papers will be published by CEUR in the workshop proceedings. Also, participants will be strongly encouraged to participate in preparing the workshop report.-->
 
 ## Important Dates
 
