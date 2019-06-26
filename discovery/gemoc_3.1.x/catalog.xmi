@@ -14,7 +14,7 @@
         license="EPL"
         groups="//@filters.0"
         image32="images/IconeGemocLanguagePlusModel-32.png">
-      <sitesURLS>https://ci.inria.fr/gemoc/job/ActivityDiagram_updatesite/lastSuccessfulBuild/artifact/dev/releng/org.gemoc.activitydiagram.repository/target/repository/</sitesURLS>
+      <sitesURLS>https://--disabled--ci.inria.fr/gemoc/job/ActivityDiagram_updatesite/lastSuccessfulBuild/artifact/dev/releng/org.gemoc.activitydiagram.repository/target/repository/</sitesURLS>
       <overview
           summary="Deployer that installs the project sources for two versions of the Activitydiagram Language developped using GEMOC. One version will run using the GEMOC Sequential engine, the second using Concurrent engine.  The deployer also provides sample models."
           screenshot="images/activitydiagram_sequential-screenshot-320x240.png"
@@ -31,7 +31,7 @@
         license="EPL"
         groups="//@filters.0"
         image32="images/IconeGemocLanguagePlusModel-32.png">
-      <sitesURLS>https://ci.inria.fr/gemoc/job/ArduinoModeling_updatesite/lastSuccessfulBuild/artifact/dev/releng/org.gemoc.arduinomodeling.repository/target/repository/</sitesURLS>
+      <sitesURLS>https://--disabled--ci.inria.fr/gemoc/job/ArduinoModeling_updatesite/lastSuccessfulBuild/artifact/dev/releng/org.gemoc.arduinomodeling.repository/target/repository/</sitesURLS>
       <overview
           summary="Deployer that installs the project sources for two versions of the ArduinoModeling Language developped using GEMOC.  One version run using the GEMOC Sequential engine, the second using the Concurrent engine. The deployer also provides some sample models."
           screenshot="images/arduinomodeling_sequential-screenshot-320x240.png"
@@ -48,7 +48,7 @@
         license="EPL"
         groups="//@filters.0"
         image32="images/IconeGemocLanguage-Concurrent-32.png">
-      <sitesURLS>https://ci.inria.fr/gemoc/job/Markedgraph_updatesite/lastSuccessfulBuild/artifact/sample/markedgraph/releng/org.gemoc.sample.markedgraph.repository/target/repository/</sitesURLS>
+      <sitesURLS>https://--disabled--ci.inria.fr/gemoc/job/Markedgraph_updatesite/lastSuccessfulBuild/artifact/sample/markedgraph/releng/org.gemoc.sample.markedgraph.repository/target/repository/</sitesURLS>
       <overview
           summary="Deployer that installs the project sources for the Markedgraph Language developped using GEMOC.  This version runs using the GEMOC Concurrent engine. The deployer also provides some sample models. This is the result of the GEMOC tutorial available in the eclipse help."
           screenshot="images/markedgraph_sequential-screenshot-320x240.png"
@@ -90,7 +90,8 @@
         description="The Model Behavioral Interface Language (MBILang) allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model."
         license="EPL"
         groups="//@filters.0"
-        image32="images/bcool-icon-32.png">
+        image32="images/bcool-icon-32.png"
+        visible="false">
       <sitesURLS>https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</sitesURLS>
       <overview
           summary="The Model Behavioral Interface Language (MBILang) allows to specify the exposed elements of the internal executable model as an homogeneous interface. The exposed elements can be exploited to specify the possible interactions with the model. "
