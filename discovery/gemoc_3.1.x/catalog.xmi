@@ -82,6 +82,38 @@
     </components>
   </categories>
   <categories
+      name="GEMOC Engines extensions"
+      description="Extensions for GEMOC Engines">
+    <components
+        name="Model Behavioral Interface Language (MBILang) (Incubation)"
+        provider="I3S"
+        description="The Model Behavioral Interface Language (MBILang) allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model."
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/bcool-icon-32.png">
+      <sitesURLS>https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</sitesURLS>
+      <overview
+          summary="The Model Behavioral Interface Language (MBILang) allows to specify the exposed elements of the internal executable model as an homogeneous interface. The exposed elements can be exploited to specify the possible interactions with the model. "
+          screenshot="images/MCL_MBILang-screeshot.png"
+          url=""/>
+      <id>fr.inria.glose.mcl.all.feature</id>
+    </components>
+    <components
+        name="Model Coordination Language (MCL) (Incubation)"
+        provider="I3S"
+        description="The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models."
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/bcool-icon-32.png">
+      <sitesURLS>https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</sitesURLS>
+      <overview
+          summary="The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models. The defined specification describes how to integrate heterogeneous models defining explicitly the coordination among them.&#xA;&#xA;Based on the Model Behavioral Interface, the Coordination Model Specification is composed by a set of Connectors. A connector defines how, when and under which synchronization constraint one or more data are conveyed from a model to another."
+          screenshot="images/MCL_MBILang-screeshot.png"
+          url=""/>
+      <id>fr.inria.glose.mcl.all.feature</id>
+    </components>
+  </categories>
+  <categories
       name="Alternative GEMOC based Engines"
       description="Engines and tools proposing alternative approaches (based on GEMOC execution framework)">
     <components
@@ -98,7 +130,6 @@
           url="https://github.com/moliz/moliz.xmof"/>
       <id>org.modelexecution.moliz.gemoc.feature</id>
     </components>
-    
   </categories>
   <categories
       name="Exhaustive Exploration"
