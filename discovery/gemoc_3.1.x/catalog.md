@@ -220,16 +220,14 @@ Modeling environment tools.
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/umldesigner.png" alt="">
-         UML Designer <small>by Obeo</small></h3>
+         UML Designer 9.0.0<small>by Obeo</small></h3>
         <p>Graphical tooling to edit and visualize UML models.</p>
         <p>UML Designer provides a set of common diagrams to work with UML 2.5 models. The intent is to provide an easy way to make the transition from UML to domain specific modeling. This way users can continue to manipulate legacy UML models and start working with DSL. Users can even re-use the provided representations and work in a total transparence on both UML and DSL models at the same time.
         <a href="http://www.umldesigner.org/">Learn more</a></p>
 
         <h4>Update site</h4>
         <ul>
-            <li><a href="http://download.eclipse.org/releases/luna/201502271000">http://download.eclipse.org/releases/luna/201502271000</a></li>
-            <li><a href="http://download.eclipse.org/sirius/updates/nightly/3.0.x/luna<">http://download.eclipse.org/sirius/updates/nightly/3.0.x/luna</a></li>
-            <li><a href="http://releases.umldesigner.org/5.0.1/repository/">http://releases.umldesigner.org/5.0.1/repository/</a></li>
+            <li><a href="https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/9.0.0/repository/">https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/9.0.0/repository/</a></li>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
