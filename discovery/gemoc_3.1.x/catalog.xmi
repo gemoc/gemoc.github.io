@@ -10,7 +10,7 @@
     <components
         name="ActivityDiagram Languages (Sequential/Concurrent)(Incubation)"
         provider="GEMOC"
-        description="Deployer that installs the project sources for Concurrent and/or Sequential version of the Activitydiagram Language and sample models."
+        description="Deployer that installs the project sources for Concurrent and/or Sequential version of the Activitydiagram Language and sample models. [gemoc-studio 2.3.0]"
         license="EPL"
         groups="//@filters.0"
         image32="images/IconeGemocLanguagePlusModel-32.png">
@@ -27,7 +27,7 @@
     <components
         name="ArduinoModeling Languages (Sequential/Concurrent)(Incubation)"
         provider="GEMOC"
-        description="Deployer that installs the project sources for Sequential and Concurrent  versions of the ArduinoModeling Language and sample models."
+        description="Deployer that installs the project sources for Sequential and Concurrent  versions of the ArduinoModeling Language and sample models.  [gemoc-studio 2.3.0]"
         license="EPL"
         groups="//@filters.0"
         image32="images/IconeGemocLanguagePlusModel-32.png">
@@ -44,7 +44,7 @@
     <components
         name="Markedgraph Language (Concurrent)(Incubation)"
         provider="GEMOC"
-        description="Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models."
+        description="Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models.  [gemoc-studio 2.3.0]"
         license="EPL"
         groups="//@filters.0"
         image32="images/IconeGemocLanguage-Concurrent-32.png">
@@ -66,7 +66,7 @@
     <components
         name="Operator for TFSM and ActivityDiagram (Incubation)"
         provider="I3S"
-        description="Deployer that installs the project sources for the coordination operator for TFSM and ActivityDiagram concurrent languages and sample models."
+        description="Deployer that installs the project sources for the coordination operator for TFSM and ActivityDiagram concurrent languages and sample models.  [gemoc-studio 2.3.0]"
         license="EPL"
         groups="//@filters.0"
         image32="images/bcool-icon-32.png">
@@ -87,11 +87,10 @@
     <components
         name="Model Behavioral Interface Language (MBILang) (Incubation)"
         provider="I3S"
-        description="The Model Behavioral Interface Language (MBILang) allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model."
+        description="The Model Behavioral Interface Language (MBILang) allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model.  [gemoc-studio ?.?.?]"
         license="EPL"
         groups="//@filters.0"
-        image32="images/bcool-icon-32.png"
-        visible="false">
+        image32="images/bcool-icon-32.png">
       <sitesURLS>https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</sitesURLS>
       <overview
           summary="The Model Behavioral Interface Language (MBILang) allows to specify the exposed elements of the internal executable model as an homogeneous interface. The exposed elements can be exploited to specify the possible interactions with the model. "
@@ -102,13 +101,13 @@
     <components
         name="Model Coordination Language (MCL) (Incubation)"
         provider="I3S"
-        description="The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models."
+        description="The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models.  [gemoc-studio ?.?.?]"
         license="EPL"
         groups="//@filters.0"
         image32="images/bcool-icon-32.png">
       <sitesURLS>https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</sitesURLS>
       <overview
-          summary="The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models. The defined specification describes how to integrate heterogeneous models defining explicitly the coordination among them.&#xA;&#xA;Based on the Model Behavioral Interface, the Coordination Model Specification is composed by a set of Connectors. A connector defines how, when and under which synchronization constraint one or more data are conveyed from a model to another."
+          summary="The MCL allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models. The defined specification describes how to integrate heterogeneous models defining explicitly the coordination among them.&#xA;&#xA;Based on the Model Behavioral Interface, the Coordination Model Specification is composed by a set of Connectors. A connector defines how, when and under which synchronization constraint one or more data are conveyed from a model to another."
           screenshot="images/MCL_MBILang-screeshot.png"
           url=""/>
       <id>fr.inria.glose.mcl.all.feature</id>
@@ -120,7 +119,7 @@
     <components
         name="GEMOC xMOF Engine"
         provider="Vienna University of Technology"
-        description="xMOF allows you to define the execution semantics of your language with UML activity diagrams."
+        description="xMOF allows you to define the execution semantics of your language with UML activity diagrams.  [gemoc-studio 3.1.0]"
         license="EPL"
         image32="images/xmof-icon-30x30.png">
       <sitesURLS>http://moliz.github.io/moliz.gemoc/updatesite/nightly/</sitesURLS>
@@ -139,7 +138,7 @@
     <components
         name="Clocksystem (Incubation)"
         provider="ENSTA"
-        description="Multiform Time Constraints"
+        description="Multiform Time Constraints.  [gemoc-studio 2.3.0]"
         license="MIT"
         groups="//@filters.0"
         image32="images/clocksystem_logo_32x32.png">
@@ -175,7 +174,7 @@
     <components
         name="TESL Engine and Editor"
         provider="CentraleSup&#xe9;lec/LRI"
-        description="The Tagged Event Specification Language allows the specification of timed systems by modeling events as clocks and occurrences of an event as ticks on its clock."
+        description="The Tagged Event Specification Language allows the specification of timed systems by modeling events as clocks and occurrences of an event as ticks on its clock.  [gemoc-studio 2.3.0]"
         license="Unknown Licence"
         groups="//@filters.0"
         incubation="true">
