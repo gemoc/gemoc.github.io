@@ -106,7 +106,7 @@ Languages designed using GEMOC.
         <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
          Flight Controller Language (ALE)(Incubation) <small>by Inria</small></h3>
         <p>Fligth Controller Language (FCL) for drone written using GEMOC and ALE and sample models. [gemoc-studio 3.1.0]</p>
-        <p>The Fligth Controller Language is a demonstration language to illustrate GEMOC capabilities. It allows to specify the behavior of a drone flight controller and simulate it.
+        <p>The Fligth Controller Language is a demonstration language to illustrate GEMOC capabilities. Thanks to a control flow + mode state machine semantics, it allows to specify the behavior of a drone flight controller and simulate it.
         <a href="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/">Learn more</a></p>
 
         <h4>Update site</h4>

@@ -67,7 +67,7 @@
         image32="images/IconeGemocLanguagePlusModel-32.png">
       <sitesURLS>https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/updatesite/latest/</sitesURLS>
       <overview
-          summary="The Fligth Controller Language is a demonstration language to illustrate GEMOC capabilities. It allows to specify the behavior of a drone flight controller and simulate it."
+          summary="The Fligth Controller Language is a demonstration language to illustrate GEMOC capabilities. Thanks to a control flow + mode state machine semantics, it allows to specify the behavior of a drone flight controller and simulate it."
           screenshot="images/fcl-screenshot.png"
           url="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/"/>
       <id>org.gemoc.activitydiagram.feature</id>
