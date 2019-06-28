@@ -70,7 +70,7 @@
           summary="The Fligth Controller Language is a demonstration language to illustrate GEMOC capabilities. Thanks to a control flow + mode state machine semantics, it allows to specify the behavior of a drone flight controller and simulate it."
           screenshot="images/fcl-screenshot.png"
           url="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/"/>
-      <id>org.gemoc.activitydiagram.feature</id>
+      <id>fr.inria.glose.fcl.all.feature</id>
     </components>
   </categories>
   <categories
