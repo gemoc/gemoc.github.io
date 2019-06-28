@@ -46,13 +46,22 @@ layout: default
 				</div>
 		  		<div id="eclipsepackage" class="panel-collapse collapse">
 		  			<div class="panel-body">
-				        <ul>Download the Eclipse package ({{ page.eclipsePackageSize }})
-				        	<li><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ page.linux32URL }}">Linux (gtk) 32 Bit</a></li> 
+		  				Download the Eclipse IDE package ({{ page.eclipsePackageSize }})
+				        <ul>
+				        	{% if page.linux32URL %} <li><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ page.linux32URL }}">Linux (gtk) 32 Bit</a></li>{% endif %} 
 							<li><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ page.linux64URL }}">Linux (gtk) 64 Bit</a></li> 
 							<li><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ page.macOS64URL }}p">Mac OS X (cocoa) 64 Bit</a></li> 
-							<li><a title="gemoc_studio-win32.win32.x86.zip" href="{{ page.win32URL }}">Windows 32 Bit</a></li> 
+							{% if page.win32URL %} <li><a title="gemoc_studio-win32.win32.x86.zip" href="{{ page.win32URL }}">Windows 32 Bit</a></li> {% endif %}
 							<li><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ page.win64URL }}">Windows 64 Bit</a></li>
-						</ul>				
+						</ul>
+						{% if page.eclipseHeadlessPackageSize %}
+						Download the Headless Engine Runner package ({{ page.eclipseHeadlessPackageSize }})
+				        <ul> 
+							{% if page.headlessLinux64URL %} <li><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ page.linux64URL }}">Headless Linux 64 Bit</a></li>{% endif %} 
+							{% if page.headlessMacOS64URL %} <li><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ page.macOS64URL }}p">Headless Mac OS X 64 Bit</a></li> {% endif %}
+							{% if page.headlessWin64URL %} <li><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ page.win64URL }}">Headless Windows 64 Bit</a></li>{% endif %}
+						</ul>
+						{% endif %}			
 		  			</div>
 		  			<div class="panel-footer"></div>
 				</div>
@@ -101,7 +110,16 @@ layout: default
 		</div>
 		{% endif %}
 
-
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					{% if page.documentationURL or page.discoveryCatalogURL %} Other artefacts associated with this release:
+						{% if page.documentationURL %} <a href="{{ page.documentationURL }}">[Documentation]</a>{% endif %}
+						{% if page.discoveryCatalogURL %} <a href="{{ page.discoveryCatalogURL }}">[Discovery catalog]</a>{% endif %}
+					{% endif %}	
+				</div>
+			</div>
+		</div>
 
 
 		<hr>

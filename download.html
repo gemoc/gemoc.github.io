@@ -48,14 +48,26 @@ layout: defaultwithtabs
 		        <table class="table table-striped">
 				<tbody>
 					<tr>					
-					<td>GEMOC Studio Eclipse package <br><a title="More details about this version"  href="{{ site.baseurl }}{{ last_eclipse_package.url }}">{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</a><br/> ({{ last_eclipse_package.eclipsePackageSize }})</td>			
+					<td>GEMOC Studio Eclipse packages <br>
+						<a title="More details about this version"  href="{{ site.baseurl }}{{ last_eclipse_package.url }}">{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</a><br/>
+					 	(IDE {{ last_eclipse_package.eclipsePackageSize }}) {% if last_eclipse_package.eclipseHeadlessPackageSize %}<br>(Headless {{ last_eclipse_package.eclipseHeadlessPackageSize }}){% endif %}
+					</td>			
 					<td>
-						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ last_eclipse_package.linux32URL }}">Linux (gtk) 32 Bit</a><br> 
+						{% if last_eclipse_package.linux32URL %} <img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-linux.gtk.x86.zip" href="{{ last_eclipse_package.linux32URL }}">Linux (gtk) 32 Bit</a><br>{% endif %} 
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ last_eclipse_package.linux64URL }}">Linux (gtk) 64 Bit</a><br>
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ last_eclipse_package.macOS64URL }}">Mac OS X (cocoa) 64 Bit</a><br> 
-						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-win32.win32.x86.zip" href="{{ last_eclipse_package.win32URL }}">Windows 32 Bit</a><br> 
+						{% if last_eclipse_package.win32URL %} <img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-win32.win32.x86.zip" href="{{ last_eclipse_package.win32URL }}">Windows 32 Bit</a><br> {% endif %}
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ last_eclipse_package.win64URL }}">Windows 64 Bit</a><br>
-					<td>{{ last_eclipse_package.excerpt }}<a href="{{ site.baseurl }}{{ last_eclipse_package.url }}">(Read more)</a></td>
+						<!-- headless -->
+						{% if last_eclipse_package.headlessLinux64URL %} <img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-linux.gtk.x86_64.zip" href="{{ last_eclipse_package.headlessLinux64URL }}">Headless Linux 64 Bit</a><br> {% endif %}
+						{% if last_eclipse_package.headlessMacOS64URL %} <img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-macosx.cocoa.x86_64.zip" href="{{ last_eclipse_package.headlessMacOS64URL }}">Headless Mac OS X 64 Bit</a><br> {% endif %}
+						{% if last_eclipse_package.headlessWin64URL %} <img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" /><a title="gemoc_studio-win32.win32.x86_64.zip" href="{{ last_eclipse_package.headlessWin64URL }}">Headless Windows 64 Bit</a><br> {% endif %}
+					<td>{{ last_eclipse_package.excerpt }}<a href="{{ site.baseurl }}{{ last_eclipse_package.url }}">(Read more)</a><br><br>
+						{% if last_eclipse_package.documentationURL or last_eclipse_package.discoveryCatalogURL %} Associated artefacts:
+							{% if last_eclipse_package.documentationURL %} <a href="{{ last_eclipse_package.documentationURL }}">[Documentation]</a>{% endif %}
+							{% if last_eclipse_package.discoveryCatalogURL %} <a href="{{ last_eclipse_package.discoveryCatalogURL }}">[Discovery catalog]</a>{% endif %}
+						{% endif %}
+					</td>
 					</tr>
 				</tbody>
 				</table>
