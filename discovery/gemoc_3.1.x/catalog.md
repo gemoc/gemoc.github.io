@@ -99,6 +99,26 @@ Languages designed using GEMOC.
     </div>
 </div>
 
+
+<!-- Flight Controller Language (ALE)(Incubation)  -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
+         Flight Controller Language (ALE)(Incubation) <small>by Inria</small></h3>
+        <p>Fligth Controller Language (FCL) for drone written using GEMOC and ALE and sample models. [gemoc-studio 3.1.0]</p>
+        <p>The Fligth Controller Language is a demonstration language to illustrate GEMOC capabilities. It allows to specify the behavior of a drone flight controller and simulate it.
+        <a href="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/updatesite/latest/">https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/updatesite/latest/</a></li>            
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <img class="img-responsive img-hover" src="images/fcl-screenshot.png" alt="">        
+    </div>
+</div>
+
 <hr>
 ## GEMOC Coordination
 Language coordination operators designed using GEMOC.
