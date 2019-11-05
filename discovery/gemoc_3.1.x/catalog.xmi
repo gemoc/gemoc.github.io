@@ -180,6 +180,60 @@
           url="http://www.umldesigner.org/"/>
       <id>org.obeonetwork.dsl.uml2.runtime.feature</id>
     </components>
+    <components
+        name="Capella 1.3.1"
+        provider="Eclipse Polarsys"
+        description="Comprehensive, extensible and field-proven MBSE tool and method to design systems architecture."
+        license="EPL"
+        image32="images/icon_capella-32.png">
+      <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/nebula/snapshot</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/sirius/updates/legacy</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</sitesURLS>
+      <overview
+          summary="Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. \nIn GEMOC, Capella may contribute to the modeling workbench activities."
+          screenshot="images/Capella_HMI.png"
+          url="https://www.polarsys.org/capella/"/>
+      <id>org.polarsys.capella.doc.feature</id>
+      <id>org.polarsys.capella.extension.sdk.feature</id>
+      <id>org.polarsys.capella.rcp.feature</id>
+      <id>org.polarsys.capella.ta.viewpoint.dsl.feature</id>
+      <id>org.polarsys.capella.cdo.mock.feature</id>
+    </components>
+    <components
+        name="Capella Studio 1.3.1"
+        provider="Eclipse Polarsys"
+        description="Development environment for Capella"
+        license="EPL"
+        image32="images/icon_capella-32.png">
+      <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/nebula/snapshot</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/sirius/updates/legacy</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</sitesURLS>
+      <overview
+          summary="Capella Studio is the development environment aiming to design Capella extensions. \nIn GEMOC, Capella Studio may contribute to the language workbench activities."
+          screenshot="images/Capella_HMI.png"
+          url="https://www.polarsys.org/capella/"/>
+      <id>org.polarsys.capella.studio.product.feature</id>
+      <id>org.polarsys.capella.ta.viewpoint.dsl.feature</id>
+      <id>org.polarsys.capella.cdo.mock.feature</id>
+      <id>org.polarsys.capella.rcp.feature</id>
+      <id>org.polarsys.capella.extension.sdk.feature</id>
+      <id>org.polarsys.capella.doc.feature</id>
+    </components>
   </categories>
   <categories
       name="Alternative Tools"
