@@ -257,6 +257,70 @@ Modeling environment tools.
     </div>
 </div>
 
+<!-- Capella  -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/icon_capella-32.png" alt="">
+         Capella 1.3.1<small>by Eclipse Polarsys</small></h3>
+        <p>Comprehensive, extensible and field-proven MBSE tool and method to design systems architecture.</p>
+        <p>Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. <br>In GEMOC, Capella may contribute to the modeling workbench activities.
+        <a href="https://www.polarsys.org/capella/">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">Capella 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/" selected="true" name="Capella EGF 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/" selected="true" name="Capella Studio 1.3.1</a></li>
+   
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/" selected="true" name="Kitalpha sdk 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/" selected="true" name="Kitalpha runtime 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/" selected="true" name="Kitalpha runtimecore 1.3.1</a></li>
+            <li><a href="http://download.eclipse.org/nebula/snapshot" selected="true" name="Eclipse Nebula Plugin Update Site</a></li>
+            <li><a href="http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site" selected="true" name="EMF Diff Merge</a></li>
+            <li><a href="https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/" selected="true" name="EMF Diff Merge Patterns</a></li>
+            <li><a href="http://download.eclipse.org/sirius/updates/legacy" selected="true" name="org.eclipse.sirius.legacy.update</a></li>
+            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon" selected="true" name="Sirius  6.1.3 for Eclipse 4.8 (Photon)</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <a href="images/Capella_HMI.png">
+            <img class="img-responsive img-hover" src="images/umldesigner-screenshot-320x240.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!-- Capella  Studio -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/icon_capella-32.png" alt="">
+         Capella Studio 1.3.1<small>by Eclipse Polarsys</small></h3>
+        <p>Development environment for Capella.</p>
+        <p>Capella Studio is the development environment aiming to design Capella extensions. <br>In GEMOC, Capella Studio may contribute to the language workbench activities.
+        <a href="https://www.polarsys.org/capella/">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">Capella 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/" selected="true" name="Capella EGF 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/" selected="true" name="Capella Studio 1.3.1</a></li>
+   
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/" selected="true" name="Kitalpha sdk 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/" selected="true" name="Kitalpha runtime 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/" selected="true" name="Kitalpha runtimecore 1.3.1</a></li>
+            <li><a href="http://download.eclipse.org/nebula/snapshot" selected="true" name="Eclipse Nebula Plugin Update Site</a></li>
+            <li><a href="http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site" selected="true" name="EMF Diff Merge</a></li>
+            <li><a href="https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/" selected="true" name="EMF Diff Merge Patterns</a></li>
+            <li><a href="http://download.eclipse.org/sirius/updates/legacy" selected="true" name="org.eclipse.sirius.legacy.update</a></li>
+            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon" selected="true" name="Sirius  6.1.3 for Eclipse 4.8 (Photon)</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <a href="images/umldesigner-screenshot-320x240.png">
+            <img class="img-responsive img-hover" src="images/umldesigner-screenshot-320x240.png" alt="">
+        </a>
+    </div>
+</div>
+
 <hr>
 ## Alternative Tools
 Engines and tools proposing alternative approaches (may not directly use GEMOC execution framework)
