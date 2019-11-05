@@ -240,7 +240,7 @@ Modeling environment tools.
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/umldesigner.png" alt="">
-         UML Designer 9.0.0<small>by Obeo</small></h3>
+         UML Designer 9.0.0<small> by Obeo</small></h3>
         <p>Graphical tooling to edit and visualize UML models.</p>
         <p>UML Designer provides a set of common diagrams to work with UML 2.5 models. The intent is to provide an easy way to make the transition from UML to domain specific modeling. This way users can continue to manipulate legacy UML models and start working with DSL. Users can even re-use the provided representations and work in a total transparence on both UML and DSL models at the same time.
         <a href="http://www.umldesigner.org/">Learn more</a></p>
@@ -261,7 +261,7 @@ Modeling environment tools.
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/icon_capella-32.png" alt="">
-         Capella 1.3.1<small>by Eclipse Polarsys</small></h3>
+         Capella 1.3.1<small> by Eclipse Polarsys</small></h3>
         <p>Comprehensive, extensible and field-proven MBSE tool and method to design systems architecture.</p>
         <p>Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. <br>In GEMOC, Capella may contribute to the modeling workbench activities.
         <a href="https://www.polarsys.org/capella/">Learn more</a></p>
@@ -293,7 +293,7 @@ Modeling environment tools.
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/icon_capella-32.png" alt="">
-         Capella Studio 1.3.1<small>by Eclipse Polarsys</small></h3>
+         Capella Studio 1.3.1<small> by Eclipse Polarsys</small></h3>
         <p>Development environment for Capella.</p>
         <p>Capella Studio is the development environment aiming to design Capella extensions. <br>In GEMOC, Capella Studio may contribute to the language workbench activities.
         <a href="https://www.polarsys.org/capella/">Learn more</a></p>
