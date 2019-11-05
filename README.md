@@ -36,3 +36,13 @@ $ docker run -it --rm -p 4000:4000 -v "$(pwd):/srv/jekyll" --volume=$PWD/vendor/
 Integrating a new paper to the http://gemoc.org/publications.html can be done by adding bib references to ./publications/gemoc.bib
 
 If you are running a local development server, the publications page should be updated at runtime, so reloading the page on a browser should return an up to date page.
+
+## Contribute to this site
+
+You're welcome to contribute to the site using github pull requests.
+
+They'll be checked. (please verify that your modification successfully compiles on travis)
+
+Once accepted, Travis will be used to deploy the result. [![Build Status](https://travis-ci.org/gemoc/gemoc.github.io.svg?branch=gh-pages-edit)](https://travis-ci.org/gemoc/gemoc.github.io)
+
+
