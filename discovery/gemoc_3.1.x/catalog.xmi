@@ -183,7 +183,7 @@
     <components
         name="Capella 1.3.1"
         provider="Eclipse Polarsys"
-        description="Comprehensive, extensible and field-proven MBSE tool and method to design systems architecture."
+        description="Comprehensive, extensible and field-proven MBSE tool and method to design systems architecture. [gemoc-studio 3.1.0]"
         license="EPL"
         image32="images/icon_capella-32.png">
       <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</sitesURLS>
@@ -197,8 +197,8 @@
       <sitesURLS>http://download.eclipse.org/sirius/updates/legacy</sitesURLS>
       <sitesURLS>https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</sitesURLS>
       <overview
-          summary="Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. \nIn GEMOC, Capella may contribute to the modeling workbench activities."
-          screenshot="images/Capella_HMI.png"
+          summary="Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. &#xA;&#xA;In GEMOC, Capella may contribute to the modeling workbench activities."
+          screenshot="images/Capella_HMI-320x240.png"
           url="https://www.polarsys.org/capella/"/>
       <id>org.polarsys.capella.doc.feature</id>
       <id>org.polarsys.capella.extension.sdk.feature</id>
@@ -209,7 +209,7 @@
     <components
         name="Capella Studio 1.3.1"
         provider="Eclipse Polarsys"
-        description="Development environment for Capella"
+        description="Development environment for Capella [gemoc-studio 3.1.0]"
         license="EPL"
         image32="images/icon_capella-32.png">
       <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</sitesURLS>
@@ -224,8 +224,8 @@
       <sitesURLS>http://download.eclipse.org/sirius/updates/legacy</sitesURLS>
       <sitesURLS>https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</sitesURLS>
       <overview
-          summary="Capella Studio is the development environment aiming to design Capella extensions. \nIn GEMOC, Capella Studio may contribute to the language workbench activities."
-          screenshot="images/Capella_HMI.png"
+          summary="Capella Studio is the development environment aiming to design Capella extensions. &#xA;&#xA;In GEMOC, Capella Studio may contribute to the language workbench activities."
+          screenshot="images/Capella_HMI-320x240.png"
           url="https://www.polarsys.org/capella/"/>
       <id>org.polarsys.capella.studio.product.feature</id>
       <id>org.polarsys.capella.ta.viewpoint.dsl.feature</id>

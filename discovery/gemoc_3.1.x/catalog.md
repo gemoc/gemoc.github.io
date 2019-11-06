@@ -268,23 +268,23 @@ Modeling environment tools.
 
         <h4>Update site</h4>
         <ul>
-            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">Capella 1.3.1</a></li>
-            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/" selected="true" name="Capella EGF 1.3.1</a></li>
-            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/" selected="true" name="Capella Studio 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</a></li>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</a></li>
+            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/">https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/</a></li>
    
-            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/" selected="true" name="Kitalpha sdk 1.3.1</a></li>
-            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/" selected="true" name="Kitalpha runtime 1.3.1</a></li>
-            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/" selected="true" name="Kitalpha runtimecore 1.3.1</a></li>
-            <li><a href="http://download.eclipse.org/nebula/snapshot" selected="true" name="Eclipse Nebula Plugin Update Site</a></li>
-            <li><a href="http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site" selected="true" name="EMF Diff Merge</a></li>
-            <li><a href="https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/" selected="true" name="EMF Diff Merge Patterns</a></li>
-            <li><a href="http://download.eclipse.org/sirius/updates/legacy" selected="true" name="org.eclipse.sirius.legacy.update</a></li>
-            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon" selected="true" name="Sirius  6.1.3 for Eclipse 4.8 (Photon)</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/</a></li>
+            <li><a href="http://download.eclipse.org/nebula/snapshot">http://download.eclipse.org/nebula/snapshot</a></li>
+            <li><a href="http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site">http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site</a></li>
+            <li><a href="https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/"https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</a></li>
+            <li><a href="http://download.eclipse.org/sirius/updates/legacy">http://download.eclipse.org/sirius/updates/legacy</a></li>
+            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon">https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</a></li>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <a href="images/Capella_HMI.png">
-            <img class="img-responsive img-hover" src="images/umldesigner-screenshot-320x240.png" alt="">
+            <img class="img-responsive img-hover" src="images/Capella_HMI.png" alt="">
         </a>
     </div>
 </div>
@@ -300,23 +300,23 @@ Modeling environment tools.
 
         <h4>Update site</h4>
         <ul>
-            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">Capella 1.3.1</a></li>
-            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/" selected="true" name="Capella EGF 1.3.1</a></li>
-            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/" selected="true" name="Capella Studio 1.3.1</a></li>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</a></li>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</a></li>
+            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/">https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/</a></li>
    
-            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/" selected="true" name="Kitalpha sdk 1.3.1</a></li>
-            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/" selected="true" name="Kitalpha runtime 1.3.1</a></li>
-            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/" selected="true" name="Kitalpha runtimecore 1.3.1</a></li>
-            <li><a href="http://download.eclipse.org/nebula/snapshot" selected="true" name="Eclipse Nebula Plugin Update Site</a></li>
-            <li><a href="http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site" selected="true" name="EMF Diff Merge</a></li>
-            <li><a href="https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/" selected="true" name="EMF Diff Merge Patterns</a></li>
-            <li><a href="http://download.eclipse.org/sirius/updates/legacy" selected="true" name="org.eclipse.sirius.legacy.update</a></li>
-            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon" selected="true" name="Sirius  6.1.3 for Eclipse 4.8 (Photon)</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/</a></li>
+            <li><a href="http://download.eclipse.org/nebula/snapshot">http://download.eclipse.org/nebula/snapshot</a></li>
+            <li><a href="http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site">http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site</a></li>
+            <li><a href="https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/">https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</a></li>
+            <li><a href="http://download.eclipse.org/sirius/updates/legacy">http://download.eclipse.org/sirius/updates/legacy</a></li>
+            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon">https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</a></li>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
-        <a href="images/umldesigner-screenshot-320x240.png">
-            <img class="img-responsive img-hover" src="images/umldesigner-screenshot-320x240.png" alt="">
+        <a href="images/Capella_HMI.png">
+            <img class="img-responsive img-hover" src="images/Capella_HMI.png" alt="">
         </a>
     </div>
 </div>
