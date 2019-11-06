@@ -200,11 +200,7 @@
           summary="Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. &#xA;&#xA;In GEMOC, Capella may contribute to the modeling workbench activities."
           screenshot="images/Capella_HMI-320x240.png"
           url="https://www.polarsys.org/capella/"/>
-      <id>org.polarsys.capella.doc.feature</id>
-      <id>org.polarsys.capella.extension.sdk.feature</id>
-      <id>org.polarsys.capella.rcp.feature</id>
-      <id>org.polarsys.capella.ta.viewpoint.dsl.feature</id>
-      <id>org.polarsys.capella.cdo.mock.feature</id>
+      <id>org.polarsys.capella.rcp</id>
     </components>
     <components
         name="Capella Studio 1.3.1"
