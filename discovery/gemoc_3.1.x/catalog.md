@@ -258,7 +258,7 @@ Modeling environment tools.
 </div>
 
 <!-- Capella  -->
-<div class="row">    
+<div class="row">   
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/icon_capella-32.png" alt="">
          Capella 1.3.1<small> by Eclipse Polarsys</small></h3>
