@@ -196,11 +196,40 @@
       <sitesURLS>https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</sitesURLS>
       <sitesURLS>http://download.eclipse.org/sirius/updates/legacy</sitesURLS>
       <sitesURLS>https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/releases/photon</sitesURLS>
       <overview
           summary="Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. &#xA;&#xA;In GEMOC, Capella may contribute to the modeling workbench activities."
           screenshot="images/Capella_HMI-320x240.png"
           url="https://www.polarsys.org/capella/"/>
-      <id>org.polarsys.capella.rcp</id>
+      <id>org.polarsys.capella.rcp.feature</id>
+      <id>org.eclipse.emf.diffmerge.sirius.feature</id>
+      <id>org.polarsys.kitalpha.ad.integration.emde.feature</id>
+      <id>org.polarsys.kitalpha.ad.feature</id>
+      <id>org.polarsys.kitalpha.ad.runtime.feature</id>
+      <id>org.polarsys.kitalpha.ad.integration.sirius.feature</id>
+      <id>org.polarsys.kitalpha.model.detachment.contrib.viewpoints.feature</id>
+      <id>org.polarsys.kitalpha.cadence.feature</id>
+      <id>org.polarsys.kitalpha.common.feature</id>
+      <id>org.polarsys.kitalpha.emde.feature</id>
+      <id>org.polarsys.kitalpha.doc.feature</id>
+      <id>org.polarsys.kitalpha.emde.ui.feature</id>
+      <id>org.polarsys.kitalpha.model.common.commands.feature</id>
+      <id>org.polarsys.kitalpha.model.common.share.feature</id>
+      <id>org.polarsys.kitalpha.model.detachment.feature</id>
+      <id>org.polarsys.kitalpha.model.detachment.ui.feature</id>
+      <id>org.polarsys.kitalpha.model.common.scrutiny.feature</id>
+      <id>org.polarsys.kitalpha.patterns.feature</id>
+      <id>org.polarsys.kitalpha.report.feature</id>
+      <id>org.polarsys.kitalpha.report.ui.feature</id>
+      <id>org.polarsys.kitalpha.resourcereuse.feature</id>
+      <id>org.polarsys.kitalpha.resourcereuse.emfscheme.feature</id>
+      <id>org.polarsys.kitalpha.resourcereuse.ui.feature</id>
+      <id>org.polarsys.kitalpha.richtext.widget.feature</id>
+      <id>org.polarsys.kitalpha.transposer.feature</id>
+      <id>org.eclipse.nebula.widgets.richtext.feature</id>
+      <id>org.eclipse.emf.diffmerge.patterns.sdk.feature</id>
+      <id>org.eclipse.emf.diffmerge.patterns.sirius.sdk.feature</id>
+      <id>org.eclipse.sirius.query.legacy.feature</id>
     </components>
     <components
         name="Capella Studio 1.3.1"
@@ -219,6 +248,8 @@
       <sitesURLS>https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</sitesURLS>
       <sitesURLS>http://download.eclipse.org/sirius/updates/legacy</sitesURLS>
       <sitesURLS>https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/releases/photon</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/eclipse/updates/4.8/</sitesURLS>
       <overview
           summary="Capella Studio is the development environment aiming to design Capella extensions. &#xA;&#xA;In GEMOC, Capella Studio may contribute to the language workbench activities."
           screenshot="images/Capella_HMI-320x240.png"
