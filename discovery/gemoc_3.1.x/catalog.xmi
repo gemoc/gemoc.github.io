@@ -127,7 +127,7 @@
       <id>fr.inria.glose.mcl.all.feature</id>
     </components>
     <components
-        name="ALE compiler (Incubation)"
+        name="ALE Compiler (Incubation)"
         provider="Inria"
         description="ALE compiler generates java code from ALE language.  [gemoc-studio 3.2.x]"
         license="EPL"
@@ -135,7 +135,7 @@
         image32="images/IconeGemoc_studio-32.png">
       <sitesURLS>http://www.kermeta.org/ale-lang-compiler/updates/2019-11-29/</sitesURLS>
       <overview
-          summary="The main features of the ALE Compiler are:&#xA;    Integration with Eclipse: Compile ALE languages in the Eclipse IDE&#xA;    Maven integration: Automatically compile your languages using the ale compiler maven plugin&#xA;    Configurable: The ALE Compiler can target four implementation patterns: Interpreter, Visitor, EMF&#x2019;s Switch and Revisitor.&#xA;"
+          summary="The main features of the ALE Compiler are:&#xA;    -Integration with Eclipse: Compile ALE languages in the Eclipse IDE&#xA;    -Maven integration: Automatically compile your languages using the ale compiler maven plugin&#xA;    - Configurable: The ALE Compiler can target four implementation patterns: Interpreter, Visitor, EMF&#x2019;s Switch and Revisitor.&#xA;"
           screenshot=""
           url="http://gemoc.org/ale-lang-compiler/"/>
       <id>fr.inria.glose.mcl.all.feature</id>

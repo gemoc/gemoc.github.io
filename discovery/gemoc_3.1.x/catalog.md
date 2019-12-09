@@ -189,7 +189,7 @@ Extensions for GEMOC Engines
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/IconeGemoc_studio-32.png" alt="">
-        ALE compiler <small>by Inria</small></h3>
+        ALE Compiler <small>by Inria</small></h3>
         <p>ALE compiler generates java code from ALE language.</p>
         <p>The main features of the ALE Compiler are:</p><ul>
 		    <li>Integration with Eclipse: Compile ALE languages in the Eclipse IDE</li>
