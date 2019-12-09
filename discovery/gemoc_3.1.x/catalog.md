@@ -185,6 +185,28 @@ Extensions for GEMOC Engines
     </div>
 </div>
 
+<!-- ALE compiler  -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/IconeGemoc_studio-32.png" alt="">
+        ALE compiler <small>by Inria</small></h3>
+        <p>ALE compiler generates java code from ALE language.</p>
+        <p>The main features of the ALE Compiler are:</p><ul>
+		    <li>Integration with Eclipse: Compile ALE languages in the Eclipse IDE</li>
+		    <li>Maven integration: Automatically compile your languages using the ale compiler maven plugin</li>
+		    <li>Configurable: The ALE Compiler can target four implementation patterns: Interpreter, Visitor, EMF’s Switch and Revisitor.</li>
+		</ul>        
+		<p><a href="http://gemoc.org/ale-lang-compiler/">Learn more</a></p>
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="http://www.kermeta.org/ale-lang-compiler/updates/">http://www.kermeta.org/ale-lang-compiler/updates/</a></li>            
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+       <!-- <img class="img-responsive img-hover" src="images/MCL_MBILang-screenshot.png" alt=""> -->        
+    </div>
+</div>
+
 <hr>
 ## Alternative GEMOC based Engines
 Engines and tools proposing alternative approaches (based on GEMOC execution framework)
