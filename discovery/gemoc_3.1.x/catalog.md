@@ -151,13 +151,13 @@ Extensions for GEMOC Engines
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/bcool-icon-32.png" alt="">
          Model Behavioral Interface Language (MBILang) <small>by I3S</small></h3>
-        <p>The Model Behavioral Interface Language (MBILang) allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model.</p>
+        <p>Allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model.</p>
         <p>The Model Behavioral Interface Language (MBILang) allows to specify the exposed elements of the internal executable model as an homogeneous interface. The exposed elements can be exploited to specify the possible interactions with the model. 
         </p>
 
         <h4>Update site</h4>
         <ul>
-            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</a></li>            
+            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</a></li>            
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -170,14 +170,14 @@ Extensions for GEMOC Engines
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/bcool-icon-32.png" alt="">
          Model Coordination Language (MCL) <small>by I3S</small></h3>
-        <p>The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models.</p>
+        <p>Allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models.</p>
         <p>The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models. The defined specification describes how to integrate heterogeneous models defining explicitly the coordination among them.
 		</p><p>Based on the Model Behavioral Interface, the Coordination Model Specification is composed by a set of Connectors. A connector defines how, when and under which synchronization constraint one or more data are conveyed from a model to another. 
         </p>
 
         <h4>Update site</h4>
         <ul>
-            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</a></li>            
+            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</a></li>            
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
