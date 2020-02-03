@@ -151,13 +151,13 @@ Extensions for GEMOC Engines
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/bcool-icon-32.png" alt="">
          Model Behavioral Interface Language (MBILang) <small>by I3S</small></h3>
-        <p>The Model Behavioral Interface Language (MBILang) allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model.</p>
+        <p>Allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model.</p>
         <p>The Model Behavioral Interface Language (MBILang) allows to specify the exposed elements of the internal executable model as an homogeneous interface. The exposed elements can be exploited to specify the possible interactions with the model. 
         </p>
 
         <h4>Update site</h4>
         <ul>
-            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</a></li>            
+            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</a></li>            
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -170,18 +170,40 @@ Extensions for GEMOC Engines
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/bcool-icon-32.png" alt="">
          Model Coordination Language (MCL) <small>by I3S</small></h3>
-        <p>The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models.</p>
+        <p>Allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models.</p>
         <p>The Model Coordination Language allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models. The defined specification describes how to integrate heterogeneous models defining explicitly the coordination among them.
 		</p><p>Based on the Model Behavioral Interface, the Coordination Model Specification is composed by a set of Connectors. A connector defines how, when and under which synchronization constraint one or more data are conveyed from a model to another. 
         </p>
 
         <h4>Update site</h4>
         <ul>
-            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/latest/</a></li>            
+            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</a></li>            
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/MCL_MBILang-screenshot.png" alt="">        
+    </div>
+</div>
+
+<!-- ALE compiler  -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/IconeGemoc_studio-32.png" alt="">
+        ALE Compiler <small>by Inria</small></h3>
+        <p>ALE compiler generates java code from ALE language.</p>
+        <p>The main features of the ALE Compiler are:</p><ul>
+		    <li>Integration with Eclipse: Compile ALE languages in the Eclipse IDE</li>
+		    <li>Maven integration: Automatically compile your languages using the ale compiler maven plugin</li>
+		    <li>Configurable: The ALE Compiler can target four implementation patterns: Interpreter, Visitor, EMF’s Switch and Revisitor.</li>
+		</ul>        
+		<p><a href="http://gemoc.org/ale-lang-compiler/">Learn more</a></p>
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="http://www.kermeta.org/ale-lang-compiler/updates/">http://www.kermeta.org/ale-lang-compiler/updates/</a></li>            
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+       <!-- <img class="img-responsive img-hover" src="images/MCL_MBILang-screenshot.png" alt=""> -->        
     </div>
 </div>
 
@@ -240,7 +262,7 @@ Modeling environment tools.
 <div class="row">    
     <div class="col-md-8 col-md-push-4">    	
         <h3><img src="images/umldesigner.png" alt="">
-         UML Designer 9.0.0<small>by Obeo</small></h3>
+         UML Designer 9.0.0<small> by Obeo</small></h3>
         <p>Graphical tooling to edit and visualize UML models.</p>
         <p>UML Designer provides a set of common diagrams to work with UML 2.5 models. The intent is to provide an easy way to make the transition from UML to domain specific modeling. This way users can continue to manipulate legacy UML models and start working with DSL. Users can even re-use the provided representations and work in a total transparence on both UML and DSL models at the same time.
         <a href="http://www.umldesigner.org/">Learn more</a></p>
@@ -253,6 +275,70 @@ Modeling environment tools.
     <div class="col-md-4 col-md-pull-8">
         <a href="images/umldesigner-screenshot-320x240.png">
             <img class="img-responsive img-hover" src="images/umldesigner-screenshot-320x240.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!-- Capella  -->
+<div class="row">   
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/icon_capella-32.png" alt="">
+         Capella 1.3.1<small> by Eclipse Polarsys</small></h3>
+        <p>Comprehensive, extensible and field-proven MBSE tool and method to design systems architecture.</p>
+        <p>Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. <br>In GEMOC, Capella may contribute to the modeling workbench activities.
+        <a href="https://www.polarsys.org/capella/">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</a></li>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</a></li>
+            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/">https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/</a></li>
+   
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/</a></li>
+            <li><a href="http://download.eclipse.org/nebula/snapshot">http://download.eclipse.org/nebula/snapshot</a></li>
+            <li><a href="http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site">http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site</a></li>
+            <li><a href="https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/"https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</a></li>
+            <li><a href="http://download.eclipse.org/sirius/updates/legacy">http://download.eclipse.org/sirius/updates/legacy</a></li>
+            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon">https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <a href="images/Capella_HMI.png">
+            <img class="img-responsive img-hover" src="images/Capella_HMI.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!-- Capella  Studio -->
+<div class="row">    
+    <div class="col-md-8 col-md-push-4">    	
+        <h3><img src="images/icon_capella-32.png" alt="">
+         Capella Studio 1.3.1<small> by Eclipse Polarsys</small></h3>
+        <p>Development environment for Capella.</p>
+        <p>Capella Studio is the development environment aiming to design Capella extensions. <br>In GEMOC, Capella Studio may contribute to the language workbench activities.
+        <a href="https://www.polarsys.org/capella/">Learn more</a></p>
+
+        <h4>Update site</h4>
+        <ul>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</a></li>
+            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</a></li>
+            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/">https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/</a></li>
+   
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/</a></li>
+            <li><a href="https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/</a></li>
+            <li><a href="http://download.eclipse.org/nebula/snapshot">http://download.eclipse.org/nebula/snapshot</a></li>
+            <li><a href="http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site">http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site</a></li>
+            <li><a href="https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/">https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</a></li>
+            <li><a href="http://download.eclipse.org/sirius/updates/legacy">http://download.eclipse.org/sirius/updates/legacy</a></li>
+            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon">https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</a></li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        <a href="images/Capella_HMI.png">
+            <img class="img-responsive img-hover" src="images/Capella_HMI.png" alt="">
         </a>
     </div>
 </div>
