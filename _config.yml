@@ -14,7 +14,7 @@ markdown: kramdown
 # These override Jekyll defaults
 # permalink: /:year/:title
 
-include: [concurrency2021/.gitattributes]
+include: [.gitattributes]
 exclude: [vendor]
 
 # These are new (in addition to Jekyll's elements above )
