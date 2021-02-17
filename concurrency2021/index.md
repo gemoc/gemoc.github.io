@@ -37,4 +37,4 @@ A complete working build of the GEMOC Studio containing the proposed implementat
 
 ## Videos
 
-![](./video-henshin-pretest.webm)
+![](https://github.com/gemoc/gemoc.github.io/raw/gh-pages-edit/concurrency2021/video-henshin-pretest.webm)

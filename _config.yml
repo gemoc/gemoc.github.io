@@ -14,8 +14,9 @@ markdown: kramdown
 # These override Jekyll defaults
 # permalink: /:year/:title
 
-include: [.gitattributes]
-exclude: [vendor]
+exclude:
+  - vendor
+  - "*.webm"
 
 # These are new (in addition to Jekyll's elements above )
 organization: The GEMOC Initiative
