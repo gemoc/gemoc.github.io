@@ -5,13 +5,15 @@ rvm:
 
 cache: bundler
 
+before_install:
+  - echo -e "machine github.com\n  login $GH_TOKEN" > ~/.netrc
+  - git lfs pull
+
 install:
   - bundle install
 
 before_script:
   - "chmod +x ./build.sh"
-  - echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
-  - git lfs pull
 
 script:
   "./build.sh"
@@ -19,7 +21,6 @@ script:
 branches:
   only:
     - gh-pages-edit
-
 
 env:
   global:
