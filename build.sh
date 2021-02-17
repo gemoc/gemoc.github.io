@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -x
 
 DEPLOY_REPO="https://${GH_TOKEN}@github.com/gemoc/gemoc.github.io.git"
 
