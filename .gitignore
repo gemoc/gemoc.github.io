@@ -4,3 +4,4 @@ _site
 /.project
 .bundle/
 /vendor
+..bfg-report

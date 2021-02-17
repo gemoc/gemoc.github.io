@@ -4,7 +4,7 @@ services:
     command: jekyll serve
     image: jekyll/jekyll:latest
     volumes:
-      - ".:/srv/jekyll"
-      - "./vendor/bundle:/usr/local/bundle"
+      - ".:/srv/jekyll:z"
+      - "./vendor/bundle:/usr/local/bundle:z"
     ports:
-      - 4000:4000
+      - 127.0.0.1:4000:4000
