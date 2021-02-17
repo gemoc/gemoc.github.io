@@ -24,7 +24,7 @@ organization: The GEMOC Initiative
 
 plugins: 
   - jekyll-twitter-plugin
-  - jekyll-spaceship
+  # - jekyll-spaceship
 
 # jekyll-scholar configurations
 scholar:
@@ -45,10 +45,10 @@ scholar:
 
 
 # Where things are
-jekyll-spaceship:
-  # default enabled processors
-  processors:
-    - media-processor
+# jekyll-spaceship:
+#   # default enabled processors
+#   processors:
+#     - media-processor
     # - table-processor
     # - mathjax-processor
     # - plantuml-processor
