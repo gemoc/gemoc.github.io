@@ -214,10 +214,13 @@ Discover concrete examples of modeling languages created with the GEMOC Studio f
         <h3>xCapella {{ page.langCon }} {{ page.bcoolLangCoord }}</h3>
         <p>xCapella is an executable extension of <a href="https://polarsys.org/capella/">Capella</a>.
 The execution is mainly based on the coordination of two sub languages: Mode Automata and DataFlow.</p>
+		<p>It is distributed as a complete Eclipse package with Gemoc, Capella and xCapella.</p>
 
         <h4>Related links</h4>
         <ul>
+        	<li><a href="https://github.com/gemoc/xCapella">Github</a></li>
             <li><a href="{{ site.baseurl }}{% link pub/anr/finalworkshop/2016-03-anr-gemoc-workshop-final-experimentations.pdf %}">Slides</a></li>
+            <li><a href="https://youtu.be/tXd421LMPao">Video</a></li>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
