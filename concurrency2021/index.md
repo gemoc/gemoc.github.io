@@ -22,7 +22,7 @@ layout: default
 The source code of the implementation described in the paper can be found in specific branches of four Github repositories: 
 - [Generic concurrent engine, strategies, MoCCML integration](https://github.com/eclipse/gemoc-studio-execution-moccml/tree/concurrency-analysis), 
 - [Small changes made to the GEMOC execution framework](https://github.com/eclipse/gemoc-studio-modeldebugging/tree/concurrency-analysis), 
-- [Henshin integration](https://github.com/szschaler/henshin_xdsmls/tree/feature/generic_strategies), 
+- [Henshin integration](https://github.com/szschaler/henshin_xdsmls), 
 - [Example xDSMLs (PLS and SigPML), each with one MoCCML semantics and one Henshin semantics, and example models](https://github.com/jdeantoni/concurrencyAnalysisExampleInGemoc).
 
 All the code is open-source (EPL-1.0).
