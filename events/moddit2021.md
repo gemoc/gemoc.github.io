@@ -1,7 +1,7 @@
 ---
 layout: event
 title: ModDiT 2021
-date: 2021, Japan
+date: 2021, Virtual
 ---
 
 <style type="text/css">
