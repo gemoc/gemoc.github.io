@@ -25,7 +25,7 @@ date: 2021, Japan
 <div style="text-align: center;" markdown="1">
 
 
-# 1st International Workshop on Model-Driven Development of Digital Twins
+# 1st International Workshop on Model-Driven Engineering of Digital Twins
 
 ## ModDiT’21
 ## co-located with [MODELS 2021](http://www.modelsconference.org/)
@@ -43,7 +43,45 @@ date: 2021, Japan
 
 ## About the Workshop
 
-TBA. 
+Digital twins promise tremendous potential to better understand and make use of cyber-physical systems in automotive, avionics, manufacturing, medicine, and many more domains. Despite many of the twinned systems being developed using models, engineering digital twins currently is ad-hoc and demands integrating different piecemeal technologies, which effectively hinders the application of digital twins. The focus of many digital twins and frameworks to create digital twins is on data acquisition and visualization via dashboards. Current research on digital twins focuses on specific implementations (bottom-up) or abstract models on how digital twins could be conceived (top down). Yet, there is a huge gap between both views that only research on model-driven engineering (MDE) can reduce. Hence, MDE is crucial to fully and systematically leverage the potential of digital twins. Currently, a venue bringing together experts from the modelling community on this topic is missing: ModDIT’21 brings together researchers on and developers of digital twins come together to shape the future of systematically designing, engineering, evolving, maintaining, and evaluating digital twins.
+
+## Call for Papers
+
+### Topics
+
+Topics of interest include, but are not restricted to:
+
+-	Modelling concepts and languages, methods, and tools for developing digital twins
+-	Digital twins for DevOps
+-	Quality assurance for and evaluation of digital twins
+-	Deployment and operation of digital twins
+-	Model consistency, management, and evolution of engineering models
+-	Architectural patterns for digital twins
+-	Digital twins for continual learning and continuous improvement
+-	Combining models and data in digital twins
+-	Digital twins for dynamic (re)configuration and optimization
+-	Case studies, experience reports, comparisons
+
+### Submission
+
+The following types of submissions are solicited:
+
+-	Regular papers (max 8 pages): These are “traditional” papers detailing research contributions to model-driven development of digital twins.
+-	Short papers (max 4 pages): These are forward-looking papers about ideas that will interest the workshop attendees but which are not currently at an advanced level of research. These might be about new research avenues, research statements or positions, or about integrating existing research ideas, or technologies.
+-	Tool demonstration papers (max 4 pages): These are papers which focus on the tooling aspects. A good tool paper focuses on practical insights that are likely to be useful to other implementers or users of digital twins in the future. Any of the aforementioned topics of interest are appropriate areas for tool demonstrations. Submissions must not exceed 4 pages. They may optionally come with an appendix with a demo outline / screenshots and/or a short video/screencast illustrating the tool.
+-	Exemplar papers (max 4 pages): These are implementations or detailed specifications of digital twins that pose and highlight fundamental or characteristic challenges for the modelling community. Submissions must not exceed 4 pages. They may optionally come with an appendix with further materials, or a short video/screencast illustrating the exemplar.
+
+Submissions that do not adhere to these limits or that violate the formatting guidelines will be desk-rejected without review. Accepted papers will be published in the workshop proceedings published of MODELS. Selected papers from the workshop will be invited to revise and submit extended versions of the papers for publication in a well-known journal.
+
+Submissions URL: https://easychair.org/conferences/?conf=moddit2021 
+
+## Important Dates
+
+- Abstract submission deadline: July 16, 2021
+- Paper submission deadline: July 23, 2021
+- Notification of acceptance: August 21, 2021
+- Camera ready submission deadline: August 28, 2021
+- Workshop: TBA.
 
 ## Keynote
 
@@ -53,61 +91,16 @@ TBA.
 
 TBA. 
 
-## Call for Papers
-
-### Context 
-
-TBA. 
-
-
-### Topics
-
-The topics of interest include (but are not limited to):
-
-TBA. 
-
-
-### Workshop Format
-
-TBA. 
-
-### Workshop Outcomes
-
-TBA. (discussions, proceedings, manifesto, community)
-
-### Submission
-
-The following types of submissions are solicited:
-
-- Research papers (up to 8 pages)
-- Short papers (up to 4 pages)
-- TBA.
-
-As contributions, we expect early research results about the aforementioned topics, descriptions of problems, case studies, experience reports or solutions related to the topics of interest. We also strongly encourage the submission of comparative studies and benchmarks of existing approaches in one of the topics. Short papers can also describe tool demonstrations or position papers. 
-
-Papers that describe use cases or novel approaches can be accompanied by concrete artifacts, such as models (requirements, design, analysis, transformation, composition, etc.), stored in a public repository. Artifacts should illustrate any experience on digital twins.
-
-
-All submissions have to follow the [the IEEE format](https://www.ieee.org/conferences/publishing/templates.html) and must be [submitted electronically in PDF format via Easychair](https://easychair.org/my/conference?conf=moddit2021). 
-
-All submissions will be evaluated by at least three members of the program committee. Research papers, experience reports, and tool demonstration papers will be evaluated concerning novelty, correctness, significance, readability, and alignment with the workshop call. Short (position) papers will be evaluated primarily concerning the validity and the ability to generate discussion (even controversy), as well as alignment with the workshop call. Furthermore, all submissions must be original work and must not have been previously published or being under review elsewhere.
-
-The accepted papers will be published as IEEE online proceedings and indexed in DBLP and Scopus.
-
-
-## Important Dates
-
-- Abstract submission deadline: TBA.
-- Paper submission deadline: TBA.
-- Notification of acceptance: TBA.
-- Camera ready submission deadline: TBA.
-- Workshop: TBA.
-
 ## Committees
 
 ### Organizers ([contact](mailto:moddit2021@easychair.org))
 
-TBA.
+-	Francis Bordeleau, (École de technologie supérieure (ETS), Canada)
+-	Benoit Combemale (University of Rennes 1, France)
+-	Romina Eramo (University of L’Aquila, Italy)
+-	Mark van den Brand (Eindhoven University of Technology, The Netherlands)
+-	Manuel Wimmer (JKU Linz, Austria)
+-	Andreas Wortmann (University of Stuttgart, Germany)
 
 ### Program Committee
 
