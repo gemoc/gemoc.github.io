@@ -95,7 +95,8 @@ TBA.
 
 ### Organizers ([contact](mailto:moddit2021@easychair.org))
 
--	Francis Bordeleau, (École de technologie supérieure (ETS), Canada)
+-	Francis Bordeleau (École de technologie supérieure (ETS), Canada)
+-	Loek Cleophas (Eindhoven University of Technology, The Netherlands, and Stellenbosch University, South Africa)
 -	Benoit Combemale (University of Rennes 1, France)
 -	Romina Eramo (University of L’Aquila, Italy)
 -	Mark van den Brand (Eindhoven University of Technology, The Netherlands)
