@@ -73,7 +73,7 @@ The following types of submissions are solicited:
 
 Submissions that do not adhere to these limits or that violate the formatting guidelines will be desk-rejected without review. Accepted papers will be published in the workshop proceedings published of MODELS. Selected papers from the workshop will be invited to revise and submit extended versions of the papers for publication in a well-known journal.
 
-Submissions URL: https://easychair.org/conferences/?conf=moddit2021 
+Submissions via [EasyChair](https://easychair.org/conferences/?conf=moddit2021)
 
 ## Important Dates
 
