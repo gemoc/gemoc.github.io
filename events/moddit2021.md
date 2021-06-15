@@ -89,6 +89,7 @@ We are pleased to annouce that [Prof. Bernhard Rumpe](https://www.se-rwth.de/sta
 
   > A digital twin shares a lot of characteristics with a model. However, there are also a lot of differences. A digital twin is like a real twin: it is an active instance that interacts with the real system. We discuss definitions and variants of digital twins and we closely examine possibilities to systematically derive digital twins from development models and thus deepen the shared characteristics of models and digital twins.
 
+  > [Prof. Bernhard Rumpe](https://www.se-rwth.de/staff/rumpe/) is heading the Software Engineering department at the RWTH Aachen University, Germany. The RWTH Aachen is one of the Excellence Universities in Germany with a strong focus on engineering and its scientific foundations. His main interests are rigorous and practical software and system development methods based on adequate modeling techniques. This includes agile development methods like XP and SCRUM as well as model-engineering based on UML-like notations and domain specific languages. The working groups have contributed to many modeling techniques, including the UML standardization. The group is well integrated in strategic efforts, such as the Internet-Of-Production Excellence cluster (IoP) and the Aachen Center for Systems Engineering (CSE), where digital twins are in deep focus. His newest book on the MontiCore Language workbench has been released earlier this year.
 
 ## Program
 
@@ -108,4 +109,21 @@ TBA.
 
 ### Program Committee
 
-TBA.
+- Shaukat Ali
+- Johann Bourcier
+- Jeff Gray
+- Georg Grossmann
+- Matthias Jarke
+- Djamel Eddine Khelladi
+- Jerome Pfeiffer
+- Alfonso Pierantonio
+- Pascal Poizat
+- Michel Reniers
+- Bernhard Rumpe
+- Julien Schmaltz
+- Massimo Tisi
+- Hans Vangheluwe
+- Michael Vierhauser
+- Alois Zoitl
+- Steffen Zschaler
+
