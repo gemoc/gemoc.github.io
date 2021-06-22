@@ -71,9 +71,9 @@ The following types of submissions are solicited:
 -	Tool demonstration papers (max 4 pages): These are papers which focus on the tooling aspects. A good tool paper focuses on practical insights that are likely to be useful to other implementers or users of digital twins in the future. Any of the aforementioned topics of interest are appropriate areas for tool demonstrations. Submissions must not exceed 4 pages. They may optionally come with an appendix with a demo outline / screenshots and/or a short video/screencast illustrating the tool.
 -	Exemplar papers (max 4 pages): These are implementations or detailed specifications of digital twins that pose and highlight fundamental or characteristic challenges for the modelling community. Submissions must not exceed 4 pages. They may optionally come with an appendix with further materials, or a short video/screencast illustrating the exemplar.
 
-Submissions that do not adhere to these limits or that violate the formatting guidelines will be desk-rejected without review. Accepted papers will be published in the workshop proceedings published of MODELS. Selected papers from the workshop will be invited to revise and submit extended versions of the papers for publication in a well-known journal.
+Submissions must adhere to the IEEE formatting instructions, which can be found at: [IEEE - Manuscript Templates for Conference Proceedings](https://www.ieee.org/conferences/publishing/templates.html), and must be submitted via [EasyChair](https://easychair.org/conferences/?conf=moddit2021).
 
-Submissions via [EasyChair](https://easychair.org/conferences/?conf=moddit2021)
+Submissions that do not adhere to these limits or that violate the formatting guidelines will be desk-rejected without review. Accepted papers will be published in the workshop proceedings published of MODELS. Selected papers from the workshop will be invited to revise and submit extended versions of the papers for publication in a well-known journal.
 
 ## Important Dates
 
