@@ -1,30 +1,1740 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>The GEMOC Initiative</title>
+    <description>GEMOC develops techniques, frameworks, and environments to facilitate the creation, integration, and automated processing of heterogeneous modeling languages.
+</description>
+    <link>https://gemoc.github.io/</link>
+    <atom:link href="https://gemoc.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 02 Jul 2021 10:02:13 -0500</pubDate>
+    <lastBuildDate>Fri, 02 Jul 2021 10:02:13 -0500</lastBuildDate>
+    <generator>Jekyll v3.9.1</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>GEMOC Studio V3.2.0</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-releases320-20200616&quot;&gt;GEMOC Studio releases/3.2.0 (2020/06/16)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS (Linux 64, Win 64, MacOS 64).&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It includes a headless variant that allows to launch an execution on the command line without the Eclipse UI.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Studio is the last based on Eclipse Photon.1&lt;/li&gt;
+  &lt;li&gt;Several improvements and bug fix on ALE engine&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Several improvements and bug fix on MOCCML engine (2 examples are now available in the Studio: SigPML and TFSM)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;performance improvement (Sirius representation refresh)&lt;/li&gt;
+  &lt;li&gt;improved launch tabs&lt;/li&gt;
+  &lt;li&gt;.dsl file support for “metaprog” with improved file content checker&lt;/li&gt;
+  &lt;li&gt;Support for addon priority mechanism&lt;/li&gt;
+  &lt;li&gt;Simplified Concurrent API&lt;/li&gt;
+  &lt;li&gt;Several refactoring to factorize the UI code of the engines (Launcher).&lt;/li&gt;
+  &lt;li&gt;Added automatic creation of missing source folders&lt;/li&gt;
+  &lt;li&gt;Upgraded version of thirdparties components (ALE, Sirius, …)&lt;/li&gt;
+  &lt;li&gt;Improved continuous integration: migration on Eclipse new infrastructure based on kubernetes, UI testing now provides a video recording.&lt;/li&gt;
+  &lt;li&gt;restructuration of the git repositories&lt;/li&gt;
+  &lt;li&gt;deployment of maven artifacts into Eclipse nexus maven repository&lt;/li&gt;
+  &lt;li&gt;and many bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release-since-v310&quot;&gt;2. List of Pull Requests in this release (since V3.1.0)&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository.&lt;/p&gt;
+
+&lt;p&gt;Thanks to our contributors (in alphabetical order): Valentin Besnard (ESEO), Erwan Bousse(LN2S), Julien Deantoni (I3S/CNRS), Ronan Gueguen (Université de Nantes), Dorian Leroy (TU Vienna /Inria), Didier Vojtisek (Inria)&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add wait for treeitem after expand in tests &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/197&quot;&gt;#197&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Improve default Engine addon launch conf tab &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/193&quot;&gt;#193&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add automatic creation of missing source folders &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/179&quot;&gt;#179&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Remove event manager from feature.xml &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/177&quot;&gt;#177&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Example’s metaprog entry fixed &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/209&quot;&gt;#209&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix xdsmlFilePath attribute in plugin.xml &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/196&quot;&gt;#196&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix method getEntry of DslImpl &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/186&quot;&gt;#186&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] autosrc: set java compliance to 1.8 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/182&quot;&gt;#182&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;bump&lt;/strong&gt;] Stop ALE engine on error &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/176&quot;&gt;#176&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Do not wait for discovery update site availability check in tests &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/173&quot;&gt;#173&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move commons to gemoc-studio-modeldebugging git repository &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/200&quot;&gt;#200&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move JavaEngine to its own dedicated git repository &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/199&quot;&gt;#199&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Uses new generic Context and RunConfiguration classes from execution framework &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/198&quot;&gt;#198&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Use general extension point + nature and builder refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/185&quot;&gt;#185&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Change Timesquare updatesite &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/195&quot;&gt;#195&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Sirius 6.1.3 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/194&quot;&gt;#194&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump ALE to latest version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/184&quot;&gt;#184&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump GEMOC Studio to 3.2.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/174&quot;&gt;#174&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix machine-id of the jenkins docker image &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/205&quot;&gt;#205&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Deploy GEMOC artefacts to maven repository (repo.eclipse.org) &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/204&quot;&gt;#204&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add OCLInEcore to the GEMOC Studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/188&quot;&gt;#188&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improve test video recording &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/190&quot;&gt;#190&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/189&quot;&gt;#189&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use custom docker image for building the studio on the CI &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/187&quot;&gt;#187&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improved docker image for local build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/181&quot;&gt;#181&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove deprecated update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/180&quot;&gt;#180&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Merge products and updatesite projects &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/175&quot;&gt;#175&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.2. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] DslValidator modified to use languageComponents instead of RuleProvider &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/175&quot;&gt;#175&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] IConfigurationElement arrays changed for ArrayLists in GEMOC tools &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/177&quot;&gt;#177&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Proposal Provider and Highlighting for dsl files in GEMOC Studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/172&quot;&gt;#172&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Fix TreeViewerHelper resize too often &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/168&quot;&gt;#168&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Cache sorting of addon on engine status change &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/165&quot;&gt;#165&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] New plug-in for validation in GEMOC Studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/164&quot;&gt;#164&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Adds Addon parameter feature and makes equivalency classes computing optional &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/157&quot;&gt;#157&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Implement addon priority mechanism &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/149&quot;&gt;#149&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add new GenericDebugModelId for generic model presentation and breakpoint management &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/141&quot;&gt;#141&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add information about number of completed steps in the EngineStatus class &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/143&quot;&gt;#143&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;enhancement&lt;/strong&gt;] Reduce Sirius refresh notification &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/125&quot;&gt;#125&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Improve default Engine addon launch conf tab &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/136&quot;&gt;#136&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Behavioral interface DSL, event occurrence metamodel and value metamodel &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/119&quot;&gt;#119&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add “openFileFromPlugin” method to TestUtil &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/109&quot;&gt;#109&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Clarifies Eclipse consoles used by the engines &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/116&quot;&gt;#116&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Avoid NPE in IntrospectiveMutableFieldExtractor for MM with null names &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/150&quot;&gt;#150&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Remove Logical Step View from perspective extension declaration &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/145&quot;&gt;#145&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix xdsmlFilePath attribute in plugin.xml &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/139&quot;&gt;#139&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Handle Sirius forced resourceSet &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/140&quot;&gt;#140&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix double instantiation of language specific addons &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/121&quot;&gt;#121&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-1&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Kermeta3 validation rule moved into gemoc-debugging from the K3 validation plugin &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/170&quot;&gt;#170&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move commons for gemoc-studio to  gemoc-studio-modeldebugging git repository &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/148&quot;&gt;#148&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move JavaEngine to its own git repository &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/147&quot;&gt;#147&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Use general extension point + nature and  builder refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/133&quot;&gt;#133&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Sirius 6.1.3 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/138&quot;&gt;#138&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/134&quot;&gt;#134&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Deploy GEMOC artefacts to maven repository (repo.eclipse.org) &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/154&quot;&gt;#154&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Move some reusable Context and Runconfiguration classes from JavaEngine to execution framework &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/144&quot;&gt;#144&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improve test video recording &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/135&quot;&gt;#135&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove deprecated update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/130&quot;&gt;#130&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improve marker reporting in tests &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/120&quot;&gt;#120&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-pull-requests-in-repository-gemoc-studio-execution-ale&quot;&gt;2.3. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-ale&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-2&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Use general extension point &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/25&quot;&gt;#25&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve default Engine addon launch conf tab &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/27&quot;&gt;#27&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Validation plug-in for the Ale meta-programming approach in GEMOC Studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/34&quot;&gt;#34&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] “metaprog” entry added to dsl files for the Ale example &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/35&quot;&gt;#35&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Metaprogramming approach name changed to FullyQualifiedName &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/36&quot;&gt;#36&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Example’s metaprog entry fixed &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/37&quot;&gt;#37&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Metaprog plugin modified to fit new extension point description + added LanguageComponent &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/38&quot;&gt;#38&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] validationRule added to languageComponent in plugin &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/40&quot;&gt;#40&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Added a console debug message indicating the implicit addons on start &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/32&quot;&gt;#32&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Change color of currentInstruction animation in example &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/28&quot;&gt;#28&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Clarifies Eclipse consoles used by the engines &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/20&quot;&gt;#20&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Use modified GEMOC standard icon in the launch conf for ALE &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/8&quot;&gt;#8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add command line eclipseapplication &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Integrate ALE interpreted engine in GEMOC Studio build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-2&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix ALE Engine launcher error message handling &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/41&quot;&gt;#41&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;bump&lt;/strong&gt;] Use AleInterpreter close &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/24&quot;&gt;#24&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;bump&lt;/strong&gt;] Stop engine on error &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/21&quot;&gt;#21&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix: print error log for model executions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/18&quot;&gt;#18&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix issue #13 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Update references to ale.odesign in the aird of the example model &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/4&quot;&gt;#4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-2&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Validator removed from plugin.xml &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/42&quot;&gt;#42&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Removes dependency to JavaEngine &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/31&quot;&gt;#31&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Use new GenericDebugModelId in order to decrease dependecies to JavaEngine &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/30&quot;&gt;#30&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-2&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump ALE version to 2019-06-24 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/19&quot;&gt;#19&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-2&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Deploy GEMOC artefacts to maven repository (repo.eclipse.org) &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/33&quot;&gt;#33&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/26&quot;&gt;#26&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/15&quot;&gt;#15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix xtend compilation issue 1373 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-pull-requests-in-repository-gemoc-studio-execution-java&quot;&gt;2.4. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-java&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-java/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-3&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] ValidationRule added to languageComponent in plugin &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/10&quot;&gt;#10&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Metaprogramming approach name changed to FullyQualifiedName &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/8&quot;&gt;#8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Metaprog plugin modified to fit new extension point description + added LanguageComponent &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Validator removed from plugin.xml &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/12&quot;&gt;#12&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Validation plug-in for the Kermeta3 meta-programming approach in GEMOC Studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-3&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix windows specific issue on the K3 project creation wizard &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/3&quot;&gt;#3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-3&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Kermeta3Rule moved to the gemoc-modeldebugging &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/6&quot;&gt;#6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-3&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Deploy GEMOC artefacts to maven repository (repo.eclipse.org) &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/4&quot;&gt;#4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-pull-requests-in-repository-gemoc-studio-moccml&quot;&gt;2.5. Pull Requests in repository &lt;em&gt;gemoc-studio-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-4&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Prettier Moccml diagrams &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/7&quot;&gt;#7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add possibility to use def to simplify the writing of constraint &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/6&quot;&gt;#6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-4&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] correct a bug due to unordered collection &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/10&quot;&gt;#10&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-3&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Ocl 6.11 bump fix &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/12&quot;&gt;#12&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-4&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Deploy GEMOC artefacts to maven repository (repo.eclipse.org) &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/11&quot;&gt;#11&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Change Timesquare updatesite &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/8&quot;&gt;#8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove deprecated update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;26-pull-requests-in-repository-gemoc-studio-execution-moccml&quot;&gt;2.6. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-5&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve default Engine addon launch conf tab &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/30&quot;&gt;#30&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] ValidationRule added to languageComponent in plugin &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/45&quot;&gt;#45&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] “metaprog” entry added to dsl files for the MOCCML examples &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/42&quot;&gt;#42&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Metaprogramming approach name changed to FullyQualifiedName &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/43&quot;&gt;#43&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Metaprog plugin modified to fit new extension point description + added LanguageComponent &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/44&quot;&gt;#44&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Validatation plug-in for the MOCCML meta-programming approach in GEMOC Studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/39&quot;&gt;#39&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Builder supports aspects separated by a comma and whitespace &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/40&quot;&gt;#40&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;enhancement&lt;/strong&gt;] Improve RTDAccessor generator &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/34&quot;&gt;#34&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Make EventSchedulingModelExecutionTracingAddon not default &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/28&quot;&gt;#28&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Clarifies Eclipse consoles used by the engines &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/17&quot;&gt;#17&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-5&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Re-enable dispatch call to applyMSEFutureStates &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/38&quot;&gt;#38&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix moccml examples &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/47&quot;&gt;#47&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix xdsmlFilePath attribute in plugin.xml &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/33&quot;&gt;#33&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix the triggering of moccml builder &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/31&quot;&gt;#31&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-4&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move moccml metaprog plugin to proper place in repo and deploy in studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/46&quot;&gt;#46&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Add DefaultConcurrentModelExecutionContext &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/27&quot;&gt;#27&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Use general extension point + nature and builder refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/25&quot;&gt;#25&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Simplify concurrent API &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/20&quot;&gt;#20&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-5&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Deploy GEMOC artefacts to maven repository (repo.eclipse.org) &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/35&quot;&gt;#35&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Change Timesquare updatesite &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/32&quot;&gt;#32&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/29&quot;&gt;#29&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove deprecated update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/23&quot;&gt;#23&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 16 Jun 2020 00:00:00 -0500</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2020/06/16/V3.2.0.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2020/06/16/V3.2.0.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>GEMOC Studio V3.2.0-20191216</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-milestones320-20191216-20191216&quot;&gt;GEMOC Studio milestones/3.2.0-20191216 (2019/12/16)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS (Linux 64, Win 64, MacOS 64).&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It includes a headless variant that allows to launch an execution on the command line without the Eclipse UI.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Studio is still based on Eclipse Photon.1&lt;/li&gt;
+  &lt;li&gt;Several improvements and bug fix on ALE engine&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Several improvements and bug fix on MOCCML engine (2 examples are now available in the Studio: SigPML and TFSM)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Simplified Concurrent API&lt;/li&gt;
+  &lt;li&gt;Several refactoring to factorize the UI code of the engines (Launcher).&lt;/li&gt;
+  &lt;li&gt;Added automatic creation of missing source folders&lt;/li&gt;
+  &lt;li&gt;Upgraded version of thirdparties components (ALE, Sirius, …)&lt;/li&gt;
+  &lt;li&gt;Improved continuous integration: migration on Eclipse new infrastructure based on kubernetes, UI testing now provides a video recording.&lt;/li&gt;
+  &lt;li&gt;and many bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release-since-v310&quot;&gt;2. List of Pull Requests in this release (since V3.1.0)&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository.&lt;/p&gt;
+
+&lt;p&gt;Thanks to our contributors (in alphabetical order): Valentin Besnard (ESEO), Erwan Bousse(LN2S), Julien Deantoni (I3S/CNRS), Dorian Leroy (TU Vienna /Inria), Didier Vojtisek (Inria)&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add automatic creation of missing source folders &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/179&quot;&gt;#179&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Remove event manager from feature.xml &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/177&quot;&gt;#177&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix method getEntry of DslImpl &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/186&quot;&gt;#186&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] autosrc: set java compliance to 1.8 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/182&quot;&gt;#182&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;bump&lt;/strong&gt;] Stop ALE engine on error &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/176&quot;&gt;#176&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Do not wait for discovery update site availability check in tests &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/173&quot;&gt;#173&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Use general extension point + nature and builder refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/185&quot;&gt;#185&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Change Timesquare updatesite &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/195&quot;&gt;#195&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump ALE to latest version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/184&quot;&gt;#184&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump GEMOC Studio to 3.2.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/174&quot;&gt;#174&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add OCLInEcore to the GEMOC Studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/188&quot;&gt;#188&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improve test video recording &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/190&quot;&gt;#190&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/189&quot;&gt;#189&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use custom docker image for building the studio on the CI &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/187&quot;&gt;#187&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improved docker image for local build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/181&quot;&gt;#181&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove deprecated update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/180&quot;&gt;#180&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Merge products and updatesite projects &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/175&quot;&gt;#175&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.2. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Behavioral interface DSL, event occurrence metamodel and value metamodel &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/119&quot;&gt;#119&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add “openFileFromPlugin” method to TestUtil &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/109&quot;&gt;#109&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Clarifies Eclipse consoles used by the engines &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/116&quot;&gt;#116&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Handle Sirius forced resourceSet &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/140&quot;&gt;#140&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix double instantiation of language specific addons &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/121&quot;&gt;#121&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-1&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Use general extension point + nature and  builder refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/133&quot;&gt;#133&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Sirius 6.1.3 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/138&quot;&gt;#138&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/134&quot;&gt;#134&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improve test video recording &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/135&quot;&gt;#135&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove deprecated update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/130&quot;&gt;#130&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improve marker reporting in tests &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/120&quot;&gt;#120&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-pull-requests-in-repository-gemoc-studio-execution-ale&quot;&gt;2.3. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-ale&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-2&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Clarifies Eclipse consoles used by the engines &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/20&quot;&gt;#20&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-2&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;bump&lt;/strong&gt;] Use AleInterpreter close &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/24&quot;&gt;#24&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;bump&lt;/strong&gt;] Stop engine on error &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/21&quot;&gt;#21&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-pull-requests-in-repository-gemoc-studio-moccml&quot;&gt;2.4. Pull Requests in repository &lt;em&gt;gemoc-studio-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-3&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Prettier Moccml diagrams &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/7&quot;&gt;#7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add possibility to use def to simplify the writing of constraint &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/6&quot;&gt;#6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-3&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] correct a bug due to unordered collection &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/10&quot;&gt;#10&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-2&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/8&quot;&gt;#8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove deprecated update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-pull-requests-in-repository-gemoc-studio-execution-moccml&quot;&gt;2.5. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-4&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Make EventSchedulingModelExecutionTracingAddon not default &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/28&quot;&gt;#28&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Clarifies Eclipse consoles used by the engines &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/17&quot;&gt;#17&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-2&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Add DefaultConcurrentModelExecutionContext &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/27&quot;&gt;#27&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Use general extension point + nature and builder refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/25&quot;&gt;#25&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Simplify concurrent API &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/20&quot;&gt;#20&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-3&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Tycho 1.5 and p2 dependencies optimisation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/29&quot;&gt;#29&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove deprecated update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/23&quot;&gt;#23&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 16 Dec 2019 00:00:00 -0600</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/12/16/V3.2.0-20191216.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/12/16/V3.2.0-20191216.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
+    
+      <item>
+        <title>GEMOC Studio V3.1.0</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-310-20190729&quot;&gt;GEMOC Studio 3.1.0 (2019/07/29)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS.&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Studio is based on Eclipse Photon.1&lt;/li&gt;
+  &lt;li&gt;Studio now contains a new sequential execution engine based on ALE.&lt;/li&gt;
+  &lt;li&gt;Studio now contains again the concurrent execution engine (MOCCML) based on Timesquare&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;New Eclipse package providing an headless application allowing to run a model from the command line&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Improved Variable and Debug views&lt;/li&gt;
+  &lt;li&gt;Improved Sirius wizard for Gemoc&lt;/li&gt;
+  &lt;li&gt;Added a pre-release version of ecoretools epackage registration tool to the studio&lt;/li&gt;
+  &lt;li&gt;Upgraded version of thirdparties components (Melange, K3, Xtext, Sirius, …)&lt;/li&gt;
+  &lt;li&gt;Improved continuous integration: now it uses a multibranch pipeline that checks the integration of all repositories at once (synchronisation is based on branch names)&lt;/li&gt;
+  &lt;li&gt;Use of a discovery URL that is unique for this version (allowing to better check contributions for this version of the studio)&lt;/li&gt;
+  &lt;li&gt;and some bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release&quot;&gt;2. List of Pull Requests in this release&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve messaging system startup &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/157&quot;&gt;#157&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Increase swtbot test timeout &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/158&quot;&gt;#158&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve Sirius wizard for Gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/156&quot;&gt;#156&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/148&quot;&gt;#148&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve Variable and Debug views &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/143&quot;&gt;#143&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add command line Eclipse application to run GEMOC languages and headless product &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/138&quot;&gt;#138&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Integrate ALE interpreted engine in GEMOC Studio build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/126&quot;&gt;#126&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Move dsl default location to project root &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/124&quot;&gt;#124&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add pre-release version of ecoretools epackage registration &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/118&quot;&gt;#118&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Add a base test for modeldebugging bug #66 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/106&quot;&gt;#106&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix error level in activator logger &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/141&quot;&gt;#141&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;documentation&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Rename LegacyFSM example to MelangeK3FSM &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/136&quot;&gt;#136&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump ALE version to 2019-06-24 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/166&quot;&gt;#166&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse Photon &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/117&quot;&gt;#117&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to latest k3/melange version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/102&quot;&gt;#102&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump components and studio versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/101&quot;&gt;#101&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Added GEMOC model icon using official colors to artwork folder &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/149&quot;&gt;#149&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add gexpressions to studio/updatesite and restructure update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/165&quot;&gt;#165&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use url for discovery that is unique for gemoc 3.1.x &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/162&quot;&gt;#162&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/160&quot;&gt;#160&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove the jenkinsfile from the component repositories &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/154&quot;&gt;#154&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;documentation&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Re-enable plantuml figures in documentation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/153&quot;&gt;#153&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove 32 bit versions of the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/145&quot;&gt;#145&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix docker file for pomless builds &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/134&quot;&gt;#134&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Correct css for nightly build download index page &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/129&quot;&gt;#129&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix xtend compilation issue 1373 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/132&quot;&gt;#132&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] New system test suite based on official example K3FSM (language and modeling) &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/104&quot;&gt;#104&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.2. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add restoreState support for missing eType &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/102&quot;&gt;#102&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Display step arguments in the debugger stack view &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/59&quot;&gt;#59&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;enhancement&lt;/strong&gt;] Fix sirius wizard call and improve Sirius project creation for GEMOC &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/104&quot;&gt;#104&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add concurrent engine to the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/98&quot;&gt;#98&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve Variable and Debug views &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/97&quot;&gt;#97&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add command line Eclipse application to run GEMOC languages and headless product &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/90&quot;&gt;#90&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Integrate ALE interpreted engine in GEMOC Studio build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/77&quot;&gt;#77&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Move dsl default location to project root and minor Melange related refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/76&quot;&gt;#76&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Update launchconf icon according to official colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/101&quot;&gt;#101&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Reorder Sirius 4 GEMOC wizard pages &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/107&quot;&gt;#107&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] [tracing] Remove exceptions when no traced objects &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/100&quot;&gt;#100&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] [test] Adapt test helper code to latest api changes &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/99&quot;&gt;#99&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix updating of Sirius views during debugging &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/105&quot;&gt;#105&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;]  Implement some missing eType in generic trace  and improve user feedback on RDT definition problems &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/89&quot;&gt;#89&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Add restoreState support for missing eType &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/94&quot;&gt;#94&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fixes GemocSequentialLanguageBuilder problem on windows &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/68&quot;&gt;#68&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-1&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Execution framework refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/53&quot;&gt;#53&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to eclipse photon &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/72&quot;&gt;#72&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to latest k3/melange version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/64&quot;&gt;#64&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump components and studio versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/62&quot;&gt;#62&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add gexpressions to studio/updatesite and restructure update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/114&quot;&gt;#114&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/110&quot;&gt;#110&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Increase swtbot test timeout &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/106&quot;&gt;#106&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix xtend compilation issue 1373 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/79&quot;&gt;#79&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-pull-requests-in-repository-gemoc-studio-execution-ale&quot;&gt;2.3. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-ale&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-2&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Use modified GEMOC standard icon in the launch conf for ALE &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/8&quot;&gt;#8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add command line eclipseapplication &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Integrate ALE interpreted engine in GEMOC Studio build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-2&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix: print error log for model executions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/18&quot;&gt;#18&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix issue #13 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Update references to ale.odesign in the aird of the example model &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/4&quot;&gt;#4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-2&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump ALE version to 2019-06-24 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/19&quot;&gt;#19&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-2&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/15&quot;&gt;#15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix xtend compilation issue 1373 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-pull-requests-in-repository-gemoc-studio-moccml&quot;&gt;2.4. Pull Requests in repository &lt;em&gt;gemoc-studio-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-3&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Start adding priority and TimeBase to moccml mapping &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add gexpressions to studio/updatesite and restructure update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/4&quot;&gt;#4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-pull-requests-in-repository-gemoc-studio-execution-moccml&quot;&gt;2.5. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-4&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Adding possible “moccmlmapping” extensions to ecl file &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/3&quot;&gt;#3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add possibility to express priorities between DSE  &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/4&quot;&gt;#4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Renaming of MelangeXDSMLHelper into XDSMLHelper &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;documentation&lt;/strong&gt;][&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add sigpml example deployer &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/12&quot;&gt;#12&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-3&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix official sample &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-3&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add gexpressions to studio/updatesite and restructure update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/14&quot;&gt;#14&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/07/29/V3.1.0.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/07/29/V3.1.0.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
+    
+      <item>
+        <title>GEMOC Studio V3.1.0-20190627</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-310-20190627-20190627&quot;&gt;GEMOC Studio 3.1.0-20190627 (2019/06/27)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS.&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Studio is based on Eclipse Photon.1&lt;/li&gt;
+  &lt;li&gt;Studio now contains a new sequential execution engine based on ALE.&lt;/li&gt;
+  &lt;li&gt;Studio now contains again the concurrent execution engine (MOCCML) based on Timesquare&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;New Eclipse package providing an headless application allowing to run a model from the command line&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Improved Variable and Debug views&lt;/li&gt;
+  &lt;li&gt;Improved Sirius wizard for Gemoc&lt;/li&gt;
+  &lt;li&gt;Added a pre-release version of ecoretools epackage registration tool to the studio&lt;/li&gt;
+  &lt;li&gt;Upgraded version of thirdparties components (Melange, K3, Xtext, Sirius, …)&lt;/li&gt;
+  &lt;li&gt;Improved continuous integration: now it uses a multibranch pipeline that checks the integration of all repositories at once (synchronisation is based on branch names)&lt;/li&gt;
+  &lt;li&gt;Use of a discovery URL that is unique for this version (allowing to better check contributions for this version of the studio)&lt;/li&gt;
+  &lt;li&gt;and some bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release&quot;&gt;2. List of Pull Requests in this release&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve messaging system startup &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/157&quot;&gt;#157&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Increase swtbot test timeout &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/158&quot;&gt;#158&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve Sirius wizard for Gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/156&quot;&gt;#156&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/148&quot;&gt;#148&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve Variable and Debug views &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/143&quot;&gt;#143&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add command line Eclipse application to run GEMOC languages and headless product &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/138&quot;&gt;#138&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Integrate ALE interpreted engine in GEMOC Studio build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/126&quot;&gt;#126&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Move dsl default location to project root &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/124&quot;&gt;#124&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add pre-release version of ecoretools epackage registration &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/118&quot;&gt;#118&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Add a base test for modeldebugging bug #66 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/106&quot;&gt;#106&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix error level in activator logger &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/141&quot;&gt;#141&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;documentation&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Rename LegacyFSM example to MelangeK3FSM &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/136&quot;&gt;#136&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump ALE version to 2019-06-24 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/166&quot;&gt;#166&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse Photon &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/117&quot;&gt;#117&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to latest k3/melange version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/102&quot;&gt;#102&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump components and studio versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/101&quot;&gt;#101&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Added GEMOC model icon using official colors to artwork folder &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/149&quot;&gt;#149&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add gexpressions to studio/updatesite and restructure update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/165&quot;&gt;#165&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use url for discovery that is unique for gemoc 3.1.x &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/162&quot;&gt;#162&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/160&quot;&gt;#160&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove the jenkinsfile from the component repositories &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/154&quot;&gt;#154&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;documentation&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Re-enable plantuml figures in documentation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/153&quot;&gt;#153&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove 32 bit versions of the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/145&quot;&gt;#145&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix docker file for pomless builds &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/134&quot;&gt;#134&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Correct css for nightly build download index page &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/129&quot;&gt;#129&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix xtend compilation issue 1373 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/132&quot;&gt;#132&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] New system test suite based on official example K3FSM (language and modeling) &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/104&quot;&gt;#104&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.2. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add restoreState support for missing eType &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/102&quot;&gt;#102&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Display step arguments in the debugger stack view &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/59&quot;&gt;#59&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;enhancement&lt;/strong&gt;] Fix sirius wizard call and improve Sirius project creation for GEMOC &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/104&quot;&gt;#104&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add concurrent engine to the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/98&quot;&gt;#98&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve Variable and Debug views &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/97&quot;&gt;#97&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add command line Eclipse application to run GEMOC languages and headless product &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/90&quot;&gt;#90&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Integrate ALE interpreted engine in GEMOC Studio build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/77&quot;&gt;#77&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Move dsl default location to project root and minor Melange related refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/76&quot;&gt;#76&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Update launchconf icon according to official colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/101&quot;&gt;#101&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Reorder Sirius 4 GEMOC wizard pages &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/107&quot;&gt;#107&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] [tracing] Remove exceptions when no traced objects &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/100&quot;&gt;#100&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] [test] Adapt test helper code to latest api changes &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/99&quot;&gt;#99&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix updating of Sirius views during debugging &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/105&quot;&gt;#105&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;]  Implement some missing eType in generic trace  and improve user feedback on RDT definition problems &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/89&quot;&gt;#89&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Add restoreState support for missing eType &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/94&quot;&gt;#94&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fixes GemocSequentialLanguageBuilder problem on windows &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/68&quot;&gt;#68&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-1&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Execution framework refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/53&quot;&gt;#53&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to eclipse photon &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/72&quot;&gt;#72&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to latest k3/melange version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/64&quot;&gt;#64&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump components and studio versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/62&quot;&gt;#62&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add gexpressions to studio/updatesite and restructure update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/114&quot;&gt;#114&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/110&quot;&gt;#110&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Increase swtbot test timeout &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/106&quot;&gt;#106&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix xtend compilation issue 1373 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/79&quot;&gt;#79&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-pull-requests-in-repository-gemoc-studio-execution-ale&quot;&gt;2.3. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-ale&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-2&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Use modified GEMOC standard icon in the launch conf for ALE &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/8&quot;&gt;#8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add command line eclipseapplication &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Integrate ALE interpreted engine in GEMOC Studio build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-2&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix: print error log for model executions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/18&quot;&gt;#18&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix issue #13 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Update references to ale.odesign in the aird of the example model &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/4&quot;&gt;#4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-2&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump ALE version to 2019-06-24 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/19&quot;&gt;#19&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-2&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/15&quot;&gt;#15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Fix xtend compilation issue 1373 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-pull-requests-in-repository-gemoc-studio-moccml&quot;&gt;2.4. Pull Requests in repository &lt;em&gt;gemoc-studio-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-3&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Start adding priority and TimeBase to moccml mapping &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add gexpressions to studio/updatesite and restructure update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/4&quot;&gt;#4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-pull-requests-in-repository-gemoc-studio-execution-moccml&quot;&gt;2.5. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-4&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Adding possible “moccmlmapping” extensions to ecl file &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/3&quot;&gt;#3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add possibility to express priorities between DSE  &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/4&quot;&gt;#4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Renaming of MelangeXDSMLHelper into XDSMLHelper &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;documentation&lt;/strong&gt;][&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add sigpml example deployer &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/12&quot;&gt;#12&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add concurrent engine to studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-3&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix official sample &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-3&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add gexpressions to studio/updatesite and restructure update site &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update icons to official branding colors &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/14&quot;&gt;#14&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 27 Jun 2019 00:00:00 -0500</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/06/27/V3.1.0-20190627.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/06/27/V3.1.0-20190627.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
+    
+      <item>
+        <title>GEMOC Studio V3.0.0</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-300-20180717&quot;&gt;GEMOC Studio 3.0.0 (2018/07/17)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS.&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Naming now follows eclipse conventions (org.eclipse.gemoc.xxx)&lt;/li&gt;
+  &lt;li&gt;Studio is based on Eclipse Oxygen.3&lt;/li&gt;
+  &lt;li&gt;Waiting for a better integration in the official build, the Concurrent engine is now available via the Discovery.&lt;/li&gt;
+  &lt;li&gt;Introduction of DSL file support. Its grammar is based on a grammar similar to java properties grammar.&lt;/li&gt;
+  &lt;li&gt;New Official example: K3FSM; It features a simple language with xtext/Sirius animation.&lt;/li&gt;
+  &lt;li&gt;New documentation structure; now also available as &lt;a href=&quot;http://gemoc.org/studio_documentations.html&quot;&gt;webhelp&lt;/a&gt; online.&lt;/li&gt;
+  &lt;li&gt;Introduction of behavioral interface support&lt;/li&gt;
+  &lt;li&gt;Continuous integration on http://ci.eclipse.org/gemoc&lt;/li&gt;
+  &lt;li&gt;Improved test suites&lt;/li&gt;
+  &lt;li&gt;Improved Discovery&lt;/li&gt;
+  &lt;li&gt;Improved robustness of messaging system&lt;/li&gt;
+  &lt;li&gt;Cleanup of some useless plugins (svn, cvs)&lt;/li&gt;
+  &lt;li&gt;Support for java 9.&lt;/li&gt;
+  &lt;li&gt;Better support of gtk3 on Linux.&lt;/li&gt;
+  &lt;li&gt;Upgraded version of Melange and K3&lt;/li&gt;
+  &lt;li&gt;and some bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release&quot;&gt;2. List of Pull Requests in this release&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add new K3FSM official example &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/81&quot;&gt;#81&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add syntax highlighting to DSL files &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/78&quot;&gt;#78&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add dockerfile and instructions for building documentation via docker &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/76&quot;&gt;#76&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve documentation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/74&quot;&gt;#74&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Improve web documentation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/72&quot;&gt;#72&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Remove old scm connectors SVN and CVS from studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/71&quot;&gt;#71&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Replace Melange by DSL files in the role of entry point for the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/70&quot;&gt;#70&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve dslfile grammar &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/63&quot;&gt;#63&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Change grammar of DSL file  to a grammar similar to Java property file &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/40&quot;&gt;#40&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve messagingsystem usability &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/38&quot;&gt;#38&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve xdsml test suites &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/35&quot;&gt;#35&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add grammar and editor for DSL file &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve option management of GEMOC project wizard templates &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fixes K3FSM example &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/89&quot;&gt;#89&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Change start option for java9 and gtk3 support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/69&quot;&gt;#69&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] [tests] Workaround to discard webkitgtk error message &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/61&quot;&gt;#61&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Improve Discovery error reporting in case of incorrect configuration &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/53&quot;&gt;#53&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] ensures to run changeStyle in an UI thread when printing large messages on console &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/44&quot;&gt;#44&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix predefined update sites &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/29&quot;&gt;#29&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Remove last references to Eclipse Neon &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/28&quot;&gt;#28&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Make more robust retry loop in MessagingSystemManager &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Change keyword ‘semantic’ to semantics’ in dslfile &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/39&quot;&gt;#39&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Mass rename org.gemoc -&amp;gt; org.eclipse.gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade Melange to version 2018-04-11 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/65&quot;&gt;#65&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade to Melange 2018-01-19 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/48&quot;&gt;#48&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Update tycho to version 1.0.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/34&quot;&gt;#34&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade to latest k3 version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/33&quot;&gt;#33&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade to Eclipse Oxygen &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/27&quot;&gt;#27&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Migrate to Eclipse oxygen &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/23&quot;&gt;#23&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade version of the studio to 2.4.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/7&quot;&gt;#7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Show summary of checked out branches in multibranch pipeline &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/92&quot;&gt;#92&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use Gren for release note management &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/66&quot;&gt;#66&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Releng improvements &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/50&quot;&gt;#50&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove backlog tests from CI build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/36&quot;&gt;#36&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Avoid direct model accesses in runtime services &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/42&quot;&gt;#42&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Manage parallel steps in debuggers + refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/39&quot;&gt;#39&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] [Debug/Engine] Replace MSEOccurence” with “Step” when possible &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/34&quot;&gt;#34&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] re-activate equivalency classes computing &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/22&quot;&gt;#22&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add a default value that should be used for swtbot tests of gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/19&quot;&gt;#19&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve xdsml test suites &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/18&quot;&gt;#18&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve gemoc project template wizard &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix timeline dimensions arrows wrongly disabled &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/54&quot;&gt;#54&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Patch mutable field extractor for pure k3 project + helper refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/52&quot;&gt;#52&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix nullpointer trace constructor &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/28&quot;&gt;#28&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fsm example fix &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-1&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move creation of generic debugger in common execution engine code &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/36&quot;&gt;#36&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move debuggers from java engine plugins to execution framework plugins &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/31&quot;&gt;#31&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Mass rename org.gemoc -&amp;gt; org.eclipse.gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Rename abstract dsl launch configuration delegate ui &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/8&quot;&gt;#8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade Melange to version 2018-04-11 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/37&quot;&gt;#37&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade Melange version to 2018-01-29 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/26&quot;&gt;#26&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Update tycho to version 1.0.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade k3 to latest version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/15&quot;&gt;#15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Migrate to Eclipse oxygen &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/11&quot;&gt;#11&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade GEMOC version to 2.4.0.qualifier &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/3&quot;&gt;#3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use Gren for release note management &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/38&quot;&gt;#38&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove old releng files with ref to Eclipse Neon &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/12&quot;&gt;#12&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Local full build support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 17 Jul 2018 00:00:00 -0500</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/07/17/V3.0.0.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/07/17/V3.0.0.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
+    
+      <item>
+        <title>GEMOC Studio V3.0.0rc4</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-300rc4-20180622&quot;&gt;GEMOC Studio 3.0.0rc4 (2018/06/22)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS.&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-reminder-of-300rc1-changes&quot;&gt;1.1. Reminder of 3.0.0rc1 changes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;naming now follows eclipse conventions (org.eclipse.gemoc.xxx)&lt;/li&gt;
+  &lt;li&gt;Studio is based on Eclipse Oxygen&lt;/li&gt;
+  &lt;li&gt;improved test suites&lt;/li&gt;
+  &lt;li&gt;introduction of DSL file support&lt;/li&gt;
+  &lt;li&gt;introduction of behavioral interface support&lt;/li&gt;
+  &lt;li&gt;continuous integration on http://ci.eclipse.org/gemoc&lt;/li&gt;
+  &lt;li&gt;and some bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-reminder-of-rc2-changes&quot;&gt;1.2. Reminder of rc2 changes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Eclipse platform base is now Oxygen.3&lt;/li&gt;
+  &lt;li&gt;Waiting for a better integration in the official build, the Concurrent engine is now available via the Discovery.&lt;/li&gt;
+  &lt;li&gt;DSL file grammar is now based on a grammar similar to java properties grammar&lt;/li&gt;
+  &lt;li&gt;Improved Discovery&lt;/li&gt;
+  &lt;li&gt;improved robustness of messaging system&lt;/li&gt;
+  &lt;li&gt;Release engineering improvements&lt;/li&gt;
+  &lt;li&gt;re-activated equivalency classes computing&lt;/li&gt;
+  &lt;li&gt;upgraded version of Melange&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;13-reminder-of-rc3-changes&quot;&gt;1.3. Reminder of rc3 changes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;new Official example: K3FSM; It features a simple language with xtext/Sirius animation.&lt;/li&gt;
+  &lt;li&gt;improved DSL editor (with syntax highlighting)&lt;/li&gt;
+  &lt;li&gt;new documentation structure; now also available as &lt;a href=&quot;http://gemoc.org/studio_documentations.html&quot;&gt;webhelp&lt;/a&gt; online.&lt;/li&gt;
+  &lt;li&gt;management improvement of parallel steps in debuggers&lt;/li&gt;
+  &lt;li&gt;cleanup of some useless plugins (svn, cvs)&lt;/li&gt;
+  &lt;li&gt;upgraded version of Melange&lt;/li&gt;
+  &lt;li&gt;and some refactoring and bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;14-new-in-rc4&quot;&gt;1.4. New in rc4&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;minor fixes in official example: K3FSM.&lt;/li&gt;
+  &lt;li&gt;support for java 9.&lt;/li&gt;
+  &lt;li&gt;better support of gtk3 on Linux.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release&quot;&gt;2. List of Pull Requests in this release&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fixes K3FSM example &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/89&quot;&gt;#89&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Change start option for java9 and gtk3 support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/69&quot;&gt;#69&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Show summary of checked out branches in multibranch pipeline &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/92&quot;&gt;#92&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;No changes since 3.0.0-rc3; see the changelog to know about changes of previous release candidates.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 22 Jun 2018 00:00:00 -0500</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/22/V3.0.0-rc4.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/22/V3.0.0-rc4.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
+    
+      <item>
+        <title>GEMOC Studio V3.0.0rc3</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-300rc3-20180607&quot;&gt;GEMOC Studio 3.0.0rc3 (2018/06/07)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS.&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-reminder-of-300rc1-changes&quot;&gt;1.1. Reminder of 3.0.0rc1 changes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;naming now follows eclipse conventions (org.eclipse.gemoc.xxx)&lt;/li&gt;
+  &lt;li&gt;Studio is based on Eclipse Oxygen&lt;/li&gt;
+  &lt;li&gt;improved test suites&lt;/li&gt;
+  &lt;li&gt;introduction of DSL file support&lt;/li&gt;
+  &lt;li&gt;introduction of behavioral interface support&lt;/li&gt;
+  &lt;li&gt;continuous integration on http://ci.eclipse.org/gemoc&lt;/li&gt;
+  &lt;li&gt;and some bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-new-in-rc2&quot;&gt;1.2. New in rc2&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Eclipse platform base is now Oxygen.3&lt;/li&gt;
+  &lt;li&gt;Waiting for a better integration in the official build, the Concurrent engine is now available via the Discovery.&lt;/li&gt;
+  &lt;li&gt;DSL file grammar is now based on a grammar similar to java properties grammar&lt;/li&gt;
+  &lt;li&gt;Improved Discovery&lt;/li&gt;
+  &lt;li&gt;improved robustness of messaging system&lt;/li&gt;
+  &lt;li&gt;Release engineering improvements&lt;/li&gt;
+  &lt;li&gt;re-activated equivalency classes computing&lt;/li&gt;
+  &lt;li&gt;upgraded version of Melange&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;13-new-in-rc3&quot;&gt;1.3. New in rc3&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;new Official example: K3FSM; It features a simple language with xtext/Sirius animation.&lt;/li&gt;
+  &lt;li&gt;improved DSL editor (with syntax highlighting)&lt;/li&gt;
+  &lt;li&gt;new documentation structure; now also available as &lt;a href=&quot;http://gemoc.org/studio_documentations.html&quot;&gt;webhelp&lt;/a&gt; online.&lt;/li&gt;
+  &lt;li&gt;management improvement of parallel steps in debuggers&lt;/li&gt;
+  &lt;li&gt;cleanup of some useless plugins (svn, cvs)&lt;/li&gt;
+  &lt;li&gt;upgraded version of Melange&lt;/li&gt;
+  &lt;li&gt;and some refactoring and bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release&quot;&gt;2. List of Pull Requests in this release&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add new K3FSM official example &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/81&quot;&gt;#81&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add syntax highlighting to DSL files &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/78&quot;&gt;#78&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add dockerfile and instructions for building documentation via docker &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/76&quot;&gt;#76&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve documentation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/74&quot;&gt;#74&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Improve web documentation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/72&quot;&gt;#72&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Remove old scm connectors SVN and CVS from studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/71&quot;&gt;#71&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Replace Melange by DSL files in the role of entry point for the studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/70&quot;&gt;#70&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve dslfile grammar &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/63&quot;&gt;#63&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] [tests] Workaround to discard webkitgtk error message &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/61&quot;&gt;#61&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade Melange to version 2018-04-11 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/65&quot;&gt;#65&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use Gren for release note management &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/66&quot;&gt;#66&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Avoid direct model accesses in runtime services &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/42&quot;&gt;#42&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Manage parallel steps in debuggers + refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/39&quot;&gt;#39&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] [Debug/Engine] Replace MSEOccurence” with “Step” when possible &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/34&quot;&gt;#34&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix timeline dimensions arrows wrongly disabled &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/54&quot;&gt;#54&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Patch mutable field extractor for pure k3 project + helper refactoring &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/52&quot;&gt;#52&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix nullpointer trace constructor &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/28&quot;&gt;#28&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move creation of generic debugger in common execution engine code &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/36&quot;&gt;#36&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Move debuggers from java engine plugins to execution framework plugins &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/31&quot;&gt;#31&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade Melange to version 2018-04-11 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/37&quot;&gt;#37&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade Melange version to 2018-01-29 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/26&quot;&gt;#26&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use Gren for release note management &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/38&quot;&gt;#38&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 07 Jun 2018 00:00:00 -0500</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/07/V3.0.0-rc3.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/07/V3.0.0-rc3.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
+    
+      <item>
+        <title>GEMOC Studio V3.0.0rc2</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-300rc2-20180327&quot;&gt;GEMOC Studio 3.0.0rc2 (2018/03/27)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS.&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-reminder-of-300rc1-changes&quot;&gt;1.1. Reminder of 3.0.0rc1 changes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;naming now follows eclipse conventions (org.eclipse.gemoc.xxx)&lt;/li&gt;
+  &lt;li&gt;Studio is based on Eclipse Oxygen&lt;/li&gt;
+  &lt;li&gt;improved test suites&lt;/li&gt;
+  &lt;li&gt;introduction of DSL file support&lt;/li&gt;
+  &lt;li&gt;introduction of behavioral interface support&lt;/li&gt;
+  &lt;li&gt;continuous integration on http://ci.eclipse.org/gemoc&lt;/li&gt;
+  &lt;li&gt;and some bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-new-in-rc2&quot;&gt;1.2. New in rc2&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Eclipse platform base is now Oxygen.3&lt;/li&gt;
+  &lt;li&gt;Waiting for a better integration in the official build, the Concurrent engine is now available via the Discovery.&lt;/li&gt;
+  &lt;li&gt;DSL file grammar is now based on a grammar similar to java properties grammar&lt;/li&gt;
+  &lt;li&gt;Improved Discovery&lt;/li&gt;
+  &lt;li&gt;updated Melange version&lt;/li&gt;
+  &lt;li&gt;improved robustness of messaging system&lt;/li&gt;
+  &lt;li&gt;Release engineering improvements&lt;/li&gt;
+  &lt;li&gt;re-activated equivalency classes computing&lt;/li&gt;
+  &lt;li&gt;upgraded version of Melange&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release&quot;&gt;2. List of Pull Requests in this release&lt;/h2&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Change grammar of DSL file  to a grammar similar to Java property file &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/40&quot;&gt;#40&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Improve Discovery error reporting in case of incorrect configuration &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/53&quot;&gt;#53&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] ensures to run changeStyle in an UI thread when printing large messages on console &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/44&quot;&gt;#44&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade to Melange 2018-01-19 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/48&quot;&gt;#48&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Update tycho to version 1.0.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/34&quot;&gt;#34&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Releng improvements &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/50&quot;&gt;#50&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] re-activate equivalency classes computing &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/22&quot;&gt;#22&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add a default value that should be used for swtbot tests of gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/19&quot;&gt;#19&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Update tycho to version 1.0.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 27 Mar 2018 00:00:00 -0500</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/03/27/v3.0.0-rc2.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/03/27/v3.0.0-rc2.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
+    
+      <item>
+        <title>GEMOC Studio V3.0.0-rc1</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-300-rc1-20171207&quot;&gt;GEMOC Studio 3.0.0-rc1 (2017/12/07)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS.&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;naming now follows eclipse conventions (org.eclipse.gemoc.xxx)&lt;/li&gt;
+  &lt;li&gt;Studio is based on Eclipse Oxygen&lt;/li&gt;
+  &lt;li&gt;improved test suites&lt;/li&gt;
+  &lt;li&gt;introduction of DSL file support&lt;/li&gt;
+  &lt;li&gt;introduction of behavioral interface support&lt;/li&gt;
+  &lt;li&gt;continuous integration on http://ci.eclipse.org/gemoc&lt;/li&gt;
+  &lt;li&gt;and some bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release&quot;&gt;2. List of Pull Requests in this release&lt;/h2&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve messagingsystem usability &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/38&quot;&gt;#38&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve xdsml test suites &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/35&quot;&gt;#35&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add grammar and editor for DSL file &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve option management of GEMOC project wizard templates &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix predefined update sites &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/29&quot;&gt;#29&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Remove last references to Eclipse Neon &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/28&quot;&gt;#28&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Make more robust retry loop in MessagingSystemManager &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Change keyword ‘semantic’ to semantics’ in dslfile &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/39&quot;&gt;#39&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Mass rename org.gemoc -&amp;gt; org.eclipse.gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade to latest k3 version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/33&quot;&gt;#33&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade to Eclipse Oxygen &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/27&quot;&gt;#27&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Migrate to Eclipse oxygen &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/23&quot;&gt;#23&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade version of the studio to 2.4.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/7&quot;&gt;#7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove backlog tests from CI build &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/36&quot;&gt;#36&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve xdsml test suites &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/18&quot;&gt;#18&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve gemoc project template wizard &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/5&quot;&gt;#5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fsm example fix &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/2&quot;&gt;#2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings-1&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Mass rename org.gemoc -&amp;gt; org.eclipse.gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/9&quot;&gt;#9&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;refactoring&lt;/strong&gt;] Rename abstract dsl launch configuration delegate ui &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/8&quot;&gt;#8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade k3 to latest version &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/15&quot;&gt;#15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Migrate to Eclipse oxygen &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/11&quot;&gt;#11&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade GEMOC version to 2.4.0.qualifier &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/3&quot;&gt;#3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Remove old releng files with ref to Eclipse Neon &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/12&quot;&gt;#12&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Local full build support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 07 Dec 2017 00:00:00 -0600</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2017/12/07/v3.0.0-rc1.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2017/12/07/v3.0.0-rc1.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
+    
+      <item>
+        <title>GEMOC Studio V2.3.1</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-231-20170915&quot;&gt;GEMOC Studio 2.3.1 (2017/09/15)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS in 64 bit only: Windows, Linux and Mac OS X.  (for a 32 bit version please use previous release)&lt;/p&gt;
+
+&lt;p&gt;This version patched from 2.3.0 2017-02-27.&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;p&gt;The purpose of this section is to highlight some of the work done on the GEMOC Studio since previous releases.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-upgrade-to-eclipse-neon-and-alignment-of-all-dependencies&quot;&gt;1.1 Upgrade to Eclipse Neon and alignment of all dependencies&lt;/h3&gt;
+
+&lt;p&gt;This version is based on Eclipse Neon. 
+This also includes internal component dependencies which are aligned to the components distributed with the Eclipse release train.
+For example : it now uses Xtext 2.10.x, Sirius 4.1.2,  OCL 5.0.0, …&lt;/p&gt;
+
+&lt;h3 id=&quot;12-official-support-of-language-inheritance-to-build-editors-and-animators&quot;&gt;1.2 Official support of language inheritance to build editors and animators.&lt;/h3&gt;
+
+&lt;p&gt;Thanks to Melange, it is now possible to build the animator as a language extension of a parent language.&lt;/p&gt;
+
+&lt;p&gt;In such scenario, the parent language supports the edition services. The child language inherits from it 
+in order to define the concepts and attributes required for the execution and animation.&lt;br /&gt;
+From the model designer point of view, she is editing model conformant to the parent language. When running the model,
+Melange will seamlessly convert the model into its executable variant in order to support the animation extension.&lt;/p&gt;
+
+&lt;p&gt;This is illustrated with the new version of the &lt;a href=&quot;https://github.com/gemoc/gemoc-studio/tree/master/official_samples/LegacyFSM&quot;&gt;Sequential FSM example&lt;/a&gt; which is bundled in the Studio.&lt;/p&gt;
+
+&lt;h3 id=&quot;13-improved-ui-for-bcool&quot;&gt;1.3 Improved UI for BCOoL&lt;/h3&gt;
+
+&lt;p&gt;Some new wizards have been added in order to create BCOoL projects and files.&lt;/p&gt;
+
+&lt;h3 id=&quot;14-improved-timeline&quot;&gt;1.4 Improved Timeline&lt;/h3&gt;
+
+&lt;p&gt;A diff viewer is now also available in order to compare execution traces.&lt;/p&gt;
+
+&lt;h3 id=&quot;15-improvement-of-the-trace-generator&quot;&gt;1.5 Improvement of the Trace generator&lt;/h3&gt;
+
+&lt;p&gt;Various bug fix have been done on this component.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-bug-fix-and-feature-request-implemented&quot;&gt;2. Bug fix and feature request implemented&lt;/h2&gt;
+
+&lt;p&gt;Many bugs and feature have been solved in this release. This includes (but is not limited to) the following:&lt;/p&gt;
+
+&lt;h3 id=&quot;21-list-of-bug-fixed-in-this-release&quot;&gt;2.1 List of bug fixed in this release&lt;/h3&gt;
+
+&lt;p&gt;(ie. bug fixed since V2.2.0)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gemoc/gemoc-studio/issues/30&quot;&gt;Studio Bug #30&lt;/a&gt;; Creating a new GEMOC Language project cannot complete if there is no preexisting ecore file.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gemoc/gemoc-studio/issues/31&quot;&gt;Studio Bug #31&lt;/a&gt;; String written reversed in Melange new project template.&lt;/li&gt;
+  &lt;li&gt;Fix Melange loading problem when using both language inheritance and xText editor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-list-of-feature-request&quot;&gt;2.2 List of feature request&lt;/h3&gt;
+
+&lt;p&gt;(i.e. done since V2.2.0)&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Sep 2017 00:00:00 -0500</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/2017/09/15/v2.3.1.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/2017/09/15/v2.3.1.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+      </item>
+    
   </channel>
 </rss>

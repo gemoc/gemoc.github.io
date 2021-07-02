@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+      
+        The GEMOC Initiative
+      
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/csl-blocks.css" />
+		<link rel="stylesheet" href="/css/pure-min.css" />
+		<link rel="stylesheet" href="/css/syntax.css" />
+
+
+	<link rel="stylesheet" href="/css/gallery.css" />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+
+</head>
+
+<body>
+    <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">The GEMOC Initiative</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/members.html">Members</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/events/moddit2021.html">ModDiT 2021</a>
+                        </li>
+                        <li>
+                            <a href="https://mleworkshop.github.io/editions/mle2021">MLE 2021</a>
+                        </li>
+                        <li>
+                            <a href="https://mleworkshop.github.io/editions/mle2020">MLE 2020</a>
+                        </li>
+                        <li>
+                            <a href="/events/mle2019.html">MLE 2019</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/events/gemoc2018.html">GEMOC 2018</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/gemoc/gemoc-rc-day18">GEMOC Hackathon 2018</a>
+                        </li>
+                        <li>
+                            <a href="/events/gemoc2017.html">GEMOC 2017</a>
+                        </li>
+                        <li>
+                            <a href="http://www.dagstuhl.de/17342">Dagstuhl SLEBoK (#17342)</a>
+                        </li>
+                        <li>
+                            <a href="/events/gemoc2016.html">GEMOC 2016</a>
+                        </li>
+                        <li>
+                            <a href="/events/gemoc2015.html">GEMOC 2015</a>
+                        </li>
+                        <li>
+                            <a href="http://www.dagstuhl.de/14412">Dagstuhl GEMOC (#14412)</a>
+                        </li>
+                        <li>
+                            <a href="/events/gemoc2014.html">GEMOC 2014</a>
+                        </li>
+                        <li>
+                            <a href="/events/gemoc2013.html">GEMOC 2013</a>
+                        </li>
+                        <li>
+                            <a href="/events/globalDSL2013.html">GlobalDSL 2013</a>
+                        </li>
+                        <li>
+                            <a href="/events/gemocmeeting2013.html">GEMOC Meeting 2013</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                     <a href="/projects.html">Projects</a>
+                </li>
+                <li>
+                     <a href="/studio.html">Studio</a>
+                </li>
+                <li>
+                     <a href="/publications.html">Publications</a>
+                </li>
+
+                <li>
+                     <a href="/artwork.html">Artwork</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact</a>
+                </li>
+                <!--
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/full-width.html">Full Width Page</a>
+                        </li>
+                        <li>
+                            <a href="/sidebar.html">Sidebar Page</a>
+                        </li>
+                        <li>
+                            <a href="/faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="/404.html">404</a>
+                        </li>
+                        <li>
+                            <a href="/pricing.html">Pricing Table</a>
+                        </li>
+                    </ul>
+                </li>
+                -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!--{ include carousel.html } -->
+
+    <!-- Page Content -->
+    <div class="container">
+
+       <h1 id="runtime-monitoring-for-executable-dsls">Runtime Monitoring for Executable DSLs</h1>
+
+<blockquote>
+  <p>Runtime monitoring is a fundamental technique used throughout the lifecycle of a system for many purposes, such as debugging, testing, or live analytics. While runtime monitoring for general purpose programming languages has seen a great amount of research, developing such complex facilities for any executable Domain Specific Language (DSL) remains a challenging, reoccurring and error prone task. A generic solution must both support a wide range of executable DSLs and induce as little execution time overhead as possible. Our contribution is a fully generic approach based on a temporal property language with a semantics tailored for runtime verification. Properties can be compiled to efficient runtime monitors that can be attached to any kind of executable discrete event model. Efficiency is bolstered using a novel combination of structural model queries and complex event processing. Our evaluation on 3 executable DSLs shows that the approach is applicable with an execution time overhead of 121% (on executions shorter than 1s), to 56% (on executions shorter than 20s) making it suitable for model testing and debugging.</p>
+
+  <p>Dorian Leroy, Pierre Jeanjean, Erwan Bousse, Manuel Wimmer, Benoit Combemale.</p>
+
+  <p><em>Research Paper Submission to the 16th European Conference on Modelling Foundations and Applications (ECMFA 2020)</em></p>
+</blockquote>
+
+<h1 id="resources">Resources</h1>
+<ul>
+  <li><a href="/ecmfa20/Runtime_Monitoring_for_Executable_DSLs__Full_Semantics.pdf">Complete translational semantics for temporal patterns (25 rules)</a></li>
+  <li><a href="/ecmfa20/evaluation_materials.zip">Code &amp; Evaluation materials</a></li>
+</ul>
+
+<h1 id="tool-support-presentation">Tool support presentation</h1>
+
+<p>As explained in the paper, we implemented our approach as a tool provided inside the GEMOC Studio, an Eclipse-based language and modeling workbench to design executable DSLs and execute conforming models. Here is a screenshot of the GEMOC Studio when debugging and monitoring properties on an Activity Diagram model taken from the evaluation materials:</p>
+
+<p><img src="/ecmfa20/runtime_monitor.png" alt="Screenshot of an Activity Diagram being monitored" /></p>
+
+<h1 id="running-the-evaluation">Running the evaluation</h1>
+
+<h2 id="preparing-the-gemoc-studio">Preparing the GEMOC Studio</h2>
+
+<ul>
+  <li><a href="http://gemoc.org/download.html">Download the latest version of the GEMOC Studio</a></li>
+  <li><a href="https://www.eclipse.org/viatra/downloads.html">Install VIATRA on top of the GEMOC Studio</a></li>
+  <li>Start the GEMOC Studio in a new workspace</li>
+</ul>
+
+<h2 id="getting-the-benchmark-code">Getting the benchmark code</h2>
+
+<ul>
+  <li>Download and extract the zip containing the code and evaluation materials</li>
+  <li>Import the projects contained in the <code class="language-plaintext highlighter-rouge">plugins</code>, <code class="language-plaintext highlighter-rouge">eval/languages</code> and <code class="language-plaintext highlighter-rouge">eval/models</code> folders into the current workspace of the GEMOC Studio</li>
+</ul>
+
+<h2 id="running-the-benchmark">Running the benchmark</h2>
+
+<ul>
+  <li>Run the <code class="language-plaintext highlighter-rouge">ActivityDiagramMonitoringTimeBenchmarkingTest</code>, <code class="language-plaintext highlighter-rouge">ThingMLMonitoringTimeBenchmarkingTest</code> and <code class="language-plaintext highlighter-rouge">MiniJavaMonitoringTimeBenchmarkingTest</code> from the <code class="language-plaintext highlighter-rouge">org.eclipse.gemoc.executionframework.property.tests</code> project as a <em>JUnit Plugin Test</em></li>
+</ul>
+
+
+        <hr>
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; The GEMOC Initiative 2021</p>
+            <iframe src="https://ghbtns.com/github-btn.html?user=gemoc&repo=gemoc-studio&type=watch&count=false&v=2" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+        	<a href="https://twitter.com/intent/tweet?screen_name=gemocinitiative" class="twitter-mention-button" data-show-count="false">Tweet to @gemocinitiative</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <!-- /.container -->
+    
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
+<!-- Proudly Powered by GitHub | Generated 2021-07-02 10:02:13 -0500 | Revision  -->
