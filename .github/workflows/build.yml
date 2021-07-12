@@ -1,0 +1,28 @@
+name: Build and deploy GEMOC website
+on:
+  push:
+    branches:
+      - gh-pages-edit
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Load secret Github token into GH_TOKEN env variable
+        env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Prepare ruby environment
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.4
+          bundler-cache: true
+      
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Download dependencies
+        run: bundle install
+
+      - name: Run the main build script
+        run: bash ./build.sh
