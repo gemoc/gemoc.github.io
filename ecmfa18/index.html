@@ -218,11 +218,11 @@ The implementation of the State Machine DSL presented in the paper <a href="http
 <ul>
   <li>at the top, the two execution traces being compared, the first with seven states and the second with eight states</li>
   <li>the result of the <em>Compare</em> operator shows us that the second trace has one extra state, shown in red, as compared to the first trace</li>
-  <li>at the bottom, two pairs of dimensions are shown (one for <code class="language-plaintext highlighter-rouge">Region1</code>, one for <code class="language-plaintext highlighter-rouge">Region2</code>), with one dimension per trace in each pair, enabling the comparison per dimension</li>
+  <li>at the bottom, two pairs of dimensions are shown (one for <code class="highlighter-rouge">Region1</code>, one for <code class="highlighter-rouge">Region2</code>), with one dimension per trace in each pair, enabling the comparison per dimension</li>
   <li>on the left, checkboxes are available to trigger at the same time the <em>Filter</em> and <em>Reduce</em> operators</li>
 </ul>
 
-<p>From there, if we use the checkboxes to filter out the <code class="language-plaintext highlighter-rouge">Region2</code> dimension using <em>Filter</em> and <em>Reduce</em>, we obtain this simplified trace:</p>
+<p>From there, if we use the checkboxes to filter out the <code class="highlighter-rouge">Region2</code> dimension using <em>Filter</em> and <em>Reduce</em>, we obtain this simplified trace:</p>
 
 <div style="text-align: center;">
   <p><img src="screenshot-filtering-reduce-after.png" alt="" /></p>
@@ -257,8 +257,8 @@ compiled to a large set of target platform like Arduino, C, C++, Java, Android, 
   <p>Ping-Pong example model.</p>
 </div>
 
-<p>This represents two things, one called <code class="language-plaintext highlighter-rouge">PingServer</code> and the other one <code class="language-plaintext highlighter-rouge">PingClient</code>, which can communicate by sending
-<code class="language-plaintext highlighter-rouge">ping</code> and <code class="language-plaintext highlighter-rouge">pong</code> messages through their own port both called <code class="language-plaintext highlighter-rouge">ping_service</code> linked together in the <code class="language-plaintext highlighter-rouge">PingPongConfig</code>
+<p>This represents two things, one called <code class="highlighter-rouge">PingServer</code> and the other one <code class="highlighter-rouge">PingClient</code>, which can communicate by sending
+<code class="highlighter-rouge">ping</code> and <code class="highlighter-rouge">pong</code> messages through their own port both called <code class="highlighter-rouge">ping_service</code> linked together in the <code class="highlighter-rouge">PingPongConfig</code>
 configuration.</p>
 
 <p>We use our own graphical concrete syntax for ThingML, as there is no official graphical concrete syntax definition in
@@ -270,16 +270,16 @@ In further examples, the transitions will be explained just below the graphical 
 
 <p>This PingPong model can be written in ThingML as follows:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thing fragment PingPongMsgs {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thing fragment PingPongMsgs {
 	message ping()
 	message pong()
 }
 </code></pre></div></div>
 
-<p>First, we declare <code class="language-plaintext highlighter-rouge">PingPongMsgs</code> Thing which cannot be instantiated as it is declared <code class="language-plaintext highlighter-rouge">fragment</code>. We do that to reuse
+<p>First, we declare <code class="highlighter-rouge">PingPongMsgs</code> Thing which cannot be instantiated as it is declared <code class="highlighter-rouge">fragment</code>. We do that to reuse
 the message definition in the two following real Things.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thing PingServer includes PingPongMsgs {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thing PingServer includes PingPongMsgs {
 	provided port ping_service {
 		sends pong
 		receives ping
@@ -297,17 +297,17 @@ the message definition in the two following real Things.</p>
 }
 </code></pre></div></div>
 
-<p>Then we can declare the <code class="language-plaintext highlighter-rouge">PingServer</code> Thing, which reuse <code class="language-plaintext highlighter-rouge">PingPongMsgs</code> to be able to use <code class="language-plaintext highlighter-rouge">ping</code> and <code class="language-plaintext highlighter-rouge">pong</code> messages.
-It declares one Provided Port <code class="language-plaintext highlighter-rouge">ping_service</code> able to send <code class="language-plaintext highlighter-rouge">pong</code> and to receives <code class="language-plaintext highlighter-rouge">ping</code> Messages. Provided Port means
+<p>Then we can declare the <code class="highlighter-rouge">PingServer</code> Thing, which reuse <code class="highlighter-rouge">PingPongMsgs</code> to be able to use <code class="highlighter-rouge">ping</code> and <code class="highlighter-rouge">pong</code> messages.
+It declares one Provided Port <code class="highlighter-rouge">ping_service</code> able to send <code class="highlighter-rouge">pong</code> and to receives <code class="highlighter-rouge">ping</code> Messages. Provided Port means
 that the service is offered by this Thing. If a Message is sent through this Port, every Thing connected to this Port
 will receive the Message.<br />
-The behaviour of the <code class="language-plaintext highlighter-rouge">PingServer</code> is declared in the main Statechart called here <code class="language-plaintext highlighter-rouge">PingServerMachine</code>. It starts with
-its <code class="language-plaintext highlighter-rouge">Active</code> States, just after having printed <code class="language-plaintext highlighter-rouge">"Ping Server Started!\n"</code>. This State possesses only one Transition
-which is <code class="language-plaintext highlighter-rouge">internal</code> (Transition to itself) and has no name. This Transition is triggered by the reception of a <code class="language-plaintext highlighter-rouge">ping</code>
-Message on the <code class="language-plaintext highlighter-rouge">ping_service</code> Port. No guard will restrict the trigger. When firing this Transition, a <code class="language-plaintext highlighter-rouge">pong</code> Message
-will be sent through the <code class="language-plaintext highlighter-rouge">ping_service</code> Port.</p>
+The behaviour of the <code class="highlighter-rouge">PingServer</code> is declared in the main Statechart called here <code class="highlighter-rouge">PingServerMachine</code>. It starts with
+its <code class="highlighter-rouge">Active</code> States, just after having printed <code class="highlighter-rouge">"Ping Server Started!\n"</code>. This State possesses only one Transition
+which is <code class="highlighter-rouge">internal</code> (Transition to itself) and has no name. This Transition is triggered by the reception of a <code class="highlighter-rouge">ping</code>
+Message on the <code class="highlighter-rouge">ping_service</code> Port. No guard will restrict the trigger. When firing this Transition, a <code class="highlighter-rouge">pong</code> Message
+will be sent through the <code class="highlighter-rouge">ping_service</code> Port.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thing PingClient includes PingPongMsgs {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thing PingClient includes PingPongMsgs {
 
 	required port ping_service {
 		receives pong
@@ -335,23 +335,23 @@ will be sent through the <code class="language-plaintext highlighter-rouge">ping
 }
 </code></pre></div></div>
 
-<p>The <code class="language-plaintext highlighter-rouge">PingClient</code> Thing also reuse <code class="language-plaintext highlighter-rouge">PingPongMsgs</code>. To work properly, the future instance will need to be connected to
-a Port through which they would receive <code class="language-plaintext highlighter-rouge">pong</code> and send <code class="language-plaintext highlighter-rouge">ping</code>.<br />
-Its behaviour, called <code class="language-plaintext highlighter-rouge">PingClientMachine</code> starts with the <code class="language-plaintext highlighter-rouge">Ping</code> State after having printed <code class="language-plaintext highlighter-rouge">"Ping Client Started!\n"</code>.
-When entering the <code class="language-plaintext highlighter-rouge">Ping</code> State, it prints <code class="language-plaintext highlighter-rouge">"Send Ping..."</code>, sends a <code class="language-plaintext highlighter-rouge">ping</code> Message on the <code class="language-plaintext highlighter-rouge">ping_service</code> Port, and then
-wait until a <code class="language-plaintext highlighter-rouge">pong</code> Message on the <code class="language-plaintext highlighter-rouge">ping_service</code> Port trigger the <code class="language-plaintext highlighter-rouge">PONG</code> Transition. When firing this Transition, it
-prints <code class="language-plaintext highlighter-rouge">"Got Pong!\n"</code> and jumps to the <code class="language-plaintext highlighter-rouge">Stop</code> state which is marked <code class="language-plaintext highlighter-rouge">final</code>, as no Transition start from it. When
-entering this State, it prints <code class="language-plaintext highlighter-rouge">"Bye.\n"</code>.</p>
+<p>The <code class="highlighter-rouge">PingClient</code> Thing also reuse <code class="highlighter-rouge">PingPongMsgs</code>. To work properly, the future instance will need to be connected to
+a Port through which they would receive <code class="highlighter-rouge">pong</code> and send <code class="highlighter-rouge">ping</code>.<br />
+Its behaviour, called <code class="highlighter-rouge">PingClientMachine</code> starts with the <code class="highlighter-rouge">Ping</code> State after having printed <code class="highlighter-rouge">"Ping Client Started!\n"</code>.
+When entering the <code class="highlighter-rouge">Ping</code> State, it prints <code class="highlighter-rouge">"Send Ping..."</code>, sends a <code class="highlighter-rouge">ping</code> Message on the <code class="highlighter-rouge">ping_service</code> Port, and then
+wait until a <code class="highlighter-rouge">pong</code> Message on the <code class="highlighter-rouge">ping_service</code> Port trigger the <code class="highlighter-rouge">PONG</code> Transition. When firing this Transition, it
+prints <code class="highlighter-rouge">"Got Pong!\n"</code> and jumps to the <code class="highlighter-rouge">Stop</code> state which is marked <code class="highlighter-rouge">final</code>, as no Transition start from it. When
+entering this State, it prints <code class="highlighter-rouge">"Bye.\n"</code>.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>configuration PingPongConfig {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>configuration PingPongConfig {
 	instance client : PingClient
 	instance server : PingServer
 	connector client.ping_service =&gt; server.ping_service
 }
 </code></pre></div></div>
 
-<p>Finally, in order to execute something, we write a model Configuration here called <code class="language-plaintext highlighter-rouge">PingPongConfig</code>. In this
-Configuration, we declare one Instance of <code class="language-plaintext highlighter-rouge">PingClient</code> called <code class="language-plaintext highlighter-rouge">client</code>, one Instance of <code class="language-plaintext highlighter-rouge">PingServer</code> called <code class="language-plaintext highlighter-rouge">server</code>,
+<p>Finally, in order to execute something, we write a model Configuration here called <code class="highlighter-rouge">PingPongConfig</code>. In this
+Configuration, we declare one Instance of <code class="highlighter-rouge">PingClient</code> called <code class="highlighter-rouge">client</code>, one Instance of <code class="highlighter-rouge">PingServer</code> called <code class="highlighter-rouge">server</code>,
 and we connect their Port together.</p>
 
 <h2 id="our-implementation">Our implementation</h2>
@@ -375,16 +375,16 @@ run-to-completion scheduling model to animate the things one by one.</li>
   <p>Producer-Consumers example model (producer point of view).</p>
 </div>
 
-<p>This model consists in one <code class="language-plaintext highlighter-rouge">Producer</code> that produces data, sends it through its <code class="language-plaintext highlighter-rouge">output</code> (O) port, and waits for the
-answer from the <code class="language-plaintext highlighter-rouge">Consumer</code>s. The <code class="language-plaintext highlighter-rouge">Consumer</code>s can only answer with an acknowledgement (<code class="language-plaintext highlighter-rouge">ack</code>) or not
-acknowledgement (<code class="language-plaintext highlighter-rouge">nack</code>). If at least one <code class="language-plaintext highlighter-rouge">ack</code> is received, the <code class="language-plaintext highlighter-rouge">Producer</code> returns in state <code class="language-plaintext highlighter-rouge">Produce</code>, otherwise it
-jumps in the <code class="language-plaintext highlighter-rouge">Error</code> state and the execution stops.<br />
-When all the data has been sent, the <code class="language-plaintext highlighter-rouge">Producer</code> goes in <code class="language-plaintext highlighter-rouge">End</code> state. Whenever it enters either in state <code class="language-plaintext highlighter-rouge">End</code> or
-<code class="language-plaintext highlighter-rouge">Error</code>, a <code class="language-plaintext highlighter-rouge">stop</code> message is sent to the <code class="language-plaintext highlighter-rouge">Consumer</code>s through the <code class="language-plaintext highlighter-rouge">synchro</code>nisation (S) port, and the execution stops.</p>
+<p>This model consists in one <code class="highlighter-rouge">Producer</code> that produces data, sends it through its <code class="highlighter-rouge">output</code> (O) port, and waits for the
+answer from the <code class="highlighter-rouge">Consumer</code>s. The <code class="highlighter-rouge">Consumer</code>s can only answer with an acknowledgement (<code class="highlighter-rouge">ack</code>) or not
+acknowledgement (<code class="highlighter-rouge">nack</code>). If at least one <code class="highlighter-rouge">ack</code> is received, the <code class="highlighter-rouge">Producer</code> returns in state <code class="highlighter-rouge">Produce</code>, otherwise it
+jumps in the <code class="highlighter-rouge">Error</code> state and the execution stops.<br />
+When all the data has been sent, the <code class="highlighter-rouge">Producer</code> goes in <code class="highlighter-rouge">End</code> state. Whenever it enters either in state <code class="highlighter-rouge">End</code> or
+<code class="highlighter-rouge">Error</code>, a <code class="highlighter-rouge">stop</code> message is sent to the <code class="highlighter-rouge">Consumer</code>s through the <code class="highlighter-rouge">synchro</code>nisation (S) port, and the execution stops.</p>
 
 <p>The behaviour of the Producer, written with the concrete syntax, is the following:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>statechart Behaviour init Produce {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>statechart Behaviour init Produce {
 
     state Produce {
         transition A -&gt; Wait
@@ -445,16 +445,16 @@ When all the data has been sent, the <code class="language-plaintext highlighter
   <p>Producer-Consumers example model (sub-model focused on the consumers point of view).</p>
 </div>
 
-<p>The <code class="language-plaintext highlighter-rouge">Consumer</code>s will stay in an <code class="language-plaintext highlighter-rouge">Active</code> state during the execution. They receive data from the <code class="language-plaintext highlighter-rouge">Producer</code> through their
-<code class="language-plaintext highlighter-rouge">input</code> (I) port, and react depending on the <code class="language-plaintext highlighter-rouge">payload</code> (p) transmitted. If they can evolve in their active state, then
-they will answer an <code class="language-plaintext highlighter-rouge">ack</code> message to the <code class="language-plaintext highlighter-rouge">Producer</code>, otherwise the outer transition will fire and they will answer an
-<code class="language-plaintext highlighter-rouge">nack</code> message.<br />
-At any moment, if they receive a <code class="language-plaintext highlighter-rouge">stop</code> message through their <code class="language-plaintext highlighter-rouge">synchro</code>nisation (S) port, they jump to the their <code class="language-plaintext highlighter-rouge">End</code>
+<p>The <code class="highlighter-rouge">Consumer</code>s will stay in an <code class="highlighter-rouge">Active</code> state during the execution. They receive data from the <code class="highlighter-rouge">Producer</code> through their
+<code class="highlighter-rouge">input</code> (I) port, and react depending on the <code class="highlighter-rouge">payload</code> (p) transmitted. If they can evolve in their active state, then
+they will answer an <code class="highlighter-rouge">ack</code> message to the <code class="highlighter-rouge">Producer</code>, otherwise the outer transition will fire and they will answer an
+<code class="highlighter-rouge">nack</code> message.<br />
+At any moment, if they receive a <code class="highlighter-rouge">stop</code> message through their <code class="highlighter-rouge">synchro</code>nisation (S) port, they jump to the their <code class="highlighter-rouge">End</code>
 state and the execution stops.</p>
 
 <p>Written with the concrete syntax, the behaviour of the first Consumer is the following:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>statechart Behaviour init Active {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>statechart Behaviour init Active {
 
     composite state Active init S2 {
 
@@ -498,16 +498,16 @@ state and the execution stops.</p>
 <p>Step by step, the execution of this model proceeds as follows:</p>
 
 <ul>
-  <li>Execution starts, <code class="language-plaintext highlighter-rouge">Producer</code> enters in his <code class="language-plaintext highlighter-rouge">Produce</code> state and all the <code class="language-plaintext highlighter-rouge">Consumers</code> enter in their <code class="language-plaintext highlighter-rouge">Active</code> state in
-substate <code class="language-plaintext highlighter-rouge">S2</code>;</li>
-  <li><code class="language-plaintext highlighter-rouge">Producer</code> fires transition <code class="language-plaintext highlighter-rouge">A</code>: sends <code class="language-plaintext highlighter-rouge">data(1)</code> through port <code class="language-plaintext highlighter-rouge">output</code>, increments <code class="language-plaintext highlighter-rouge">data_index</code> to <code class="language-plaintext highlighter-rouge">1</code>, and finally
-jumps in state <code class="language-plaintext highlighter-rouge">Wait</code>;</li>
-  <li><code class="language-plaintext highlighter-rouge">Consumer1</code> fires transition <code class="language-plaintext highlighter-rouge">P</code>: sends <code class="language-plaintext highlighter-rouge">nack()</code> through port <code class="language-plaintext highlighter-rouge">input</code> and stay in state <code class="language-plaintext highlighter-rouge">Active.S2</code>;</li>
-  <li><code class="language-plaintext highlighter-rouge">Consumer2</code> fires transition <code class="language-plaintext highlighter-rouge">S2_p_1</code>: sends <code class="language-plaintext highlighter-rouge">ack()</code> through port <code class="language-plaintext highlighter-rouge">input</code> and stay in state <code class="language-plaintext highlighter-rouge">Active.S2</code>;</li>
-  <li><code class="language-plaintext highlighter-rouge">Consumer3</code> fires transition <code class="language-plaintext highlighter-rouge">S2_p_1</code>: sends <code class="language-plaintext highlighter-rouge">ack()</code> through port <code class="language-plaintext highlighter-rouge">input</code> and jumps to state <code class="language-plaintext highlighter-rouge">Active.S1</code>;</li>
-  <li><code class="language-plaintext highlighter-rouge">Producer</code> fires transition <code class="language-plaintext highlighter-rouge">C</code>: increments <code class="language-plaintext highlighter-rouge">consumer_nack</code> and stay in state <code class="language-plaintext highlighter-rouge">Wait</code>,<br />
-then, fires transition <code class="language-plaintext highlighter-rouge">B</code>: increments <code class="language-plaintext highlighter-rouge">consumer_ack</code> and stay in state <code class="language-plaintext highlighter-rouge">Wait</code>,
-and then, fires transition <code class="language-plaintext highlighter-rouge">D</code>: jumps into state <code class="language-plaintext highlighter-rouge">Produce</code>;</li>
+  <li>Execution starts, <code class="highlighter-rouge">Producer</code> enters in his <code class="highlighter-rouge">Produce</code> state and all the <code class="highlighter-rouge">Consumers</code> enter in their <code class="highlighter-rouge">Active</code> state in
+substate <code class="highlighter-rouge">S2</code>;</li>
+  <li><code class="highlighter-rouge">Producer</code> fires transition <code class="highlighter-rouge">A</code>: sends <code class="highlighter-rouge">data(1)</code> through port <code class="highlighter-rouge">output</code>, increments <code class="highlighter-rouge">data_index</code> to <code class="highlighter-rouge">1</code>, and finally
+jumps in state <code class="highlighter-rouge">Wait</code>;</li>
+  <li><code class="highlighter-rouge">Consumer1</code> fires transition <code class="highlighter-rouge">P</code>: sends <code class="highlighter-rouge">nack()</code> through port <code class="highlighter-rouge">input</code> and stay in state <code class="highlighter-rouge">Active.S2</code>;</li>
+  <li><code class="highlighter-rouge">Consumer2</code> fires transition <code class="highlighter-rouge">S2_p_1</code>: sends <code class="highlighter-rouge">ack()</code> through port <code class="highlighter-rouge">input</code> and stay in state <code class="highlighter-rouge">Active.S2</code>;</li>
+  <li><code class="highlighter-rouge">Consumer3</code> fires transition <code class="highlighter-rouge">S2_p_1</code>: sends <code class="highlighter-rouge">ack()</code> through port <code class="highlighter-rouge">input</code> and jumps to state <code class="highlighter-rouge">Active.S1</code>;</li>
+  <li><code class="highlighter-rouge">Producer</code> fires transition <code class="highlighter-rouge">C</code>: increments <code class="highlighter-rouge">consumer_nack</code> and stay in state <code class="highlighter-rouge">Wait</code>,<br />
+then, fires transition <code class="highlighter-rouge">B</code>: increments <code class="highlighter-rouge">consumer_ack</code> and stay in state <code class="highlighter-rouge">Wait</code>,
+and then, fires transition <code class="highlighter-rouge">D</code>: jumps into state <code class="highlighter-rouge">Produce</code>;</li>
   <li>etc.</li>
 </ul>
 
@@ -1427,9 +1427,9 @@ read.</p>
 </div>
 
 <p>In order to get something interesting out of this lot of information, we can <em>filter</em> the dimension of the trace.<br />
-For instance, keeping only the set of information composed of the <code class="language-plaintext highlighter-rouge">Producer.current_state</code> and <code class="language-plaintext highlighter-rouge">Active.current_state</code>
-from all the <code class="language-plaintext highlighter-rouge">Consumer</code>s, we would be able to observe the effect of the number sequence in the <code class="language-plaintext highlighter-rouge">data_list</code> of the
-<code class="language-plaintext highlighter-rouge">Producer</code> on the whole model.</p>
+For instance, keeping only the set of information composed of the <code class="highlighter-rouge">Producer.current_state</code> and <code class="highlighter-rouge">Active.current_state</code>
+from all the <code class="highlighter-rouge">Consumer</code>s, we would be able to observe the effect of the number sequence in the <code class="highlighter-rouge">data_list</code> of the
+<code class="highlighter-rouge">Producer</code> on the whole model.</p>
 
 <div class="table-responsive">
 
@@ -1915,9 +1915,9 @@ what happened during the execution.</p>
 
 <p>With this view, we can understand two things:</p>
 <ul>
-  <li>starting from the initial state, sending data sequence <code class="language-plaintext highlighter-rouge">[1, 3]</code> will loop and will not modifiy the state of the system
+  <li>starting from the initial state, sending data sequence <code class="highlighter-rouge">[1, 3]</code> will loop and will not modifiy the state of the system
 composed of the three consumers (at least, their current state); and</li>
-  <li>the minimal sequence that brought the system in a error state is, starting from the initial state, <code class="language-plaintext highlighter-rouge">[2, 2, 0, 0]</code>.</li>
+  <li>the minimal sequence that brought the system in a error state is, starting from the initial state, <code class="highlighter-rouge">[2, 2, 0, 0]</code>.</li>
 </ul>
 
 
@@ -1951,4 +1951,4 @@ composed of the three consumers (at least, their current state); and</li>
 </body>
 
 </html>
-<!-- Proudly Powered by GitHub | Generated 2021-07-02 10:02:13 -0500 | Revision  -->
+<!-- Proudly Powered by GitHub | Generated 2021-07-12 13:46:38 +0000 | Revision  -->

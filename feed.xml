@@ -6,9 +6,9 @@
 </description>
     <link>https://gemoc.github.io/</link>
     <atom:link href="https://gemoc.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 02 Jul 2021 10:02:13 -0500</pubDate>
-    <lastBuildDate>Fri, 02 Jul 2021 10:02:13 -0500</lastBuildDate>
-    <generator>Jekyll v3.9.1</generator>
+    <pubDate>Mon, 12 Jul 2021 13:46:38 +0000</pubDate>
+    <lastBuildDate>Mon, 12 Jul 2021 13:46:38 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
     
       <item>
         <title>GEMOC Studio V3.2.0</title>
@@ -340,7 +340,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 16 Jun 2020 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2020/06/16/V3.2.0.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2020/06/16/V3.2.0.html</guid>
         
@@ -546,7 +546,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Mon, 16 Dec 2019 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/12/16/V3.2.0-20191216.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/12/16/V3.2.0-20191216.html</guid>
         
@@ -779,7 +779,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Mon, 29 Jul 2019 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/07/29/V3.1.0.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/07/29/V3.1.0.html</guid>
         
@@ -1012,7 +1012,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Thu, 27 Jun 2019 00:00:00 -0500</pubDate>
+        <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/06/27/V3.1.0-20190627.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2019/06/27/V3.1.0-20190627.html</guid>
         
@@ -1182,7 +1182,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 17 Jul 2018 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/07/17/V3.0.0.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/07/17/V3.0.0.html</guid>
         
@@ -1281,7 +1281,7 @@
 &lt;p&gt;No changes since 3.0.0-rc3; see the changelog to know about changes of previous release candidates.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 22 Jun 2018 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/22/V3.0.0-rc4.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/22/V3.0.0-rc4.html</guid>
         
@@ -1425,7 +1425,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Thu, 07 Jun 2018 00:00:00 -0500</pubDate>
+        <pubDate>Thu, 07 Jun 2018 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/07/V3.0.0-rc3.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/07/V3.0.0-rc3.html</guid>
         
@@ -1524,7 +1524,7 @@
   &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Update tycho to version 1.0.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Tue, 27 Mar 2018 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/03/27/v3.0.0-rc2.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/03/27/v3.0.0-rc2.html</guid>
         
@@ -1644,7 +1644,7 @@
   &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Local full build support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/1&quot;&gt;#1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 07 Dec 2017 00:00:00 -0600</pubDate>
+        <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2017/12/07/v3.0.0-rc1.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2017/12/07/v3.0.0-rc1.html</guid>
         
@@ -1725,7 +1725,7 @@ Melange will seamlessly convert the model into its executable variant in order t
 
 &lt;p&gt;(i.e. done since V2.2.0)&lt;/p&gt;
 </description>
-        <pubDate>Fri, 15 Sep 2017 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/2017/09/15/v2.3.1.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/2017/09/15/v2.3.1.html</guid>
         

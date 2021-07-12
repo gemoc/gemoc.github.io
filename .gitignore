@@ -1,7 +1,0 @@
-_site
-.sass-cache
-.tweet-cache
-/.project
-.bundle/
-/vendor
-..bfg-report

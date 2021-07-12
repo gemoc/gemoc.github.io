@@ -208,7 +208,7 @@ Richard F. Paige Martin Erwig, Eric van Wyk, eds., LNCS, Springer-Verlag, 2013.<
 
 <p>We based the abstract syntax on EMF (the Eclipse Modeling Framework). This choice is motivated by the good acceptation of EMF and its correspondence to the MOF standard. Additionally, EMF is well tooled and many other tools are based on it (<em>e.g.</em>, OCL, GMF, etc).</p>
 
-<p>Briefly, the abstract syntax of a TFSM <em>System</em> (see Figure below) is composed of a set of <em>TFSM</em>, a set of global <em>FSMEvents</em> and a set of global <em>FSMClocks</em>. Each TFSM is composed of <em>States</em> among which an initial state and composed of a set of <em>Transitions</em>, which owned a guard. A guard can be specified by a FSMEvent reception (EventGuard) or by a duration relative to the entry in the incoming state of the transition (TemporalGuard). The duration of a temporal guard is measured on an explicit reference clock. To a transition is associated an action, represented in the abstract syntax like a <em>String</em>. This action represents model level code defined by the designer. In our experiments such model level code is written in the Groovy language<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> for its capacity to be invoked dynamically. However this is a totally arbitrary choice. A transition can also generate a set of event occurrences.</p>
+<p>Briefly, the abstract syntax of a TFSM <em>System</em> (see Figure below) is composed of a set of <em>TFSM</em>, a set of global <em>FSMEvents</em> and a set of global <em>FSMClocks</em>. Each TFSM is composed of <em>States</em> among which an initial state and composed of a set of <em>Transitions</em>, which owned a guard. A guard can be specified by a FSMEvent reception (EventGuard) or by a duration relative to the entry in the incoming state of the transition (TemporalGuard). The duration of a temporal guard is measured on an explicit reference clock. To a transition is associated an action, represented in the abstract syntax like a <em>String</em>. This action represents model level code defined by the designer. In our experiments such model level code is written in the Groovy language<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> for its capacity to be invoked dynamically. However this is a totally arbitrary choice. A transition can also generate a set of event occurrences.</p>
 
 <div style="text-align: center;">
   <p><a href="/sle13/meta_ecore.png"><img src="/sle13/meta_ecore.png" alt="meta_ecore" /></a></p>
@@ -308,10 +308,10 @@ In the actor model, we added mainly six operations:</p>
   <p><img src="/sle13/logoVM-300x241.png" style="max-width: 100%;" /></p>
 </div>
 
-<div class="footnotes" role="doc-endnotes">
+<div class="footnotes">
   <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p><a href="http://groovy.codehaus.org/">http://groovy.codehaus.org/</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    <li id="fn:1">
+      <p><a href="http://groovy.codehaus.org/">http://groovy.codehaus.org/</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -347,4 +347,4 @@ In the actor model, we added mainly six operations:</p>
 </body>
 
 </html>
-<!-- Proudly Powered by GitHub | Generated 2021-07-02 10:02:13 -0500 | Revision  -->
+<!-- Proudly Powered by GitHub | Generated 2021-07-12 13:46:38 +0000 | Revision  -->
