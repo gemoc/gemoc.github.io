@@ -4,7 +4,7 @@ on:
     branches:
       - gh-pages-edit
 jobs:
-  Explore-GitHub-Actions:
+  Build-And-Deploy:
     runs-on: ubuntu-latest
     steps:
 
