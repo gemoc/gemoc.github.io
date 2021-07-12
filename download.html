@@ -6,7 +6,7 @@ layout: defaultwithtabs
 <!-- Page Heading/Breadcrumbs -->
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">The GEMOC Studio
+        <h1 class="page-header">The Eclipse GEMOC Studio
             <small>Download</small>
         </h1>
         <ol class="breadcrumb">
@@ -48,7 +48,7 @@ layout: defaultwithtabs
 		        <table class="table table-striped">
 				<tbody>
 					<tr>					
-					<td>GEMOC Studio Eclipse packages <br>
+					<td>Eclipse GEMOC Studio packages <br>
 						<a title="More details about this version"  href="{{ site.baseurl }}{{ last_eclipse_package.url }}">{{ last_eclipse_package.releaseVersion }} - {{ last_eclipse_package.date  | date: "%Y/%m/%d" }}</a><br/>
 					 	(IDE {{ last_eclipse_package.eclipsePackageSize }}) {% if last_eclipse_package.eclipseHeadlessPackageSize %}<br>(Headless {{ last_eclipse_package.eclipseHeadlessPackageSize }}){% endif %}
 					</td>			
@@ -86,7 +86,7 @@ layout: defaultwithtabs
 							
 							{% for eclipse_package_post in site.categories.eclipse_package %}
 							<tr>
-							<td><a title="More details about this version"   href="{{ site.baseurl }}{{ eclipse_package_post.url }}">GEMOC Studio Eclipse package</a><br/> ({{ eclipse_package_post.eclipsePackageSize }})</td>			
+							<td><a title="More details about this version"   href="{{ site.baseurl }}{{ eclipse_package_post.url }}">Eclipse GEMOC Studio package</a><br/> ({{ eclipse_package_post.eclipsePackageSize }})</td>			
 							<td>{{ eclipse_package_post.releaseVersion }} - {{ eclipse_package_post.date  | date: "%Y/%m/%d" }}</td>
 							<td>
 							{{ eclipse_package_post.excerpt }}<a href="{{ site.baseurl }}{{ eclipse_package_post.url }}">(Read more)</a></td>
@@ -105,7 +105,7 @@ layout: defaultwithtabs
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td><a title="get the latest version from the continuous integration service at Eclipse" href="http://download.eclipse.org/gemoc/packages/nightly/"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" />GEMOC Studio Official Eclipse package</a></td>			
+					<td><a title="get the latest version from the continuous integration service at Eclipse" href="http://download.eclipse.org/gemoc/packages/nightly/"><img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_eclipse_package.png" width="16" height="16" align="TOP" />Eclipse GEMOC Studio Official package</a></td>			
 					<td>Latest nightly build</td>
 					<td>Continuous integration build from <b>official eclipse git</b>.</td>
 					</tr>
@@ -122,7 +122,7 @@ layout: defaultwithtabs
   				<table class="table table-striped">
 				<tbody>
 					<tr>
-					<td>GEMOC Studio in a VM for VirtualBox <br><a title="More details about this version" href="{{ site.baseurl }}{{ last_virtualbox.url }}">{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</a></td>			
+					<td>Eclipse GEMOC Studio in a VM for VirtualBox <br><a title="More details about this version" href="{{ site.baseurl }}{{ last_virtualbox.url }}">{{ last_virtualbox.releaseVersion }} - {{ last_virtualbox.date  | date: "%Y/%m/%d" }}</a></td>			
 					<td>
 						<img class="alignleft" style="border: 0px none;" src="img/releng/gemoc_vm.png" width="16" height="16" align="TOP" />
 						<a  title="Lubuntu%2064%20GEMOC.ova" href="{{ last_virtualbox.virtualBoxURL }}">Lubuntu 64 GEMOC.ova</a> ({{ last_virtualbox.virtualBoxSize }})  
@@ -236,7 +236,7 @@ layout: defaultwithtabs
   			<div class="panel-body">
   				<p> The update sites for the Additional GEMOC Components can be found in the <a href="{{ site.baseurl }}discovery/catalog.html">GEMOC Component Discovery Catalog</a>
   				</p>
-  				<p>This <a href="{{ site.baseurl }}updatesite">page</a> lists the update sites used to built a GEMOC Studio  from an empty Eclipse.
+  				<p>This <a href="{{ site.baseurl }}updatesite">page</a> lists the update sites used to built the Eclipse GEMOC Studio from an empty Eclipse.
   				</p>
 			</div>
 		</div>
