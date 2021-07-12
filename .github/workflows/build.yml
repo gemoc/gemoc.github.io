@@ -7,7 +7,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-    
+
       - name: Prepare ruby environment
         uses: ruby/setup-ruby@v1
         with:
@@ -21,6 +21,11 @@ jobs:
         run: bundle install
 
       - name: Run the main build script
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: bash ./build.sh
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: master # The branch the action should deploy to.
+          folder: _site # The folder the action should deploy.
+
