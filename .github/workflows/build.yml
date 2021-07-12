@@ -7,11 +7,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-
-      - name: Load secret Github token into GH_TOKEN env variable
-        env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
+    
       - name: Prepare ruby environment
         uses: ruby/setup-ruby@v1
         with:
@@ -25,4 +21,6 @@ jobs:
         run: bundle install
 
       - name: Run the main build script
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: bash ./build.sh
