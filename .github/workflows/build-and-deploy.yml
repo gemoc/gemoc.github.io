@@ -8,17 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
       - name: Prepare ruby environment
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6.4
           bundler-cache: true
-      
-      - name: Check out repository code
-        uses: actions/checkout@v2
-
-      - name: Download dependencies
-        run: bundle install
 
       - name: Run the main build script
         run: bash ./build.sh
