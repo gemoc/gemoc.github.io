@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "gallery.css",
+	"sources": [
+		"gallery.scss"
+	],
+	"sourcesContent": [
+		"/* Extracted and adapted from: https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/minimal-mistakes/_base.scss */\n\n/* Figures and images */\n\nfiguregallery {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n  justify-content: space-between;\n  -webkit-box-align: start;\n  align-items: flex-start;\n  flex-wrap: wrap;\n  margin: 2em 0;\n\n  img,\n  iframe,\n  .fluid-width-video-wrapper {\n    margin-bottom: 1em;\n  }\n\n  img {\n    width: 100%;\n  }\n\n  > a {\n    display: block;\n  }\n\n  &.half {\n    > a,\n    > img {\n        width: calc(50% - 0.5em);\n    }\n\n    figcaption {\n      width: 100%;\n    }\n  }\n\n  &.third {\n    > a,\n    > img {\n        width: calc(33.3333% - 0.5em);\n    }\n\n    figcaption {\n      width: 100%;\n    }\n  }\n}\n\n/* Figure captions */\n\nfigcaption {\n  margin-bottom: 0.5em;\n\n  a {\n\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,6HAA6H;AAE7H,wBAAwB;AAExB,AAAA,aAAa,CAAC,EACZ,OAAO,EAAE,WAAW,EACpB,OAAO,EAAE,IAAI,EACb,gBAAgB,EAAE,OAAO,EACzB,eAAe,EAAE,aAAa,EAC9B,iBAAiB,EAAE,KAAK,EACxB,WAAW,EAAE,UAAU,EACvB,SAAS,EAAE,IAAI,EACf,MAAM,EAAE,KAAK,GAqCd;;AA7CD,AAUE,aAVW,CAUX,GAAG,EAVL,aAAa,CAWX,MAAM,EAXR,aAAa,CAYX,0BAA0B,CAAC,EACzB,aAAa,EAAE,GAAG,GACnB;;AAdH,AAgBE,aAhBW,CAgBX,GAAG,CAAC,EACF,KAAK,EAAE,IAAI,GACZ;;AAlBH,AAoBE,aApBW,GAoBT,CAAC,CAAC,EACF,OAAO,EAAE,KAAK,GACf;;AAtBH,AAyBI,aAzBS,AAwBV,KAAK,GACF,CAAC,EAzBP,aAAa,AAwBV,KAAK,GAEF,GAAG,CAAC,EACF,KAAK,EAAE,iBAAiB,GAC3B;;AA5BL,AA8BI,aA9BS,AAwBV,KAAK,CAMJ,UAAU,CAAC,EACT,KAAK,EAAE,IAAI,GACZ;;AAhCL,AAoCI,aApCS,AAmCV,MAAM,GACH,CAAC,EApCP,aAAa,AAmCV,MAAM,GAEH,GAAG,CAAC,EACF,KAAK,EAAE,sBAAsB,GAChC;;AAvCL,AAyCI,aAzCS,AAmCV,MAAM,CAML,UAAU,CAAC,EACT,KAAK,EAAE,IAAI,GACZ;;AAIL,qBAAqB;AAErB,AAAA,UAAU,CAAC,EACT,aAAa,EAAE,KAAK,GAKrB"
+}
