@@ -29,7 +29,6 @@ plugins:
 # jekyll-scholar configurations
 scholar:
   style: ./publications/acm-sig-proceedings-long-author-list.csl
-  use_raw_bibtex_entry : true
   locale: en
   sort_by: year
   order: descending
