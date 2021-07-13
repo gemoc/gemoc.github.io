@@ -1,10 +1,13 @@
 version: "3"
 services:
   site:
-    command: jekyll serve
-    image: jekyll/jekyll:latest
+    command: ./serve.sh
+    image: docker.io/ruby:2.6.8
+    working_dir: /code
+    stdin_open: true
+    tty: true
     volumes:
-      - ".:/srv/jekyll:z"
+      - ".:/code:z"
       - "./vendor/bundle:/usr/local/bundle:z"
     ports:
       - 127.0.0.1:4000:4000
