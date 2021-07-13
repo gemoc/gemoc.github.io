@@ -14,7 +14,7 @@ jobs:
       - name: Prepare ruby environment
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6.4
+          ruby-version: 2.6.8
           bundler-cache: true
 
       - name: Run the main build script
