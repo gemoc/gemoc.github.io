@@ -77,8 +77,8 @@ Submissions that do not adhere to these limits or that violate the formatting gu
 
 ## Important Dates
 
-- Abstract submission deadline: July 16, 2021
-- Paper submission deadline: July 23, 2021
+- Abstract submission deadline: **July 20, 2021** (extended)
+- Paper submission deadline: **July 27, 2021** (extended)
 - Notification of acceptance: August 21, 2021
 - Camera ready submission deadline: August 28, 2021
 - Workshop: TBA.
