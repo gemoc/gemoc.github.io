@@ -6,9 +6,231 @@
 </description>
     <link>https://gemoc.github.io/</link>
     <atom:link href="https://gemoc.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Jul 2021 15:12:13 +0000</pubDate>
-    <lastBuildDate>Fri, 16 Jul 2021 15:12:13 +0000</lastBuildDate>
+    <pubDate>Wed, 28 Jul 2021 13:03:47 +0000</pubDate>
+    <lastBuildDate>Wed, 28 Jul 2021 13:03:47 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>GEMOC Studio V3.3.0</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-releases330-20210728&quot;&gt;GEMOC Studio releases/3.3.0 (2021/07/28)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS (Linux 64, Win 64, MacOS 64).&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It includes a headless variant that allows to launch an execution on the command line without the Eclipse UI.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Studio is the last based on Eclipse 2021-06&lt;/li&gt;
+  &lt;li&gt;Several performance improvements and bug fix on MOCCML engine&lt;/li&gt;
+  &lt;li&gt;addition of event management components for defining behavioral interfaces to languages&lt;/li&gt;
+  &lt;li&gt;ELK support for Sirius autolayout&lt;/li&gt;
+  &lt;li&gt;test suite stability improvements&lt;/li&gt;
+  &lt;li&gt;and many bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release-since-v320&quot;&gt;2. List of Pull Requests in this release (since V3.2.0)&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository.&lt;/p&gt;
+
+&lt;p&gt;Thanks to our contributors (in alphabetical order): Valentin Besnard (ESEO), Erwan Bousse(LN2S), Julien Deantoni (I3S/CNRS), Ronan Gueguen (Université de Nantes), Dorian Leroy (TU Vienna /Inria), Didier Vojtisek (Inria)&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Disable flacky tests &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/227&quot;&gt;#227&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;testing&lt;/strong&gt;] Improve test suites timings &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/229&quot;&gt;#229&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add Sirius ELK support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/222&quot;&gt;#222&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Remove use of ALESiriusInterpreter in headles launcher &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/216&quot;&gt;#216&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;refactorings&quot;&gt;Refactorings&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;documentation&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Improvement of the official examples documentation &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/217&quot;&gt;#217&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2021-06 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/231&quot;&gt;#231&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2020-12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/219&quot;&gt;#219&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2020-03 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/212&quot;&gt;#212&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Consolidation and automatic bump of K3 versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/224&quot;&gt;#224&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Explicit repository feature &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/226&quot;&gt;#226&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use image-tools-plugin 0.1.0 from GEMOC organization &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/230&quot;&gt;#230&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Improve docker for CI &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/232&quot;&gt;#232&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Provide github issue templates &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/215&quot;&gt;#215&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.2. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Consolidation and automatic bump of K3 versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/185&quot;&gt;#185&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] [Event Manager PR#4] Event manager GUI plugin &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/188&quot;&gt;#188&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Improve test logs about locked jobs &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/193&quot;&gt;#193&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Add Sirius ELK support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/184&quot;&gt;#184&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] [Event Manager PR#1] Support for execution step parameters + misc. &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/186&quot;&gt;#186&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] [Event Manager PR#2] Event manager plugin &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/187&quot;&gt;#187&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Disable flacky tests &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/192&quot;&gt;#192&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix wrongly reported .dsl error  &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/180&quot;&gt;#180&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Fix event manager integration problems &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/189&quot;&gt;#189&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2021-06 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/196&quot;&gt;#196&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2020-12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/183&quot;&gt;#183&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2020-03 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/178&quot;&gt;#178&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Explicit repository feature &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/190&quot;&gt;#190&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-pull-requests-in-repository-gemoc-studio-execution-ale&quot;&gt;2.3. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-ale&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;enhancements-2&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;][&lt;strong&gt;enhancement&lt;/strong&gt;] Improve management of ALE when  used as SiriusInterpreter &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/45&quot;&gt;#45&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-2&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2020-12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/46&quot;&gt;#46&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2021-06 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/49&quot;&gt;#49&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2020-03 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/43&quot;&gt;#43&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-2&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Consolidation and automatic bump of K3 versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/47&quot;&gt;#47&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Explicit repository feature &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/48&quot;&gt;#48&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-pull-requests-in-repository-gemoc-studio-execution-java&quot;&gt;2.4. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-java&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-java/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-3&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add Sirius ELK support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/15&quot;&gt;#15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] [Event Manager PR#3] Metalanguage rule executor for java execution engine &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/17&quot;&gt;#17&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-3&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2020-12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/14&quot;&gt;#14&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2021-06 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/19&quot;&gt;#19&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2020-03 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-3&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Consolidation and automatic bump of K3 versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Explicit repository features &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/18&quot;&gt;#18&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-pull-requests-in-repository-gemoc-studio-moccml&quot;&gt;2.5. Pull Requests in repository &lt;em&gt;gemoc-studio-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-4&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] major improve in readability of ECL files. defs can now be used to avoid redundant let..in clauses &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/14&quot;&gt;#14&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Major performance improvement &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/16&quot;&gt;#16&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add Sirius ELK support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/18&quot;&gt;#18&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Ocl 6.11 bump fix &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/15&quot;&gt;#15&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-4&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2020 12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/17&quot;&gt;#17&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2021-06 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/19&quot;&gt;#19&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2020-03 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;26-pull-requests-in-repository-gemoc-studio-execution-moccml&quot;&gt;2.6. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-5&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add Sirius ELK support &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/50&quot;&gt;#50&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] update the formal analysis branch wrt changes done in the master &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/53&quot;&gt;#53&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-5&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2020-12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/49&quot;&gt;#49&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2021-06 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/54&quot;&gt;#54&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to Eclipse 2020-03 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/48&quot;&gt;#48&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-4&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Consolidation and automatic bump of K3 versions &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/51&quot;&gt;#51&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2021/07/28/V3.3.0.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2021/07/28/V3.3.0.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
     
       <item>
         <title>GEMOC Studio V3.2.0</title>
@@ -1654,85 +1876,6 @@
         <category>eclipse_package</category>
         
         <category>updatesite</category>
-        
-      </item>
-    
-      <item>
-        <title>GEMOC Studio V2.3.1</title>
-        <description>&lt;h1 id=&quot;gemoc-studio-231-20170915&quot;&gt;GEMOC Studio 2.3.1 (2017/09/15)&lt;/h1&gt;
-
-&lt;p&gt;This software is provided for all major OS in 64 bit only: Windows, Linux and Mac OS X.  (for a 32 bit version please use previous release)&lt;/p&gt;
-
-&lt;p&gt;This version patched from 2.3.0 2017-02-27.&lt;/p&gt;
-
-&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
-
-&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
-  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
-
-&lt;p&gt;The purpose of this section is to highlight some of the work done on the GEMOC Studio since previous releases.&lt;/p&gt;
-
-&lt;h3 id=&quot;11-upgrade-to-eclipse-neon-and-alignment-of-all-dependencies&quot;&gt;1.1 Upgrade to Eclipse Neon and alignment of all dependencies&lt;/h3&gt;
-
-&lt;p&gt;This version is based on Eclipse Neon. 
-This also includes internal component dependencies which are aligned to the components distributed with the Eclipse release train.
-For example : it now uses Xtext 2.10.x, Sirius 4.1.2,  OCL 5.0.0, …&lt;/p&gt;
-
-&lt;h3 id=&quot;12-official-support-of-language-inheritance-to-build-editors-and-animators&quot;&gt;1.2 Official support of language inheritance to build editors and animators.&lt;/h3&gt;
-
-&lt;p&gt;Thanks to Melange, it is now possible to build the animator as a language extension of a parent language.&lt;/p&gt;
-
-&lt;p&gt;In such scenario, the parent language supports the edition services. The child language inherits from it 
-in order to define the concepts and attributes required for the execution and animation.&lt;br /&gt;
-From the model designer point of view, she is editing model conformant to the parent language. When running the model,
-Melange will seamlessly convert the model into its executable variant in order to support the animation extension.&lt;/p&gt;
-
-&lt;p&gt;This is illustrated with the new version of the &lt;a href=&quot;https://github.com/gemoc/gemoc-studio/tree/master/official_samples/LegacyFSM&quot;&gt;Sequential FSM example&lt;/a&gt; which is bundled in the Studio.&lt;/p&gt;
-
-&lt;h3 id=&quot;13-improved-ui-for-bcool&quot;&gt;1.3 Improved UI for BCOoL&lt;/h3&gt;
-
-&lt;p&gt;Some new wizards have been added in order to create BCOoL projects and files.&lt;/p&gt;
-
-&lt;h3 id=&quot;14-improved-timeline&quot;&gt;1.4 Improved Timeline&lt;/h3&gt;
-
-&lt;p&gt;A diff viewer is now also available in order to compare execution traces.&lt;/p&gt;
-
-&lt;h3 id=&quot;15-improvement-of-the-trace-generator&quot;&gt;1.5 Improvement of the Trace generator&lt;/h3&gt;
-
-&lt;p&gt;Various bug fix have been done on this component.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-bug-fix-and-feature-request-implemented&quot;&gt;2. Bug fix and feature request implemented&lt;/h2&gt;
-
-&lt;p&gt;Many bugs and feature have been solved in this release. This includes (but is not limited to) the following:&lt;/p&gt;
-
-&lt;h3 id=&quot;21-list-of-bug-fixed-in-this-release&quot;&gt;2.1 List of bug fixed in this release&lt;/h3&gt;
-
-&lt;p&gt;(ie. bug fixed since V2.2.0)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gemoc/gemoc-studio/issues/30&quot;&gt;Studio Bug #30&lt;/a&gt;; Creating a new GEMOC Language project cannot complete if there is no preexisting ecore file.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gemoc/gemoc-studio/issues/31&quot;&gt;Studio Bug #31&lt;/a&gt;; String written reversed in Melange new project template.&lt;/li&gt;
-  &lt;li&gt;Fix Melange loading problem when using both language inheritance and xText editor.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;22-list-of-feature-request&quot;&gt;2.2 List of feature request&lt;/h3&gt;
-
-&lt;p&gt;(i.e. done since V2.2.0)&lt;/p&gt;
-</description>
-        <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
-        <link>https://gemoc.github.io/studio_releases/eclipse_package/2017/09/15/v2.3.1.html</link>
-        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/2017/09/15/v2.3.1.html</guid>
-        
-        
-        <category>studio_releases</category>
-        
-        <category>eclipse_package</category>
         
       </item>
     
