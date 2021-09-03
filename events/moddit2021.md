@@ -91,6 +91,15 @@ We are pleased to annouce that [Prof. Bernhard Rumpe](https://www.se-rwth.de/sta
 
   > [Prof. Bernhard Rumpe](https://www.se-rwth.de/staff/rumpe/) is heading the Software Engineering department at the RWTH Aachen University, Germany. The RWTH Aachen is one of the Excellence Universities in Germany with a strong focus on engineering and its scientific foundations. His main interests are rigorous and practical software and system development methods based on adequate modeling techniques. This includes agile development methods like XP and SCRUM as well as model-engineering based on UML-like notations and domain specific languages. The working groups have contributed to many modeling techniques, including the UML standardization. The group is well integrated in strategic efforts, such as the Internet-Of-Production Excellence cluster (IoP) and the Aachen Center for Systems Engineering (CSE), where digital twins are in deep focus. His newest book on the MontiCore Language workbench has been released earlier this year.
 
+## Accepted Papers
+
+- Matthew Bonney, Marco De Angelis, Mattia Dal Borgo and David Wagg. _Digital Twin Operational Platform for Connectivity and Accessibility using Flask Python_ (exemplar paper).
+- Istvan David, Jessie Galasso and Eugene Syriani. _Inference of Simulation Models in Digital Twins by Reinforcement Learning_ (short paper)
+- Hari Govindasamy, Ramya Jayaraman, Burcu Taspinar, Daniel Lehner and Manuel Wimmer. _Air Quality Management: An Exemplar for Model-Driven Digital Twin Engineering_ (exemplar paper).
+- David Manrique Negrin, Loek Cleophas and Mark van den Brand. _Using Ptolemy II as a framework for virtual entity integration and orchestration in digital twins_ (short paper).
+- Paula Mu\~noz, Javier Troya and Antonio Vallecillo. _Using UML and OCL Models to Realize High-Level Digital Twins_ (regular paper).
+- Mark van den Brand, Loek Cleophas, Raghavendran Gunasekaran, Boudewijn Haverkort, David Manrique Negrin and Hossain Muhammad Muctadir. _Models Meet Data: Challenges to Create Virtual Entities for Digital Twins_ (short paper).
+
 ## Program
 
 TBA. 
@@ -113,7 +122,6 @@ TBA.
 - Johann Bourcier
 - Jeff Gray
 - Georg Grossmann
-- Matthias Jarke
 - Djamel Eddine Khelladi
 - Jerome Pfeiffer
 - Alfonso Pierantonio
@@ -122,7 +130,6 @@ TBA.
 - Bernhard Rumpe
 - Julien Schmaltz
 - Massimo Tisi
-- Hans Vangheluwe
 - Michael Vierhauser
 - Alois Zoitl
 - Steffen Zschaler
