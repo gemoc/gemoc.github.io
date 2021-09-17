@@ -102,23 +102,23 @@ We are pleased to annouce that [Prof. Bernhard Rumpe](https://www.se-rwth.de/sta
 
 ## Program
 
-(All times in GMT+0)
+The workshop is schedule on Oct. 12th (Tue). All times are in CET. 
 
-### Session 01 (15:00 - 16:15): Opening and Keynote
+### Session 01 (16:00 - 17:15): Opening and Keynote
 * Opening by the organizers
 * Keynote by Prof. Bernhard Rumpe
 
-### Session 02 (16:15 - 17:15): Engineering Digital Twins
+### Session 02 (17:15 - 18:15): Engineering Digital Twins
 * Paula Muñoz, Javier Troya and Antonio Vallecillo. _Using UML and OCL Models to Realize High-Level Digital Twins_
 * Istvan David, Jessie Galasso and Eugene Syriani. _Inference of Simulation Models in Digital Twins by Reinforcement Learning_
 * Mark van den Brand, Loek Cleophas, Raghavendran Gunasekaran, Boudewijn Haverkort, David Manrique Negrin and Hossain Muhammad Muctadir. _Models Meet Data: Challenges to Create Virtual Entities for Digital Twins_
 
-### Session 03 (17:30 - 18:30): Digital Twin Exemplars
+### Session 03 (18:30 - 19:30): Digital Twin Exemplars
 * Hari Govindasamy, Ramya Jayaraman, Burcu Taspinar, Daniel Lehner and Manuel Wimmer. _Air Quality Management: An Exemplar for Model-Driven Digital Twin Engineering_
 * David A Manrique Negrin, Loek Cleophas and Mark van den Brand. _Using Ptolemy II as a framework for virtual entity integration and orchestration in digital twins_
 * Matthew Bonney, Marco De Angelis, Mattia Dal Borgo and David Wagg. _Digital Twin Operational Platform for Connectivity and Accessibility using Flask Python_
 
-### Session 04 (18:30 - 19:30): Invited Flash Talks and Demo
+### Session 04 (19:30 - 20:30): Invited Flash Talks and Demo
 
 
 ## Committees
