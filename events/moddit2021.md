@@ -81,7 +81,7 @@ Submissions that do not adhere to these limits or that violate the formatting gu
 - Paper submission deadline: **July 27, 2021** (extended)
 - Notification of acceptance: **August 25, 2021** (extended)
 - Camera ready submission deadline: **September 3, 2021** (extended)
-- Workshop: TBA.
+- Workshop: **October 12, 2021**
 
 ## Keynote
 
