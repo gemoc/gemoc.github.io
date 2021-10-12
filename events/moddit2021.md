@@ -106,7 +106,7 @@ The workshop is schedule on Oct. 12th (Tue). All times are in CET.
 
 ### Session 01 (17:00 - 18:15): Opening and Keynote (chair: B. Combemale)
 * Opening by the organizers
-* Keynote by Prof. Bernhard Rumpe
+* Keynote by Prof. Bernhard Rumpe ([slide](https://gemoc.org/pub/21.10.12.MODDIT.Keynote.pdf))
 
 ### Session 02 (18:15 - 19:15): Engineering Digital Twins (chair: R. Eramo)
 * Paula Muñoz, Javier Troya and Antonio Vallecillo. _Using UML and OCL Models to Realize High-Level Digital Twins_
