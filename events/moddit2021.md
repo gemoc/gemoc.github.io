@@ -85,7 +85,7 @@ Submissions that do not adhere to these limits or that violate the formatting gu
 
 ## Keynote
 
-We are pleased to annouce that [Prof. Bernhard Rumpe](https://www.se-rwth.de/staff/rumpe/) will give a keynote entitled "Modelling for and of Digital Twins". 
+We are pleased to annouce that [Prof. Bernhard Rumpe](https://www.se-rwth.de/staff/rumpe/) will give a keynote entitled "[Modelling for and of Digital Twins](https://gemoc.org/pub/21.10.12.MODDIT.Keynote.pdf)". 
 
   > Abstract: A digital twin shares a lot of characteristics with a model. However, there are also a lot of differences. A digital twin is like a real twin: it is an active instance that interacts with the real system. We discuss definitions and variants of digital twins and we closely examine possibilities to systematically derive digital twins from development models and thus deepen the shared characteristics of models and digital twins.
 
