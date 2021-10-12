@@ -121,6 +121,7 @@ The workshop is schedule on Oct. 12th (Tue). All times are in CET.
 ### Session 04 (20:30 - 21:30): Invited Flash Talks and Demo (chair: M. v.d. Brand)
 * Talk 1
 * Francis Bordeleau. _Can Digital Twins be used for the continuous improvement of DevOps processes?_
+* Gijs Walravens. _Towards Digital Twins for soccer robots: a use case in reusing artifacts_
 
 
 ## Committees
