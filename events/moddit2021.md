@@ -85,7 +85,7 @@ Submissions that do not adhere to these limits or that violate the formatting gu
 
 ## Keynote
 
-We are pleased to annouce that [Prof. Bernhard Rumpe](https://www.se-rwth.de/staff/rumpe/) will give a keynote entitled "[Modelling for and of Digital Twins](https://gemoc.org/pub/21.10.12.MODDIT.Keynote.pdf)". 
+We are pleased to annouce that [Prof. Bernhard Rumpe](https://www.se-rwth.de/staff/rumpe/) will give a keynote entitled "[Modelling for and of Digital Twins](https://gemoc.org/pub/moddit21/21.10.12.MODDIT.Keynote.pdf)". 
 
   > Abstract: A digital twin shares a lot of characteristics with a model. However, there are also a lot of differences. A digital twin is like a real twin: it is an active instance that interacts with the real system. We discuss definitions and variants of digital twins and we closely examine possibilities to systematically derive digital twins from development models and thus deepen the shared characteristics of models and digital twins.
 
@@ -106,22 +106,22 @@ The workshop is schedule on Oct. 12th (Tue). All times are in CET.
 
 ### Session 01 (17:00 - 18:15): Opening and Keynote (chair: B. Combemale)
 * Opening by the organizers
-* Keynote by Prof. Bernhard Rumpe ([slide](https://gemoc.org/pub/21.10.12.MODDIT.Keynote.pdf))
+* Keynote by Prof. Bernhard Rumpe ([slide](https://gemoc.org/pub/moddit21/21.10.12.MODDIT.Keynote.pdf))
 
 ### Session 02 (18:15 - 19:15): Engineering Digital Twins (chair: R. Eramo)
-* Paula Muñoz, Javier Troya and Antonio Vallecillo. _Using UML and OCL Models to Realize High-Level Digital Twins_
-* Istvan David, Jessie Galasso and Eugene Syriani. _Inference of Simulation Models in Digital Twins by Reinforcement Learning_
-* Mark van den Brand, Loek Cleophas, Raghavendran Gunasekaran, Boudewijn Haverkort, David Manrique Negrin and Hossain Muhammad Muctadir. _Models Meet Data: Challenges to Create Virtual Entities for Digital Twins_
+* Paula Muñoz, Javier Troya and Antonio Vallecillo. _Using UML and OCL Models to Realize High-Level Digital Twins_ ([slide](https://gemoc.org/pub/moddit21/P.Muñoz-J.Troya-A.Vallecillo-ModDitMODELS.pdf), [GitHub repo](https://github.com/atenearesearchgroup/digitalTwinModelingFramework))
+* Istvan David, Jessie Galasso and Eugene Syriani. _Inference of Simulation Models in Digital Twins by Reinforcement Learning_ ([slide](https://gemoc.org/pub/moddit21/moddit-rl4dt-export.pdf))
+* Mark van den Brand, Loek Cleophas, Raghavendran Gunasekaran, Boudewijn Haverkort, David Manrique Negrin and Hossain Muhammad Muctadir. _Models Meet Data: Challenges to Create Virtual Entities for Digital Twins_ ([slide](https://gemoc.org/pub/moddit21/ModelsMeetData.pdf))
 
 ### Session 03 (19:30 - 20:30): Digital Twin Exemplars (chair: F. Bordeleau)
-* Hari Govindasamy, Ramya Jayaraman, Burcu Taspinar, Daniel Lehner and Manuel Wimmer. _Air Quality Management: An Exemplar for Model-Driven Digital Twin Engineering_
-* David A Manrique Negrin, Loek Cleophas and Mark van den Brand. _Using Ptolemy II as a framework for virtual entity integration and orchestration in digital twins_
-* Matthew Bonney, Marco De Angelis, Mattia Dal Borgo and David Wagg. _Digital Twin Operational Platform for Connectivity and Accessibility using Flask Python_
+* Hari Govindasamy, Ramya Jayaraman, Burcu Taspinar, Daniel Lehner and Manuel Wimmer. _Air Quality Management: An Exemplar for Model-Driven Digital Twin Engineering_ ([slide](https://gemoc.org/pub/moddit21/##.pdf))
+* David A Manrique Negrin, Loek Cleophas and Mark van den Brand. _Using Ptolemy II as a framework for virtual entity integration and orchestration in digital twins_ ([slide](https://gemoc.org/pub/moddit21/##.pdf))
+* Matthew Bonney, Marco De Angelis, Mattia Dal Borgo and David Wagg. _Digital Twin Operational Platform for Connectivity and Accessibility using Flask Python_ ([slide](https://gemoc.org/pub/moddit21/Bonney_Cristallo.pdf))
 
 ### Session 04 (20:30 - 21:30): Invited Flash Talks and Demo (chair: M. v.d. Brand)
 * Talk 1
-* Francis Bordeleau. _Can Digital Twins be used for the continuous improvement of DevOps processes?_
-* Gijs Walravens. _Towards Digital Twins for soccer robots: a use case in reusing artifacts_
+* Francis Bordeleau. _Can Digital Twins be used for the continuous improvement of DevOps processes?_ ([slide](https://gemoc.org/pub/moddit21/ModDiT2021-DTforDevOpsprocessv2.pdf))
+* Gijs Walravens. _Towards Digital Twins for soccer robots: a use case in reusing artifacts_ ([slide](https://gemoc.org/pub/moddit21/##.pdf))
 
 
 ## Committees
