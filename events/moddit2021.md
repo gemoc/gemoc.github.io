@@ -115,7 +115,7 @@ The workshop is schedule on Oct. 12th (Tue). All times are in CET.
 
 ### Session 03 (19:30 - 20:30): Digital Twin Exemplars (chair: F. Bordeleau)
 * Hari Govindasamy, Ramya Jayaraman, Burcu Taspinar, Daniel Lehner and Manuel Wimmer. _Air Quality Management: An Exemplar for Model-Driven Digital Twin Engineering_ ([slide](https://gemoc.org/pub/moddit21/##.pdf))
-* David A Manrique Negrin, Loek Cleophas and Mark van den Brand. _Using Ptolemy II as a framework for virtual entity integration and orchestration in digital twins_ ([slide](https://gemoc.org/pub/moddit21/##.pdf))
+* David A Manrique Negrin, Loek Cleophas and Mark van den Brand. _Using Ptolemy II as a framework for virtual entity integration and orchestration in digital twins_ ([slide](https://gemoc.org/pub/moddit21/2021.10.08.Paper_Ptolemy_framework_for_integration.pdf))
 * Matthew Bonney, Marco De Angelis, Mattia Dal Borgo and David Wagg. _Digital Twin Operational Platform for Connectivity and Accessibility using Flask Python_ ([slide](https://gemoc.org/pub/moddit21/Bonney_Cristallo.pdf))
 
 ### Session 04 (20:30 - 21:30): Invited Flash Talks and Demo (chair: M. v.d. Brand)
