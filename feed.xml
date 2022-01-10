@@ -6,8 +6,8 @@
 </description>
     <link>https://gemoc.github.io/</link>
     <atom:link href="https://gemoc.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Jan 2022 15:08:17 +0000</pubDate>
-    <lastBuildDate>Mon, 10 Jan 2022 15:08:17 +0000</lastBuildDate>
+    <pubDate>Mon, 10 Jan 2022 16:30:46 +0000</pubDate>
+    <lastBuildDate>Mon, 10 Jan 2022 16:30:46 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -31,7 +31,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;Studio is the last based on Eclipse 2021-06&lt;/li&gt;
-  &lt;li&gt;new support for definition and execution of behavioral interface (currently available for sequential java engine). This interface allows to interleave user/external events with the execution. (cf. https://hal.archives-ouvertes.fr/hal-02565549/document)&lt;/li&gt;
+  &lt;li&gt;new support for definition and execution of behavioral interface (currently available for sequential java engine). This interface allows to interleave user/external events with the execution. (cf. &lt;a href=&quot;https://hal.archives-ouvertes.fr/hal-02565549/document&quot;&gt;https://hal.archives-ouvertes.fr/hal-02565549/document&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;enhancement of the moccml concurrent to support the construction of state space&lt;/li&gt;
   &lt;li&gt;enhancement of the moccml concurrent to support a new DSL that specifies a specific scenario to be verified against the behavioral semantics&lt;/li&gt;
   &lt;li&gt;better support for pom first jar of a subset of the studio (ie. jar to be used with pure maven dependencies instead of eclipse manifest dependencies)&lt;/li&gt;
