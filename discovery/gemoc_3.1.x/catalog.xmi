@@ -14,7 +14,7 @@
         license="EPL"
         groups="//@filters.0"
         image32="images/IconeGemocLanguagePlusModel-32.png">
-      <sitesURLS>http://gemoc.org/activitydiagram/updates/nightly</sitesURLS>
+      <sitesURLS>http://--disabled--gemoc.org/activitydiagram/updates/nightly</sitesURLS>
       <overview
           summary="Deployer that installs the project sources for two versions of the Activitydiagram Language developped using GEMOC. One version will run using the GEMOC Sequential engine, the second using Concurrent engine.  The deployer also provides sample models."
           screenshot="images/activitydiagram_sequential-screenshot-320x240.png"
