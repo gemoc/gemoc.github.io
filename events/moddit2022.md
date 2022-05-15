@@ -105,7 +105,6 @@ TBA.
 -	Benoit Combemale (University of Rennes 1, France)
 -	Romina Eramo (University of L’Aquila, Italy)
 -	Mark van den Brand (Eindhoven University of Technology, The Netherlands)
--	Manuel Wimmer (JKU Linz, Austria)
 -	Andreas Wortmann (University of Stuttgart, Germany)
 
 ### Program Committee
