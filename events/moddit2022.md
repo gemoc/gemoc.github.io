@@ -77,11 +77,11 @@ Submissions that do not adhere to these limits or that violate the formatting gu
 
 ## Important Dates
 
-- Abstract submission deadline: **July 16, 2022**
-- Paper submission deadline: **July 23, 2022**
-- Notification of acceptance: **August 21, 2022**
-- Camera ready submission deadline: **August 28, 2022**
-- Workshop: **tbc.**
+- Abstract submission deadline: **July 13, 2022**
+- Paper submission deadline: **July 20, 2022**
+- Notification of acceptance: **August 19, 2022**
+- Camera ready submission deadline: **August 26, 2022**
+- Workshop: **tbc in range October 23-25**
 
 ## Keynote
 
