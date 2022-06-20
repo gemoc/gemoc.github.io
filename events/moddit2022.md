@@ -30,7 +30,7 @@ date: 2022, Virtual
 ## ModDiT’22
 ## co-located with [MODELS 2022](http://www.modelsconference.org/)
 
-<strong>[About]({{ site.baseurl }}{% link events/moddit2021.md %}#about-the-workshop)  |  [Program]({{ site.baseurl }}{% link events/moddit2021.md %}#program)  |  [Call]({{ site.baseurl }}{% link events/moddit2021.md %}#call-for-papers--models)  |  [Dates]({{ site.baseurl }}{% link events/moddit2021.md %}#important-dates)  |  [Committees]({{ site.baseurl }}{% link events/moddit2021.md %}#committees)</strong>
+<strong>[About]({{ site.baseurl }}{% link events/moddit2022.md %}#about-the-workshop)  |  [Program]({{ site.baseurl }}{% link events/moddit2022.md %}#program)  |  [Call]({{ site.baseurl }}{% link events/moddit2022.md %}#call-for-papers--models)  |  [Dates]({{ site.baseurl }}{% link events/moddit2022.md %}#important-dates)  |  [Committees]({{ site.baseurl }}{% link events/moddit2022.md %}#committees)</strong>
 
 <!-- <div style="color:red;" markdown="1">
 ## Public collaborative document for discussions and feedback during the workshop: [link](https://uncloud.univ-nantes.fr/index.php/apps/onlyoffice/s/CXSDaABiWTYdJHp)
@@ -71,8 +71,9 @@ The following types of submissions are solicited:
 -	Tool demonstration papers (max 5 pages): These are papers which focus on the tooling aspects. A good tool paper focuses on practical insights that are likely to be useful to other implementers or users of digital twins in the future. Any of the aforementioned topics of interest are appropriate areas for tool demonstrations. Submissions must not exceed 5 pages. They may optionally come with an appendix with a demo outline / screenshots and/or a short video/screencast illustrating the tool.
 -	Exemplar papers (max 5 pages): These are implementations or detailed specifications of digital twins that pose and highlight fundamental or characteristic challenges for the modelling community. Submissions must not exceed 5 pages. They may optionally come with an appendix with further materials, or a short video/screencast illustrating the exemplar.
 
-Submissions must adhere to the IEEE formatting instructions, which can be found at: [IEEE - Manuscript Templates for Conference Proceedings](https://www.ieee.org/conferences/publishing/templates.html), and must be submitted via [EasyChair](https://easychair.org/conferences/?conf=moddit2022).
+Submissions must adhere to the ACM formatting instructions, which can be found at https://www.acm.org/publications/proceedings-template for both LaTeX and Word users. LaTeX users must use the provided acmart.cls and ACM-Reference-Format.bst without modification, enable the conference format in the preamble of the document (i.e., \documentclass[sigconf,review]{acmart}), and use the ACM reference format for the bibliography (i.e., \bibliographystyle{ACM-Reference-Format}). The review option adds line numbers, thereby allowing referees to refer to specific lines in their comments.
 
+Submissions must be made via [EasyChair](https://easychair.org/conferences/?conf=moddit2022).
 Submissions that do not adhere to these limits or that violate the formatting guidelines will be desk-rejected without review. Accepted papers will be published in the workshop proceedings published of MODELS. Selected papers from the workshop will be invited to revise and submit extended versions of the papers for publication in a well-known journal.
 
 ## Important Dates
