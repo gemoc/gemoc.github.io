@@ -73,7 +73,7 @@ The following types of submissions are solicited:
 
 Submissions must adhere to the ACM formatting instructions, which can be found at https://www.acm.org/publications/proceedings-template for both LaTeX and Word users. LaTeX users must use the provided acmart.cls and ACM-Reference-Format.bst without modification, enable the conference format in the preamble of the document (i.e., \documentclass[sigconf,review]{acmart}), and use the ACM reference format for the bibliography (i.e., \bibliographystyle{ACM-Reference-Format}). The review option adds line numbers, thereby allowing referees to refer to specific lines in their comments.
 
-Submissions must be made via [EasyChair](https://easychair.org/conferences/?conf=moddit2022).
+Submissions must be made via [EasyChair](https://easychair.org/conferences/?conf=moddit22).
 Submissions that do not adhere to these limits or that violate the formatting guidelines will be desk-rejected without review. Accepted papers will be published in the workshop proceedings published of MODELS. Selected papers from the workshop will be invited to revise and submit extended versions of the papers for publication in a well-known journal.
 
 ## Important Dates
