@@ -6,9 +6,215 @@
 </description>
     <link>https://gemoc.github.io/</link>
     <atom:link href="https://gemoc.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jun 2022 10:00:08 +0000</pubDate>
-    <lastBuildDate>Thu, 23 Jun 2022 10:00:08 +0000</lastBuildDate>
+    <pubDate>Fri, 01 Jul 2022 08:12:44 +0000</pubDate>
+    <lastBuildDate>Fri, 01 Jul 2022 08:12:44 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>GEMOC Studio V3.5.0</title>
+        <description>&lt;h1 id=&quot;gemoc-studio-releases350-20220631&quot;&gt;GEMOC Studio releases/3.5.0 (2022/06/31)&lt;/h1&gt;
+
+&lt;p&gt;This software is provided for all major OS (Linux 64, Win 64, MacOS 64).&lt;/p&gt;
+
+&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
+
+&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
+  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It includes a headless variant that allows to launch an execution on the command line without the Eclipse UI.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Studio is the last based on Eclipse 2021-12&lt;/li&gt;
+  &lt;li&gt;Initial version of a Webprotocol based EngineAddon server&lt;/li&gt;
+  &lt;li&gt;K3FSM sample improvements&lt;/li&gt;
+  &lt;li&gt;MacOS M1 processor version of the Studio&lt;/li&gt;
+  &lt;li&gt;Updated sections in documentation&lt;/li&gt;
+  &lt;li&gt;and several bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release-since-v340&quot;&gt;2. List of Pull Requests in this release (since V3.4.0)&lt;/h2&gt;
+
+&lt;p&gt;The full history is  also available in the CHANGELOG.md at the root of each repository.&lt;/p&gt;
+
+&lt;p&gt;Thanks to our contributors (in alphabetical order): Erwan Bousse(LN2S), Julien Deantoni (I3S/CNRS), Pierre Jeanjean (University of Rennes), Faezeh Khorram (Université de Nantes), Dorian Leroy (TU Vienna /Inria), Didier Vojtisek (Inria)&lt;/p&gt;
+
+&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] K3FSM sample improvements &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/256&quot;&gt;#256&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add new k3fsm modeling samples &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/257&quot;&gt;#257&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Initial version of a Webprotocol based EngineAddon server &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/264&quot;&gt;#264&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Make K3FSM semantics work with null input/outputs &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/258&quot;&gt;#258&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to 3.5.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/254&quot;&gt;#254&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2021 12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/255&quot;&gt;#255&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update target to latest and target generation script &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/263&quot;&gt;#263&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] MacOS M1 processor version of the Studio &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/268&quot;&gt;#268&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Add nodejs to docker for CI &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/265&quot;&gt;#265&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Update docker ci eclipse jenkins image &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/261&quot;&gt;#261&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use tpd for defining target platform &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/259&quot;&gt;#259&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;22-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.2. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-modeldebugging/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Initial version of a Webprotocol based EngineAddon server &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/220&quot;&gt;#220&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;bug-fixes-1&quot;&gt;Bug Fixes:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Fix several trace consistency and serialization issues &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/215&quot;&gt;#215&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Prevent NPE in Sirius if a model element doesn’t have an eResource &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/214&quot;&gt;#214&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to 3.5.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/212&quot;&gt;#212&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2021 12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/213&quot;&gt;#213&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-1&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use tpd for defining target platform &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/216&quot;&gt;#216&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;23-pull-requests-in-repository-gemoc-studio-execution-ale&quot;&gt;2.3. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-ale&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-ale/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-2&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Initial version of a Webprotocol based EngineAddon server &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/54&quot;&gt;#54&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-2&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to 3.5.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/51&quot;&gt;#51&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2021 12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/52&quot;&gt;#52&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-2&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use tpd for defining target platform &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-ale/pull/53&quot;&gt;#53&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;24-pull-requests-in-repository-gemoc-studio-execution-java&quot;&gt;2.4. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-java&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-java/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-3&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Initial version of a Webprotocol based EngineAddon server &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/26&quot;&gt;#26&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-3&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to 3.5.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/22&quot;&gt;#22&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2021 12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/23&quot;&gt;#23&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-3&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use tpd for defining target platform &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-java/pull/24&quot;&gt;#24&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;25-pull-requests-in-repository-gemoc-studio-moccml&quot;&gt;2.5. Pull Requests in repository &lt;em&gt;gemoc-studio-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-4&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Initial version of a Webprotocol based EngineAddon server &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/25&quot;&gt;#25&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-4&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to 3.5.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/22&quot;&gt;#22&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2021 12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/23&quot;&gt;#23&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-4&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;]  Use tpd for defining target platform &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-moccml/pull/24&quot;&gt;#24&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;26-pull-requests-in-repository-gemoc-studio-execution-moccml&quot;&gt;2.6. Pull Requests in repository &lt;em&gt;gemoc-studio-execution-moccml&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&quot;&gt;https://github.com/eclipse/gemoc-studio-execution-moccml/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enhancements-5&quot;&gt;Enhancements:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] WIP adding a new filtering strategy rule &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/67&quot;&gt;#67&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Initial version of a Webprotocol based EngineAddon server &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/68&quot;&gt;#68&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;version-upgrades-5&quot;&gt;Version upgrades&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump to 3.5.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/64&quot;&gt;#64&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Bump eclipse 2021 12 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/65&quot;&gt;#65&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;release-engineering-5&quot;&gt;Release Engineering&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Use tpd for defining target platform &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-execution-moccml/pull/66&quot;&gt;#66&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2022/07/01/V3.5.0.html</link>
+        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2022/07/01/V3.5.0.html</guid>
+        
+        
+        <category>studio_releases</category>
+        
+        <category>eclipse_package</category>
+        
+        <category>updatesite</category>
+        
+      </item>
     
       <item>
         <title>GEMOC Studio V3.4.0</title>
@@ -1820,105 +2026,6 @@
         <pubDate>Thu, 07 Jun 2018 00:00:00 +0000</pubDate>
         <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/07/V3.0.0-rc3.html</link>
         <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/06/07/V3.0.0-rc3.html</guid>
-        
-        
-        <category>studio_releases</category>
-        
-        <category>eclipse_package</category>
-        
-        <category>updatesite</category>
-        
-      </item>
-    
-      <item>
-        <title>GEMOC Studio V3.0.0rc2</title>
-        <description>&lt;h1 id=&quot;gemoc-studio-300rc2-20180327&quot;&gt;GEMOC Studio 3.0.0rc2 (2018/03/27)&lt;/h1&gt;
-
-&lt;p&gt;This software is provided for all major OS.&lt;/p&gt;
-
-&lt;p&gt;The GEMOC Studio contains components supporting the GEMOC methodology for building and composing executable DSMLs.&lt;/p&gt;
-
-&lt;p&gt;It includes the two workbenches:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The GEMOC Language Workbench, intended to be used by language designers: it allows building and composing new executable DSMLs.&lt;/li&gt;
-  &lt;li&gt;The GEMOC Modeling Workbench, intended to be used by domain designers: it allows creating and executing, debugging and animating models conformant to executable DSMLs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-new-and-noteworthy&quot;&gt;1. New and noteworthy&lt;/h2&gt;
-
-&lt;h3 id=&quot;11-reminder-of-300rc1-changes&quot;&gt;1.1. Reminder of 3.0.0rc1 changes&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;naming now follows eclipse conventions (org.eclipse.gemoc.xxx)&lt;/li&gt;
-  &lt;li&gt;Studio is based on Eclipse Oxygen&lt;/li&gt;
-  &lt;li&gt;improved test suites&lt;/li&gt;
-  &lt;li&gt;introduction of DSL file support&lt;/li&gt;
-  &lt;li&gt;introduction of behavioral interface support&lt;/li&gt;
-  &lt;li&gt;continuous integration on http://ci.eclipse.org/gemoc&lt;/li&gt;
-  &lt;li&gt;and some bug fixes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;12-new-in-rc2&quot;&gt;1.2. New in rc2&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Eclipse platform base is now Oxygen.3&lt;/li&gt;
-  &lt;li&gt;Waiting for a better integration in the official build, the Concurrent engine is now available via the Discovery.&lt;/li&gt;
-  &lt;li&gt;DSL file grammar is now based on a grammar similar to java properties grammar&lt;/li&gt;
-  &lt;li&gt;Improved Discovery&lt;/li&gt;
-  &lt;li&gt;updated Melange version&lt;/li&gt;
-  &lt;li&gt;improved robustness of messaging system&lt;/li&gt;
-  &lt;li&gt;Release engineering improvements&lt;/li&gt;
-  &lt;li&gt;re-activated equivalency classes computing&lt;/li&gt;
-  &lt;li&gt;upgraded version of Melange&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2-list-of-pull-requests-in-this-release&quot;&gt;2. List of Pull Requests in this release&lt;/h2&gt;
-
-&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio&lt;/em&gt;&lt;/h3&gt;
-
-&lt;h4 id=&quot;enhancements&quot;&gt;Enhancements:&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;][&lt;strong&gt;refactoring&lt;/strong&gt;] Change grammar of DSL file  to a grammar similar to Java property file &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/40&quot;&gt;#40&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;bug-fixes&quot;&gt;Bug Fixes:&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] Improve Discovery error reporting in case of incorrect configuration &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/53&quot;&gt;#53&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;[&lt;strong&gt;bug&lt;/strong&gt;] ensures to run changeStyle in an UI thread when printing large messages on console &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/44&quot;&gt;#44&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;version-upgrades&quot;&gt;Version upgrades&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Upgrade to Melange 2018-01-19 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/48&quot;&gt;#48&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;][&lt;strong&gt;releng&lt;/strong&gt;] Update tycho to version 1.0.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/34&quot;&gt;#34&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;release-engineering&quot;&gt;Release Engineering&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[&lt;strong&gt;releng&lt;/strong&gt;] Releng improvements &lt;a href=&quot;https://github.com/eclipse/gemoc-studio/pull/50&quot;&gt;#50&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;21-pull-requests-in-repository-gemoc-studio-modeldebugging&quot;&gt;2.1. Pull Requests in repository &lt;em&gt;gemoc-studio-modeldebugging&lt;/em&gt;&lt;/h3&gt;
-
-&lt;h4 id=&quot;enhancements-1&quot;&gt;Enhancements:&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] re-activate equivalency classes computing &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/22&quot;&gt;#22&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;[&lt;strong&gt;enhancement&lt;/strong&gt;] Add a default value that should be used for swtbot tests of gemoc &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/19&quot;&gt;#19&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;version-upgrades-1&quot;&gt;Version upgrades&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[&lt;strong&gt;bump&lt;/strong&gt;] Update tycho to version 1.0.0 &lt;a href=&quot;https://github.com/eclipse/gemoc-studio-modeldebugging/pull/13&quot;&gt;#13&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
-        <link>https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/03/27/v3.0.0-rc2.html</link>
-        <guid isPermaLink="true">https://gemoc.github.io/studio_releases/eclipse_package/updatesite/2018/03/27/v3.0.0-rc2.html</guid>
         
         
         <category>studio_releases</category>
