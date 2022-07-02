@@ -110,4 +110,22 @@ TBA.
 
 ### Program Committee
 
-TBA.
+
+- Shaukat Ali
+- Johann Bourcier
+- Mark Harman
+- Djamel Eddine Khelladi
+- Alfonso Pierantonio
+- Bernhard Rumpe
+- Julien Schmaltz
+- Massimo Tisi
+- Hans Vangheluwe
+- Michael Vierhauser
+- Alois Zoitl
+- Steffen Zschaler
+
+<!-- - Jeff Gray -->
+<!-- - Georg Grossmann -->
+<!-- - Jerome Pfeiffer -->
+<!-- - Pascal Poizat -->
+<!-- - Michel Reniers -->
