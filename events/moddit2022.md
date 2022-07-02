@@ -1,7 +1,7 @@
 ---
 layout: event
 title: ModDiT 2022
-date: 2022, Virtual
+date: 2022, Montreal, Canada
 ---
 
 <style type="text/css">
