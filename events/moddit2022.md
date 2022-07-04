@@ -111,18 +111,18 @@ TBA.
 ### Program Committee
 
 
-- Shaukat Ali
-- Johann Bourcier
-- Mark Harman
-- Djamel Eddine Khelladi
-- Alfonso Pierantonio
-- Bernhard Rumpe
-- Julien Schmaltz
-- Massimo Tisi
-- Hans Vangheluwe
-- Michael Vierhauser
-- Alois Zoitl
-- Steffen Zschaler
+- Shaukat Ali (Simula Research Laboratory)
+- Johann Bourcier (Universite de Rennes 1 / IRISA / INRIA)
+- Mark Harman (University College London)
+- Djamel Eddine Khelladi (Université Rennes 1)
+- Alfonso Pierantonio (University of L'Aquila)
+- Bernhard Rumpe (RWTH Aachen University)
+- Julien Schmaltz (ICT Group)
+- Massimo Tisi (IMT Atlantique)
+- Hans Vangheluwe (University of Antwerp and McGill University)
+- Michael Vierhauser (Johannes Kepler University Linz)
+- Alois Zoitl (Johannes Kepler University Linz)
+- Steffen Zschaler (King's College London)
 
 <!-- - Jeff Gray -->
 <!-- - Georg Grossmann -->
