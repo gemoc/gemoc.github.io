@@ -99,7 +99,7 @@ TBA.
 
 ## Committees
 
-### Organizers ([contact](mailto:moddit2022@easychair.org))
+### Organizers ([contact](mailto:moddit22@easychair.org))
 
 -	Francis Bordeleau (École de technologie supérieure (ETS), Canada)
 -	Loek Cleophas (Eindhoven University of Technology, The Netherlands, and Stellenbosch University, South Africa)
