@@ -90,7 +90,23 @@ TBA.
 
 ## Accepted Papers
 
-TBA.
+* Gijs Walravens, Hossain Muhammad Muctadir and Loek Cleophas. Virtual Soccer Champions: a case study on artifact reuse in soccer robot Digital Twin construction   
+ 
+* Richard Somers, Andrew Clark, Neil Walkinshaw and Robert Hierons. Reliable Counterparts: Efficiently Testing Causal Relationships in Digital Twins       
+ 
+* Nikolena Christofi and Xavier Pucel. A Novel Methodology to construct Digital Twin Models for Spacecraft Operations using Fault and Behaviour Trees        
+ 
+* Loek Cleophas, Thomas Godfrey, Djamel Eddine Khelladi, Daniel Lehner, Benoit Combemale, Mark van den Brand, Michael Vierhauser, Manuel Wimmer and Steffen Zschaler. A Community-Sourced View on Engineering Digital Twins: Report from the EDT.Community              
+ 
+* Stefan Höppner, Matthias Tichy, Florian Ege, Sarah Stieß and Steffen Becker. Coordination and Explanation of Reconfigurations in Self-adaptive high-performance Systems       
+ 
+* Randy Paredis and Hans Vangheluwe. Towards a Digital X Framework Based on a Family of Architectures and a Virtual Knowledge Graph             
+ 
+* Yining Huang, Saadia Dhouib, Luis Palacios Medinacelli and Jacques Malenfant. Enabling Semantic Interoperability of Asset Administration Shells Through an Ontology-based Modeling Method
+ 
+* Paula Muñoz, Manuel Wimmer, Javier Troya and Antonio Vallecillo. Using Trace Alignments for Measuring the Similarity between a Physical and its Digital Twin              
+ 
+* Philipp Grimmeisen, Andreas Wortmann and Andrey Morozov. Case Study on Automated and Continuous Reliability Assessment of Software-Defined Manufacturing based on Digital Twins             
 
 ## Program
 
