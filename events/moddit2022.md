@@ -84,14 +84,18 @@ Submissions that do not adhere to these limits or that violate the formatting gu
 - Camera ready submission deadline: **August 26, 2022**
 - Workshop: **tbc in range October 23-25**
 
-## Keynote
+## Keynotes
 
-We are pleased to annouce that Dr. Marie-José Montpetit will give a keynote entitled "Digital twinning in distributed systems: bringing data and models together".
+We are pleased to annouce that the workshop will have two keynotes.
+
+Dr. Marie-José Montpetit will give a keynote entitled "Digital twinning in distributed systems: bringing data and models together".
 
   > Abstract: The trend towards system softwarization is accelerating, driven by powerful computing power at the edge and in the  cloud, broadband everywhere and the increasing use of machine learning and artificial intelligence in decision making. Novel application range from networking, medicine, advanced manufacturing and precision agriculture amongst other.  In that context, digital twins based on powerful cyber-physical modeling, are now used in performance evaluation, hypothesis testing and decision support systems everywhere. They reach beyond traditional simulators that relied on hardware components,  and include goal-driven analysis and re-enforcement learning. At the same time, sensors are now gathering large amounts of data that contain a system's response to specific stimuli. Statistical modelling allows to indentify key system variables and infer both long term and short term behaviour and deep learning identifies the best condition for operating the systems.  The data validate the twins and in return the twins enable more data to be generated. The presentation will focus on a specific use case of modeling and data analysis in the context of a distributed machine learning system in controlled environment agriculture.
 
 
   > [Dr. Marie-José Montpetit](https://www.linkedin.com/in/mjmontpetit/) is a well known researcher in Internet of Things, distributed networking and computing in the network. Her current interests englobe how artificial intelligence is impacting these fields and how in particular to apply AI to industrial and networking systems. She is an affiliate professor at Concordia University in Montreal and at Telecom-Paris Sud and a consultant to Iowa State university. She is also a lead designer at Ferme d’Hiver a Montreal region startup in controlled environment agriculture.
+
+Prof. Érik Poirier and Prof. Ali Motamedi will give a keynote entitled "Digital twins for the built environement: challenges, opportunities and the way forward". (Abstract and short biographies will be added later.)
 
 ## Accepted Papers
 
