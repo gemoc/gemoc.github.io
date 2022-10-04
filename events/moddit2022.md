@@ -119,8 +119,33 @@ Prof. Érik Poirier and Prof. Ali Motamedi will give a keynote entitled "Digital
 
 ## Program
 
-TBA.
+The workshop is schedule on Tuesday October 25th. All times are in Eastern Daylight Time (EDT). 
 
+### Session 01 (08:30 - 10:00): Opening and Keynote
+
+* Opening by the organizers
+* Keynote by Marie-Jose Montpetit
+
+### Session 02 (10:30 - 12:00): Engineering Digital Twins
+
+* Nikolena Christofi and Xavier Pucel, _A Novel Methodology to construct Digital Twin Models for Spacecraft Operations using Fault and Behaviour Trees_ (short paper)
+* Randy Paredis and Hans Vangheluwe, _Towards a Digital X Framework Based on a Family of Architectures and a Virtual Knowledge Graph_ (short paper)
+* Yining Huang, Saadia Dhouib, Luis Palacios Medinacelli and Jacques Malenfant, _Enabling Semantic Interoperability of Asset Administration Shells Through an Ontology-based Modeling Method_ (short paper)
+* Richard Somers, Andrew Clark, Neil Walkinshaw and Robert Hierons, _Reliable Counterparts: Efficiently Testing Causal Relationships in Digital Twins_ (short paper)
+* Loek Cleophas, Thomas Godfrey, Djamel Eddine Khelladi, Daniel Lehner, Benoit Combemale, Mark van den Brand, Michael Vierhauser, Manuel Wimmer and Steffen Zschaler, _A Community-Sourced View on Engineering Digital Twins: Report from the EDT.Community_ (short paper)
+
+### Lunch break (12:00–13:30)
+
+### Session 03 (13:30 - 15:00): Keynote and Operations of Digital Twins Pt. 1
+
+* Keynote by Érik Poirier and Ali Motamedi
+* Paula Muñoz, Manuel Wimmer, Javier Troya and Antonio Vallecillo, _Using Trace Alignments for Measuring the Similarity between a Physical and its Digital Twin_ (reguler paper)
+
+### Session 04 (15:30 - 17:00): Operations of Digital Twins Pt. 2
+
+* Stefan Höppner, Matthias Tichy, Florian Ege, Sarah Stieß and Steffen Becker, _Coordination and Explanation of Reconfigurations in Self-adaptive high-performance Systems_ (short paper)
+* Gijs Walravens, Hossain Muhammad Muctadir and Loek Cleophas, _Virtual Soccer Champions: a case study on artifact reuse in soccer robot Digital Twin construction_ (short paper)
+* Philipp Grimmeisen, Andreas Wortmann and Andrey Morozov, _Case Study on Automated and Continuous Reliability Assessment of Software-Defined Manufacturing based on Digital Twins_ (regular paper) 
 
 ## Committees
 
