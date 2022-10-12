@@ -97,6 +97,8 @@ Dr. Marie-José Montpetit will give a keynote entitled "Digital twinning in dist
 
 Prof. Érik Poirier and Prof. Ali Motamedi will give a keynote entitled "Digital twins for the built environement: challenges, opportunities and the way forward". (Abstract and short biographies will be added later.)
 
+  > Abstract: The increasingly tight coupling of digital and physical worlds in the built environment is unlocking tremendous potential for real, positive, and long-lasting impact. As with many nascent technologies, however, this tremendous potential is either obscured or depleted by a lack of formal constructs, models and instantiations. Looking at other domains, the built asset industry can learn much to accelerate its transition. This presentation will cover the application of the concept of Digital Twins in the built environment. It will start with an overview of key research and development in the field. It will then present some concrete applications of the concept and its implementation within the built asset industry. It will finish with a discussion on potential research avenues. Attendees will be able to better understand the research, development and application of Digital Twins for the built environment.
+
 ## Accepted Papers
 
 * Gijs Walravens, Hossain Muhammad Muctadir and Loek Cleophas. Virtual Soccer Champions: a case study on artifact reuse in soccer robot Digital Twin construction   
