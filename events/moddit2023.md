@@ -77,16 +77,16 @@ The following types of submissions are solicited:
 
 Submissions must adhere to the ACM formatting instructions, which can be found at https://www.acm.org/publications/proceedings-template for both LaTeX and Word users. LaTeX users must use the provided acmart.cls and ACM-Reference-Format.bst without modification, enable the conference format in the preamble of the document (i.e., \documentclass[sigconf,review]{acmart}), and use the ACM reference format for the bibliography (i.e., \bibliographystyle{ACM-Reference-Format}). The review option adds line numbers, thereby allowing referees to refer to specific lines in their comments.
 
-Submissions must be made via [EasyChair](https://easychair.org/conferences/?conf=moddit22).
-Submissions that do not adhere to these limits or that violate the formatting guidelines will be desk-rejected without review. Accepted papers will be published in the workshop proceedings published of MODELS. Selected papers from the workshop will be invited to revise and submit extended versions of the papers for publication in a well-known journal.
+Submissions must be made via EasyChair (link to instance to be added).
+Submissions that do not adhere to these limits or that violate the formatting guidelines will be desk-rejected without review. Note that for each accepted paper, at least one author has to register and attend in person to present their paper. Accepted papers will then be published in the workshop proceedings published of MODELS. Selected papers from the workshop will be invited to revise and submit extended versions of the papers for publication in a well-known journal.
 
 ## Important Dates
 
-- Abstract submission deadline: **TODO, 2023**
-- Paper submission deadline: **TODO, 2023**
-- Notification of acceptance: **TODO, 2023**
-- Camera ready submission deadline: **TODO, 2023**
-- Workshop: **TODO*, 2023*
+- Abstract submission deadline: Monday July 10th, 2023
+- Paper submission deadline: Monday July 17h, 2023
+- Notification of acceptance: Tuesday August 15th, 2023
+- Camera ready submission deadline: Tuesday August 22nd, 2023
+- Workshop: to be decided, between Sunday October 1st and Tuesday October 3rd, 2023
 
 ## Keynotes
 
@@ -106,7 +106,11 @@ TODO
 
 ### Organizers ([contact](mailto:moddit23@easychair.org))
 
-TODO
+* Tony Clark (Aston University, United Kingdom)
+* Loek Cleophas (Eindhoven University of Technology, The Netherlands, and Stellenbosch University, South Africa)
+* Romina Eramo (University of Teramo, Italy)
+* Vinay Kulkarni (Tata Consultancy Services, India)
+* Manuel Wimmer (Johannes Kepler University Linz, Austria)
 
 ### Program Committee
 
