@@ -43,9 +43,8 @@ date: 2023, Västerås, Sweden
 
 ## About the Workshop
 
-(to be updated)
-
-Digital twins promise tremendous potential to better understand and make use of cyber-physical systems in automotive, avionics, manufacturing, medicine, and many more domains. Despite many of the twinned systems being developed using models, engineering digital twins currently is ad-hoc and demands integrating different piecemeal technologies, which effectively hinders the application of digital twins. The focus of many digital twins and frameworks to create digital twins is on data acquisition and visualization via dashboards. Current research on digital twins focuses on specific implementations (bottom-up) or abstract models on how digital twins could be conceived (top down). Yet, there is a huge gap between both views that only research on model-driven engineering (MDE) can reduce. Hence, MDE is crucial to fully and systematically leverage the potential of digital twins. Currently, a venue bringing together experts from the modelling community on this topic is missing: ModDIT’21 brings together researchers on and developers of digital twins come together to shape the future of systematically designing, engineering, evolving, maintaining, and evaluating digital twins.
+Digital twin (DT) is a concept that is gaining growing attention in many disciplines to support engineering, monitoring, controlling, and optimizing cyber-
+physical systems (CPSs) and beyond. It refers to the ability to clone an actual system into a virtual counterpart, that reflects all the important properties and characteristics of the original system within a specific application context. While the benefits of DT have been demonstrated in many contexts, their development, maintenance, and evolution, yield major challenges. Part of these needs to be addressed from a Model-Driven Engineering (MDE) perspective. MoDDiT’23 aims at bringing together researchers and practitioners on DTs to shape the future of systematically designing, engineering, evolving, maintaining, and evaluating DTs across different disciplines.
 
 ## Call for Papers
 
