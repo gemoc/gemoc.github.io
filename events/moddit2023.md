@@ -30,7 +30,7 @@ date: 2023, Västerås, Sweden
 ## ModDiT’23
 ## co-located with [MODELS 2023](http://www.modelsconference.org/)
 
-<strong>[About]({{ site.baseurl }}{% link events/moddit2022.md %}#about-the-workshop)  |  [Program]({{ site.baseurl }}{% link events/moddit2022.md %}#program)  |  [Call]({{ site.baseurl }}{% link events/moddit2022.md %}#call-for-papers--models)  |  [Dates]({{ site.baseurl }}{% link events/moddit2022.md %}#important-dates)  |  [Committees]({{ site.baseurl }}{% link events/moddit2022.md %}#committees)</strong>
+<strong>[About]({{ site.baseurl }}{% link events/moddit2023.md %}#about-the-workshop)  |  [Program]({{ site.baseurl }}{% link events/moddit2023.md %}#program)  |  [Call]({{ site.baseurl }}{% link events/moddit2023.md %}#call-for-papers--models)  |  [Dates]({{ site.baseurl }}{% link events/moddit2023.md %}#important-dates)  |  [Committees]({{ site.baseurl }}{% link events/moddit2023.md %}#committees)</strong>
 
 <!-- <div style="color:red;" markdown="1">
 ## Public collaborative document for discussions and feedback during the workshop: [link](https://uncloud.univ-nantes.fr/index.php/apps/onlyoffice/s/CXSDaABiWTYdJHp)
