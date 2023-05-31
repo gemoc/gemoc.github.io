@@ -34,7 +34,8 @@ def catalogXmiToMd(md_template_path, xmifile_path, mdfile_path):
         for catalogComponent in catalogCategory.iter('components'):
             sectionContent += '''
 <!-- {} -->
-<div class=\"row\">    
+<hr align=center width=50%>
+<div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="{}" alt="">
             {}  <small>by {}</small>
