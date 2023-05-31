@@ -31,15 +31,18 @@ def catalogXmiToMd(md_template_path, xmifile_path, mdfile_path):
     
     sectionContent =""
     for catalogCategory in root.iter('categories'):
-        sectionContent += "## {} \n".format(catalogCategory.get('name'))
+        sectionContent += "<hr>\n## {} \n".format(catalogCategory.get('name'))
         sectionContent += "{} \n".format(catalogCategory.get('description'))
         for catalogComponent in catalogCategory.iter('components'):
-            sectionContent += '''<div class=\"row\">    
+            sectionContent += '''
+<!-- {} -->
+<div class=\"row\">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="{}" alt="">
             {}  <small>by {}</small>
         </h3>
-        <p>{}</p>\n'''.format(catalogComponent.get('image32'), 
+        <p>{}</p>\n'''.format(catalogComponent.get('name'),
+                              catalogComponent.get('image32'), 
                               catalogComponent.get('name'), 
                               catalogComponent.get('provider'),  
                               catalogComponent.get('description'))   
