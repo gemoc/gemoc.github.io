@@ -54,13 +54,11 @@ Languages designed using GEMOC.
                 <a href="http://github.com/gemoc/activitydiagram">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="http://--disabled--gemoc.org/activitydiagram/updates/nightly">http://--disabled--gemoc.org/activitydiagram/updates/nightly</a></li>
         </ul>
-        <h4>Getting started</h4>
-        <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 2.3.0</p>
+        <p><b><i class='fa fa-info-circle'></i> <i>Getting started</i>:</b> Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 2.3.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/activitydiagram_sequential-screenshot-320x240.png" alt="">        
@@ -78,13 +76,11 @@ Languages designed using GEMOC.
                 <a href="http://github.com/gemoc/arduinomodeling">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://--disabled--ci.inria.fr/gemoc/job/ArduinoModeling_updatesite/lastSuccessfulBuild/artifact/dev/releng/org.gemoc.arduinomodeling.repository/target/repository/">https://--disabled--ci.inria.fr/gemoc/job/ArduinoModeling_updatesite/lastSuccessfulBuild/artifact/dev/releng/org.gemoc.arduinomodeling.repository/target/repository/</a></li>
         </ul>
-        <h4>Getting started</h4>
-        <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 2.3.0</p>
+        <p><b><i class='fa fa-info-circle'></i> <i>Getting started</i>:</b> Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 2.3.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/arduinomodeling_sequential-screenshot-320x240.png" alt="">        
@@ -102,13 +98,11 @@ Languages designed using GEMOC.
                 <a href="http://gemoc.github.io/gemoc-studio/publish/tutorial_markedgraph/html_single/GuideTutorialMarkedGraph.html">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://--disabled--ci.inria.fr/gemoc/job/Markedgraph_updatesite/lastSuccessfulBuild/artifact/sample/markedgraph/releng/org.gemoc.sample.markedgraph.repository/target/repository/">https://--disabled--ci.inria.fr/gemoc/job/Markedgraph_updatesite/lastSuccessfulBuild/artifact/sample/markedgraph/releng/org.gemoc.sample.markedgraph.repository/target/repository/</a></li>
         </ul>
-        <h4>Getting started</h4>
-        <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 2.3.0</p>
+        <p><b><i class='fa fa-info-circle'></i> <i>Getting started</i>:</b> Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 2.3.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/markedgraph_sequential-screenshot-320x240.png" alt="">        
@@ -126,11 +120,10 @@ Languages designed using GEMOC.
                 <a href="https://gitlab.inria.fr/glose/flight-controller-language-demonstrator">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/updatesite/latest/">https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/updatesite/latest/</a></li>
         </ul>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 3.6.0</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 3.6.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/fcl-screenshot_320x240.png" alt="">        
@@ -152,13 +145,11 @@ Language coordination operators designed using GEMOC.
                 <a href="http://timesquare.inria.fr/BCOoL/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://ci.inria.fr/gemoc/job/gemoc-studio_official_samples_deployer/lastSuccessfulBuild/artifact/official_samples/sample.deployers/releng/org.gemoc.official_samples.deployers.repository/target/repository/">https://ci.inria.fr/gemoc/job/gemoc-studio_official_samples_deployer/lastSuccessfulBuild/artifact/official_samples/sample.deployers/releng/org.gemoc.official_samples.deployers.repository/target/repository/</a></li>
         </ul>
-        <h4>Getting started</h4>
-        <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 2.3.0</p>
+        <p><b><i class='fa fa-info-circle'></i> <i>Getting started</i>:</b> Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 2.3.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/bcool-tfsm-activity-320x240.png" alt="">        
@@ -180,11 +171,10 @@ Extensions for GEMOC Engines
                 <a href="">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</a></li>
         </ul>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 3.2.0</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 3.2.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/MCL_MBILang-screeshot.png" alt="">        
@@ -204,11 +194,10 @@ Based on the Model Behavioral Interface, the Coordination Model Specification is
                 <a href="">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</a></li>
         </ul>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 3.2.0</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 3.2.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/MCL_MBILang-screeshot.png" alt="">        
@@ -230,11 +219,10 @@ Based on the Model Behavioral Interface, the Coordination Model Specification is
                 <a href="http://gemoc.org/ale-lang-compiler/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="http://www.kermeta.org/ale-lang-compiler/updates/2019-11-29/">http://www.kermeta.org/ale-lang-compiler/updates/2019-11-29/</a></li>
         </ul>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 3.2.0</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 3.2.0</p>
     </div>
 </div>
 
@@ -253,12 +241,11 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
                 <a href="https://github.com/moliz/moliz.xmof">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="http://moliz.github.io/moliz.gemoc/updatesite/nightly/">http://moliz.github.io/moliz.gemoc/updatesite/nightly/</a></li>
            <li><a href="http://download.eclipse.org/releases/neon">http://download.eclipse.org/releases/neon</a></li>
         </ul>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 3.1.0</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 3.1.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/xmof-figure-320x240.png" alt="">        
@@ -280,11 +267,10 @@ Tools for Exhaustive Exploration.
                 <a href="None">Learn more</a></p>
         <p><small>License MIT</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://ci.inria.fr/gemoc/job/concurrency_exploration/lastSuccessfulBuild/artifact/exploration/releng/org.gemoc.mocc.clocksystem.features.updatesite/target/repository">https://ci.inria.fr/gemoc/job/concurrency_exploration/lastSuccessfulBuild/artifact/exploration/releng/org.gemoc.mocc.clocksystem.features.updatesite/target/repository</a></li>
         </ul>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 2.3.0</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 2.3.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/cs_screenshot_320x240.png" alt="">        
@@ -306,7 +292,7 @@ Modeling environment tools.
                 <a href="http://www.umldesigner.org/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/9.0.0/repository/">https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/9.0.0/repository/</a></li>
         </ul>
     </div>
@@ -328,7 +314,7 @@ In GEMOC, Capella may contribute to the modeling workbench activities.
                 <a href="https://www.polarsys.org/capella/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</a></li>
            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</a></li>
            <li><a href="https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/">https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</a></li>
@@ -360,7 +346,7 @@ In GEMOC, Capella Studio may contribute to the language workbench activities.
                 <a href="https://www.polarsys.org/capella/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</a></li>
            <li><a href="https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/">https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</a></li>
            <li><a href="https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/">https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/</a></li>
@@ -396,11 +382,10 @@ Engines and tools proposing alternative approaches (may not directly use GEMOC e
                 <a href="http://wwwdi.supelec.fr/software/TESL/">Learn more</a></p>
         <p><small>License Unknown Licence</small></p>
         <h4>Update site</h4>
-        <ul>
+        <ul style="margin-top:0;">
            <li><a href="http://wwwdi.supelec.fr/tesl-update-site">http://wwwdi.supelec.fr/tesl-update-site</a></li>
         </ul>
-        <h4>Compatibility</h4>
-        <p>Checked last with GEMOC version 2.3.0</p>
+        <p><b><i class='fa fa-warning'></i> <i>Compatibility</i>:</b> Checked last with GEMOC version 2.3.0</p>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/tesl-screenshot-320x240.png" alt="">        

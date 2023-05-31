@@ -51,14 +51,17 @@ def catalogXmiToMd(md_template_path, xmifile_path, mdfile_path):
                                                   catalogOverview.get('url'))
             sectionContent += '        <p><small>License {}</small></p>\n'.format(catalogComponent.get('license'))
             sectionContent += '''        <h4>Update site</h4>
-        <ul>\n'''
+        <ul style="margin-top:0;">\n'''
             for catalogUpdateSite in catalogComponent.iter('sitesURLS'):
                 sectionContent += '''           <li><a href="{}">{}</a></li>\n'''.format(catalogUpdateSite.text,
                                                   catalogUpdateSite.text)
             sectionContent += '''        </ul>\n'''
             for catalogMessage in catalogComponent.iter('messages'):
-                sectionContent += '''        <h4>{}</h4>
-        <p>{}</p>\n'''.format(catalogMessage.get('title'),
+                icon = "<i class='fa fa-info-circle'></i>"
+                if catalogMessage.get('icon') == 'warning' :
+                    icon = "<i class='fa fa-warning'></i>"
+                sectionContent += '''        <p><b>{} <i>{}</i>:</b> {}</p>\n'''.format(icon,
+                              catalogMessage.get('title'),
                               catalogMessage.get('message'))
             sectionContent += '''    </div>\n'''
             for catalogOverview in catalogComponent.iter('overview'):
