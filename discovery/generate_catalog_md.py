@@ -1,7 +1,5 @@
 import argparse
-import fileinput
 import os
-import sys
 import xml.etree.ElementTree as ET
 from string import Template
 
@@ -49,7 +47,7 @@ def catalogXmiToMd(md_template_path, xmifile_path, mdfile_path):
 
             for catalogOverview in catalogComponent.iter('overview'):
                 sectionContent += '''        <p>{}</p>
-        <a href="{}">Learn more</a></p>\n'''.format(catalogOverview.get('summary'),
+        <p><a href="{}">Learn more</a></p>\n'''.format(catalogOverview.get('summary'),
                                                   catalogOverview.get('url'))
             sectionContent += '        <p><small>License {}</small></p>\n'.format(catalogComponent.get('license'))
             sectionContent += '''        <h4>Update site</h4>
@@ -62,7 +60,6 @@ def catalogXmiToMd(md_template_path, xmifile_path, mdfile_path):
                 sectionContent += '''        <h4>{}</h4>
         <p>{}</p>\n'''.format(catalogMessage.get('title'),
                               catalogMessage.get('message'))
-            sectionContent += '''        </ul>\n'''
             sectionContent += '''    </div>\n'''
             for catalogOverview in catalogComponent.iter('overview'):
                 if catalogOverview.get('screenshot') :
