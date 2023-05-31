@@ -46,8 +46,8 @@ def catalogXmiToMd(md_template_path, xmifile_path, mdfile_path):
                               catalogComponent.get('description'))   
 
             for catalogOverview in catalogComponent.iter('overview'):
-                sectionContent += '''        <p>{}</p>
-        <p><a href="{}">Learn more</a></p>\n'''.format(catalogOverview.get('summary'),
+                sectionContent += '''        <p>{}   
+                <a href="{}">Learn more</a></p>\n'''.format(catalogOverview.get('summary'),
                                                   catalogOverview.get('url'))
             sectionContent += '        <p><small>License {}</small></p>\n'.format(catalogComponent.get('license'))
             sectionContent += '''        <h4>Update site</h4>
