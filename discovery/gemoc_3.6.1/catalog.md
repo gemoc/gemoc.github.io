@@ -44,6 +44,7 @@ All these components can be installed from a GEMOC Studio. Simply click on <i>He
 Languages designed using GEMOC. 
 
 <!-- ActivityDiagram Languages (Sequential/Concurrent)(Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
@@ -66,6 +67,7 @@ Languages designed using GEMOC.
 </div>
 
 <!-- ArduinoModeling Languages (Sequential/Concurrent)(Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
@@ -88,6 +90,7 @@ Languages designed using GEMOC.
 </div>
 
 <!-- Markedgraph Language (Concurrent)(Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/IconeGemocLanguage-Concurrent-32.png" alt="">
@@ -110,6 +113,7 @@ Languages designed using GEMOC.
 </div>
 
 <!-- Flight Controller Language (ALE/sequential/Concurrent)(Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/IconeGemocLanguagePlusModel-32.png" alt="">
@@ -135,6 +139,7 @@ Languages designed using GEMOC.
 Language coordination operators designed using GEMOC. 
 
 <!-- Operator for TFSM and ActivityDiagram (Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/bcool-icon-32.png" alt="">
@@ -161,6 +166,7 @@ Language coordination operators designed using GEMOC.
 Extensions for GEMOC Engines 
 
 <!-- Model Behavioral Interface Language (MBILang) (Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/bcool-icon-32.png" alt="">
@@ -182,6 +188,7 @@ Extensions for GEMOC Engines
 </div>
 
 <!-- Model Coordination Language (MCL) (Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/bcool-icon-32.png" alt="">
@@ -205,6 +212,7 @@ Based on the Model Behavioral Interface, the Coordination Model Specification is
 </div>
 
 <!-- ALE Compiler (Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/IconeGemoc_studio-32.png" alt="">
@@ -231,6 +239,7 @@ Based on the Model Behavioral Interface, the Coordination Model Specification is
 Engines and tools proposing alternative approaches (based on GEMOC execution framework) 
 
 <!-- GEMOC xMOF Engine -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/xmof-icon-30x30.png" alt="">
@@ -257,6 +266,7 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
 Tools for Exhaustive Exploration. 
 
 <!-- Clocksystem (Incubation) -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/clocksystem_logo_32x32.png" alt="">
@@ -282,6 +292,7 @@ Tools for Exhaustive Exploration.
 Modeling environment tools. 
 
 <!-- UML Designer 9.0.0 -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/umldesigner.png" alt="">
@@ -302,6 +313,7 @@ Modeling environment tools.
 </div>
 
 <!-- Capella 1.3.1 -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/icon_capella-32.png" alt="">
@@ -334,6 +346,7 @@ In GEMOC, Capella may contribute to the modeling workbench activities.
 </div>
 
 <!-- Capella Studio 1.3.1 -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="images/icon_capella-32.png" alt="">
@@ -372,6 +385,7 @@ In GEMOC, Capella Studio may contribute to the language workbench activities.
 Engines and tools proposing alternative approaches (may not directly use GEMOC execution framework) 
 
 <!-- TESL Engine and Editor -->
+<hr align=center width=50%>
 <div class="row">    
     <div class="col-md-8 col-md-push-4">
         <h3><img src="None" alt="">
