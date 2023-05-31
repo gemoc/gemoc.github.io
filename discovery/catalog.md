@@ -37,7 +37,6 @@ Categories:
 
 All these components can be installed from a GEMOC Studio. Simply click on <i>Help &gt; Install Additional GEMOC Components</i>
 
-<hr>
 
 <hr>
 ## GEMOC Language 
@@ -51,7 +50,7 @@ Languages designed using GEMOC.
         </h3>
         <p>Deployer that installs the project sources for Concurrent and/or Sequential version of the Activitydiagram Language and sample models.</p>
         <p>Deployer that installs the project sources for two versions of the Activitydiagram Language developped using GEMOC. One version will run using the GEMOC Sequential engine, the second using Concurrent engine.  The deployer also provides sample models.</p>
-        <a href="http://github.com/gemoc/activitydiagram">Learn more</a></p>
+        <p><a href="http://github.com/gemoc/activitydiagram">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -59,7 +58,6 @@ Languages designed using GEMOC.
         </ul>
         <h4>Getting started</h4>
         <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/activitydiagram_sequential-screenshot-320x240.png" alt="">        
@@ -74,7 +72,7 @@ Languages designed using GEMOC.
         </h3>
         <p>Deployer that installs the project sources for Sequential and Concurrent  versions of the ArduinoModeling Language and sample models.</p>
         <p>Deployer that installs the project sources for two versions of the ArduinoModeling Language developped using GEMOC.  One version run using the GEMOC Sequential engine, the second using the Concurrent engine. The deployer also provides some sample models.</p>
-        <a href="http://github.com/gemoc/arduinomodeling">Learn more</a></p>
+        <p><a href="http://github.com/gemoc/arduinomodeling">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -82,7 +80,6 @@ Languages designed using GEMOC.
         </ul>
         <h4>Getting started</h4>
         <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/arduinomodeling_sequential-screenshot-320x240.png" alt="">        
@@ -97,7 +94,7 @@ Languages designed using GEMOC.
         </h3>
         <p>Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models.</p>
         <p>Deployer that installs the project sources for the Markedgraph Language developped using GEMOC.  This version runs using the GEMOC Concurrent engine. The deployer also provides some sample models. This is the result of the GEMOC tutorial available in the eclipse help.</p>
-        <a href="http://gemoc.github.io/gemoc-studio/publish/tutorial_markedgraph/html_single/GuideTutorialMarkedGraph.html">Learn more</a></p>
+        <p><a href="http://gemoc.github.io/gemoc-studio/publish/tutorial_markedgraph/html_single/GuideTutorialMarkedGraph.html">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -105,7 +102,6 @@ Languages designed using GEMOC.
         </ul>
         <h4>Getting started</h4>
         <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/markedgraph_sequential-screenshot-320x240.png" alt="">        
@@ -124,7 +120,7 @@ Language coordination operators designed using GEMOC.
         </h3>
         <p>Deployer that installs the project sources for the coordination operator for TFSM and ActivityDiagram concurrent languages and sample models.</p>
         <p>Deployer that installs the project sources for the coordination operator for TFSM and ActivityDiagram concurrent languages developped using GEMOC. The deployer also provides some sample models.</p>
-        <a href="http://timesquare.inria.fr/BCOoL/">Learn more</a></p>
+        <p><a href="http://timesquare.inria.fr/BCOoL/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -132,7 +128,6 @@ Language coordination operators designed using GEMOC.
         </ul>
         <h4>Getting started</h4>
         <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/bcool-tfsm-activity-320x240.png" alt="">        
@@ -151,13 +146,12 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
         </h3>
         <p>xMOF allows you to define the execution semantics of your language with UML activity diagrams.</p>
         <p>The xMOF language allows you to define the execution semantics of your language with UML activity diagrams. This component provides the xMOF language, editor and execution engine, as well as wizards helping you to setup your xMOF projects.</p>
-        <a href="https://github.com/moliz/moliz.xmof">Learn more</a></p>
+        <p><a href="https://github.com/moliz/moliz.xmof">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="http://moliz.github.io/moliz.gemoc/updatesite/nightly/">http://moliz.github.io/moliz.gemoc/updatesite/nightly/</a></li>
            <li><a href="http://download.eclipse.org/releases/neon">http://download.eclipse.org/releases/neon</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -173,7 +167,7 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
         </h3>
         <p>This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare.</p>
         <p>This concurrent engine allows you to define the execution semantics of your language and specifying concurrency using TimeSquare.</p>
-        <a href="https://github.com/gemoc/concurrency">Learn more</a></p>
+        <p><a href="https://github.com/gemoc/concurrency">Learn more</a></p>
         <p><small>License EPL 1.0</small></p>
         <h4>Update site</h4>
         <ul>
@@ -182,7 +176,6 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
            <li><a href="http://timesquare.inria.fr/update_site/oxygen">http://timesquare.inria.fr/update_site/oxygen</a></li>
            <li><a href="https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.execution.concurrent.ccsljava.repository/target/repository/">https://ci.inria.fr/gemoc/view/All/job/gemoc-studio-eclipsefork/job/concurrency-coordination/lastSuccessfulBuild/artifact/gemoc-studio-concurrency/ccsljava_execution/releng/org.eclipse.gemoc.execution.concurrent.ccsljava.repository/target/repository/</a></li>
            <li><a href="http://download.eclipse.org/releases/oxygen">http://download.eclipse.org/releases/oxygen</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -198,13 +191,12 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
         </h3>
         <p>This engine allows to define the execution semantics of languages with Action Language for EMF (ALE)</p>
         <p>Ale is a language to define behaviors on the top of Ecore models. It is intended to be distributed in EcoreTools and will be an alternative to K3. It has its own GEMOC engine support.</p>
-        <a href="http://gemoc.org/ale-lang/">Learn more</a></p>
+        <p><a href="http://gemoc.org/ale-lang/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/">https://ci.inria.fr/gemoc/job/ale-lang/lastSuccessfulBuild/artifact/releng/org.eclipse.emf.ecoretools.ale.updatesite/target/repository/</a></li>
            <li><a href="https://ci.inria.fr/gemoc/job/gemoc-studio-ale-execution/lastSuccessfulBuild/artifact/releng/org.eclipse.gemoc.ale.engine.updatesite/target/repository/">https://ci.inria.fr/gemoc/job/gemoc-studio-ale-execution/lastSuccessfulBuild/artifact/releng/org.eclipse.gemoc.ale.engine.updatesite/target/repository/</a></li>
-        </ul>
         </ul>
     </div>
 </div>
@@ -221,12 +213,11 @@ Tools for Exhaustive Exploration.
         </h3>
         <p>Multiform Time Constraints</p>
         <p>Clocksystem is meta-described clock-constraint engine, which embeds a formal model of logical time into the Smalltalk general-purpose language and environment</p>
-        <a href="None">Learn more</a></p>
+        <p><a href="None">Learn more</a></p>
         <p><small>License MIT</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="https://ci.inria.fr/gemoc/job/concurrency_exploration/lastSuccessfulBuild/artifact/exploration/releng/org.gemoc.mocc.clocksystem.features.updatesite/target/repository">https://ci.inria.fr/gemoc/job/concurrency_exploration/lastSuccessfulBuild/artifact/exploration/releng/org.gemoc.mocc.clocksystem.features.updatesite/target/repository</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -246,14 +237,13 @@ Modeling environment tools.
         </h3>
         <p>Graphical tooling to edit and visualize UML models.</p>
         <p>UML Designer provides a set of common diagrams to work with UML 2.5 models. The intent is to provide an easy way to make the transition from UML to domain specific modeling. This way users can continue to manipulate legacy UML models and start working with DSL. Users can even re-use the provided representations and work in a total transparence on both UML and DSL models at the same time.</p>
-        <a href="http://www.umldesigner.org/">Learn more</a></p>
+        <p><a href="http://www.umldesigner.org/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="http://download.eclipse.org/releases/luna/201502271000">http://download.eclipse.org/releases/luna/201502271000</a></li>
            <li><a href="http://download.eclipse.org/sirius/updates/nightly/3.0.x/luna">http://download.eclipse.org/sirius/updates/nightly/3.0.x/luna</a></li>
            <li><a href="http://releases.umldesigner.org/5.0.1/repository/">http://releases.umldesigner.org/5.0.1/repository/</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -273,12 +263,11 @@ Engines and tools proposing alternative approaches (may not directly use GEMOC e
         </h3>
         <p>The Tagged Event Specification Language allows the specification of timed systems by modeling events as clocks and occurrences of an event as ticks on its clock.</p>
         <p>The Tagged Event Specification Language allows the specification of timed systems by modeling events as clocks and occurrences of an event as ticks on its clock.</p>
-        <a href="http://wwwdi.supelec.fr/software/TESL/">Learn more</a></p>
+        <p><a href="http://wwwdi.supelec.fr/software/TESL/">Learn more</a></p>
         <p><small>License Unknown Licence</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="http://wwwdi.supelec.fr/tesl-update-site">http://wwwdi.supelec.fr/tesl-update-site</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">

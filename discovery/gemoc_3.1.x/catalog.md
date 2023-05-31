@@ -51,7 +51,7 @@ Languages designed using GEMOC.
         </h3>
         <p>Deployer that installs the project sources for Concurrent and/or Sequential version of the Activitydiagram Language and sample models. [gemoc-studio 2.3.0]</p>
         <p>Deployer that installs the project sources for two versions of the Activitydiagram Language developped using GEMOC. One version will run using the GEMOC Sequential engine, the second using Concurrent engine.  The deployer also provides sample models.</p>
-        <a href="http://github.com/gemoc/activitydiagram">Learn more</a></p>
+        <p><a href="http://github.com/gemoc/activitydiagram">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -59,7 +59,6 @@ Languages designed using GEMOC.
         </ul>
         <h4>Getting started</h4>
         <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/activitydiagram_sequential-screenshot-320x240.png" alt="">        
@@ -74,7 +73,7 @@ Languages designed using GEMOC.
         </h3>
         <p>Deployer that installs the project sources for Sequential and Concurrent  versions of the ArduinoModeling Language and sample models.  [gemoc-studio 2.3.0]</p>
         <p>Deployer that installs the project sources for two versions of the ArduinoModeling Language developped using GEMOC.  One version run using the GEMOC Sequential engine, the second using the Concurrent engine. The deployer also provides some sample models.</p>
-        <a href="http://github.com/gemoc/arduinomodeling">Learn more</a></p>
+        <p><a href="http://github.com/gemoc/arduinomodeling">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -82,7 +81,6 @@ Languages designed using GEMOC.
         </ul>
         <h4>Getting started</h4>
         <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/arduinomodeling_sequential-screenshot-320x240.png" alt="">        
@@ -97,7 +95,7 @@ Languages designed using GEMOC.
         </h3>
         <p>Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models.  [gemoc-studio 2.3.0]</p>
         <p>Deployer that installs the project sources for the Markedgraph Language developped using GEMOC.  This version runs using the GEMOC Concurrent engine. The deployer also provides some sample models. This is the result of the GEMOC tutorial available in the eclipse help.</p>
-        <a href="http://gemoc.github.io/gemoc-studio/publish/tutorial_markedgraph/html_single/GuideTutorialMarkedGraph.html">Learn more</a></p>
+        <p><a href="http://gemoc.github.io/gemoc-studio/publish/tutorial_markedgraph/html_single/GuideTutorialMarkedGraph.html">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -105,7 +103,6 @@ Languages designed using GEMOC.
         </ul>
         <h4>Getting started</h4>
         <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/markedgraph_sequential-screenshot-320x240.png" alt="">        
@@ -120,12 +117,11 @@ Languages designed using GEMOC.
         </h3>
         <p>Fligth Controller Language (FCL) for drone written using GEMOC and ALE and sample models. [gemoc-studio 3.1.0]</p>
         <p>The Fligth Controller Language is a demonstration language to illustrate GEMOC capabilities. Thanks to a control flow + mode state machine semantics, it allows to specify the behavior of a drone flight controller and simulate it.</p>
-        <a href="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/">Learn more</a></p>
+        <p><a href="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/updatesite/latest/">https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/updatesite/latest/</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -145,7 +141,7 @@ Language coordination operators designed using GEMOC.
         </h3>
         <p>Deployer that installs the project sources for the coordination operator for TFSM and ActivityDiagram concurrent languages and sample models.  [gemoc-studio 2.3.0]</p>
         <p>Deployer that installs the project sources for the coordination operator for TFSM and ActivityDiagram concurrent languages developped using GEMOC. The deployer also provides some sample models.</p>
-        <a href="http://timesquare.inria.fr/BCOoL/">Learn more</a></p>
+        <p><a href="http://timesquare.inria.fr/BCOoL/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -153,7 +149,6 @@ Language coordination operators designed using GEMOC.
         </ul>
         <h4>Getting started</h4>
         <p>Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help.</p>
-        </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
         <img class="img-responsive img-hover" src="images/bcool-tfsm-activity-320x240.png" alt="">        
@@ -172,12 +167,11 @@ Extensions for GEMOC Engines
         </h3>
         <p>Allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model.  [gemoc-studio 3.2.x]</p>
         <p>The Model Behavioral Interface Language (MBILang) allows to specify the exposed elements of the internal executable model as an homogeneous interface. The exposed elements can be exploited to specify the possible interactions with the model. </p>
-        <a href="">Learn more</a></p>
+        <p><a href="">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -195,12 +189,11 @@ Extensions for GEMOC Engines
         <p>The MCL allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models. The defined specification describes how to integrate heterogeneous models defining explicitly the coordination among them.
 
 Based on the Model Behavioral Interface, the Coordination Model Specification is composed by a set of Connectors. A connector defines how, when and under which synchronization constraint one or more data are conveyed from a model to another.</p>
-        <a href="">Learn more</a></p>
+        <p><a href="">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/">https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -220,12 +213,11 @@ Based on the Model Behavioral Interface, the Coordination Model Specification is
     -Maven integration: Automatically compile your languages using the ale compiler maven plugin
     - Configurable: The ALE Compiler can target four implementation patterns: Interpreter, Visitor, EMF’s Switch and Revisitor.
 </p>
-        <a href="http://gemoc.org/ale-lang-compiler/">Learn more</a></p>
+        <p><a href="http://gemoc.org/ale-lang-compiler/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="http://www.kermeta.org/ale-lang-compiler/updates/2019-11-29/">http://www.kermeta.org/ale-lang-compiler/updates/2019-11-29/</a></li>
-        </ul>
         </ul>
     </div>
 </div>
@@ -242,13 +234,12 @@ Engines and tools proposing alternative approaches (based on GEMOC execution fra
         </h3>
         <p>xMOF allows you to define the execution semantics of your language with UML activity diagrams.  [gemoc-studio 3.1.0]</p>
         <p>The xMOF language allows you to define the execution semantics of your language with UML activity diagrams. This component provides the xMOF language, editor and execution engine, as well as wizards helping you to setup your xMOF projects.</p>
-        <a href="https://github.com/moliz/moliz.xmof">Learn more</a></p>
+        <p><a href="https://github.com/moliz/moliz.xmof">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="http://moliz.github.io/moliz.gemoc/updatesite/nightly/">http://moliz.github.io/moliz.gemoc/updatesite/nightly/</a></li>
            <li><a href="http://download.eclipse.org/releases/neon">http://download.eclipse.org/releases/neon</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -268,12 +259,11 @@ Tools for Exhaustive Exploration.
         </h3>
         <p>Multiform Time Constraints.  [gemoc-studio 2.3.0]</p>
         <p>Clocksystem is meta-described clock-constraint engine, which embeds a formal model of logical time into the Smalltalk general-purpose language and environment</p>
-        <a href="None">Learn more</a></p>
+        <p><a href="None">Learn more</a></p>
         <p><small>License MIT</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="https://ci.inria.fr/gemoc/job/concurrency_exploration/lastSuccessfulBuild/artifact/exploration/releng/org.gemoc.mocc.clocksystem.features.updatesite/target/repository">https://ci.inria.fr/gemoc/job/concurrency_exploration/lastSuccessfulBuild/artifact/exploration/releng/org.gemoc.mocc.clocksystem.features.updatesite/target/repository</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -293,12 +283,11 @@ Modeling environment tools.
         </h3>
         <p>Graphical tooling to edit and visualize UML models.</p>
         <p>UML Designer provides a set of common diagrams to work with UML 2.5 models. The intent is to provide an easy way to make the transition from UML to domain specific modeling. This way users can continue to manipulate legacy UML models and start working with DSL. Users can even re-use the provided representations and work in a total transparence on both UML and DSL models at the same time.</p>
-        <a href="http://www.umldesigner.org/">Learn more</a></p>
+        <p><a href="http://www.umldesigner.org/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/9.0.0/repository/">https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/9.0.0/repository/</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -316,7 +305,7 @@ Modeling environment tools.
         <p>Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. 
 
 In GEMOC, Capella may contribute to the modeling workbench activities.</p>
-        <a href="https://www.polarsys.org/capella/">Learn more</a></p>
+        <p><a href="https://www.polarsys.org/capella/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -331,7 +320,6 @@ In GEMOC, Capella may contribute to the modeling workbench activities.</p>
            <li><a href="http://download.eclipse.org/sirius/updates/legacy">http://download.eclipse.org/sirius/updates/legacy</a></li>
            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon">https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</a></li>
            <li><a href="http://download.eclipse.org/releases/photon">http://download.eclipse.org/releases/photon</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -349,7 +337,7 @@ In GEMOC, Capella may contribute to the modeling workbench activities.</p>
         <p>Capella Studio is the development environment aiming to design Capella extensions. 
 
 In GEMOC, Capella Studio may contribute to the language workbench activities.</p>
-        <a href="https://www.polarsys.org/capella/">Learn more</a></p>
+        <p><a href="https://www.polarsys.org/capella/">Learn more</a></p>
         <p><small>License EPL</small></p>
         <h4>Update site</h4>
         <ul>
@@ -366,7 +354,6 @@ In GEMOC, Capella Studio may contribute to the language workbench activities.</p
            <li><a href="https://download.eclipse.org/sirius/updates/releases/6.1.3/photon">https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</a></li>
            <li><a href="http://download.eclipse.org/releases/photon">http://download.eclipse.org/releases/photon</a></li>
            <li><a href="http://download.eclipse.org/eclipse/updates/4.8/">http://download.eclipse.org/eclipse/updates/4.8/</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
@@ -386,12 +373,11 @@ Engines and tools proposing alternative approaches (may not directly use GEMOC e
         </h3>
         <p>The Tagged Event Specification Language allows the specification of timed systems by modeling events as clocks and occurrences of an event as ticks on its clock.  [gemoc-studio 2.3.0]</p>
         <p>The Tagged Event Specification Language allows the specification of timed systems by modeling events as clocks and occurrences of an event as ticks on its clock.</p>
-        <a href="http://wwwdi.supelec.fr/software/TESL/">Learn more</a></p>
+        <p><a href="http://wwwdi.supelec.fr/software/TESL/">Learn more</a></p>
         <p><small>License Unknown Licence</small></p>
         <h4>Update site</h4>
         <ul>
            <li><a href="http://wwwdi.supelec.fr/tesl-update-site">http://wwwdi.supelec.fr/tesl-update-site</a></li>
-        </ul>
         </ul>
     </div>
     <div class="col-md-4 col-md-pull-8">
