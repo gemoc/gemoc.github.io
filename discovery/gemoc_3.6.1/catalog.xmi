@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="ASCII"?>
+<discovery:DiscoveryDefinition
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:discovery="http://www.eclipse.org/amalgamation/discovery/1.0">
+  <categories
+      name="GEMOC Language"
+      description="Languages designed using GEMOC."
+      relevance="7">
+    <components
+        name="ActivityDiagram Languages (Sequential/Concurrent)(Incubation)"
+        provider="GEMOC"
+        description="Deployer that installs the project sources for Concurrent and/or Sequential version of the Activitydiagram Language and sample models. [gemoc-studio 2.3.0]"
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/IconeGemocLanguagePlusModel-32.png">
+      <sitesURLS>http://--disabled--gemoc.org/activitydiagram/updates/nightly</sitesURLS>
+      <overview
+          summary="Deployer that installs the project sources for two versions of the Activitydiagram Language developped using GEMOC. One version will run using the GEMOC Sequential engine, the second using Concurrent engine.  The deployer also provides sample models."
+          screenshot="images/activitydiagram_sequential-screenshot-320x240.png"
+          url="http://github.com/gemoc/activitydiagram"/>
+      <id>org.gemoc.activitydiagram.feature</id>
+      <messages
+          title="Getting started"
+          message="Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help."/>
+    </components>
+    <components
+        name="ArduinoModeling Languages (Sequential/Concurrent)(Incubation)"
+        provider="GEMOC"
+        description="Deployer that installs the project sources for Sequential and Concurrent  versions of the ArduinoModeling Language and sample models.  [gemoc-studio 2.3.0]"
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/IconeGemocLanguagePlusModel-32.png">
+      <sitesURLS>https://--disabled--ci.inria.fr/gemoc/job/ArduinoModeling_updatesite/lastSuccessfulBuild/artifact/dev/releng/org.gemoc.arduinomodeling.repository/target/repository/</sitesURLS>
+      <overview
+          summary="Deployer that installs the project sources for two versions of the ArduinoModeling Language developped using GEMOC.  One version run using the GEMOC Sequential engine, the second using the Concurrent engine. The deployer also provides some sample models."
+          screenshot="images/arduinomodeling_sequential-screenshot-320x240.png"
+          url="http://github.com/gemoc/arduinomodeling"/>
+      <id>org.gemoc.arduinomodeling.feature</id>
+      <messages
+          title="Getting started"
+          message="Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help."/>
+    </components>
+    <components
+        name="Markedgraph Language (Concurrent)(Incubation)"
+        provider="GEMOC"
+        description="Deployer that installs the project sources for the concurrent version of the Markedgraph Language and sample models.  [gemoc-studio 2.3.0]"
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/IconeGemocLanguage-Concurrent-32.png">
+      <sitesURLS>https://--disabled--ci.inria.fr/gemoc/job/Markedgraph_updatesite/lastSuccessfulBuild/artifact/sample/markedgraph/releng/org.gemoc.sample.markedgraph.repository/target/repository/</sitesURLS>
+      <overview
+          summary="Deployer that installs the project sources for the Markedgraph Language developped using GEMOC.  This version runs using the GEMOC Concurrent engine. The deployer also provides some sample models. This is the result of the GEMOC tutorial available in the eclipse help."
+          screenshot="images/markedgraph_sequential-screenshot-320x240.png"
+          url="http://gemoc.github.io/gemoc-studio/publish/tutorial_markedgraph/html_single/GuideTutorialMarkedGraph.html"/>
+      <id>org.gemoc.sample.markedgraph.feature</id>
+      <messages
+          title="Getting started"
+          message="Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help."/>
+    </components>
+    <components
+        name="Flight Controller Language (ALE)(Incubation)"
+        provider="GEMOC"
+        description="Fligth Controller Language (FCL) for drone written using GEMOC and ALE and sample models. [gemoc-studio 3.1.0]"
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/IconeGemocLanguagePlusModel-32.png">
+      <sitesURLS>https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/updatesite/latest/</sitesURLS>
+      <overview
+          summary="The Fligth Controller Language is a demonstration language to illustrate GEMOC capabilities. Thanks to a control flow + mode state machine semantics, it allows to specify the behavior of a drone flight controller and simulate it."
+          screenshot="images/fcl-screenshot.png"
+          url="https://glose.gitlabpages.inria.fr/flight-controller-language-demonstrator/"/>
+      <id>fr.inria.glose.fcl.all.feature</id>
+    </components>
+  </categories>
+  <categories
+      name="GEMOC Coordination"
+      description="Language coordination operators designed using GEMOC."
+      relevance="6">
+    <components
+        name="Operator for TFSM and ActivityDiagram (Incubation)"
+        provider="I3S"
+        description="Deployer that installs the project sources for the coordination operator for TFSM and ActivityDiagram concurrent languages and sample models.  [gemoc-studio 2.3.0]"
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/bcool-icon-32.png">
+      <sitesURLS>https://ci.inria.fr/gemoc/job/gemoc-studio_official_samples_deployer/lastSuccessfulBuild/artifact/official_samples/sample.deployers/releng/org.gemoc.official_samples.deployers.repository/target/repository/</sitesURLS>
+      <overview
+          summary="Deployer that installs the project sources for the coordination operator for TFSM and ActivityDiagram concurrent languages developped using GEMOC. The deployer also provides some sample models."
+          screenshot="images/bcool-tfsm-activity-320x240.png"
+          url="http://timesquare.inria.fr/BCOoL/"/>
+      <id>org.gemoc.tfsmandactivity.deployer.feature</id>
+      <messages
+          title="Getting started"
+          message="Once Eclipse has restarted, your example languages will be available in the File > New > Example... menu. Look for the GEMOC categories. Some more informations will be available in the Eclipse help."/>
+    </components>
+  </categories>
+  <categories
+      name="GEMOC Engines extensions"
+      description="Extensions for GEMOC Engines">
+    <components
+        name="Model Behavioral Interface Language (MBILang) (Incubation)"
+        provider="I3S"
+        description="Allows to define the model behavioral interface that exposes a part of the internal syntax and semantics of the model.  [gemoc-studio 3.2.x]"
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/bcool-icon-32.png">
+      <sitesURLS>https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</sitesURLS>
+      <overview
+          summary="The Model Behavioral Interface Language (MBILang) allows to specify the exposed elements of the internal executable model as an homogeneous interface. The exposed elements can be exploited to specify the possible interactions with the model. "
+          screenshot="images/MCL_MBILang-screeshot.png"
+          url=""/>
+      <id>fr.inria.glose.mcl.all.feature</id>
+    </components>
+    <components
+        name="Model Coordination Language (MCL) (Incubation)"
+        provider="I3S"
+        description="Allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models.  [gemoc-studio 3.2.x]"
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/bcool-icon-32.png">
+      <sitesURLS>https://glose.gitlabpages.inria.fr/model-coordination-language/updatesite/20191213/</sitesURLS>
+      <overview
+          summary="The MCL allows to define the Model Coordination Specification based on the Model Behavioral Interface for one or more models. The defined specification describes how to integrate heterogeneous models defining explicitly the coordination among them.&#xA;&#xA;Based on the Model Behavioral Interface, the Coordination Model Specification is composed by a set of Connectors. A connector defines how, when and under which synchronization constraint one or more data are conveyed from a model to another."
+          screenshot="images/MCL_MBILang-screeshot.png"
+          url=""/>
+      <id>fr.inria.glose.mcl.all.feature</id>
+    </components>
+    <components
+        name="ALE Compiler (Incubation)"
+        provider="Inria"
+        description="ALE compiler generates java code from ALE language.  [gemoc-studio 3.2.x]"
+        license="EPL"
+        groups="//@filters.0"
+        image32="images/IconeGemoc_studio-32.png">
+      <sitesURLS>http://www.kermeta.org/ale-lang-compiler/updates/2019-11-29/</sitesURLS>
+      <overview
+          summary="The main features of the ALE Compiler are:&#xA;    -Integration with Eclipse: Compile ALE languages in the Eclipse IDE&#xA;    -Maven integration: Automatically compile your languages using the ale compiler maven plugin&#xA;    - Configurable: The ALE Compiler can target four implementation patterns: Interpreter, Visitor, EMF&#x2019;s Switch and Revisitor.&#xA;"
+          screenshot=""
+          url="http://gemoc.org/ale-lang-compiler/"/>
+      <id>fr.inria.glose.mcl.all.feature</id>
+    </components>
+  </categories>
+  <categories
+      name="Alternative GEMOC based Engines"
+      description="Engines and tools proposing alternative approaches (based on GEMOC execution framework)">
+    <components
+        name="GEMOC xMOF Engine"
+        provider="Vienna University of Technology"
+        description="xMOF allows you to define the execution semantics of your language with UML activity diagrams.  [gemoc-studio 3.1.0]"
+        license="EPL"
+        image32="images/xmof-icon-30x30.png">
+      <sitesURLS>http://moliz.github.io/moliz.gemoc/updatesite/nightly/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/releases/neon</sitesURLS>
+      <overview
+          summary="The xMOF language allows you to define the execution semantics of your language with UML activity diagrams. This component provides the xMOF language, editor and execution engine, as well as wizards helping you to setup your xMOF projects."
+          screenshot="images/xmof-figure-320x240.png"
+          url="https://github.com/moliz/moliz.xmof"/>
+      <id>org.modelexecution.moliz.gemoc.feature</id>
+    </components>
+  </categories>
+  <categories
+      name="Exhaustive Exploration"
+      description="Tools for Exhaustive Exploration."
+      relevance="4">
+    <components
+        name="Clocksystem (Incubation)"
+        provider="ENSTA"
+        description="Multiform Time Constraints.  [gemoc-studio 2.3.0]"
+        license="MIT"
+        groups="//@filters.0"
+        image32="images/clocksystem_logo_32x32.png">
+      <sitesURLS>https://ci.inria.fr/gemoc/job/concurrency_exploration/lastSuccessfulBuild/artifact/exploration/releng/org.gemoc.mocc.clocksystem.features.updatesite/target/repository</sitesURLS>
+      <overview
+          summary="Clocksystem is meta-described clock-constraint engine, which embeds a formal model of logical time into the Smalltalk general-purpose language and environment"
+          screenshot="images/cs_screenshot_320x240.png"/>
+      <id>org.gemoc.mocc.clocksystem.common.feature</id>
+    </components>
+  </categories>
+  <categories
+      name="Modeler"
+      description="Modeling environment tools."
+      relevance="3">
+    <components
+        name="UML Designer 9.0.0"
+        provider="Obeo"
+        description="Graphical tooling to edit and visualize UML models."
+        license="EPL"
+        image32="images/umldesigner.png">
+      <sitesURLS>https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/9.0.0/repository/</sitesURLS>
+      <overview
+          summary="UML Designer provides a set of common diagrams to work with UML 2.5 models. The intent is to provide an easy way to make the transition from UML to domain specific modeling. This way users can continue to manipulate legacy UML models and start working with DSL. Users can even re-use the provided representations and work in a total transparence on both UML and DSL models at the same time."
+          screenshot="images/umldesigner-screenshot-320x240.png"
+          url="http://www.umldesigner.org/"/>
+      <id>org.obeonetwork.dsl.uml2.runtime.feature</id>
+    </components>
+    <components
+        name="Capella 1.3.1"
+        provider="Eclipse Polarsys"
+        description="Comprehensive, extensible and field-proven MBSE tool and method to design systems architecture. [gemoc-studio 3.1.0]"
+        license="EPL"
+        image32="images/icon_capella-32.png">
+      <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/nebula/snapshot</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/sirius/updates/legacy</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/releases/photon</sitesURLS>
+      <overview
+          summary="Capella is a comprehensive, extensible and field-proven MBSE tool to successfully design system, software, and hardware architecture. Relying on Arcadia, a model-based methodology that covers each engineering phase, Capella helps systems architects to formalize specification and master architectural design. &#xA;&#xA;In GEMOC, Capella may contribute to the modeling workbench activities."
+          screenshot="images/Capella_HMI-320x240.png"
+          url="https://www.polarsys.org/capella/"/>
+      <id>org.polarsys.capella.rcp.feature</id>
+      <id>org.eclipse.emf.diffmerge.sirius.feature</id>
+      <id>org.polarsys.kitalpha.ad.integration.emde.feature</id>
+      <id>org.polarsys.kitalpha.ad.feature</id>
+      <id>org.polarsys.kitalpha.ad.runtime.feature</id>
+      <id>org.polarsys.kitalpha.ad.integration.sirius.feature</id>
+      <id>org.polarsys.kitalpha.model.detachment.contrib.viewpoints.feature</id>
+      <id>org.polarsys.kitalpha.cadence.feature</id>
+      <id>org.polarsys.kitalpha.common.feature</id>
+      <id>org.polarsys.kitalpha.emde.feature</id>
+      <id>org.polarsys.kitalpha.doc.feature</id>
+      <id>org.polarsys.kitalpha.emde.ui.feature</id>
+      <id>org.polarsys.kitalpha.model.common.commands.feature</id>
+      <id>org.polarsys.kitalpha.model.common.share.feature</id>
+      <id>org.polarsys.kitalpha.model.detachment.feature</id>
+      <id>org.polarsys.kitalpha.model.detachment.ui.feature</id>
+      <id>org.polarsys.kitalpha.model.common.scrutiny.feature</id>
+      <id>org.polarsys.kitalpha.patterns.feature</id>
+      <id>org.polarsys.kitalpha.report.feature</id>
+      <id>org.polarsys.kitalpha.report.ui.feature</id>
+      <id>org.polarsys.kitalpha.resourcereuse.feature</id>
+      <id>org.polarsys.kitalpha.resourcereuse.emfscheme.feature</id>
+      <id>org.polarsys.kitalpha.resourcereuse.ui.feature</id>
+      <id>org.polarsys.kitalpha.richtext.widget.feature</id>
+      <id>org.polarsys.kitalpha.transposer.feature</id>
+      <id>org.eclipse.nebula.widgets.richtext.feature</id>
+      <id>org.eclipse.emf.diffmerge.patterns.sdk.feature</id>
+      <id>org.eclipse.emf.diffmerge.patterns.sirius.sdk.feature</id>
+      <id>org.eclipse.sirius.query.legacy.feature</id>
+    </components>
+    <components
+        name="Capella Studio 1.3.1"
+        provider="Eclipse Polarsys"
+        description="Development environment for Capella [gemoc-studio 3.1.0]"
+        license="EPL"
+        image32="images/icon_capella-32.png">
+      <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.rcp.site/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/capella/core/updates/releases/1.3.1-R20190520-182008/org.polarsys.capella.egf.site/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/capella/capellastudio/updates/release/sdk/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/sdk/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/runtime/1.3.1/</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/kitalpha/updates/release/runtimecore/1.3.1/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/nebula/snapshot</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/diffmerge/releases/0.11.0/emf-diffmerge-site</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/diffmerge/releases/0.11.0/edm-patterns-site/</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/sirius/updates/legacy</sitesURLS>
+      <sitesURLS>https://download.eclipse.org/sirius/updates/releases/6.1.3/photon</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/releases/photon</sitesURLS>
+      <sitesURLS>http://download.eclipse.org/eclipse/updates/4.8/</sitesURLS>
+      <overview
+          summary="Capella Studio is the development environment aiming to design Capella extensions. &#xA;&#xA;In GEMOC, Capella Studio may contribute to the language workbench activities."
+          screenshot="images/Capella_HMI-320x240.png"
+          url="https://www.polarsys.org/capella/"/>
+      <id>org.polarsys.capella.studio.product.feature</id>
+      <id>org.polarsys.capella.ta.viewpoint.dsl.feature</id>
+      <id>org.polarsys.capella.cdo.mock.feature</id>
+      <id>org.polarsys.capella.rcp.feature</id>
+      <id>org.polarsys.capella.extension.sdk.feature</id>
+      <id>org.polarsys.capella.doc.feature</id>
+    </components>
+  </categories>
+  <categories
+      name="Alternative Tools"
+      description="Engines and tools proposing alternative approaches (may not directly use GEMOC execution framework)"
+      relevance="2">
+    <components
+        name="TESL Engine and Editor"
+        provider="CentraleSup&#xe9;lec/LRI"
+        description="The Tagged Event Specification Language allows the specification of timed systems by modeling events as clocks and occurrences of an event as ticks on its clock.  [gemoc-studio 2.3.0]"
+        license="Unknown Licence"
+        groups="//@filters.0"
+        incubation="true">
+      <sitesURLS>http://wwwdi.supelec.fr/tesl-update-site</sitesURLS>
+      <overview
+          summary="The Tagged Event Specification Language allows the specification of timed systems by modeling events as clocks and occurrences of an event as ticks on its clock."
+          screenshot="images/tesl-screenshot-320x240.png"
+          url="http://wwwdi.supelec.fr/software/TESL/"/>
+      <id>fr.supelec.tesl.feature</id>
+    </components>
+  </categories>
+  <filters name="Incubation"/>
+</discovery:DiscoveryDefinition>
