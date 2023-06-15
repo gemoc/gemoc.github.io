@@ -113,4 +113,22 @@ TODO
 
 ### Program Committee
 
-TODO
+- Shaukat Ali ( Simula Research Laboratory, Norway)
+- Souvik Barat (Tata Consultancy Services, India)
+- Francis Bordeleau (ÉTS Montréal, Canada)
+- Mark van den Brand (Eindhoven University of Technology, The Netherlands)
+- Alessio Bucaioni (Mälardalen University, Sweden)
+- Benoit Combemale (IRISA/INRIA, Université de Rennes 1, France)
+- Georg Grossmann (University of South Australia, Australia)
+- Djamel Eddine Khelladi (IRISA/INRIA / Université Rennes 1, France)
+- Judith Michael (RWTH Aachen University, Germany)
+- Bentley Oakes (University of Montréal, Canada) 
+- Alfonso Pierantonio (University of L'Aquila, Italy)
+- Bernhard Rumpe (RWTH Aachen University, Germany)
+- Julien Schmaltz (CGI, The Netherlands)
+- Markus Stumptner (University of South Australia, Australia)
+- Michael Vierhauser (Johannes Kepler University Linz, Austria)
+- Andreas Wortmann (University of Stuttgart, Germany)
+- Alois Zoitl (Johannes Kepler University Linz, Austria)
+- Steffen Zschaler (King’s College London, UK)
+
