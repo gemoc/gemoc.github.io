@@ -88,9 +88,11 @@ Submissions that do not adhere to the above limits or that violate the formattin
 
 ## Keynotes
 
-We are pleased to announce... 
+We are pleased to announce that [Dr. Judith Michael](https://judithmichael.github.io) (RWTH Aachen University, Germany) will give a keynote talk:
 
-TODO 
+**Unlocking Potential: Rocking the Sustainable Future with Digital Twins**
+
+As we as humans and our activities in practice and research have profound impacts on the world, there has never been a more urgent need to address sustainability and its global challenges. A broad range of modeling and, in particular, domain-specific modeling techniques in combination with digital twins are currently being crystallized as a possible solution to address some of these challenges. In this keynote, we focus primarily on 2 perspectives: How can our research contribute to the sustainable development of digital twins, and how can we use digital twins to assess the sustainability of complex, software-intensive systems. Sustainability challenges are multi-faceted, forcing us to form alliances with researchers from other fields. As such, we can comprehensively explore economic, environmental and social sustainability and their balance at different scales to positively impact the future of our world.
 
 ## Accepted Papers
 
