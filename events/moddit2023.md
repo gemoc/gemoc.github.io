@@ -48,8 +48,6 @@ physical systems (CPSs) and beyond. It refers to the ability to clone an actual 
 
 ## Call for Papers
 
-(to be updated)
-
 ### Topics
 
 Topics of interest include, but are not restricted to:
@@ -94,13 +92,32 @@ We are pleased to announce that [Dr. Judith Michael](https://judithmichael.githu
 
 As we as humans and our activities in practice and research have profound impacts on the world, there has never been a more urgent need to address sustainability and its global challenges. A broad range of modeling and, in particular, domain-specific modeling techniques in combination with digital twins are currently being crystallized as a possible solution to address some of these challenges. In this keynote, we focus primarily on 2 perspectives: How can our research contribute to the sustainable development of digital twins, and how can we use digital twins to assess the sustainability of complex, software-intensive systems. Sustainability challenges are multi-faceted, forcing us to form alliances with researchers from other fields. As such, we can comprehensively explore economic, environmental and social sustainability and their balance at different scales to positively impact the future of our world.
 
-## Accepted Papers
-
-TODO
-
 ## Program
 
-TODO
+9:30 - 11:00 
+- Welcome and Introduction ( 5 minutes )
+- Keynote Judith Michael (RWTH Aachen University, Germany) "Unlocking Potential: Rocking the Sustainable Future with Digital Twins" (45 minutes + 15 minutes Q&A) 
+- Florian Rademacher, Jingxi Zhang, Quentin Perez, Nico Jansen, Judith Michael, Didier Vojtisek, Andreas Wortmann, Bernhard Rumpe, Benoit Combemale and Jean-Marc Jézéquel. Model-Based DevOps: Foundations and Challenges. (Short Paper) (20 minutes + 5 minutes Q&A)
+
+11:00 - 11:30 Coffee Break
+
+11:30 - 13:00 
+- Birte Caesar, Nico Jansen, Maximilian Weigand, Alexander Fay and Bernhard Rumpe. Extracting Hardware Reconfiguration Models based on Knowledge Synthesis from STEP Files. (Regular Paper)  (25 minutes + 10 minutes Q&A)
+- Hussein Marah, Lucas Lima, Moharram Challenger and Hans Vangheluwe. Towards Ontology Enabled Agent-based Twinning for Cyber-physical Systems. (Short Paper)  (20 minutes + 5 minutes Q&A)
+- Ramya Jayaraman, Daniel Lehner, Stefan Klikovits and Manuel Wimmer. Towards Generating Model-Driven Speech Interfaces for Digital Twins. (Short Paper) (20 minutes + 5 minutes Q&A)
+
+13:00 - 14:30 Lunch Break
+
+14:30 - 16:00 
+- Ivan Compagnucci, Monique Snoeck and Estefanía Serral Asensio. Supporting Digital Twins Systems Integrating the MERODE Approach. (Regular Paper) (25 minutes + 10 minutes Q&A)
+- Patrick Spaney, Steffen Becker, Robin Ströbel, Jürgen Fleischer, Soraya Zenhari, Hans-Christian Möhring, Ann-Kathrin Splettstößer and Andreas Wortmann. A Model-Driven Digital Twin for Manufacturing Process Adaptation. (Exemplar Paper) (20 minutes + 5 minutes Q&A)
+- Benjamin Nast, Achim Reiz, Nikola Ivanovic and Kurt Sandkuhl. A Modeling Approach Supporting Digital Twin Engineering: Optimizing the Energy Consumption of Air Conditioning Facilities. (Tool Paper) (20 minutes + 5 minutes Q&A)
+
+16:00 - 16:30 Coffee Break
+
+16:30 - 17:30
+- Malte Heithoff, Marco Konersmann, Judith Michael, Bernhard Rumpe and Felix Steinfurth. Challenges of Integrating Model-Based Digital Twins for Vehicle Diagnosis. (Regular Paper) (25 minutes + 10 minutes Q&A)
+- Discussion:  How to have more impact in the Digital Twin field ( 25 minutes )
 
 ## Committees
 
