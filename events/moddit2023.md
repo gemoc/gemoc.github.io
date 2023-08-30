@@ -48,8 +48,6 @@ physical systems (CPSs) and beyond. It refers to the ability to clone an actual 
 
 ## Call for Papers
 
-(to be updated)
-
 ### Topics
 
 Topics of interest include, but are not restricted to:
