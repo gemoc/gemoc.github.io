@@ -84,7 +84,7 @@ Submissions that do not adhere to the above limits or that violate the formattin
 - Camera ready submission deadline: Tuesday August 22nd, 2023
 - Workshop: to be decided, between Sunday October 1st and Tuesday October 3rd, 2023
 
-## Keynotes
+## Keynotes [[slide](https://judithmichael.github.io/assets/pdfs/23.10.01.ModDiT.Keynote.JudithMichael.pdf)]
 
 We are pleased to announce that [Dr. Judith Michael](https://judithmichael.github.io) (RWTH Aachen University, Germany) will give a keynote talk:
 
@@ -96,7 +96,7 @@ As we as humans and our activities in practice and research have profound impact
 
 9:30 - 11:00 
 - Welcome and Introduction ( 5 minutes )
-- Keynote Judith Michael (RWTH Aachen University, Germany) "Unlocking Potential: Rocking the Sustainable Future with Digital Twins" (45 minutes + 15 minutes Q&A) 
+- Keynote Judith Michael (RWTH Aachen University, Germany) "Unlocking Potential: Rocking the Sustainable Future with Digital Twins" (45 minutes + 15 minutes Q&A) [[slide](https://judithmichael.github.io/assets/pdfs/23.10.01.ModDiT.Keynote.JudithMichael.pdf)]
 - Florian Rademacher, Jingxi Zhang, Quentin Perez, Nico Jansen, Judith Michael, Didier Vojtisek, Andreas Wortmann, Bernhard Rumpe, Benoit Combemale and Jean-Marc Jézéquel. Model-Based DevOps: Foundations and Challenges. (Short Paper) (20 minutes + 5 minutes Q&A)
 
 11:00 - 11:30 Coffee Break
